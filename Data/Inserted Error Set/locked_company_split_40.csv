@@ -1,0 +1,41 @@
+ticker,cik,sec_name,split,dataset,claims_per_company
+UNH,0000731766,UNITEDHEALTH GROUP INC,test,general,10
+NEM,0001164727,NEWMONT Corp /DE/,test,general,10
+MDT,0001613103,Medtronic plc,test,general,10
+AEP,0000004904,AMERICAN ELECTRIC POWER CO INC,train,general,10
+TGT,0000027419,TARGET CORP,train,general,10
+USB,0000036104,US BANCORP \DE\,train,general,10
+LOW,0000060667,LOWES COMPANIES INC,train,general,10
+PAYX,0000723531,PAYCHEX INC,train,general,10
+O,0000726728,REALTY INCOME CORP,train,general,10
+T,0000732717,AT&T INC.,train,general,10
+REGN,0000872589,"REGENERON PHARMACEUTICALS, INC.",train,general,10
+ROP,0000882835,ROPER TECHNOLOGIES INC,train,general,10
+VLO,0001035002,VALERO ENERGY CORP/TX,train,general,10
+MET,0001099219,METLIFE INC,train,general,10
+EXC,0001109357,EXELON CORP,train,general,10
+TSLA,0001318605,"Tesla, Inc.",train,general,10
+PLTR,0001321655,Palantir Technologies Inc.,train,general,10
+DUK,0001326160,Duke Energy CORP,train,general,10
+META,0001326801,"Meta Platforms, Inc.",train,general,10
+V,0001403161,VISA INC.,train,general,10
+CRWD,0001535527,"CrowdStrike Holdings, Inc.",train,general,10
+ZTS,0001555280,Zoetis Inc.,train,general,10
+ICE,0001571949,"Intercontinental Exchange, Inc.",train,general,10
+HLT,0001585689,Hilton Worldwide Holdings Inc.,train,general,10
+CL,0000021665,COLGATE PALMOLIVE CO,validation,general,10
+TJX,0000109198,TJX COMPANIES INC /DE/,validation,general,10
+SCHW,0000316709,SCHWAB CHARLES CORP,validation,general,10
+NOC,0001133421,NORTHROP GRUMMAN CORP /DE/,validation,general,10
+PRU,0001137774,PRUDENTIAL FINANCIAL INC,validation,general,10
+LULU,0001397187,lululemon athletica inc.,validation,general,10
+CPB,0000016732,CAMPBELL'S Co,test,storyboard_b,10
+CAT,0000018230,CATERPILLAR INC,test,storyboard_b,10
+KMB,0000055785,KIMBERLY CLARK CORP,test,storyboard_b,10
+PG,0000080424,PROCTER & GAMBLE Co,test,storyboard_b,10
+WY,0000106535,WEYERHAEUSER CO,test,storyboard_b,10
+CMI,0000026172,CUMMINS INC,train,storyboard_b,10
+ECL,0000031462,ECOLAB INC.,train,storyboard_b,10
+SHW,0000089800,SHERWIN WILLIAMS CO,train,storyboard_b,10
+PH,0000076334,Parker-Hannifin Corp,validation,storyboard_b,10
+SO,0000092122,SOUTHERN CO,validation,storyboard_b,10
