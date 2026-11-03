@@ -18,7 +18,7 @@ All four methods label the same claims, with the same passages and the same numb
 
 | Row | Method | Owner | Status |
 |---|---|---|---|
-| Baseline | Rule-based number normalization + keyword matching | Sharon | Done, validation results in [Baseline/](Baseline/) |
+| Baseline | Rule-based number normalization + keyword matching | Sharon | Done; test results and error analysis in [Baseline/](Baseline/) |
 | Classical | TF-IDF + logistic regression | Stephanie | Planned |
 | Deep | DeBERTa-v3-large (NLI checkpoint), fine-tuned on RAGBench FinQA/TAT-QA | Chengyuan | Planned |
 | Foundation | LLM judge (Claude; GPT and Gemini if time allows) | Stephanie | Planned |
@@ -63,19 +63,30 @@ python3 Baseline/fetch_ragbench.py
 python3 Baseline/run_inserted_error_set.py
 python3 Baseline/run_ragbench.py
 
-# 3. Tests
+# 3. Error analysis from the saved test outputs, then tests
+python3 Baseline/error_analysis.py
 python3 -m unittest discover Baseline/tests
 ```
 
+The baseline's one-time test run is done (`--final-test`); don't repeat it.
+
 On macOS with the python.org build of Python, `urllib` downloads in the notebook can fail with `CERTIFICATE_VERIFY_FAILED`. Run *Install Certificates.command* in your Python folder, or use `fetch_ragbench.py`, which downloads with `curl`.
 
-## Current results (validation)
+## Comparison table (test split)
 
-| Model | Inserted Error Set strict R / P / F1 | Storyboard B strict R | RAGBench FinQA claims strict R / P / F1 | AUROC | ECE |
-|---|---|---|---|---|---|
-| Rule-based baseline | 1.00 / 1.00 / 1.00 | 1.00 | 0.14 / 0.04 / 0.06 | N/A | N/A |
+| Model | Inserted Error Set strict R / P / F1 | Storyboard B strict R | RAGBench claims strict R / P / F1 (FinQA · TAT-QA) | AUROC | Seeds | ECE | Training | Latency | Inspectability |
+|---|---|---|---|---|---|---|---|---|---|
+| Rule-based baseline (rules 1.2.0) | 1.00 / 1.00 / 1.00 | 1.00 | 0.18 / 0.05 / 0.08 · 0.05 / 0.02 / 0.03 | N/A | N/A (deterministic) | N/A | none | ~1 ms/claim (CPU) | Each label comes from a named rule and the passage line it used |
+| *Label everything Unsupported* | *1.00 / 0.80 / 0.89* | *1.00* | *1.00 / 0.02 / 0.03 · 1.00 / 0.01 / 0.02* | | | | | | |
+| TF-IDF + LR | | | | | | | | | |
+| DeBERTa-v3-large | | | | | | | | | |
+| LLM judge | | | | | | | | | |
 
-The Inserted Error Set is saturated by simple rules, and 80% of its claims are wrong, so labelling every claim Unsupported also meets the precision target. See [Baseline/README.md](Baseline/README.md) for what this means for comparing the other methods.
+**Points for the team:**
+- **The Inserted Error Set is saturated by simple rules.** 80% of its claims are wrong, so labelling every claim Unsupported also meets the recall and precision targets. We should add a check that a method beats that reference.
+- **The baseline labels 73% of RAGBench claims Uncertain,** over the ⅓ cap, because most RAGBench sentences are calculations or contain no number.
+
+Details, error analysis and limitations: [Baseline/README.md](Baseline/README.md).
 
 ## Ethics and scope
 

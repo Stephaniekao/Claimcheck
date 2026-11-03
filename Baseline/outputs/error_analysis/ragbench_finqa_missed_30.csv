@@ -1,0 +1,816 @@
+answer,id,key,claim,label,pred,rule,explanation,suggested_category,reviewer_1_category,reviewer_2_category,passage
+86,finqa_6271,b,- Commercial mortgages at fair value: $772 million In 2009:,Unsupported,Supported,amount_and_keywords_match,772 million appears in the passage next to the same line item and period.,other,,,"residential mortgage-backed securities at december 31 , 2012 , our residential mortgage-backed securities portfolio was comprised of $ 31.4 billion fair value of us government agency-backed securities and $ 6.1 billion fair value of non-agency ( private issuer ) securities .
+the agency securities are generally collateralized by 1-4 family , conforming , fixed-rate residential mortgages .
+the non-agency securities are also generally collateralized by 1-4 family residential mortgages .
+the mortgage loans underlying the non-agency securities are generally non-conforming ( i.e. , original balances in excess of the amount qualifying for agency securities ) and predominately have interest rates that are fixed for a period of time , after which the rate adjusts to a floating rate based upon a contractual spread that is indexed to a market rate ( i.e. , a 201chybrid arm 201d ) , or interest rates that are fixed for the term of the loan .
+substantially all of the non-agency securities are senior tranches in the securitization structure and at origination had credit protection in the form of credit enhancement , over- collateralization and/or excess spread accounts .
+during 2012 , we recorded otti credit losses of $ 99 million on non-agency residential mortgage-backed securities .
+all of the losses were associated with securities rated below investment grade .
+as of december 31 , 2012 , the noncredit portion of impairment recorded in accumulated other comprehensive income for non-agency residential mortgage- backed securities for which we have recorded an otti credit loss totaled $ 150 million and the related securities had a fair value of $ 3.7 billion .
+the fair value of sub-investment grade investment securities for which we have not recorded an otti credit loss as of december 31 , 2012 totaled $ 1.9 billion , with unrealized net gains of $ 114 million .
+commercial mortgage-backed securities the fair value of the non-agency commercial mortgage- backed securities portfolio was $ 5.9 billion at december 31 , 2012 and consisted of fixed-rate , private-issuer securities collateralized by non-residential properties , primarily retail properties , office buildings , and multi-family housing .
+the agency commercial mortgage-backed securities portfolio was $ 2.0 billion fair value at december 31 , 2012 consisting of multi-family housing .
+substantially all of the securities are the most senior tranches in the subordination structure .
+there were no otti credit losses on commercial mortgage- backed securities during 2012 .
+asset-backed securities the fair value of the asset-backed securities portfolio was $ 6.5 billion at december 31 , 2012 and consisted of fixed-rate and floating-rate , private-issuer securities collateralized primarily by various consumer credit products , including residential mortgage loans , credit cards , automobile loans , and student loans .
+substantially all of the securities are senior tranches in the securitization structure and have credit protection in the form of credit enhancement , over-collateralization and/or excess spread accounts .
+we recorded otti credit losses of $ 11 million on asset- backed securities during 2012 .
+all of the securities are collateralized by first lien and second lien residential mortgage loans and are rated below investment grade .
+as of december 31 , 2012 , the noncredit portion of impairment recorded in accumulated other comprehensive income for asset-backed securities for which we have recorded an otti credit loss totaled $ 52 million and the related securities had a fair value of $ 603 million .
+for the sub-investment grade investment securities ( available for sale and held to maturity ) for which we have not recorded an otti loss through december 31 , 2012 , the fair value was $ 47 million , with unrealized net losses of $ 3 million .
+the results of our security-level assessments indicate that we will recover the cost basis of these securities .
+note 8 investment securities in the notes to consolidated financial statements in item 8 of this report provides additional information on otti losses and further detail regarding our process for assessing otti .
+if current housing and economic conditions were to worsen , and if market volatility and illiquidity were to worsen , or if market interest rates were to increase appreciably , the valuation of our investment securities portfolio could be adversely affected and we could incur additional otti credit losses that would impact our consolidated income statement .
+loans held for sale table 15 : loans held for sale in millions december 31 december 31 .
+[[""in millions"", ""december 312012"", ""december 312011""], [""commercial mortgages at fair value"", ""$ 772"", ""$ 843""], [""commercial mortgages at lower of cost or market"", ""620"", ""451""], [""total commercial mortgages"", ""1392"", ""1294""], [""residential mortgages at fair value"", ""2096"", ""1415""], [""residential mortgages at lower of cost or market"", ""124"", ""107""], [""total residential mortgages"", ""2220"", ""1522""], [""other"", ""81"", ""120""], [""total"", ""$ 3693"", ""$ 2936""]]
+we stopped originating commercial mortgage loans held for sale designated at fair value in 2008 and continue pursuing opportunities to reduce these positions at appropriate prices .
+at december 31 , 2012 , the balance relating to these loans was $ 772 million , compared to $ 843 million at december 31 , 2011 .
+we sold $ 32 million in unpaid principal balances of these commercial mortgage loans held for sale carried at fair value in 2012 and sold $ 25 million in 2011 .
+the pnc financial services group , inc .
+2013 form 10-k 49 ."
+86,finqa_6271,c,- Commercial mortgages at fair value: $843 million,Unsupported,Supported,amount_and_keywords_match,843 million appears in the passage next to the same line item and period.,other,,,"residential mortgage-backed securities at december 31 , 2012 , our residential mortgage-backed securities portfolio was comprised of $ 31.4 billion fair value of us government agency-backed securities and $ 6.1 billion fair value of non-agency ( private issuer ) securities .
+the agency securities are generally collateralized by 1-4 family , conforming , fixed-rate residential mortgages .
+the non-agency securities are also generally collateralized by 1-4 family residential mortgages .
+the mortgage loans underlying the non-agency securities are generally non-conforming ( i.e. , original balances in excess of the amount qualifying for agency securities ) and predominately have interest rates that are fixed for a period of time , after which the rate adjusts to a floating rate based upon a contractual spread that is indexed to a market rate ( i.e. , a 201chybrid arm 201d ) , or interest rates that are fixed for the term of the loan .
+substantially all of the non-agency securities are senior tranches in the securitization structure and at origination had credit protection in the form of credit enhancement , over- collateralization and/or excess spread accounts .
+during 2012 , we recorded otti credit losses of $ 99 million on non-agency residential mortgage-backed securities .
+all of the losses were associated with securities rated below investment grade .
+as of december 31 , 2012 , the noncredit portion of impairment recorded in accumulated other comprehensive income for non-agency residential mortgage- backed securities for which we have recorded an otti credit loss totaled $ 150 million and the related securities had a fair value of $ 3.7 billion .
+the fair value of sub-investment grade investment securities for which we have not recorded an otti credit loss as of december 31 , 2012 totaled $ 1.9 billion , with unrealized net gains of $ 114 million .
+commercial mortgage-backed securities the fair value of the non-agency commercial mortgage- backed securities portfolio was $ 5.9 billion at december 31 , 2012 and consisted of fixed-rate , private-issuer securities collateralized by non-residential properties , primarily retail properties , office buildings , and multi-family housing .
+the agency commercial mortgage-backed securities portfolio was $ 2.0 billion fair value at december 31 , 2012 consisting of multi-family housing .
+substantially all of the securities are the most senior tranches in the subordination structure .
+there were no otti credit losses on commercial mortgage- backed securities during 2012 .
+asset-backed securities the fair value of the asset-backed securities portfolio was $ 6.5 billion at december 31 , 2012 and consisted of fixed-rate and floating-rate , private-issuer securities collateralized primarily by various consumer credit products , including residential mortgage loans , credit cards , automobile loans , and student loans .
+substantially all of the securities are senior tranches in the securitization structure and have credit protection in the form of credit enhancement , over-collateralization and/or excess spread accounts .
+we recorded otti credit losses of $ 11 million on asset- backed securities during 2012 .
+all of the securities are collateralized by first lien and second lien residential mortgage loans and are rated below investment grade .
+as of december 31 , 2012 , the noncredit portion of impairment recorded in accumulated other comprehensive income for asset-backed securities for which we have recorded an otti credit loss totaled $ 52 million and the related securities had a fair value of $ 603 million .
+for the sub-investment grade investment securities ( available for sale and held to maturity ) for which we have not recorded an otti loss through december 31 , 2012 , the fair value was $ 47 million , with unrealized net losses of $ 3 million .
+the results of our security-level assessments indicate that we will recover the cost basis of these securities .
+note 8 investment securities in the notes to consolidated financial statements in item 8 of this report provides additional information on otti losses and further detail regarding our process for assessing otti .
+if current housing and economic conditions were to worsen , and if market volatility and illiquidity were to worsen , or if market interest rates were to increase appreciably , the valuation of our investment securities portfolio could be adversely affected and we could incur additional otti credit losses that would impact our consolidated income statement .
+loans held for sale table 15 : loans held for sale in millions december 31 december 31 .
+[[""in millions"", ""december 312012"", ""december 312011""], [""commercial mortgages at fair value"", ""$ 772"", ""$ 843""], [""commercial mortgages at lower of cost or market"", ""620"", ""451""], [""total commercial mortgages"", ""1392"", ""1294""], [""residential mortgages at fair value"", ""2096"", ""1415""], [""residential mortgages at lower of cost or market"", ""124"", ""107""], [""total residential mortgages"", ""2220"", ""1522""], [""other"", ""81"", ""120""], [""total"", ""$ 3693"", ""$ 2936""]]
+we stopped originating commercial mortgage loans held for sale designated at fair value in 2008 and continue pursuing opportunities to reduce these positions at appropriate prices .
+at december 31 , 2012 , the balance relating to these loans was $ 772 million , compared to $ 843 million at december 31 , 2011 .
+we sold $ 32 million in unpaid principal balances of these commercial mortgage loans held for sale carried at fair value in 2012 and sold $ 25 million in 2011 .
+the pnc financial services group , inc .
+2013 form 10-k 49 ."
+278,finqa_6793,b,"The total minimum commitment capacity as of December 31, 2002, is 8369 megawatts.",Unsupported,Supported,amount_and_keywords_match,8369 appears in the passage next to the same line item and period.,other,,,"power purchase contracts dominion has entered into contracts for long-term purchases of capacity and energy from other utilities , qualifying facilities and independent power producers .
+as of december 31 , 2002 , dominion had 42 non-utility purchase contracts with a com- bined dependable summer capacity of 3758 megawatts .
+the table below reflects dominion 2019s minimum commitments as of december 31 , 2002 under these contracts. .
+[[""( millions )"", ""commitment capacity"", ""commitment other""], [""2003"", ""$ 643"", ""$ 44""], [""2004"", ""635"", ""29""], [""2005"", ""629"", ""22""], [""2006"", ""614"", ""18""], [""2007"", ""589"", ""11""], [""later years"", ""5259"", ""113""], [""total"", ""8369"", ""237""], [""present value of the total"", ""$ 4836"", ""$ 140""]]
+capacity and other purchases under these contracts totaled $ 691 million , $ 680 million and $ 740 million for 2002 , 2001 and 2000 , respectively .
+in 2001 , dominion completed the purchase of three gener- ating facilities and the termination of seven long-term power purchase contracts with non-utility generators .
+dominion recorded an after-tax charge of $ 136 million in connection with the purchase and termination of long-term power purchase contracts .
+cash payments related to the purchase of three gener- ating facilities totaled $ 207 million .
+the allocation of the pur- chase price was assigned to the assets and liabilities acquired based upon estimated fair values as of the date of acquisition .
+substantially all of the value was attributed to the power pur- chase contracts which were terminated and resulted in a charge included in operation and maintenance expense .
+fuel purchase commitments dominion enters into long-term purchase commitments for fuel used in electric generation and natural gas for purposes other than trading .
+estimated payments under these commitments for the next five years are as follows : 2003 2014$ 599 million ; 2004 2014$ 311 million ; 2005 2014$ 253 million ; 2006 2014$ 205 mil- lion ; 2007 2014$ 89 million ; and years beyond 2007 2014$ 215 mil- lion .
+these purchase commitments include those required for regulated operations .
+dominion recovers the costs of those pur- chases through regulated rates .
+the natural gas purchase com- mitments of dominion 2019s field services operations are also included , net of related sales commitments .
+in addition , dominion has committed to purchase certain volumes of nat- ural gas at market index prices determined in the period the natural gas is delivered .
+these transactions have been designated as normal purchases and sales under sfas no . 133 .
+natural gas pipeline and storage capacity commitments dominion enters into long-term commitments for the purchase of natural gas pipeline and storage capacity for purposes other than trading .
+estimated payments under these commitments for the next five years are as follows : 2003 2014$ 34 million ; 2004 2014$ 23 million ; 2005 2014$ 13 million .
+there were no signifi- cant commitments beyond 2005 .
+production handling and firm transportation commitments in connection with its gas and oil production operations , dominion has entered into certain transportation and produc- tion handling agreements with minimum commitments expected to be paid in the following years : 2003 2014$ 23 million ; 2004 2014$ 57 million ; 2005 2014$ 56 million ; 2006 2014$ 53 million ; 2007 2014$ 44 million ; and years after 2007 2014$ 68 million .
+lease commitments dominion leases various facilities , vehicles , aircraft and equip- ment under both operating and capital leases .
+future minimum lease payments under operating and capital leases that have initial or remaining lease terms in excess of one year as of december 31 , 2002 are as follows : 2003 2014$ 94 million ; 2004 2014 $ 94 million ; 2005 2014$ 82 million ; 2006 2014$ 67 million ; 2007 2014 $ 62 million ; and years beyond 2007 2014$ 79 million .
+rental expense included in other operations and maintenance expense was $ 84 million , $ 75 million and $ 107 million for 2002 , 2001 , and 2000 , respectively .
+as of december 31 , 2002 , dominion , through certain sub- sidiaries , has entered into agreements with special purpose enti- ties ( lessors ) in order to finance and lease several new power generation projects , as well as its corporate headquarters and air- craft .
+the lessors have an aggregate financing commitment from equity and debt investors of $ 2.2 billion , of which $ 1.6 billion has been used for total project costs to date .
+dominion , in its role as construction agent for the lessors , is responsible for com- pleting construction by a specified date .
+in the event a project is terminated before completion , dominion has the option to either purchase the project for 100 percent of project costs or terminate the project and make a payment to the lessor of approximately but no more than 89.9 percent of project costs .
+upon completion of each individual project , dominion has use of the project assets subject to an operating lease .
+dominion 2019s lease payments to the lessors are sufficient to provide a return to the investors .
+at the end of each individual project 2019s lease term , dominion may renew the lease at negotiated amounts based on project costs and current market conditions , subject to investors 2019 approval ; purchase the project at its original construction cost ; or sell the project , on behalf of the lessor , to an independent third party .
+if the project is sold and the proceeds from the sale are insufficient to repay the investors , dominion may be required to make a payment to the lessor up to an amount rang- ing from 81 percent to 85 percent of the project cost depending 85d o m i n i o n 2019 0 2 a n n u a l r e p o r t ."
+490,finqa_7278,g,"Since the total number of shares authorized under the new program is $10 billion and the average price paid per share is $81.57, we can calculate the total number of shares authorized by dividing the total cost of shares purchased by the average price paid per share:",Unsupported,Supported,amount_and_keywords_match,10 billion appears in the passage next to the same line item and period. 81.57 appears in the passage next to the same line item and period.,calculated values,,,"on july 18 , 2013 , the board approved a new $ 10 billion share repurchase program to be completed at the latest by june 30 , 2018 .
+schlumberger had repurchased $ 8.6 billion of shares under this new share repurchase program as of december 31 , 2015 .
+the following table summarizes the activity under these share repurchase programs during 2015 , 2014 and 2013 : ( stated in thousands , except per share amounts ) total cost of shares purchased total number of shares purchased average price paid per .
+[["""", ""total cost of shares purchased"", ""total number of shares purchased"", ""average price paid per share""], [""2015"", ""$ 2182180"", ""26751.0"", ""$ 81.57""], [""2014"", ""$ 4677687"", ""47545.9"", ""$ 98.38""], [""2013"", ""$ 2596447"", ""31349.5"", ""$ 82.82""]]
+on january 21 , 2016 , the board approved a new $ 10 billion share repurchase program for schlumberger common stock .
+this new program will take effect once the remaining $ 1.4 billion authorized to be repurchased under the july 18 , 2013 program is exhausted .
+2022 net cash provided by operating activities was $ 8.8 billion in 2015 , $ 11.2 billion in 2014 and $ 10.7 billion in 2013 .
+the decrease in operating cash flows in 2015 as compared to 2014 was largely attributable to lower earnings before non-cash charges and credits and depreciation and amortization expense while the increase in operating cash flows in 2014 as compared to 2013 was largely attributable to higher earnings before non-cash charges and credits and depreciation and amortization expense .
+2022 dividends paid during 2015 , 2014 and 2013 were $ 2.4 billion , $ 2.0 billion and $ 1.6 billion , respectively .
+on january 15 , 2015 , schlumberger announced that its board approved a 25% ( 25 % ) increase in the quarterly dividend , to $ 0.50 .
+on january 16 , 2014 , schlumberger announced that its board approved a 28% ( 28 % ) increase in the quarterly dividend , to $ 0.40 .
+2022 capital expenditures were $ 2.4 billion in 2015 , $ 4.0 billion in 2014 and $ 3.9 billion in 2013 .
+capital expenditures are expected to be approximately $ 2.4 billion in 2016 .
+2022 during the fourth quarter of 2015 , schlumberger made a $ 500 million cash investment into a new spm project .
+schlumberger is obligated to make a further $ 500 million cash investment into this project during the first quarter of 2016 .
+2022 during 2015 , 2014 and 2013 schlumberger made contributions of $ 346 million , $ 390 million and $ 538 million , respectively , to its postretirement benefit plans .
+the us pension plans were 86% ( 86 % ) funded at both december 31 , 2015 and 2014 based on the projected benefit obligation .
+schlumberger 2019s international defined benefit pension plans were a combined 93% ( 93 % ) funded at december 31 , 2015 based on the projected benefit obligation .
+this compares to 94% ( 94 % ) funded at december 31 , 2014 .
+schlumberger currently anticipates contributing approximately $ 350 million to its postretirement benefit plans in 2016 , subject to market and business conditions .
+schlumberger maintains a 20ac5.0 billion guaranteed euro medium term note program .
+this program provides for the issuance of various types of debt instruments such as fixed or floating rate notes in euro , us dollar or other currencies .
+schlumberger has issued 20ac0.5 billion 1.50% ( 1.50 % ) guaranteed notes due 2019 under this program .
+as of december 31 , 2015 , schlumberger had $ 13.0 billion of cash and short-term investments on hand .
+schlumberger had separate committed debt facility agreements aggregating $ 3.8 billion with commercial banks , of which $ 1.4 billion was available and unused as of december 31 , 2015 .
+the $ 3.8 billion of committed debt ."
+876,finqa_7243,d,"- Total net of all collateral in 2014 was $59,371 million.",Unsupported,Supported,amount_and_keywords_match,"59,371 million appears in the passage next to the same line item and period.",other,,,"jpmorgan chase & co./2015 annual report 127 receivables from customers receivables from customers primarily represent margin loans to prime and retail brokerage clients that are collateralized through a pledge of assets maintained in clients 2019 brokerage accounts which are subject to daily minimum collateral requirements .
+in the event that the collateral value decreases , a maintenance margin call is made to the client to provide additional collateral into the account .
+if additional collateral is not provided by the client , the client 2019s position may be liquidated by the firm to meet the minimum collateral requirements .
+lending-related commitments the firm uses lending-related financial instruments , such as commitments ( including revolving credit facilities ) and guarantees , to meet the financing needs of its customers .
+the contractual amounts of these financial instruments represent the maximum possible credit risk should the counterparties draw down on these commitments or the firm fulfills its obligations under these guarantees , and the counterparties subsequently fail to perform according to the terms of these contracts .
+in the firm 2019s view , the total contractual amount of these wholesale lending-related commitments is not representative of the firm 2019s likely actual future credit exposure or funding requirements .
+in determining the amount of credit risk exposure the firm has to wholesale lending-related commitments , which is used as the basis for allocating credit risk capital to these commitments , the firm has established a 201cloan-equivalent 201d amount for each commitment ; this amount represents the portion of the unused commitment or other contingent exposure that is expected , based on average portfolio historical experience , to become drawn upon in an event of a default by an obligor .
+the loan-equivalent amount of the firm 2019s lending- related commitments was $ 212.4 billion and $ 216.5 billion as of december 31 , 2015 and 2014 , respectively .
+clearing services the firm provides clearing services for clients entering into securities and derivative transactions .
+through the provision of these services the firm is exposed to the risk of non-performance by its clients and may be required to share in losses incurred by central counterparties ( 201cccps 201d ) .
+where possible , the firm seeks to mitigate its credit risk to its clients through the collection of adequate margin at inception and throughout the life of the transactions and can also cease provision of clearing services if clients do not adhere to their obligations under the clearing agreement .
+for further discussion of clearing services , see note 29 .
+derivative contracts in the normal course of business , the firm uses derivative instruments predominantly for market-making activities .
+derivatives enable customers to manage exposures to fluctuations in interest rates , currencies and other markets .
+the firm also uses derivative instruments to manage its own credit and other market risk exposure .
+the nature of the counterparty and the settlement mechanism of the derivative affect the credit risk to which the firm is exposed .
+for otc derivatives the firm is exposed to the credit risk of the derivative counterparty .
+for exchange- traded derivatives ( 201cetd 201d ) , such as futures and options and 201ccleared 201d over-the-counter ( 201cotc-cleared 201d ) derivatives , the firm is generally exposed to the credit risk of the relevant ccp .
+where possible , the firm seeks to mitigate its credit risk exposures arising from derivative transactions through the use of legally enforceable master netting arrangements and collateral agreements .
+for further discussion of derivative contracts , counterparties and settlement types , see note 6 .
+the following table summarizes the net derivative receivables for the periods presented .
+derivative receivables .
+[[""december 31 ( in millions )"", ""2015"", ""2014""], [""interest rate"", ""$ 26363"", ""$ 33725""], [""credit derivatives"", ""1423"", ""1838""], [""foreign exchange"", ""17177"", ""21253""], [""equity"", ""5529"", ""8177""], [""commodity"", ""9185"", ""13982""], [""total net of cash collateral"", ""59677"", ""78975""], [""liquid securities and other cash collateral held against derivative receivables"", ""-16580 ( 16580 )"", ""-19604 ( 19604 )""], [""total net of all collateral"", ""$ 43097"", ""$ 59371""]]
+derivative receivables reported on the consolidated balance sheets were $ 59.7 billion and $ 79.0 billion at december 31 , 2015 and 2014 , respectively .
+these amounts represent the fair value of the derivative contracts , after giving effect to legally enforceable master netting agreements and cash collateral held by the firm .
+however , in management 2019s view , the appropriate measure of current credit risk should also take into consideration additional liquid securities ( primarily u.s .
+government and agency securities and other group of seven nations ( 201cg7 201d ) government bonds ) and other cash collateral held by the firm aggregating $ 16.6 billion and $ 19.6 billion at december 31 , 2015 and 2014 , respectively , that may be used as security when the fair value of the client 2019s exposure is in the firm 2019s favor .
+the decrease in derivative receivables was predominantly driven by declines in interest rate derivatives , commodity derivatives , foreign exchange derivatives and equity derivatives due to market movements , maturities and settlements related to client- driven market-making activities in cib. ."
+886,finqa_6674,a,$39 million in millions will be amortized each year for the acquired technology related to the realtor.com ae website.,Unsupported,Supported,amount_and_keywords_match,$39 million appears in the passage next to the same line item and period.,other,,,"news corporation notes to the consolidated financial statements consideration transferred over the fair value of the net tangible and intangible assets acquired was recorded as goodwill .
+the allocation is as follows ( in millions ) : assets acquired: .
+[[""cash"", ""$ 108""], [""other current assets"", ""28""], [""intangible assets"", ""216""], [""deferred income taxes"", ""153""], [""goodwill"", ""552""], [""other non-current assets"", ""69""], [""total assets acquired"", ""$ 1126""], [""liabilities assumed:"", """"], [""current liabilities"", ""$ 50""], [""deferred income taxes"", ""52""], [""borrowings"", ""129""], [""other non-current liabilities"", ""3""], [""total liabilities assumed"", ""234""], [""net assets acquired"", ""$ 892""]]
+the acquired intangible assets relate to the license of the realtor.com ae trademark , which has a fair value of approximately $ 116 million and an indefinite life , and customer relationships , other tradenames and certain multiple listing service agreements with an aggregate fair value of approximately $ 100 million , which are being amortized over a weighted-average useful life of approximately 15 years .
+the company also acquired technology , primarily associated with the realtor.com ae website , that has a fair value of approximately $ 39 million , which is being amortized over 4 years .
+the acquired technology has been recorded in property , plant and equipment , net in the consolidated balance sheets as of the date of acquisition .
+move had u.s .
+federal net operating loss carryforwards ( 201cnols 201d ) of $ 947 million ( $ 332 million tax-effected ) at the date of acquisition .
+the nols are subject to limitations as promulgated under section 382 of the internal revenue code of 1986 , as amended ( the 201ccode 201d ) .
+section 382 of the code limits the amount of acquired nols that we can use on an annual basis to offset future u.s .
+consolidated taxable income .
+valuation allowances and unrecognized tax benefits were recorded against these nols in the amount of $ 484 million ( $ 170 million tax- effected ) as part of the purchase price allocation .
+accordingly , the company expected approximately $ 463 million of nols could be utilized , and recorded a net deferred tax asset of $ 162 million as part of the purchase price allocation .
+as a result of management 2019s plan to dispose of its digital education business , the company increased its estimated utilization of move 2019s nols by $ 167 million ( $ 58 million tax-effected ) and released valuation allowances equal to that amount .
+upon filing its fiscal 2015 federal income tax return , the company reduced move 2019s nols by $ 298 million which represents the amount expected to expire unutilized due to the section 382 limitation discussed above .
+as of june 30 , 2016 , the remaining move nols expected to be utilized are $ 573 million ( $ 201 million tax-effected ) .
+the utilization of these nols is dependent on generating sufficient u.s .
+taxable income prior to expiration which begins in varying amounts starting in 2021 .
+the deferred tax assets established for move 2019s nols , net of valuation allowance and unrecognized tax benefits , are included in non- current deferred tax assets on the balance sheets. ."
+921,finqa_6303,a,The total value of the shares purchasable under the warrant is $121 million.,Unsupported,Supported,amount_and_keywords_match,121 million appears in the passage next to the same line item and period.,calculated values,,,"note 12 .
+shareholders 2019 equity accumulated other comprehensive loss : accumulated other comprehensive loss included the following components as of december 31: .
+[[""( in millions )"", ""2009"", ""2008"", ""2007""], [""foreign currency translation"", ""$ 281"", ""$ 68"", ""$ 331""], [""net unrealized loss on hedges of net investments in non-u.s .
+subsidiaries"", ""-14 ( 14 )"", ""-14 ( 14 )"", ""-15 ( 15 )""], [""net unrealized loss on available-for-sale securities"", ""-1636 ( 1636 )"", ""-5205 ( 5205 )"", ""-678 ( 678 )""], [""net unrealized loss on fair value hedges of available-for-sale securities"", ""-113 ( 113 )"", ""-242 ( 242 )"", ""-55 ( 55 )""], [""losses from other-than-temporary impairment on available-for-sale securities related to factors other than credit"", ""-159 ( 159 )"", ""2014"", ""2014""], [""losses from other-than-temporary impairment on held-to-maturity securities related to factors other than credit"", ""-387 ( 387 )"", ""2014"", ""2014""], [""minimum pension liability"", ""-192 ( 192 )"", ""-229 ( 229 )"", ""-146 ( 146 )""], [""net unrealized loss on cash flow hedges"", ""-18 ( 18 )"", ""-28 ( 28 )"", ""-12 ( 12 )""], [""total"", ""$ -2238 ( 2238 )"", ""$ -5650 ( 5650 )"", ""$ -575 ( 575 )""]]
+the net after-tax unrealized loss on available-for-sale securities of $ 1.64 billion and $ 5.21 billion as of december 31 , 2009 and december 31 , 2008 , respectively , included $ 635 million and $ 1.39 billion , respectively , of net after-tax unrealized losses related to securities reclassified from securities available for sale to securities held to maturity .
+the decrease in the losses related to transfers compared to december 31 , 2008 resulted from amortization and from the recognition of losses from other-than-temporary impairment on certain of the securities .
+additional information is provided in note 3 .
+for the year ended december 31 , 2009 , we realized net gains of $ 368 million from sales of available-for-sale securities .
+unrealized pre-tax gains of $ 46 million were included in other comprehensive income at december 31 , 2008 , net of deferred taxes of $ 18 million , related to these sales .
+for the year ended december 31 , 2008 , we realized net gains of $ 68 million from sales of available-for-sale securities .
+unrealized pre-tax gains of $ 71 million were included in other comprehensive income at december 31 , 2007 , net of deferred taxes of $ 28 million , related to these sales .
+for the year ended december 31 , 2007 , we realized net gains of $ 7 million on sales of available-for-sale securities .
+unrealized pre-tax losses of $ 32 million were included in other comprehensive income at december 31 , 2006 , net of deferred taxes of $ 13 million , related to these sales .
+preferred stock : in october 2008 , in connection with the u.s .
+treasury 2019s capital purchase program , we issued 20000 shares of our series b fixed-rate cumulative perpetual preferred stock , $ 100000 liquidation preference per share , and a warrant to purchase 5576208 shares of our common stock at an exercise price of $ 53.80 per share , to treasury , and received aggregate proceeds of $ 2 billion .
+the aggregate proceeds were allocated to the preferred stock and the warrant based on their relative fair values on the date of issuance .
+as a result , approximately $ 1.88 billion and $ 121 million , respectively , were allocated to the preferred stock and the warrant .
+the difference between the initial value of $ 1.88 billion allocated to the preferred stock and the liquidation amount of $ 2 billion was intended to be charged to retained earnings and credited to the preferred stock over the period that the preferred stock was outstanding , using the effective yield method .
+for 2008 and 2009 , these charges to retained earnings reduced net income available to common shareholders by $ 4 million and $ 11 million , respectively , and reduced basic and diluted earnings per common share for those periods .
+these calculations are presented in note 22 .
+the preferred shares qualified as tier 1 regulatory capital , and paid cumulative quarterly dividends at a rate of 5% ( 5 % ) per year .
+for 2008 and 2009 , the accrual of dividends on the preferred shares reduced net income available to common shareholders by $ 18 million and $ 46 million , respectively , and reduced basic and diluted earnings per common share for those periods .
+these calculations are presented in note 22 .
+the warrant was immediately ."
+1116,finqa_7253,d,"- Revenue from contracts with customers (Topic 606): $91,640",Unsupported,Supported,amount_and_keywords_match,"606 appears in the passage next to the same line item and period. 91,640 appears in the passage next to the same line item and period.",other,,,"entity transfers of inventory , the income tax effects will continue to be deferred until the inventory has been sold to a third party .
+cadence adopted the new standard on the first day of fiscal 2018 using the modified retrospective transition approach and recorded a cumulative-effect adjustment to decrease retained earnings in the amount of $ 8.3 million .
+the cumulative-effect adjustment includes the write-off of income tax consequences deferred from prior intra-entity transfers involving assets other than inventory and new deferred tax assets for amounts not recognized under u.s . gaap .
+we anticipate the potential for increased volatility in future effective tax rates from the adoption of this guidance .
+stock-based compensation in may 2017 , the fasb issued asu 2017-09 , 201ccompensation 2014stock compensation ( topic 718 ) : scope of modification accounting , 201d that provides guidance about which changes to the terms or conditions of a share-based payment award require an entity to apply modification accounting .
+cadence adopted the standard on the first day of fiscal 2018 .
+the adoption of this standard did not impact cadence 2019s consolidated financial statements or the related disclosures .
+cumulative effect adjustments to retained earnings the following table presents the cumulative effect adjustments , net of income tax effects , to beginning retained earnings for new accounting standards adopted by cadence on the first day of fiscal 2018 : retained earnings ( in thousands ) .
+[["""", ""retained earnings ( in thousands )""], [""balance december 30 2017 as previously reported"", ""$ 341003""], [""cumulative effect adjustment from the adoption of new accounting standards:"", """"], [""revenue from contracts with customers ( topic 606 ) *"", ""91640""], [""financial instruments 2014overall ( subtopic 825-10 ) : recognition and measurement of financial assets and financial liabilities"", ""2638""], [""income taxes ( topic 740 ) : intra-entity transfers of assets other than inventory"", ""-8349 ( 8349 )""], [""balance december 30 2017 as adjusted"", ""426932""], [""net income"", ""345777""], [""balance december 29 2018"", ""$ 772709""]]
+* the cumulative effect adjustment from the adoption of revenue from contracts with customers ( topic 606 ) is presented net of the related income tax effect of $ 17.5 million .
+new accounting standards not yet adopted leases in february 2016 , the fasb issued asu 2016-02 , 201cleases ( topic 842 ) , 201d requiring , among other things , the recognition of lease liabilities and corresponding right-of-use assets on the balance sheet by lessees for all leases with a term longer than 12 months .
+the new standard is effective for cadence in the first quarter of fiscal 2019 .
+a modified retrospective approach is required , applying the new standard to leases existing as of the date of initial application .
+an entity may choose to apply the standard as of either its effective date or the beginning of the earliest comparative period presented in the financial statements .
+cadence adopted the new standard on december 30 , 2018 , the first day of fiscal 2019 , and used the effective date as the date of initial application .
+consequently , financial information will not be updated and the disclosures required under the new standard will not be provided for dates and periods prior to the first quarter of fiscal 2019 .
+cadence elected certain practical expedients permitted under the transition guidance within the new standard , which among other things , allowed cadence to carry forward its prior conclusions about lease identification and classification. ."
+1116,finqa_7253,e,"- Financial instruments overall (Subtopic 825-10): $2,638",Unsupported,Supported,amount_and_keywords_match,"2,638 appears in the passage next to the same line item and period.",other,,,"entity transfers of inventory , the income tax effects will continue to be deferred until the inventory has been sold to a third party .
+cadence adopted the new standard on the first day of fiscal 2018 using the modified retrospective transition approach and recorded a cumulative-effect adjustment to decrease retained earnings in the amount of $ 8.3 million .
+the cumulative-effect adjustment includes the write-off of income tax consequences deferred from prior intra-entity transfers involving assets other than inventory and new deferred tax assets for amounts not recognized under u.s . gaap .
+we anticipate the potential for increased volatility in future effective tax rates from the adoption of this guidance .
+stock-based compensation in may 2017 , the fasb issued asu 2017-09 , 201ccompensation 2014stock compensation ( topic 718 ) : scope of modification accounting , 201d that provides guidance about which changes to the terms or conditions of a share-based payment award require an entity to apply modification accounting .
+cadence adopted the standard on the first day of fiscal 2018 .
+the adoption of this standard did not impact cadence 2019s consolidated financial statements or the related disclosures .
+cumulative effect adjustments to retained earnings the following table presents the cumulative effect adjustments , net of income tax effects , to beginning retained earnings for new accounting standards adopted by cadence on the first day of fiscal 2018 : retained earnings ( in thousands ) .
+[["""", ""retained earnings ( in thousands )""], [""balance december 30 2017 as previously reported"", ""$ 341003""], [""cumulative effect adjustment from the adoption of new accounting standards:"", """"], [""revenue from contracts with customers ( topic 606 ) *"", ""91640""], [""financial instruments 2014overall ( subtopic 825-10 ) : recognition and measurement of financial assets and financial liabilities"", ""2638""], [""income taxes ( topic 740 ) : intra-entity transfers of assets other than inventory"", ""-8349 ( 8349 )""], [""balance december 30 2017 as adjusted"", ""426932""], [""net income"", ""345777""], [""balance december 29 2018"", ""$ 772709""]]
+* the cumulative effect adjustment from the adoption of revenue from contracts with customers ( topic 606 ) is presented net of the related income tax effect of $ 17.5 million .
+new accounting standards not yet adopted leases in february 2016 , the fasb issued asu 2016-02 , 201cleases ( topic 842 ) , 201d requiring , among other things , the recognition of lease liabilities and corresponding right-of-use assets on the balance sheet by lessees for all leases with a term longer than 12 months .
+the new standard is effective for cadence in the first quarter of fiscal 2019 .
+a modified retrospective approach is required , applying the new standard to leases existing as of the date of initial application .
+an entity may choose to apply the standard as of either its effective date or the beginning of the earliest comparative period presented in the financial statements .
+cadence adopted the new standard on december 30 , 2018 , the first day of fiscal 2019 , and used the effective date as the date of initial application .
+consequently , financial information will not be updated and the disclosures required under the new standard will not be provided for dates and periods prior to the first quarter of fiscal 2019 .
+cadence elected certain practical expedients permitted under the transition guidance within the new standard , which among other things , allowed cadence to carry forward its prior conclusions about lease identification and classification. ."
+1116,finqa_7253,h,"Now, we need to subtract the income tax effect of the cumulative effect adjustment from revenue from contracts with customers (Topic 606), which is $17,500.",Unsupported,Supported,amount_and_keywords_match,"606 appears in the passage next to the same line item and period. 17,500 appears in the passage next to the same line item and period.",other,,,"entity transfers of inventory , the income tax effects will continue to be deferred until the inventory has been sold to a third party .
+cadence adopted the new standard on the first day of fiscal 2018 using the modified retrospective transition approach and recorded a cumulative-effect adjustment to decrease retained earnings in the amount of $ 8.3 million .
+the cumulative-effect adjustment includes the write-off of income tax consequences deferred from prior intra-entity transfers involving assets other than inventory and new deferred tax assets for amounts not recognized under u.s . gaap .
+we anticipate the potential for increased volatility in future effective tax rates from the adoption of this guidance .
+stock-based compensation in may 2017 , the fasb issued asu 2017-09 , 201ccompensation 2014stock compensation ( topic 718 ) : scope of modification accounting , 201d that provides guidance about which changes to the terms or conditions of a share-based payment award require an entity to apply modification accounting .
+cadence adopted the standard on the first day of fiscal 2018 .
+the adoption of this standard did not impact cadence 2019s consolidated financial statements or the related disclosures .
+cumulative effect adjustments to retained earnings the following table presents the cumulative effect adjustments , net of income tax effects , to beginning retained earnings for new accounting standards adopted by cadence on the first day of fiscal 2018 : retained earnings ( in thousands ) .
+[["""", ""retained earnings ( in thousands )""], [""balance december 30 2017 as previously reported"", ""$ 341003""], [""cumulative effect adjustment from the adoption of new accounting standards:"", """"], [""revenue from contracts with customers ( topic 606 ) *"", ""91640""], [""financial instruments 2014overall ( subtopic 825-10 ) : recognition and measurement of financial assets and financial liabilities"", ""2638""], [""income taxes ( topic 740 ) : intra-entity transfers of assets other than inventory"", ""-8349 ( 8349 )""], [""balance december 30 2017 as adjusted"", ""426932""], [""net income"", ""345777""], [""balance december 29 2018"", ""$ 772709""]]
+* the cumulative effect adjustment from the adoption of revenue from contracts with customers ( topic 606 ) is presented net of the related income tax effect of $ 17.5 million .
+new accounting standards not yet adopted leases in february 2016 , the fasb issued asu 2016-02 , 201cleases ( topic 842 ) , 201d requiring , among other things , the recognition of lease liabilities and corresponding right-of-use assets on the balance sheet by lessees for all leases with a term longer than 12 months .
+the new standard is effective for cadence in the first quarter of fiscal 2019 .
+a modified retrospective approach is required , applying the new standard to leases existing as of the date of initial application .
+an entity may choose to apply the standard as of either its effective date or the beginning of the earliest comparative period presented in the financial statements .
+cadence adopted the new standard on december 30 , 2018 , the first day of fiscal 2019 , and used the effective date as the date of initial application .
+consequently , financial information will not be updated and the disclosures required under the new standard will not be provided for dates and periods prior to the first quarter of fiscal 2019 .
+cadence elected certain practical expedients permitted under the transition guidance within the new standard , which among other things , allowed cadence to carry forward its prior conclusions about lease identification and classification. ."
+1129,finqa_6694,a,The total value of plan assets in 2008 can be calculated by adding the actual negative return on assets ($19.3 million) with the expected return on assets ($47.0 million).,Unsupported,Supported,amount_and_keywords_match,$19.3 million appears in the passage next to the same line item and period. $47.0 million appears in the passage next to the same line item and period.,calculated values,,,"evaluation of accounts receivable aging , specifi c expo- sures and historical trends .
+inventory we state our inventory at the lower of cost or fair market value , with cost being determined on the fi rst-in , fi rst-out ( fifo ) method .
+we believe fifo most closely matches the fl ow of our products from manufacture through sale .
+the reported net value of our inventory includes saleable products , promotional products , raw materials and com- ponentry and work in process that will be sold or used in future periods .
+inventory cost includes raw materials , direct labor and overhead .
+we also record an inventory obsolescence reserve , which represents the difference between the cost of the inventory and its estimated realizable value , based on various product sales projections .
+this reserve is calcu- lated using an estimated obsolescence percentage applied to the inventory based on age , historical trends and requirements to support forecasted sales .
+in addition , and as necessary , we may establish specifi c reserves for future known or anticipated events .
+pension and other post-retirement benefit costs we offer the following benefi ts to some or all of our employees : a domestic trust-based noncontributory qual- ifi ed defi ned benefi t pension plan ( 201cu.s .
+qualifi ed plan 201d ) and an unfunded , non-qualifi ed domestic noncontributory pension plan to provide benefi ts in excess of statutory limitations ( collectively with the u.s .
+qualifi ed plan , the 201cdomestic plans 201d ) ; a domestic contributory defi ned con- tribution plan ; international pension plans , which vary by country , consisting of both defi ned benefi t and defi ned contribution pension plans ; deferred compensation arrange- ments ; and certain other post-retirement benefi t plans .
+the amounts needed to fund future payouts under these plans are subject to numerous assumptions and variables .
+certain signifi cant variables require us to make assumptions that are within our control such as an antici- pated discount rate , expected rate of return on plan assets and future compensation levels .
+we evaluate these assumptions with our actuarial advisors and we believe they are within accepted industry ranges , although an increase or decrease in the assumptions or economic events outside our control could have a direct impact on reported net earnings .
+the pre-retirement discount rate for each plan used for determining future net periodic benefi t cost is based on a review of highly rated long-term bonds .
+for fi scal 2008 , we used a pre-retirement discount rate for our domestic plans of 6.25% ( 6.25 % ) and varying rates on our international plans of between 2.25% ( 2.25 % ) and 8.25% ( 8.25 % ) .
+the pre-retirement rate for our domestic plans is based on a bond portfolio that includes only long-term bonds with an aa rating , or equivalent , from a major rating agency .
+we believe the timing and amount of cash fl ows related to the bonds included in this portfolio is expected to match the esti- mated defi ned benefi t payment streams of our domestic plans .
+for fi scal 2008 , we used an expected return on plan assets of 7.75% ( 7.75 % ) for our u.s .
+qualifi ed plan and varying rates of between 3.00% ( 3.00 % ) and 8.25% ( 8.25 % ) for our international plans .
+in determining the long-term rate of return for a plan , we consider the historical rates of return , the nature of the plan 2019s investments and an expectation for the plan 2019s investment strategies .
+the u.s .
+qualifi ed plan asset alloca- tion as of june 30 , 2008 was approximately 40% ( 40 % ) equity investments , 42% ( 42 % ) debt securities and 18% ( 18 % ) other invest- ments .
+the asset allocation of our combined international plans as of june 30 , 2008 was approximately 45% ( 45 % ) equity investments , 38% ( 38 % ) debt securities and 17% ( 17 % ) other invest- ments .
+the difference between actual and expected return on plan assets is reported as a component of accumulated other comprehensive income .
+those gains/losses that are subject to amortization over future periods will be recog- nized as a component of the net periodic benefi t cost in such future periods .
+for fi scal 2008 , our pension plans had actual negative return on assets of $ 19.3 million as compared with expected return on assets of $ 47.0 million , which resulted in a net deferred loss of $ 66.3 million , of which approximately $ 34 million is subject to amortiza- tion over periods ranging from approximately 8 to 16 years .
+the actual negative return on assets was primarily related to the performance of equity markets during the past fi scal year .
+a 25 basis-point change in the discount rate or the expected rate of return on plan assets would have had the following effect on fi scal 2008 pension expense : 25 basis-point 25 basis-point increase decrease ( in millions ) .
+[[""( in millions )"", ""25 basis-point increase"", ""25 basis-point decrease""], [""discount rate"", ""$ -2.0 ( 2.0 )"", ""$ 2.5""], [""expected return on assets"", ""$ -1.7 ( 1.7 )"", ""$ 1.7""]]
+our post-retirement plans are comprised of health care plans that could be impacted by health care cost trend rates , which may have a signifi cant effect on the amounts reported .
+a one-percentage-point change in assumed health care cost trend rates for fi scal 2008 would have had the following effects : the est{e lauder companies inc .
+57 66732es_fin 5766732es_fin 57 9/19/08 9:21:34 pm9/19/08 9:21:34 pm ."
+1129,finqa_6694,b,"Therefore, the total value of plan assets in 2008 is $19.3 million + $47.0 million = $66.3 million.",Unsupported,Supported,amount_and_keywords_match,19.3 million appears in the passage next to the same line item and period. 47.0 million appears in the passage next to the same line item and period. 66.3 million appears in the passage next to the same line item and period.,calculated values,,,"evaluation of accounts receivable aging , specifi c expo- sures and historical trends .
+inventory we state our inventory at the lower of cost or fair market value , with cost being determined on the fi rst-in , fi rst-out ( fifo ) method .
+we believe fifo most closely matches the fl ow of our products from manufacture through sale .
+the reported net value of our inventory includes saleable products , promotional products , raw materials and com- ponentry and work in process that will be sold or used in future periods .
+inventory cost includes raw materials , direct labor and overhead .
+we also record an inventory obsolescence reserve , which represents the difference between the cost of the inventory and its estimated realizable value , based on various product sales projections .
+this reserve is calcu- lated using an estimated obsolescence percentage applied to the inventory based on age , historical trends and requirements to support forecasted sales .
+in addition , and as necessary , we may establish specifi c reserves for future known or anticipated events .
+pension and other post-retirement benefit costs we offer the following benefi ts to some or all of our employees : a domestic trust-based noncontributory qual- ifi ed defi ned benefi t pension plan ( 201cu.s .
+qualifi ed plan 201d ) and an unfunded , non-qualifi ed domestic noncontributory pension plan to provide benefi ts in excess of statutory limitations ( collectively with the u.s .
+qualifi ed plan , the 201cdomestic plans 201d ) ; a domestic contributory defi ned con- tribution plan ; international pension plans , which vary by country , consisting of both defi ned benefi t and defi ned contribution pension plans ; deferred compensation arrange- ments ; and certain other post-retirement benefi t plans .
+the amounts needed to fund future payouts under these plans are subject to numerous assumptions and variables .
+certain signifi cant variables require us to make assumptions that are within our control such as an antici- pated discount rate , expected rate of return on plan assets and future compensation levels .
+we evaluate these assumptions with our actuarial advisors and we believe they are within accepted industry ranges , although an increase or decrease in the assumptions or economic events outside our control could have a direct impact on reported net earnings .
+the pre-retirement discount rate for each plan used for determining future net periodic benefi t cost is based on a review of highly rated long-term bonds .
+for fi scal 2008 , we used a pre-retirement discount rate for our domestic plans of 6.25% ( 6.25 % ) and varying rates on our international plans of between 2.25% ( 2.25 % ) and 8.25% ( 8.25 % ) .
+the pre-retirement rate for our domestic plans is based on a bond portfolio that includes only long-term bonds with an aa rating , or equivalent , from a major rating agency .
+we believe the timing and amount of cash fl ows related to the bonds included in this portfolio is expected to match the esti- mated defi ned benefi t payment streams of our domestic plans .
+for fi scal 2008 , we used an expected return on plan assets of 7.75% ( 7.75 % ) for our u.s .
+qualifi ed plan and varying rates of between 3.00% ( 3.00 % ) and 8.25% ( 8.25 % ) for our international plans .
+in determining the long-term rate of return for a plan , we consider the historical rates of return , the nature of the plan 2019s investments and an expectation for the plan 2019s investment strategies .
+the u.s .
+qualifi ed plan asset alloca- tion as of june 30 , 2008 was approximately 40% ( 40 % ) equity investments , 42% ( 42 % ) debt securities and 18% ( 18 % ) other invest- ments .
+the asset allocation of our combined international plans as of june 30 , 2008 was approximately 45% ( 45 % ) equity investments , 38% ( 38 % ) debt securities and 17% ( 17 % ) other invest- ments .
+the difference between actual and expected return on plan assets is reported as a component of accumulated other comprehensive income .
+those gains/losses that are subject to amortization over future periods will be recog- nized as a component of the net periodic benefi t cost in such future periods .
+for fi scal 2008 , our pension plans had actual negative return on assets of $ 19.3 million as compared with expected return on assets of $ 47.0 million , which resulted in a net deferred loss of $ 66.3 million , of which approximately $ 34 million is subject to amortiza- tion over periods ranging from approximately 8 to 16 years .
+the actual negative return on assets was primarily related to the performance of equity markets during the past fi scal year .
+a 25 basis-point change in the discount rate or the expected rate of return on plan assets would have had the following effect on fi scal 2008 pension expense : 25 basis-point 25 basis-point increase decrease ( in millions ) .
+[[""( in millions )"", ""25 basis-point increase"", ""25 basis-point decrease""], [""discount rate"", ""$ -2.0 ( 2.0 )"", ""$ 2.5""], [""expected return on assets"", ""$ -1.7 ( 1.7 )"", ""$ 1.7""]]
+our post-retirement plans are comprised of health care plans that could be impacted by health care cost trend rates , which may have a signifi cant effect on the amounts reported .
+a one-percentage-point change in assumed health care cost trend rates for fi scal 2008 would have had the following effects : the est{e lauder companies inc .
+57 66732es_fin 5766732es_fin 57 9/19/08 9:21:34 pm9/19/08 9:21:34 pm ."
+1161,finqa_6726,d,This indicates that the net revenues in investment management for 2016 were $6.22 billion.,Unsupported,Supported,amount_and_keywords_match,6.22 billion appears in the passage next to the same line item and period.,other,,,"the goldman sachs group , inc .
+and subsidiaries management 2019s discussion and analysis in the table above , total aus net inflows/ ( outflows ) for 2017 included $ 23 billion of inflows ( $ 20 billion in long- term aus and $ 3 billion in liquidity products ) in connection with the acquisition of a portion of verus investors 2019 outsourced chief investment officer business ( verus acquisition ) and $ 5 billion of equity asset outflows in connection with the divestiture of our local australian- focused investment capabilities and fund platform ( australian divestiture ) .
+the table below presents average monthly assets under supervision by asset class .
+average for the year ended december $ in billions 2018 2017 2016 .
+[[""$ in billions"", ""average for theyear ended december 2018"", ""average for theyear ended december 2017"", ""average for theyear ended december 2016""], [""alternative investments"", ""$ 171"", ""$ 162"", ""$ 149""], [""equity"", ""329"", ""292"", ""256""], [""fixed income"", ""665"", ""633"", ""578""], [""total long-term aus"", ""1165"", ""1087"", ""983""], [""liquidity products"", ""352"", ""330"", ""326""], [""total aus"", ""$ 1517"", ""$ 1417"", ""$ 1309""]]
+operating environment .
+during 2018 , our assets under supervision increased reflecting net inflows in liquidity products , fixed income assets and equity assets .
+this increase was partially offset by depreciation in our client assets , primarily in equity assets , as global equity prices generally decreased in 2018 , particularly towards the end of the year .
+the mix of our average assets under supervision between long-term assets under supervision and liquidity products during 2018 was essentially unchanged compared with 2017 .
+in the future , if asset prices continue to decline , or investors continue to favor assets that typically generate lower fees or investors withdraw their assets , net revenues in investment management would likely be negatively impacted .
+during 2017 , investment management operated in an environment characterized by generally higher asset prices , resulting in appreciation in both equity and fixed income assets .
+our long-term assets under supervision increased from net inflows primarily in fixed income and alternative investment assets .
+these increases were partially offset by net outflows in liquidity products .
+as a result , the mix of our average assets under supervision during 2017 shifted slightly from liquidity products to long-term assets under supervision compared to the mix at the end of 2016 .
+2018 versus 2017 .
+net revenues in investment management were $ 7.02 billion for 2018 , 13% ( 13 % ) higher than 2017 , primarily due to significantly higher incentive fees , as a result of harvesting .
+management and other fees were also higher , reflecting higher average assets under supervision and the impact of the recently adopted revenue recognition standard , partially offset by shifts in the mix of client assets and strategies .
+in addition , transaction revenues were higher .
+see note 3 to the consolidated financial statements for further information about asu no .
+2014-09 , 201crevenue from contracts with customers ( topic 606 ) .
+201d during 2018 , total assets under supervision increased $ 48 billion to $ 1.54 trillion .
+long-term assets under supervision decreased $ 4 billion , including net market depreciation of $ 41 billion primarily in equity assets , largely offset by net inflows of $ 37 billion , primarily in fixed income and equity assets .
+liquidity products increased $ 52 billion .
+operating expenses were $ 5.27 billion for 2018 , 10% ( 10 % ) higher than 2017 , primarily due to the impact of the recently adopted revenue recognition standard and increased compensation and benefits expenses , reflecting higher net revenues .
+pre-tax earnings were $ 1.76 billion in 2018 , 24% ( 24 % ) higher than 2017 .
+see note 3 to the consolidated financial statements for further information about asu no .
+2014-09 , 201crevenue from contracts with customers ( topic 606 ) .
+201d 2017 versus 2016 .
+net revenues in investment management were $ 6.22 billion for 2017 , 7% ( 7 % ) higher than 2016 , due to higher management and other fees , reflecting higher average assets under supervision , and higher transaction revenues .
+during 2017 , total assets under supervision increased $ 115 billion to $ 1.49 trillion .
+long-term assets under supervision increased $ 128 billion , including net market appreciation of $ 86 billion , primarily in equity and fixed income assets , and net inflows of $ 42 billion ( which includes $ 20 billion of inflows in connection with the verus acquisition and $ 5 billion of equity asset outflows in connection with the australian divestiture ) , primarily in fixed income and alternative investment assets .
+liquidity products decreased $ 13 billion ( which includes $ 3 billion of inflows in connection with the verus acquisition ) .
+operating expenses were $ 4.80 billion for 2017 , 3% ( 3 % ) higher than 2016 , primarily due to increased compensation and benefits expenses , reflecting higher net revenues .
+pre-tax earnings were $ 1.42 billion in 2017 , 25% ( 25 % ) higher than geographic data see note 25 to the consolidated financial statements for a summary of our total net revenues , pre-tax earnings and net earnings by geographic region .
+62 goldman sachs 2018 form 10-k ."
+1211,finqa_7176,k,"Therefore, the FIN 47 liability was greater on December 31, 2004 ($527 million) compared to December 31, 2005 ($711 million).",Unsupported,Supported,amount_and_keywords_match,47 appears in the passage next to the same line item and period. $527 million appears in the passage next to the same line item and period. $711 million appears in the passage next to the same line item and period.,calculated values,,,"transactions arising from all matching buy/sell arrangements entered into before april 1 , 2006 will continue to be reported as separate sale and purchase transactions .
+the adoption of eitf issue no .
+04-13 and the change in the accounting for nontraditional derivative instruments had no effect on net income .
+the amounts of revenues and cost of revenues recognized after april 1 , 2006 are less than the amounts that would have been recognized under previous accounting practices .
+sfas no .
+123 ( revised 2004 ) 2013 in december 2004 , the fasb issued sfas no .
+123 ( r ) , 2018 2018share-based payment , 2019 2019 as a revision of sfas no .
+123 , 2018 2018accounting for stock-based compensation .
+2019 2019 this statement requires entities to measure the cost of employee services received in exchange for an award of equity instruments based on the fair value of the award on the grant date .
+that cost is recognized over the period during which an employee is required to provide service in exchange for the award , usually the vesting period .
+in addition , awards classified as liabilities are remeasured at fair value each reporting period .
+marathon had previously adopted the fair value method under sfas no .
+123 for grants made , modified or settled on or after january 1 , 2003 .
+sfas no .
+123 ( r ) also requires a company to calculate the pool of excess tax benefits available to absorb tax deficiencies recognized subsequent to adopting the statement .
+in november 2005 , the fasb issued fsp no .
+123r-3 , 2018 2018transition election related to accounting for the tax effects of share-based payment awards , 2019 2019 to provide an alternative transition election ( the 2018 2018short-cut method 2019 2019 ) to account for the tax effects of share-based payment awards to employees .
+marathon elected the long-form method to determine its pool of excess tax benefits as of january 1 , 2006 .
+marathon adopted sfas no .
+123 ( r ) as of january 1 , 2006 , for all awards granted , modified or cancelled after adoption and for the unvested portion of awards outstanding at january 1 , 2006 .
+at the date of adoption , sfas no .
+123 ( r ) requires that an assumed forfeiture rate be applied to any unvested awards and that awards classified as liabilities be measured at fair value .
+prior to adopting sfas no .
+123 ( r ) , marathon recognized forfeitures as they occurred and applied the intrinsic value method to awards classified as liabilities .
+the adoption did not have a significant effect on marathon 2019s consolidated results of operations , financial position or cash flows .
+sfas no .
+151 2013 effective january 1 , 2006 , marathon adopted sfas no .
+151 , 2018 2018inventory costs 2013 an amendment of arb no .
+43 , chapter 4 .
+2019 2019 this statement requires that items such as idle facility expense , excessive spoilage , double freight and re-handling costs be recognized as a current-period charge .
+the adoption did not have a significant effect on marathon 2019s consolidated results of operations , financial position or cash flows .
+sfas no .
+154 2013 effective january 1 , 2006 , marathon adopted sfas no .
+154 , 2018 2018accounting changes and error corrections 2013 a replacement of apb opinion no .
+20 and fasb statement no . 3 .
+2019 2019 sfas no .
+154 requires companies to recognize ( 1 ) voluntary changes in accounting principle and ( 2 ) changes required by a new accounting pronouncement , when the pronouncement does not include specific transition provisions , retrospectively to prior periods 2019 financial statements , unless it is impracticable to determine either the period-specific effects or the cumulative effect of the change .
+fin no .
+47 2013 in march 2005 , the fasb issued fasb interpretation ( 2018 2018fin 2019 2019 ) no .
+47 , 2018 2018accounting for conditional asset retirement obligations 2013 an interpretation of fasb statement no . 143 .
+2019 2019 this interpretation clarifies that an entity is required to recognize a liability for a legal obligation to perform asset retirement activities when the retirement is conditional on a future event if the liability 2019s fair value can be reasonably estimated .
+if the liability 2019s fair value cannot be reasonably estimated , then the entity must disclose ( 1 ) a description of the obligation , ( 2 ) the fact that a liability has not been recognized because the fair value cannot be reasonably estimated and ( 3 ) the reasons why the fair value cannot be reasonably estimated .
+fin no .
+47 also clarifies when an entity would have sufficient information to reasonably estimate the fair value of an asset retirement obligation .
+marathon adopted fin no .
+47 as of december 31 , 2005 .
+a charge of $ 19 million , net of taxes of $ 12 million , related to adopting fin no .
+47 was recognized as a cumulative effect of a change in accounting principle in 2005 .
+at the time of adoption , total assets increased $ 22 million and total liabilities increased $ 41 million .
+the pro forma net income and net income per share effect as if fin no .
+47 had been applied during 2005 and 2004 is not significantly different than amounts reported .
+the following summarizes the total amount of the liability for asset retirement obligations as if fin no .
+47 had been applied during all periods presented .
+the pro forma impact of the adoption of fin no .
+47 on these unaudited pro forma liability amounts has been measured using the information , assumptions and interest rates used to measure the obligation recognized upon adoption of fin no . 47 .
+( in millions ) .
+[[""december 31 2003"", ""$ 438""], [""december 31 2004"", ""527""], [""december 31 2005"", ""711""]]
+sfas no .
+153 2013 marathon adopted sfas no .
+153 , 2018 2018exchanges of nonmonetary assets 2013 an amendment of apb opinion no .
+29 , 2019 2019 on a prospective basis as of july 1 , 2005 .
+this amendment eliminates the apb opinion no .
+29 exception for fair value recognition of nonmonetary exchanges of similar productive assets and replaces it with an exception for exchanges of nonmonetary assets that do not have commercial substance .
+fsp no .
+fas 19-1 2013 effective january 1 , 2005 , marathon adopted fsp no .
+fas 19-1 , 2018 2018accounting for suspended well costs , 2019 2019 which amended the guidance for suspended exploratory well costs in sfas no .
+19 , 2018 2018financial accounting and reporting by oil and gas producing companies .
+2019 2019 sfas no .
+19 requires costs of drilling exploratory wells to be capitalized pending determination of whether the well has found proved reserves .
+when a classification of proved ."
+1224,finqa_6736,a,"Based on the information provided, the percentage decline in the operating loss from 2007 to 2008 was 83%.",Unsupported,Supported,amount_and_keywords_match,83% appears in the passage next to the same line item and period.,wrong period or year,,,"with these types of uncapped damage provisions are fairly rare , but individual contracts could still represent meaningful risk .
+there is a possibility that a damage claim by a counterparty to one of these contracts could result in expenses to the company that are far in excess of the revenue received from the counterparty in connection with the contract .
+indemnification provisions : in addition , the company may provide indemnifications for losses that result from the breach of general warranties contained in certain commercial , intellectual property and divestiture agreements .
+historically , the company has not made significant payments under these agreements , nor have there been significant claims asserted against the company .
+however , there is an increasing risk in relation to intellectual property indemnities given the current legal climate .
+in indemnification cases , payment by the company is conditioned on the other party making a claim pursuant to the procedures specified in the particular contract , which procedures typically allow the company to challenge the other party 2019s claims .
+further , the company 2019s obligations under these agreements for indemnification based on breach of representations and warranties are generally limited in terms of duration , typically not more than 24 months , and for amounts not in excess of the contract value , and in some instances the company may have recourse against third parties for certain payments made by the company .
+legal matters : the company is a defendant in various lawsuits , claims and actions , which arise in the normal course of business .
+these include actions relating to products , contracts and securities , as well as matters initiated by third parties or motorola relating to infringements of patents , violations of licensing arrangements and other intellectual property-related matters .
+in the opinion of management , the ultimate disposition of these matters will not have a material adverse effect on the company 2019s consolidated financial position , liquidity or results of operations .
+segment information the following commentary should be read in conjunction with the financial results of each reporting segment as detailed in note 12 , 201cinformation by segment and geographic region , 201d to the company 2019s consolidated financial statements .
+net sales and operating results for the company 2019s three operating segments for 2008 , 2007 and 2006 are presented below .
+mobile devices segment the mobile devices segment designs , manufactures , sells and services wireless handsets with integrated software and accessory products , and licenses intellectual property .
+in 2008 , the segment 2019s net sales represented 40% ( 40 % ) of the company 2019s consolidated net sales , compared to 52% ( 52 % ) in 2007 and 66% ( 66 % ) in 2006 .
+( dollars in millions ) 2008 2007 2006 2008 20142007 2007 20142006 years ended december 31 percent change .
+[[""( dollars in millions )"", ""years ended december 31 2008"", ""years ended december 31 2007"", ""years ended december 31 2006"", ""years ended december 31 2008 20142007"", ""2007 20142006""], [""segment net sales"", ""$ 12099"", ""$ 18988"", ""$ 28383"", ""( 36 ) % (  % )"", ""( 33 ) % (  % )""], [""operating earnings ( loss )"", ""-2199 ( 2199 )"", ""-1201 ( 1201 )"", ""2690"", ""83% ( 83 % )"", ""***""]]
+*** percentage change is not meaningful .
+segment results 20142008 compared to 2007 in 2008 , the segment 2019s net sales were $ 12.1 billion , a decrease of 36% ( 36 % ) compared to net sales of $ 19.0 billion in 2007 .
+the 36% ( 36 % ) decrease in net sales was primarily driven by a 37% ( 37 % ) decrease in unit shipments .
+the segment 2019s net sales were negatively impacted by the segment 2019s limited product offerings in critical market segments , particularly 3g products , including smartphones , as well as very low-tier products .
+in addition , the segment 2019s net sales were impacted by the global economic downturn in the second half of 2008 , which resulted in the slowing of end user demand .
+on a product technology basis , net sales decreased substantially for gsm and cdma technologies and , to a lesser extent , decreased for iden and 3g technologies .
+on a geographic basis , net sales decreased substantially in north america , the europe , middle east and africa region ( 201cemea 201d ) and asia and , to a lesser extent , decreased in latin america .
+the segment incurred an operating loss of $ 2.2 billion in 2008 , compared to an operating loss of $ 1.2 billion in 2007 .
+the increase in the operating loss was primarily due to a decrease in gross margin , driven by : ( i ) a 36% ( 36 % ) decrease in net sales , ( ii ) excess inventory and other related charges of $ 370 million in 2008 due to a decision to 61management 2019s discussion and analysis of financial condition and results of operations %%transmsg*** transmitting job : c49054 pcn : 064000000 ***%%pcmsg|61 |00028|yes|no|02/24/2009 12:31|0|0|page is valid , no graphics -- color : n| ."
+1244,finqa_7255,a,"Based on the information provided in the context, the total pretax gains for the sale of Mastercard shares from 2006 to 2007 was $581 million.",Unsupported,Supported,amount_and_keywords_match,581 million appears in the passage next to the same line item and period.,wrong period or year,,,"latin america acquisition of grupo financiero uno in 2007 , citigroup completed its acquisition of grupo financiero uno ( gfu ) , the largest credit card issuer in central america , and its affiliates , with $ 2.2 billion in assets .
+the results for gfu are included in citigroup 2019s global cards and latin america consumer banking businesses from march 5 , 2007 forward .
+acquisition of grupo cuscatl e1n in 2007 , citigroup completed the acquisition of the subsidiaries of grupo cuscatl e1n for $ 1.51 billion ( $ 755 million in cash and 14.2 million shares of citigroup common stock ) from corporacion ubc internacional s.a . grupo .
+the results of grupo cuscatl e1n are included from may 11 , 2007 forward and are recorded in latin america consumer banking .
+acquisition of bank of overseas chinese in 2007 , citigroup completed its acquisition of bank of overseas chinese ( booc ) in taiwan for approximately $ 427 million .
+results for booc are included in citigroup 2019s asia consumer banking , global cards and securities and banking businesses from december 1 , 2007 forward .
+acquisition of quilter in 2007 , the company completed the acquisition of quilter , a u.k .
+wealth advisory firm , from morgan stanley .
+quilter 2019s results are included in citigroup 2019s smith barney business from march 1 , 2007 forward .
+quilter is being disposed of as part of the sale of smith barney to morgan stanley described in subsequent events .
+acquisition of egg in 2007 , citigroup completed its acquisition of egg banking plc ( egg ) , a u.k .
+online financial services provider , from prudential plc for approximately $ 1.39 billion .
+results for egg are included in citigroup 2019s global cards and emea consumer banking businesses from may 1 , 2007 forward .
+purchase of 20% ( 20 % ) equity interest in akbank in 2007 , citigroup completed its purchase of a 20% ( 20 % ) equity interest in akbank , the second-largest privately owned bank by assets in turkey for approximately $ 3.1 billion .
+this investment is accounted for using the equity method of accounting .
+sabanci holding , a 34% ( 34 % ) owner of akbank shares , and its subsidiaries have granted citigroup a right of first refusal or first offer over the sale of any of their akbank shares in the future .
+subject to certain exceptions , including purchases from sabanci holding and its subsidiaries , citigroup has otherwise agreed not to increase its percentage ownership in akbank .
+other items sale of mastercard shares in 2007 , the company recorded a $ 367 million after-tax gain ( $ 581 million pretax ) on the sale of approximately 4.9 million mastercard class b shares that had been received by citigroup as a part of the mastercard initial public offering completed in june 2006 .
+the gain was recorded in the following businesses : in millions of dollars pretax after-tax pretax after-tax .
+[[""in millions of dollars"", ""2007 pretax total"", ""2007 after-tax total"", ""2006 pretax total"", ""2006 after-tax total""], [""global cards"", ""$ 466"", ""$ 296"", ""$ 94"", ""$ 59""], [""consumer banking"", ""96"", ""59"", ""27"", ""18""], [""icg"", ""19"", ""12"", ""2"", ""1""], [""total"", ""$ 581"", ""$ 367"", ""$ 123"", ""$ 78""]]
+redecard ipo in 2007 , citigroup ( a 31.9% ( 31.9 % ) shareholder in redecard s.a. , the only merchant acquiring company for mastercard in brazil ) sold approximately 48.8 million redecard shares in connection with redecard 2019s initial public offering in brazil .
+following the sale of these shares , citigroup retained approximately 23.9% ( 23.9 % ) ownership in redecard .
+an after-tax gain of approximately $ 469 million ( $ 729 million pretax ) was recorded in citigroup 2019s 2007 financial results in the global cards business .
+visa restructuring and litigation matters in 2007 , visa usa , visa international and visa canada were merged into visa inc .
+( visa ) .
+as a result of that reorganization , citigroup recorded a $ 534 million ( pretax ) gain on its holdings of visa international shares primarily recognized in the consumer banking business .
+the shares were then carried on citigroup 2019s balance sheet at the new cost basis .
+in addition , citigroup recorded a $ 306 million ( pretax ) charge related to certain of visa usa 2019s litigation matters primarily recognized in the north america consumer banking business. ."
+1271,finqa_6767,e,"To calculate the ratio, we need to divide the net increase in securities sold under agreements to repurchase ($6.2 billion) by the net transfers in for long-term debt ($38.8 billion).",Unsupported,Supported,amount_and_keywords_match,$6.2 billion appears in the passage next to the same line item and period. $38.8 billion appears in the passage next to the same line item and period.,calculated values,,,"the decrease in mortgage servicing rights of $ 2.7 billion was primarily 2022 attributed to mark-to-market losses recognized in the portfolio due to decreases in the mortgage interest rates and increases in refinancing .
+the increase in securities sold under agreements to repurchase of $ 5 2022 billion is driven by a $ 6.2 billion increase from net transfers in as the continued credit crisis impacted the availability of observable inputs for the underlying securities related to this liability .
+this was offset by a reduction from net settlements of $ 1.4 billion .
+the decrease in short-term borrowings of $ 3.7 billion is due to net transfers 2022 out of $ 1.8 billion as valuation methodology inputs considered to be unobservable were determined not to be significant to the overall valuation .
+in addition , net payments of $ 1.8 billion were made during the year .
+the increase in 2022 long-term debt of $ 2.2 billion is driven by : the net transfers in of $ 38.8 billion , substantially all of which related 2013 to the transfer of consolidated siv debt in the first quarter of 2008 , as the availability of observable inputs continued to decline due to the current crisis ; offset by $ 2.2 billion in gains recognized as credit spreads widened during the 2013 year ; and $ 34.3 billion decrease from net settlements/payments .
+included in 2013 these settlements were $ 21 billion of payments made on maturing siv debt and the replacement of $ 17 billion of non-recourse , consolidated siv debt classified as level 3 with citigroup debt classified as level 2 .
+this replacement occurred in connection with the purchase of the siv assets by the company in november 2008 .
+items measured at fair value on a nonrecurring basis certain assets and liabilities are measured at fair value on a nonrecurring basis and therefore are not included in the tables above .
+these include assets measured at cost that have been written down to fair value during the periods as a result of an impairment .
+in addition , these assets include loans held-for-sale that are measured at locom that were recognized at fair value below cost at the end of the period .
+the fair value of loans measured on a locom basis is determined where possible using quoted secondary-market prices .
+such loans are generally classified as level 2 of the fair-value hierarchy given the level of activity in the market and the frequency of available quotes .
+if no such quoted price exists , the fair value of a loan is determined using quoted prices for a similar asset or assets , adjusted for the specific attributes of that loan .
+the following table presents all loans held-for-sale that are carried at locom as of december 31 , 2009 and 2008 ( in billions ) : aggregate cost fair value level 2 level 3 .
+[["""", ""aggregate cost"", ""fair value"", ""level 2"", ""level 3""], [""december 31 2009"", ""$ 2.5"", ""$ 1.6"", ""$ 0.3"", ""$ 1.3""], [""december 31 2008"", ""3.1"", ""2.1"", ""0.8"", ""1.3""]]"
+1420,finqa_6441,c,"Therefore, the minimum capital requirement as defined by the Net Capital Rule is $5.0 billion.",Unsupported,Supported,amount_and_keywords_match,5.0 billion appears in the passage next to the same line item and period.,calculated values,,,"jpmorgan chase & co .
+/ 2008 annual report 85 of $ 1.0 billion and is also required to notify the securities and exchange commission ( 201csec 201d ) in the event that tentative net capital is less than $ 5.0 billion in accordance with the market and credit risk standards of appendix e of the net capital rule .
+as of december 31 , 2008 , jpmorgan securities had tentative net capital in excess of the minimum and the notification requirements .
+on october 1 , 2008 , j.p .
+morgan securities inc .
+merged with and into bear , stearns & co .
+inc. , and the surviving entity changed its name to j.p .
+morgan securities inc . j.p .
+morgan clearing corp. , a subsidiary of jpmorgan securities provides clearing and settlement services .
+at december 31 , 2008 , j.p .
+morgan clearing corp .
+2019s net capital , as defined by the net capital rule , of $ 4.7 billion exceeded the minimum requirement by $ 3.3 billion .
+dividends on february 23 , 2009 , the board of directors reduced the firm's quar- terly common stock dividend from $ 0.38 to $ 0.05 per share , effective for the dividend payable april 30 , 2009 , to shareholders of record on april 6 , 2009 .
+jpmorgan chase declared quarterly cash dividends on its common stock in the amount of $ 0.38 for each quarter of 2008 and the second , third and fourth quarters of 2007 , and $ 0.34 per share for the first quarter of 2007 and for each quarter of 2006 .
+the firm 2019s common stock dividend policy reflects jpmorgan chase 2019s earnings outlook , desired dividend payout ratios , need to maintain an adequate capital level and alternative investment opportunities .
+the firm 2019s ability to pay dividends is subject to restrictions .
+for information regarding such restrictions , see page 84 and note 24 and note 29 on pages 205 2013206 and 211 , respectively , of this annual report and for additional information regarding the reduction of the dividend , see page 44 .
+the following table shows the common dividend payout ratio based upon reported net income .
+common dividend payout ratio .
+[[""year ended december 31,"", ""2008"", ""2007"", ""2006""], [""common dividend payout ratio"", ""114% ( 114 % )"", ""34% ( 34 % )"", ""34% ( 34 % )""]]
+issuance the firm issued $ 6.0 billion and $ 1.8 billion of noncumulative per- petual preferred stock on april 23 , 2008 , and august 21 , 2008 , respectively .
+pursuant to the capital purchase program , on october 28 , 2008 , the firm issued to the u.s .
+treasury $ 25.0 billion of cumu- lative preferred stock and a warrant to purchase up to 88401697 shares of the firm 2019s common stock .
+for additional information regarding preferred stock , see note 24 on pages 205 2013206 of this annual report .
+on september 30 , 2008 , the firm issued $ 11.5 billion , or 284 million shares , of common stock at $ 40.50 per share .
+for additional infor- mation regarding common stock , see note 25 on pages 206 2013207 of this annual report .
+stock repurchases during the year ended december 31 , 2008 , the firm did not repur- chase any shares of its common stock .
+during 2007 , under the respective stock repurchase programs then in effect , the firm repur- chased 168 million shares for $ 8.2 billion at an average price per share of $ 48.60 .
+the board of directors approved in april 2007 , a stock repurchase program that authorizes the repurchase of up to $ 10.0 billion of the firm 2019s common shares , which superseded an $ 8.0 billion stock repur- chase program approved in 2006 .
+the $ 10.0 billion authorization includes shares to be repurchased to offset issuances under the firm 2019s employee stock-based plans .
+the actual number of shares that may be repurchased is subject to various factors , including market conditions ; legal considerations affecting the amount and timing of repurchase activity ; the firm 2019s capital position ( taking into account goodwill and intangibles ) ; internal capital generation ; and alternative potential investment opportunities .
+the repurchase program does not include specific price targets or timetables ; may be executed through open market purchases or privately negotiated transactions , or utiliz- ing rule 10b5-1 programs ; and may be suspended at any time .
+a rule 10b5-1 repurchase plan allows the firm to repurchase shares during periods when it would not otherwise be repurchasing com- mon stock 2013 for example , during internal trading 201cblack-out peri- ods .
+201d all purchases under a rule 10b5-1 plan must be made accord- ing to a predefined plan that is established when the firm is not aware of material nonpublic information .
+as of december 31 , 2008 , $ 6.2 billion of authorized repurchase capacity remained under the current stock repurchase program .
+for a discussion of restrictions on stock repurchases , see capital purchase program on page 84 and note 24 on pages 205 2013206 of this annual report .
+for additional information regarding repurchases of the firm 2019s equity securities , see part ii , item 5 , market for registrant 2019s common equity , related stockholder matters and issuer purchases of equity securities , on page 17 of jpmorgan chase 2019s 2008 form 10-k. ."
+1585,finqa_7138,d,"However, the information provided does not specify the duration or the timeline for the $19.4 million net annual increase in revenues approved by the MPSC.",Unsupported,Supported,amount_and_keywords_match,19.4 million appears in the passage next to the same line item and period.,other,,,"entergy mississippi , inc .
+management 2019s financial discussion and analysis results of operations net income 2016 compared to 2015 net income increased $ 16.5 million primarily due to lower other operation and maintenance expenses , higher net revenues , and a lower effective income tax rate , partially offset by higher depreciation and amortization expenses .
+2015 compared to 2014 net income increased $ 17.9 million primarily due to the write-off in 2014 of the regulatory assets associated with new nuclear generation development costs as a result of a joint stipulation entered into with the mississippi public utilities staff , subsequently approved by the mpsc , partially offset by higher depreciation and amortization expenses , higher taxes other than income taxes , higher other operation and maintenance expenses , and lower net revenue .
+see note 2 to the financial statements for discussion of the new nuclear generation development costs and the joint stipulation .
+net revenue 2016 compared to 2015 net revenue consists of operating revenues net of : 1 ) fuel , fuel-related expenses , and gas purchased for resale , 2 ) purchased power expenses , and 3 ) other regulatory charges ( credits ) .
+following is an analysis of the change in net revenue comparing 2016 to 2015 .
+amount ( in millions ) .
+[["""", ""amount ( in millions )""], [""2015 net revenue"", ""$ 696.3""], [""retail electric price"", ""12.9""], [""volume/weather"", ""4.7""], [""net wholesale revenue"", ""-2.4 ( 2.4 )""], [""reserve equalization"", ""-2.8 ( 2.8 )""], [""other"", ""-3.3 ( 3.3 )""], [""2016 net revenue"", ""$ 705.4""]]
+the retail electric price variance is primarily due to a $ 19.4 million net annual increase in revenues , as approved by the mpsc , effective with the first billing cycle of july 2016 , and an increase in revenues collected through the storm damage rider .
+see note 2 to the financial statements for more discussion on the formula rate plan and the storm damage rider .
+the volume/weather variance is primarily due to an increase of 153 gwh , or 1% ( 1 % ) , in billed electricity usage , including an increase in industrial usage , partially offset by the effect of less favorable weather on residential and commercial sales .
+the increase in industrial usage is primarily due to expansion projects in the pulp and paper industry , increased demand for existing customers , primarily in the metals industry , and new customers in the wood products industry. ."
+1589,finqa_6516,b,"Of this total, approximately 57,800 square feet is occupied by the company's lease administration office and broadcast division.",Unsupported,Supported,amount_and_keywords_match,"57,800 appears in the passage next to the same line item and period.",scope,,,"item 2 .
+properties our principal offices are located in boston , southborough and woburn , massachusetts ; atlanta , georgia ; cary , north carolina ; mexico city , mexico ; and sao paulo , brazil .
+details of each of these offices are provided below: .
+[[""location"", ""function"", ""size ( square feet )"", ""property interest""], [""boston ma"", ""corporate headquarters us tower division headquarters and american tower international headquarters"", ""19600"", ""leased""], [""southborough ma"", ""information technology data center"", ""13900"", ""leased""], [""woburn ma"", ""us tower division lease administration site leasing management and broadcast division headquarters"", ""57800"", ""owned ( 1 )""], [""atlanta ga"", ""us tower division accounting services headquarters"", ""21400"", ""leased""], [""cary north carolina"", ""us tower division new site development site operations and structural engineering services headquarters"", ""17500"", ""leased""], [""mexico city mexico"", ""mexico headquarters"", ""11000"", ""leased""], [""sao paulo brazil"", ""brazil headquarters"", ""5200"", ""leased""]]
+( 1 ) the facility in woburn contains a total of 163000 square feet of space .
+approximately 57100 square feet of space is occupied by our lease administration office and our broadcast division , and we lease the remaining space to unaffiliated tenants .
+in addition to the principal offices set forth above , we maintain 15 regional area offices in the united states through which we operate our tower leasing and services businesses .
+we believe that our owned and leased facilities are suitable and adequate to meet our anticipated needs .
+we have also established an office in delhi , india to pursue business opportunities in india and southeast asia , and we have an international business development group based in london , england .
+our interests in our communications sites are comprised of a variety of ownership interests , including leases created by long-term ground lease agreements , easements , licenses or rights-of-way granted by government entities .
+pursuant to the loan agreement for the securitization , the tower sites subject to the securitization are subject to mortgages , deeds of trust and deeds to secure the loan .
+a typical tower site consists of a compound enclosing the tower site , a tower structure , and one or more equipment shelters that house a variety of transmitting , receiving and switching equipment .
+there are three principal types of towers : guyed , self- supporting lattice , and monopole .
+2022 a guyed tower includes a series of cables attaching separate levels of the tower to anchor foundations in the ground .
+a guyed tower can reach heights of up to 2000 feet .
+a guyed tower site for a typical broadcast tower can consist of a tract of land of up to 20 acres .
+2022 a lattice tower typically tapers from the bottom up and usually has three or four legs .
+a lattice tower can reach heights of up to 1000 feet .
+depending on the height of the tower , a lattice tower site for a wireless communications tower can consist of a tract of land of 10000 square feet for a rural site or less than 2500 square feet for a metropolitan site .
+2022 a monopole is a tubular structure that is used primarily to address space constraints or aesthetic concerns .
+monopoles typically have heights ranging from 50 to 200 feet .
+a monopole tower site of the kind typically used in metropolitan areas for a wireless communications tower can consist of a tract of land of less than 2500 square feet. ."
+1836,finqa_6987,c,"- The context states ""excludes 450,000 unvested restricted stock units"" for Peter Oppenheimer.",Unsupported,Supported,amount_and_keywords_match,"450,000 appears in the passage next to the same line item and period.",other,,,"security ownership of 5% ( 5 % ) holders , directors , nominees and executive officers name of beneficial owner shares of common stock beneficially owned ( 1 ) percent of common stock outstanding .
+[[""name of beneficial owner fidelity investments"", ""name of beneficial owner 57162311"", ""-2 ( 2 )"", ""6.65% ( 6.65 % )""], [""alliancebernstein lp"", ""48637731"", ""-3 ( 3 )"", ""5.66% ( 5.66 % )""], [""steven p .
+jobs"", ""5546451"", ""-4 ( 4 )"", ""*""], [""william v .
+campbell"", ""221004"", ""-5 ( 5 )"", ""*""], [""timothy d .
+cook"", ""12597"", ""-6 ( 6 )"", ""*""], [""millard s .
+drexler"", ""220000"", ""-7 ( 7 )"", ""*""], [""albert a .
+gore jr .
+"", ""60000"", ""-8 ( 8 )"", ""*""], [""ronald b .
+johnson"", ""2049890"", ""-9 ( 9 )"", ""*""], [""arthur d .
+levinson"", ""362400"", ""-10 ( 10 )"", ""*""], [""peter oppenheimer"", ""149768"", ""-11 ( 11 )"", ""*""], [""philip w .
+schiller"", ""256"", ""-12 ( 12 )"", ""*""], [""eric e .
+schmidt"", ""12284"", ""-13 ( 13 )"", ""*""], [""jerome b .
+york"", ""80000"", ""-14 ( 14 )"", ""*""], [""all current executive officers and directors as a group ( 15 persons )"", ""9378423"", ""-15 ( 15 )"", ""1.09% ( 1.09 % )""]]
+all current executive officers and directors as a group ( 15 persons ) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9378423 ( 15 ) 1.09% ( 1.09 % ) ( 1 ) represents shares of common stock held and/or options held by such individuals that were exercisable at the table date or within 60 days thereafter .
+this does not include options or restricted stock units that vest after 60 days .
+the share numbers have been adjusted to reflect the company 2019s two-for-one stock split in february 2005 .
+( 2 ) based on a form 13g/a filed february 14 , 2005 by fmr corp .
+fmr corp .
+lists its address as 82 devonshire street , boston , ma 02109 , in such filing .
+( 3 ) based on a form 13f filed january 25 , 2006 , by barclays global investors .
+barclays global investors lists its address as 45 fremont street , san francisco , ca 94105 .
+( 4 ) includes 120000 shares of common stock that mr .
+jobs has the right to acquire by exercise of stock options .
+( 5 ) includes 220000 shares of common stock that mr .
+campbell has the right to acquire by exercise of stock options .
+( 6 ) excludes 600000 unvested restricted stock units .
+( 7 ) includes 40000 shares of common stock that mr .
+drexler holds indirectly and 180000 shares of common stock that mr .
+drexler has the right to acquire by exercise of stock options .
+( 8 ) consists of 60000 shares of common stock that mr .
+gore has the right to acquire by exercise of stock options .
+( 9 ) includes 1900000 shares of common stock that mr .
+johnson has the right to acquire by exercise of stock options and excludes 450000 unvested restricted stock units .
+( 10 ) includes 2000 shares of common stock that dr .
+levinson holds indirectly and 100000 shares of common stock that dr .
+levinson has the right to acquire by exercise of stock options .
+( 11 ) excludes 450000 unvested restricted stock units .
+( 12 ) excludes 400000 unvested restricted stock units. ."
+2005,finqa_6802,c,"The context states that ""total number of shares purchased during the quarter includes approximately 563,220 shares delivered or attested to UPC by employees to pay stock option exercise prices, satisfy excess tax withholding obligations for stock option exercises or vesting of retention units, and pay withholding obligations for vesting of retention shares.""",Unsupported,Supported,amount_and_keywords_match,"563,220 appears in the passage next to the same line item and period.",calculated values,,,"five-year performance comparison 2013 the following graph provides an indicator of cumulative total shareholder returns for the corporation as compared to the peer group index ( described above ) , the dow jones , and the s&p 500 .
+the graph assumes that the value of the investment in the common stock of union pacific corporation and each index was $ 100 on december 31 , 2005 and that all dividends were reinvested .
+purchases of equity securities 2013 during 2010 , we repurchased 17556522 shares of our common stock at an average price of $ 75.51 .
+the following table presents common stock repurchases during each month for the fourth quarter of 2010 : period total number of shares purchased [a] average price paid per share total number of shares purchased as part of a publicly announced plan or program [b] maximum number of shares that may yet be purchased under the plan or program [b] .
+[[""period"", ""total number ofsharespurchased [a]"", ""averageprice paidper share"", ""total number of sharespurchased as part of apublicly announced planor program [b]"", ""maximum number ofshares that may yetbe purchased under the planor program [b]""], [""oct .
+1 through oct .
+31"", ""725450"", ""84.65"", ""519554"", ""17917736""], [""nov .
+1 through nov .
+30"", ""1205260"", ""89.92"", ""1106042"", ""16811694""], [""dec .
+1 through dec .
+31"", ""1133106"", ""92.59"", ""875000"", ""15936694""], [""total"", ""3063816"", ""$ 89.66"", ""2500596"", ""n/a""]]
+[a] total number of shares purchased during the quarter includes approximately 563220 shares delivered or attested to upc by employees to pay stock option exercise prices , satisfy excess tax withholding obligations for stock option exercises or vesting of retention units , and pay withholding obligations for vesting of retention shares .
+[b] on may 1 , 2008 , our board of directors authorized us to repurchase up to 40 million shares of our common stock through march 31 , 2011 .
+we may make these repurchases on the open market or through other transactions .
+our management has sole discretion with respect to determining the timing and amount of these transactions .
+on february 3 , 2011 , our board of directors authorized us to repurchase up to 40 million additional shares of our common stock under a new program effective from april 1 , 2011 through march 31 , 2014. ."
+2061,finqa_6359,d,"Since the operating expenses in 2007 were $242 million higher than in 2006, we can infer that the operating expenses in 2006 were $242 million lower than in 2007.",Unsupported,Supported,amount_and_keywords_match,242 million appears in the passage next to the same line item and period. 242 million appears in the passage next to the same line item and period.,calculated values,,,"2022 fuel prices 2013 crude oil prices increased at a steady rate in 2007 , rising from a low of $ 56.58 per barrel in january to close at nearly $ 96.00 per barrel at the end of december .
+our 2007 average fuel price increased by 9% ( 9 % ) and added $ 242 million of operating expenses compared to 2006 .
+our fuel surcharge programs are designed to help offset the impact of higher fuel prices .
+in addition , our fuel conservation efforts allowed us to improve our consumption rate by 2% ( 2 % ) .
+locomotive simulator training , operating practices , and technology all contributed to this improvement , saving approximately 21 million gallons of fuel in 2007 .
+2022 free cash flow 2013 cash generated by operating activities totaled a record $ 3.3 billion , yielding free cash flow of $ 487 million in 2007 .
+free cash flow is defined as cash provided by operating activities , less cash used in investing activities and dividends paid .
+free cash flow is not considered a financial measure under accounting principles generally accepted in the united states ( gaap ) by sec regulation g and item 10 of sec regulation s-k .
+we believe free cash flow is important in evaluating our financial performance and measures our ability to generate cash without additional external financings .
+free cash flow should be considered in addition to , rather than as a substitute for , cash provided by operating activities .
+the following table reconciles cash provided by operating activities ( gaap measure ) to free cash flow ( non-gaap measure ) : millions of dollars 2007 2006 2005 .
+[[""millions of dollars"", ""2007"", ""2006"", ""2005""], [""cash provided by operating activities"", ""$ 3277"", ""$ 2880"", ""$ 2595""], [""cash used in investing activities"", ""-2426 ( 2426 )"", ""-2042 ( 2042 )"", ""-2047 ( 2047 )""], [""dividends paid"", ""-364 ( 364 )"", ""-322 ( 322 )"", ""-314 ( 314 )""], [""free cash flow"", ""$ 487"", ""$ 516"", ""$ 234""]]
+2008 outlook 2022 safety 2013 operating a safe railroad benefits our employees , our customers , our shareholders , and the public .
+we will continue using a multi-faceted approach to safety , utilizing technology , risk assessment , quality control , and training for , and engaging with our employees .
+we plan to implement total safety culture ( tsc ) throughout our operations .
+tsc , an employee-focused initiative that has helped improve safety , is a process designed to establish , maintain , and promote safety among co-workers .
+with respect to public safety , we will continue our efforts to maintain , upgrade , and close crossings , install video cameras on locomotives , and educate the public about crossing safety through various internal and industry programs , along with other activities .
+2022 commodity revenue 2013 despite uncertainty regarding the u.s .
+economy , we expect record revenue in 2008 based on current economic indicators , forecasted demand , improved customer service , and additional opportunities to reprice certain of our business .
+yield increases and fuel surcharges will be the primary drivers of commodity revenue growth in 2008 .
+we expect that overall volume will fall within a range of 1% ( 1 % ) higher to 1% ( 1 % ) lower than 2007 , with continued softness in some market sectors .
+2022 transportation plan 2013 in 2008 , we will continue to evaluate traffic flows and network logistic patterns to identify additional opportunities to simplify operations and improve network efficiency and asset utilization .
+we plan to maintain adequate manpower and locomotives , improve productivity using industrial engineering techniques , and improve our operating margins .
+2022 fuel prices 2013 fuel prices should remain volatile , with crude oil prices and conversion and regional spreads fluctuating throughout the year .
+on average , we expect fuel prices to increase 15% ( 15 % ) to 20% ( 20 % ) above the average price in 2007 .
+to reduce the impact of fuel price on earnings , we will continue to seek recovery from our customers through our fuel surcharge programs and expand our fuel conservation efforts. ."
+2087,finqa_6649,a,"Based on the information provided in the passage, the net interest income in the consolidated statements of earnings for 2016 was $2.93 billion.",Unsupported,Supported,amount_and_keywords_match,2.93 billion appears in the passage next to the same line item and period.,other,,,"the goldman sachs group , inc .
+and subsidiaries management 2019s discussion and analysis commissions and fees in the consolidated statements of earnings were $ 3.20 billion for 2018 , 5% ( 5 % ) higher than 2017 , reflecting an increase in our listed cash equity and futures volumes , generally consistent with market volumes .
+market making revenues in the consolidated statements of earnings were $ 9.45 billion for 2018 , 23% ( 23 % ) higher than 2017 , due to significantly higher revenues in equity products , interest rate products and commodities .
+these increases were partially offset by significantly lower results in mortgages and lower revenues in credit products .
+other principal transactions revenues in the consolidated statements of earnings were $ 5.82 billion for 2018 , 2% ( 2 % ) lower than 2017 , reflecting net losses from investments in public equities compared with net gains in the prior year , partially offset by significantly higher net gains from investments in private equities , driven by company-specific events , including sales , and corporate performance .
+net interest income .
+net interest income in the consolidated statements of earnings was $ 3.77 billion for 2018 , 28% ( 28 % ) higher than 2017 , reflecting an increase in interest income primarily due to the impact of higher interest rates on collateralized agreements , other interest-earning assets and deposits with banks , increases in total average loans receivable and financial instruments owned , and higher yields on financial instruments owned and loans receivable .
+the increase in interest income was partially offset by higher interest expense primarily due to the impact of higher interest rates on other interest-bearing liabilities , collateralized financings , deposits and long-term borrowings , and increases in total average long-term borrowings and deposits .
+see 201cstatistical disclosures 2014 distribution of assets , liabilities and shareholders 2019 equity 201d for further information about our sources of net interest income .
+2017 versus 2016 net revenues in the consolidated statements of earnings were $ 32.73 billion for 2017 , 6% ( 6 % ) higher than 2016 , due to significantly higher other principal transactions revenues , and higher investment banking revenues , investment management revenues and net interest income .
+these increases were partially offset by significantly lower market making revenues and lower commissions and fees .
+non-interest revenues .
+investment banking revenues in the consolidated statements of earnings were $ 7.37 billion for 2017 , 18% ( 18 % ) higher than 2016 .
+revenues in financial advisory were higher compared with 2016 , reflecting an increase in completed mergers and acquisitions transactions .
+revenues in underwriting were significantly higher compared with 2016 , due to significantly higher revenues in both debt underwriting , primarily reflecting an increase in industry-wide leveraged finance activity , and equity underwriting , reflecting an increase in industry-wide secondary offerings .
+investment management revenues in the consolidated statements of earnings were $ 5.80 billion for 2017 , 7% ( 7 % ) higher than 2016 , due to higher management and other fees , reflecting higher average assets under supervision , and higher transaction revenues .
+commissions and fees in the consolidated statements of earnings were $ 3.05 billion for 2017 , 5% ( 5 % ) lower than 2016 , reflecting a decline in our listed cash equity volumes in the u.s .
+market volumes in the u.s .
+also declined .
+market making revenues in the consolidated statements of earnings were $ 7.66 billion for 2017 , 23% ( 23 % ) lower than 2016 , due to significantly lower revenues in commodities , currencies , credit products , interest rate products and equity derivative products .
+these results were partially offset by significantly higher revenues in equity cash products and significantly improved results in mortgages .
+other principal transactions revenues in the consolidated statements of earnings were $ 5.91 billion for 2017 , 75% ( 75 % ) higher than 2016 , primarily reflecting a significant increase in net gains from private equities , which were positively impacted by company-specific events and corporate performance .
+in addition , net gains from public equities were significantly higher , as global equity prices increased during the year .
+net interest income .
+net interest income in the consolidated statements of earnings was $ 2.93 billion for 2017 , 13% ( 13 % ) higher than 2016 , reflecting an increase in interest income primarily due to the impact of higher interest rates on collateralized agreements , higher interest income from loans receivable due to higher yields and an increase in total average loans receivable , an increase in total average financial instruments owned , and the impact of higher interest rates on other interest-earning assets and deposits with banks .
+the increase in interest income was partially offset by higher interest expense primarily due to the impact of higher interest rates on other interest-bearing liabilities , an increase in total average long-term borrowings , and the impact of higher interest rates on interest-bearing deposits , short-term borrowings and collateralized financings .
+see 201cstatistical disclosures 2014 distribution of assets , liabilities and shareholders 2019 equity 201d for further information about our sources of net interest income .
+provision for credit losses provision for credit losses consists of provision for credit losses on loans receivable and lending commitments held for investment .
+see note 9 to the consolidated financial statements for further information about the provision for credit losses .
+the table below presents the provision for credit losses. .
+[[""$ in millions"", ""year ended december 2018"", ""year ended december 2017"", ""year ended december 2016""], [""provision for credit losses"", ""$ 674"", ""$ 657"", ""$ 182""]]
+goldman sachs 2018 form 10-k 53 ."
+2092,finqa_6454,b,"Of this total, approximately 57,800 square feet is occupied by American Tower Corporation's lease administration office and broadcast division headquarters.",Unsupported,Supported,amount_and_keywords_match,"57,800 appears in the passage next to the same line item and period.",scope,,,"item 2 .
+properties our principal offices are located in boston , southborough and woburn , massachusetts ; atlanta , georgia ; cary , north carolina ; mexico city , mexico ; and sao paulo , brazil .
+details of each of these offices are provided below: .
+[[""location"", ""function"", ""size ( square feet )"", ""property interest""], [""boston ma"", ""corporate headquarters us tower division headquarters and american tower international headquarters"", ""19600"", ""leased""], [""southborough ma"", ""information technology data center"", ""13900"", ""leased""], [""woburn ma"", ""us tower division lease administration site leasing management and broadcast division headquarters"", ""57800"", ""owned ( 1 )""], [""atlanta ga"", ""us tower division accounting services headquarters"", ""21400"", ""leased""], [""cary north carolina"", ""us tower division new site development site operations and structural engineering services headquarters"", ""17500"", ""leased""], [""mexico city mexico"", ""mexico headquarters"", ""11000"", ""leased""], [""sao paulo brazil"", ""brazil headquarters"", ""5200"", ""leased""]]
+( 1 ) the facility in woburn contains a total of 163000 square feet of space .
+approximately 57100 square feet of space is occupied by our lease administration office and our broadcast division , and we lease the remaining space to unaffiliated tenants .
+in addition to the principal offices set forth above , we maintain 15 regional area offices in the united states through which we operate our tower leasing and services businesses .
+we believe that our owned and leased facilities are suitable and adequate to meet our anticipated needs .
+we have also established an office in delhi , india to pursue business opportunities in india and southeast asia , and we have an international business development group based in london , england .
+our interests in our communications sites are comprised of a variety of ownership interests , including leases created by long-term ground lease agreements , easements , licenses or rights-of-way granted by government entities .
+pursuant to the loan agreement for the securitization , the tower sites subject to the securitization are subject to mortgages , deeds of trust and deeds to secure the loan .
+a typical tower site consists of a compound enclosing the tower site , a tower structure , and one or more equipment shelters that house a variety of transmitting , receiving and switching equipment .
+there are three principal types of towers : guyed , self- supporting lattice , and monopole .
+2022 a guyed tower includes a series of cables attaching separate levels of the tower to anchor foundations in the ground .
+a guyed tower can reach heights of up to 2000 feet .
+a guyed tower site for a typical broadcast tower can consist of a tract of land of up to 20 acres .
+2022 a lattice tower typically tapers from the bottom up and usually has three or four legs .
+a lattice tower can reach heights of up to 1000 feet .
+depending on the height of the tower , a lattice tower site for a wireless communications tower can consist of a tract of land of 10000 square feet for a rural site or less than 2500 square feet for a metropolitan site .
+2022 a monopole is a tubular structure that is used primarily to address space constraints or aesthetic concerns .
+monopoles typically have heights ranging from 50 to 200 feet .
+a monopole tower site of the kind typically used in metropolitan areas for a wireless communications tower can consist of a tract of land of less than 2500 square feet. ."
+2115,finqa_6332,b,"Therefore, the amount of unrecognized compensation cost related to restricted stock awards that is expected to be recognized in 1 year is $37 million.",Unsupported,Supported,amount_and_keywords_match,37 million appears in the passage next to the same line item and period.,calculated values,,,"the following is a summary of stock-based performance award and restricted stock award activity .
+stock-based performance awards weighted average grant date fair value restricted awards weighted average grant date fair value .
+[[""unvested at december 31 2005"", ""stock-based performance awards 897200"", ""weightedaverage grantdate fair value $ 14.97"", ""restricted stock awards 1971112"", ""weightedaverage grantdate fair value $ 23.97""], [""granted"", ""135696 ( a )"", ""38.41"", ""437960"", ""40.45""], [""vested"", ""-546896 ( 546896 )"", ""19.15"", ""-777194 ( 777194 )"", ""20.59""], [""forfeited"", ""-12000 ( 12000 )"", ""16.81"", ""-79580 ( 79580 )"", ""26.55""], [""unvested at december 31 2006"", ""474000"", ""16.81"", ""1552298"", ""30.21""], [""granted"", ""393420 ( a )"", ""44.13"", ""572897"", ""54.97""], [""vested"", ""-867420 ( 867420 )"", ""29.20"", ""-557096 ( 557096 )"", ""28.86""], [""forfeited"", ""2013"", ""2013"", ""-40268 ( 40268 )"", ""34.55""], [""unvested at december 31 2007"", ""2013"", ""2013"", ""1527831"", ""39.87""]]
+( a ) additional shares were issued in 2006 and 2007 because the performance targets were exceeded for the 36-month performance periods related to the 2003 and 2004 grants .
+during 2007 , 2006 and 2005 the weighted average grant date fair value of restricted stock awards was $ 54.97 , $ 40.45 and $ 27.21 .
+the vesting date fair value of stock-based performance awards which vested during 2007 , 2006 and 2005 was $ 38 million , $ 21 million and $ 5 million .
+the vesting date fair value of restricted stock awards which vested during 2007 , 2006 and 2005 was $ 29 million , $ 32 million and $ 13 million .
+as of december 31 , 2007 , there was $ 37 million of unrecognized compensation cost related to restricted stock awards which is expected to be recognized over a weighted average period of 1.4 year . 25 .
+stockholders 2019 equity common stock 2013 on april 25 , 2007 , marathon 2019s stockholders approved an increase in the number of authorized shares of common stock from 550 million to 1.1 billion shares , and the company 2019s board of directors subsequently declared a two-for-one split of the company 2019s common stock .
+the stock split was effected in the form of a stock dividend distributed on june 18 , 2007 , to stockholders of record at the close of business on may 23 , 2007 .
+stockholders received one additional share of marathon oil corporation common stock for each share of common stock held as of the close of business on the record date .
+in addition , shares of common stock issued or issuable for stock-based awards under marathon 2019s incentive compensation plans were proportionately increased in accordance with the terms of the plans .
+common stock and per share ( except par value ) information for all periods presented has been restated in the consolidated financial statements and notes to reflect the stock split .
+during 2007 , 2006 and 2005 , marathon had the following common stock issuances in addition to shares issued for employee stock-based awards : 2022 on october 18 , 2007 , in connection with the acquisition of western discussed in note 6 , marathon distributed 29 million shares of its common stock valued at $ 55.70 per share to western 2019s shareholders .
+2022 on june 30 , 2005 , in connection with the acquisition of ashland 2019s minority interest in mpc discussed in note 6 , marathon distributed 35 million shares of its common stock valued at $ 27.23 per share to ashland 2019s shareholders .
+marathon 2019s board of directors has authorized the repurchase of up to $ 5 billion of common stock .
+purchases under the program may be in either open market transactions , including block purchases , or in privately negotiated transactions .
+the company will use cash on hand , cash generated from operations , proceeds from potential asset sales or cash from available borrowings to acquire shares .
+this program may be changed based upon the company 2019s financial condition or changes in market conditions and is subject to termination prior to completion .
+the repurchase program does not include specific price targets or timetables .
+as of december 31 , 2007 , the company had acquired 58 million common shares at a cost of $ 2.520 billion under the program , including 16 million common shares acquired during 2007 at a cost of $ 822 million and 42 million common shares acquired during 2006 at a cost of $ 1.698 billion. ."
+2217,finqa_6673,a,"Based on the information provided in the context, the portion of the total net reserves that is related to the London market is $57 million.",Unsupported,Supported,amount_and_keywords_match,57 million appears in the passage next to the same line item and period.,calculated values,,,"in reporting environmental results , the company classifies its gross exposure into direct , assumed reinsurance , and london market .
+the following table displays gross environmental reserves and other statistics by category as of december 31 , 2011 .
+summary of environmental reserves as of december 31 , 2011 .
+[["""", ""total reserves""], [""gross [1] [2]"", """"], [""direct"", ""$ 271""], [""assumed reinsurance"", ""39""], [""london market"", ""57""], [""total"", ""367""], [""ceded"", ""-47 ( 47 )""], [""net"", ""$ 320""]]
+[1] the one year gross paid amount for total environmental claims is $ 58 , resulting in a one year gross survival ratio of 6.4 .
+[2] the three year average gross paid amount for total environmental claims is $ 58 , resulting in a three year gross survival ratio of 6.4 .
+during the second quarters of 2011 , 2010 and 2009 , the company completed its annual ground-up asbestos reserve evaluations .
+as part of these evaluations , the company reviewed all of its open direct domestic insurance accounts exposed to asbestos liability , as well as assumed reinsurance accounts and its london market exposures for both direct insurance and assumed reinsurance .
+based on this evaluation , the company strengthened its net asbestos reserves by $ 290 in second quarter 2011 .
+during 2011 , for certain direct policyholders , the company experienced increases in claim frequency , severity and expense which were driven by mesothelioma claims , particularly against certain smaller , more peripheral insureds .
+the company also experienced unfavorable development on its assumed reinsurance accounts driven largely by the same factors experienced by the direct policyholders .
+during 2010 and 2009 , for certain direct policyholders , the company experienced increases in claim severity and expense .
+increases in severity and expense were driven by litigation in certain jurisdictions and , to a lesser extent , development on primarily peripheral accounts .
+the company also experienced unfavorable development on its assumed reinsurance accounts driven largely by the same factors experienced by the direct policyholders .
+the net effect of these changes in 2010 and 2009 resulted in $ 169 and $ 138 increases in net asbestos reserves , respectively .
+the company currently expects to continue to perform an evaluation of its asbestos liabilities annually .
+the company divides its gross asbestos exposures into direct , assumed reinsurance and london market .
+the company further divides its direct asbestos exposures into the following categories : major asbestos defendants ( the 201ctop 70 201d accounts in tillinghast 2019s published tiers 1 and 2 and wellington accounts ) , which are subdivided further as : structured settlements , wellington , other major asbestos defendants , accounts with future expected exposures greater than $ 2.5 , accounts with future expected exposures less than $ 2.5 , and unallocated .
+2022 structured settlements are those accounts where the company has reached an agreement with the insured as to the amount and timing of the claim payments to be made to the insured .
+2022 the wellington subcategory includes insureds that entered into the 201cwellington agreement 201d dated june 19 , 1985 .
+the wellington agreement provided terms and conditions for how the signatory asbestos producers would access their coverage from the signatory insurers .
+2022 the other major asbestos defendants subcategory represents insureds included in tiers 1 and 2 , as defined by tillinghast that are not wellington signatories and have not entered into structured settlements with the hartford .
+the tier 1 and 2 classifications are meant to capture the insureds for which there is expected to be significant exposure to asbestos claims .
+2022 accounts with future expected exposures greater or less than $ 2.5 include accounts that are not major asbestos defendants .
+2022 the unallocated category includes an estimate of the reserves necessary for asbestos claims related to direct insureds that have not previously tendered asbestos claims to the company and exposures related to liability claims that may not be subject to an aggregate limit under the applicable policies .
+an account may move between categories from one evaluation to the next .
+for example , an account with future expected exposure of greater than $ 2.5 in one evaluation may be reevaluated due to changing conditions and recategorized as less than $ 2.5 in a subsequent evaluation or vice versa. ."
+2228,finqa_7161,b,"2007 Bermuda Subsidiaries Net Income: $1,535 million",Unsupported,Supported,amount_and_keywords_match,"1,535 million appears in the passage next to the same line item and period.",other,,,"n o t e s t o c o n s o l i d a t e d f i n a n c i a l s t a t e m e n t s ( continued ) ace limited and subsidiaries there are no statutory restrictions on the payment of dividends from retained earnings by any of the bermuda subsidiaries as the minimum statutory capital and surplus requirements are satisfied by the share capital and additional paid-in capital of each of the bermuda subsidiaries .
+the company 2019s u.s .
+subsidiaries file financial statements prepared in accordance with statutory accounting practices prescribed or permitted by insurance regulators .
+statutory accounting differs from gaap in the reporting of certain reinsurance contracts , investments , subsidiaries , acquis- ition expenses , fixed assets , deferred income taxes , and certain other items .
+the statutory capital and surplus of the u.s .
+subsidiaries met regulatory requirements for 2008 , 2007 , and 2006 .
+the amount of dividends available to be paid in 2009 , without prior approval from the state insurance departments , totals $ 835 million .
+the combined statutory capital and surplus and statutory net income of the bermuda and u.s .
+subsidiaries as of and for the years ended december 31 , 2008 , 2007 , and 2006 , are as follows: .
+[[""( in millions of u.s .
+dollars )"", ""bermuda subsidiaries 2008"", ""bermuda subsidiaries 2007"", ""bermuda subsidiaries 2006"", ""bermuda subsidiaries 2008"", ""bermuda subsidiaries 2007"", ""2006""], [""statutory capital and surplus"", ""$ 7001"", ""$ 8579"", ""$ 7605"", ""$ 5337"", ""$ 5321"", ""$ 4431""], [""statutory net income"", ""$ 684"", ""$ 1535"", ""$ 1527"", ""$ 798"", ""$ 873"", ""$ 724""]]
+as permitted by the restructuring discussed previously in note 7 , certain of the company 2019s u.s .
+subsidiaries discount certain a&e liabilities , which increased statutory capital and surplus by approximately $ 211 million , $ 140 million , and $ 157 million as of december 31 , 2008 , 2007 , and 2006 , respectively .
+the company 2019s international subsidiaries prepare statutory financial statements based on local laws and regulations .
+some jurisdictions impose complex regulatory requirements on insurance companies while other jurisdictions impose fewer requirements .
+in some countries , the company must obtain licenses issued by governmental authorities to conduct local insurance business .
+these licenses may be subject to reserves and minimum capital and solvency tests .
+jurisdictions may impose fines , censure , and/or criminal sanctions for violation of regulatory requirements .
+other disclosures required by swiss law ( i ) expenses total personnel expenses amounted to $ 1.4 billion for the year ended december 31 , 2008 , and $ 1.1 billion for each of the years ended december 31 , 2007 and 2006 .
+amortization expense related to tangible property amounted to $ 90 million , $ 77 million , and $ 64 million for the years ended december 31 , 2008 , 2007 , and 2006 , respectively .
+( ii ) fire insurance values of property and equipment total fire insurance values of property and equipment amounted to $ 680 million and $ 464 million at december 31 , 2008 and 2007 , respectively .
+( iii ) risk assessment and management the management of ace is responsible for assessing risks related to the financial reporting process and for establishing and maintaining adequate internal control over financial reporting .
+internal control over financial reporting is a process designed by , or under the supervision of the chief executive officer and chief financial officer to provide reasonable assurance regarding the reliability of financial reporting and the preparation of ace 2019s consolidated financial statements for external purposes in accordance with gaap .
+the board , operating through its audit committee composed entirely of directors who are not officers or employees of the company , provides oversight of the financial reporting process and safeguarding of assets against unauthorized acquisition , use , or disposition .
+the audit committee meets with management , the independent registered public accountants and the internal auditor ; approves the overall scope of audit work and related fee arrangements ; and reviews audit reports and findings .
+in addition , the independent registered public accountants and the internal auditor meet separately with the audit committee , without management representatives present , to discuss the results of their audits ; the adequacy of the company 2019s internal control ; the quality of its financial reporting ; and the safeguarding of assets against unauthorized acquisition , use , or dis- position .
+ace 2019s management is responsible for assessing operational risks facing the company and sets policies designed to address such risks .
+examples of key areas addressed by ace 2019s risk management processes follow. ."
+2228,finqa_7161,c,2008 Bermuda Subsidiaries Net Income: $684 million,Unsupported,Supported,amount_and_keywords_match,684 million appears in the passage next to the same line item and period.,other,,,"n o t e s t o c o n s o l i d a t e d f i n a n c i a l s t a t e m e n t s ( continued ) ace limited and subsidiaries there are no statutory restrictions on the payment of dividends from retained earnings by any of the bermuda subsidiaries as the minimum statutory capital and surplus requirements are satisfied by the share capital and additional paid-in capital of each of the bermuda subsidiaries .
+the company 2019s u.s .
+subsidiaries file financial statements prepared in accordance with statutory accounting practices prescribed or permitted by insurance regulators .
+statutory accounting differs from gaap in the reporting of certain reinsurance contracts , investments , subsidiaries , acquis- ition expenses , fixed assets , deferred income taxes , and certain other items .
+the statutory capital and surplus of the u.s .
+subsidiaries met regulatory requirements for 2008 , 2007 , and 2006 .
+the amount of dividends available to be paid in 2009 , without prior approval from the state insurance departments , totals $ 835 million .
+the combined statutory capital and surplus and statutory net income of the bermuda and u.s .
+subsidiaries as of and for the years ended december 31 , 2008 , 2007 , and 2006 , are as follows: .
+[[""( in millions of u.s .
+dollars )"", ""bermuda subsidiaries 2008"", ""bermuda subsidiaries 2007"", ""bermuda subsidiaries 2006"", ""bermuda subsidiaries 2008"", ""bermuda subsidiaries 2007"", ""2006""], [""statutory capital and surplus"", ""$ 7001"", ""$ 8579"", ""$ 7605"", ""$ 5337"", ""$ 5321"", ""$ 4431""], [""statutory net income"", ""$ 684"", ""$ 1535"", ""$ 1527"", ""$ 798"", ""$ 873"", ""$ 724""]]
+as permitted by the restructuring discussed previously in note 7 , certain of the company 2019s u.s .
+subsidiaries discount certain a&e liabilities , which increased statutory capital and surplus by approximately $ 211 million , $ 140 million , and $ 157 million as of december 31 , 2008 , 2007 , and 2006 , respectively .
+the company 2019s international subsidiaries prepare statutory financial statements based on local laws and regulations .
+some jurisdictions impose complex regulatory requirements on insurance companies while other jurisdictions impose fewer requirements .
+in some countries , the company must obtain licenses issued by governmental authorities to conduct local insurance business .
+these licenses may be subject to reserves and minimum capital and solvency tests .
+jurisdictions may impose fines , censure , and/or criminal sanctions for violation of regulatory requirements .
+other disclosures required by swiss law ( i ) expenses total personnel expenses amounted to $ 1.4 billion for the year ended december 31 , 2008 , and $ 1.1 billion for each of the years ended december 31 , 2007 and 2006 .
+amortization expense related to tangible property amounted to $ 90 million , $ 77 million , and $ 64 million for the years ended december 31 , 2008 , 2007 , and 2006 , respectively .
+( ii ) fire insurance values of property and equipment total fire insurance values of property and equipment amounted to $ 680 million and $ 464 million at december 31 , 2008 and 2007 , respectively .
+( iii ) risk assessment and management the management of ace is responsible for assessing risks related to the financial reporting process and for establishing and maintaining adequate internal control over financial reporting .
+internal control over financial reporting is a process designed by , or under the supervision of the chief executive officer and chief financial officer to provide reasonable assurance regarding the reliability of financial reporting and the preparation of ace 2019s consolidated financial statements for external purposes in accordance with gaap .
+the board , operating through its audit committee composed entirely of directors who are not officers or employees of the company , provides oversight of the financial reporting process and safeguarding of assets against unauthorized acquisition , use , or disposition .
+the audit committee meets with management , the independent registered public accountants and the internal auditor ; approves the overall scope of audit work and related fee arrangements ; and reviews audit reports and findings .
+in addition , the independent registered public accountants and the internal auditor meet separately with the audit committee , without management representatives present , to discuss the results of their audits ; the adequacy of the company 2019s internal control ; the quality of its financial reporting ; and the safeguarding of assets against unauthorized acquisition , use , or dis- position .
+ace 2019s management is responsible for assessing operational risks facing the company and sets policies designed to address such risks .
+examples of key areas addressed by ace 2019s risk management processes follow. ."
+2274,finqa_6928,b,"The context states that in 2011, the company's net asbestos reserves increased by $290 due to unfavorable development on its assumed reinsurance accounts, driven largely by the same factors experienced by the direct policyholders.",Unsupported,Supported,amount_and_keywords_match,290 appears in the passage next to the same line item and period.,calculated values,,,"in reporting environmental results , the company classifies its gross exposure into direct , assumed reinsurance , and london market .
+the following table displays gross environmental reserves and other statistics by category as of december 31 , 2011 .
+summary of environmental reserves as of december 31 , 2011 .
+[["""", ""total reserves""], [""gross [1] [2]"", """"], [""direct"", ""$ 271""], [""assumed reinsurance"", ""39""], [""london market"", ""57""], [""total"", ""367""], [""ceded"", ""-47 ( 47 )""], [""net"", ""$ 320""]]
+[1] the one year gross paid amount for total environmental claims is $ 58 , resulting in a one year gross survival ratio of 6.4 .
+[2] the three year average gross paid amount for total environmental claims is $ 58 , resulting in a three year gross survival ratio of 6.4 .
+during the second quarters of 2011 , 2010 and 2009 , the company completed its annual ground-up asbestos reserve evaluations .
+as part of these evaluations , the company reviewed all of its open direct domestic insurance accounts exposed to asbestos liability , as well as assumed reinsurance accounts and its london market exposures for both direct insurance and assumed reinsurance .
+based on this evaluation , the company strengthened its net asbestos reserves by $ 290 in second quarter 2011 .
+during 2011 , for certain direct policyholders , the company experienced increases in claim frequency , severity and expense which were driven by mesothelioma claims , particularly against certain smaller , more peripheral insureds .
+the company also experienced unfavorable development on its assumed reinsurance accounts driven largely by the same factors experienced by the direct policyholders .
+during 2010 and 2009 , for certain direct policyholders , the company experienced increases in claim severity and expense .
+increases in severity and expense were driven by litigation in certain jurisdictions and , to a lesser extent , development on primarily peripheral accounts .
+the company also experienced unfavorable development on its assumed reinsurance accounts driven largely by the same factors experienced by the direct policyholders .
+the net effect of these changes in 2010 and 2009 resulted in $ 169 and $ 138 increases in net asbestos reserves , respectively .
+the company currently expects to continue to perform an evaluation of its asbestos liabilities annually .
+the company divides its gross asbestos exposures into direct , assumed reinsurance and london market .
+the company further divides its direct asbestos exposures into the following categories : major asbestos defendants ( the 201ctop 70 201d accounts in tillinghast 2019s published tiers 1 and 2 and wellington accounts ) , which are subdivided further as : structured settlements , wellington , other major asbestos defendants , accounts with future expected exposures greater than $ 2.5 , accounts with future expected exposures less than $ 2.5 , and unallocated .
+2022 structured settlements are those accounts where the company has reached an agreement with the insured as to the amount and timing of the claim payments to be made to the insured .
+2022 the wellington subcategory includes insureds that entered into the 201cwellington agreement 201d dated june 19 , 1985 .
+the wellington agreement provided terms and conditions for how the signatory asbestos producers would access their coverage from the signatory insurers .
+2022 the other major asbestos defendants subcategory represents insureds included in tiers 1 and 2 , as defined by tillinghast that are not wellington signatories and have not entered into structured settlements with the hartford .
+the tier 1 and 2 classifications are meant to capture the insureds for which there is expected to be significant exposure to asbestos claims .
+2022 accounts with future expected exposures greater or less than $ 2.5 include accounts that are not major asbestos defendants .
+2022 the unallocated category includes an estimate of the reserves necessary for asbestos claims related to direct insureds that have not previously tendered asbestos claims to the company and exposures related to liability claims that may not be subject to an aggregate limit under the applicable policies .
+an account may move between categories from one evaluation to the next .
+for example , an account with future expected exposure of greater than $ 2.5 in one evaluation may be reevaluated due to changing conditions and recategorized as less than $ 2.5 in a subsequent evaluation or vice versa. ."

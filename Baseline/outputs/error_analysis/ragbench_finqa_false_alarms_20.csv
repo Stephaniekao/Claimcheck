@@ -1,0 +1,460 @@
+answer,id,key,claim,label,pred,rule,explanation,suggested_category,reviewer_1_category,reviewer_2_category,passage
+335,finqa_7039,d,"Therefore, 9.77% of the total minimum lease payments are due in 2015.",Supported,Unsupported,amount_not_in_passage,9.77% does not appear anywhere in the cited passage (after unit normalization).,calculated values,,,"dish network corporation notes to consolidated financial statements - continued future minimum lease payments under the capital lease obligation , together with the present value of the net minimum lease payments as of december 31 , 2010 are as follows ( in thousands ) : for the years ended december 31 .
+[[""2011"", ""$ 82184""], [""2012"", ""77110""], [""2013"", ""75970""], [""2014"", ""75970""], [""2015"", ""75970""], [""thereafter"", ""390239""], [""total minimum lease payments"", ""777443""], [""less : amount representing lease of the orbital location and estimated executory costs ( primarily insurance and maintenance ) including profit thereon included in total minimum lease payments"", ""-357982 ( 357982 )""], [""net minimum lease payments"", ""419461""], [""less : amount representing interest"", ""-132490 ( 132490 )""], [""present value of net minimum lease payments"", ""286971""], [""less : current portion"", ""-24801 ( 24801 )""], [""long-term portion of capital lease obligations"", ""$ 262170""]]
+the summary of future maturities of our outstanding long-term debt as of december 31 , 2010 is included in the commitments table in note 14 . 10 .
+income taxes and accounting for uncertainty in income taxes income taxes our income tax policy is to record the estimated future tax effects of temporary differences between the tax bases of assets and liabilities and amounts reported on our consolidated balance sheets , as well as probable operating loss , tax credit and other carryforwards .
+deferred tax assets are offset by valuation allowances when we believe it is more likely than not that net deferred tax assets will not be realized .
+we periodically evaluate our need for a valuation allowance .
+determining necessary valuation allowances requires us to make assessments about historical financial information as well as the timing of future events , including the probability of expected future taxable income and available tax planning opportunities .
+as of december 31 , 2010 , we had no net operating loss carryforwards ( 201cnols 201d ) for federal income tax purposes and $ 13 million of nol benefit for state income tax purposes .
+the state nols begin to expire in the year 2020 .
+in addition , there are $ 11 million of tax benefits related to credit carryforwards which are partially offset by a valuation allowance and $ 42 million of capital loss carryforwards which were fully offset by a valuation allowance .
+the credit carryforwards begin to expire in the year 2011. ."
+404,finqa_6926,g,"Therefore, 56.4% of the total contractual obligations in 2010 are made up of long-term debt obligations.",Supported,Unsupported,amount_not_in_passage,56.4% does not appear anywhere in the cited passage (after unit normalization).,calculated values,,,"contractual obligations the following table includes aggregated information about citigroup 2019s contractual obligations that impact its short- and long-term liquidity and capital needs .
+the table includes information about payments due under specified contractual obligations , aggregated by type of contractual obligation .
+it includes the maturity profile of citigroup 2019s consolidated long-term debt , leases and other long-term liabilities .
+citigroup 2019s contractual obligations include purchase obligations that are enforceable and legally binding for citi .
+for the purposes of the table below , purchase obligations are included through the termination date of the respective agreements , even if the contract is renewable .
+many of the purchase agreements for goods or services include clauses that would allow citigroup to cancel the agreement with specified notice ; however , that impact is not included in the table ( unless citigroup has already notified the counterparty of its intention to terminate the agreement ) .
+other liabilities reflected on citigroup 2019s consolidated balance sheet include obligations for goods and services that have already been received , uncertain tax positions , as well as other long-term liabilities that have been incurred and will ultimately be paid in cash .
+excluded from the following table are obligations that are generally short-term in nature , including deposit liabilities and securities sold under agreements to repurchase .
+the table also excludes certain insurance and investment contracts subject to mortality and morbidity risks or without defined maturities , such that the timing of payments and withdrawals is uncertain .
+the liabilities related to these insurance and investment contracts are included on the consolidated balance sheet as insurance policy and claims reserves , contractholder funds , and separate and variable accounts .
+citigroup 2019s funding policy for pension plans is generally to fund to the minimum amounts required by the applicable laws and regulations .
+at december 31 , 2009 , there were no minimum required contributions , and no contributions are currently planned for the u.s .
+pension plans .
+accordingly , no amounts have been included in the table below for future contributions to the u.s .
+pension plans .
+for the non-u.s .
+pension plans , discretionary contributions in 2010 are anticipated to be approximately $ 160 million .
+the anticipated cash contributions in 2010 related to the non-u.s .
+postretirement benefit plans are $ 72 million .
+these amounts are included in the purchase obligations in the table below .
+the estimated pension and postretirement plan contributions are subject to change , since contribution decisions are affected by various factors , such as market performance , regulatory and legal requirements , and management 2019s ability to change funding policy .
+for additional information regarding citi 2019s retirement benefit obligations , see note 9 to the consolidated financial statements. .
+[[""in millions of dollars at year end"", ""contractual obligations by year 2010"", ""contractual obligations by year 2011"", ""contractual obligations by year 2012"", ""contractual obligations by year 2013"", ""contractual obligations by year 2014"", ""contractual obligations by year thereafter""], [""long-term debt obligations ( 1 )"", ""$ 47162"", ""$ 59656"", ""$ 69344"", ""$ 28132"", ""$ 34895"", ""$ 124830""], [""lease obligations"", ""1247"", ""1110"", ""1007"", ""900"", ""851"", ""2770""], [""purchase obligations"", ""1032"", ""446"", ""331"", ""267"", ""258"", ""783""], [""other long-term liabilities reflected on citi 2019s consolidated balance sheet ( 2 )"", ""34218"", ""156"", ""36"", ""35"", ""36"", ""3009""], [""total"", ""$ 83659"", ""$ 61368"", ""$ 70718"", ""$ 29334"", ""$ 36040"", ""$ 131392""]]
+( 1 ) for additional information about long-term debt and trust preferred securities , see note 20 to the consolidated financial statements .
+( 2 ) relates primarily to accounts payable and accrued expenses included in other liabilities in citi 2019s consolidated balance sheet. ."
+575,finqa_7302,a,"The company lost $3,516,000 when some of their grants were forfeited based on the fair value of the grant which was $23.44 as indicated in the context provided.",Supported,Unsupported,amount_not_in_passage,"3,516,000 does not appear anywhere in the cited passage (after unit normalization).",number or unit format,,,"table of contents hologic , inc .
+notes to consolidated financial statements ( continued ) ( in thousands , except per share data ) a summary of the company 2019s restricted stock units activity during the year september 26 , 2009 is presented below : non-vested shares number of shares weighted-average grant-date fair .
+[[""non-vested shares"", ""number of shares"", ""weighted-average grant-date fair value""], [""non-vested at september 27 2008"", ""1461"", ""$ 31.23""], [""granted .
+"", ""1669"", ""14.46""], [""vested"", ""-210 ( 210 )"", ""23.87""], [""forfeited"", ""-150 ( 150 )"", ""23.44""], [""non-vested at september 26 2009"", ""2770"", ""$ 21.96""]]
+the number of restricted stock units vested includes shares withheld on behalf of employees to satisfy minimum statutory tax withholding requirements .
+during fiscal 2009 , 2008 and 2007 the total fair value of rsus vested was $ 5014 , $ 2009 and $ 0 , respectively .
+employee stock purchase plan at the company 2019s march 11 , 2008 annual meeting of stockholders , the company 2019s 2008 employee stock purchase plan ( the 201cespp 201d ) was approved .
+the plan meets the criteria set forth in asc 718 2019s definition of a non-compensatory plan and does not give rise to stock-based compensation expense .
+employees who have completed three consecutive months , or two years , whether or not consecutive , of employment with the company or any of its participating subsidiaries are eligible to participate in the espp .
+the espp plan period is semi-annual and allows participants to purchase the company 2019s common stock at 95% ( 95 % ) of the closing price of the stock on the last day of the plan period .
+a total of 400 shares may be issued under the espp .
+during fiscal 2009 , the company issued 121 shares under the espp . 10 .
+profit sharing 401 ( k ) plan the company has a qualified profit sharing plan covering substantially all of its employees .
+contributions to the plan are at the discretion of the company 2019s board of directors .
+the company made contributions of $ 5725 , $ 5305 and $ 1572 for fiscal years 2009 , 2008 and 2007 , respectively . 11 .
+supplemental executive retirement plan effective march 15 , 2006 , the company adopted a serp to provide non-qualified retirement benefits to a select group of executive officers , senior management and highly compensated employees of the company .
+eligible employees may elect to contribute up to 75% ( 75 % ) of their annual base salary and 100% ( 100 % ) of their annual bonus to the serp and such employee contributions are 100% ( 100 % ) vested .
+in addition , the company may elect to make annual discretionary contributions on behalf of participants in the serp .
+each company contribution is subject to a three year vesting schedule , such that each contribution vests one third annually .
+employee contributions are recorded within accrued expenses in the consolidated balance sheets .
+upon enrollment into the serp , employees make investment elections for both their voluntary contributions and discretionary contributions , if any , made by the company .
+earnings and losses on contributions based on these investment elections are recorded as a component of compensation expense in the period earned .
+source : hologic inc , 10-k , november 24 , 2009 powered by morningstar ae document research 2120 the information contained herein may not be copied , adapted or distributed and is not warranted to be accurate , complete or timely .
+the user assumes all risks for any damages or losses arising from any use of this information , except to the extent such damages or losses cannot be limited or excluded by applicable law .
+past financial performance is no guarantee of future results. ."
+674,finqa_6921,b,This means there was a 100% increase ($250.0 increase from the original $250.0) in long-term debt.,Supported,Unsupported,amount_not_in_passage,100% does not appear anywhere in the cited passage (after unit normalization).,calculated values,,,"annual maturities as of december 31 , 2006 are scheduled as follows: .
+[[""2007"", ""$ 2.6""], [""20081"", ""2.8""], [""2009"", ""257.0""], [""2010"", ""240.9""], [""2011"", ""500.0""], [""thereafter"", ""1247.9""], [""total long-term debt"", ""$ 2251.2""]]
+1 in addition , holders of our $ 400.0 4.50% ( 4.50 % ) notes may require us to repurchase their 4.50% ( 4.50 % ) notes for cash at par in march 2008 .
+these notes will mature in 2023 if not converted or repurchased .
+redemption of long-term debt in august 2005 , we redeemed the remainder of our 7.875% ( 7.875 % ) senior unsecured notes with an aggregate principal amount of $ 250.0 at maturity for a total cost of $ 258.6 , which included the principal amount of the notes , accrued interest to the redemption date , and a prepayment penalty of $ 1.4 .
+to redeem these notes we used the proceeds from the sale and issuance in july 2005 of $ 250.0 floating rate senior unsecured notes due 2008 .
+floating rate senior unsecured notes in december 2006 , we exchanged all of our $ 250.0 floating rate notes due 2008 for $ 250.0 aggregate principal amount floating rate notes due 2010 .
+the new floating rate notes mature on november 15 , 2010 and bear interest at a per annum rate equal to three-month libor plus 200 basis points , 125 basis points less than the interest rate on the old floating rate notes .
+in connection with the exchange , we made an early participation payment of $ 41.25 ( actual amount ) in cash per $ 1000 ( actual amount ) principal amount of old floating rate notes for a total payment of $ 10.3 .
+in accordance with eitf issue no .
+96-19 , debtor 2019s accounting for a modification or exchange of debt instruments ( 201ceitf 96-19 201d ) , this transaction is treated as an exchange of debt for accounting purposes because the present value of the remaining cash flows under the terms of the original instrument are not substantially different from those of the new instrument .
+the new floating rate notes are reflected on our consolidated balance sheet net of the $ 10.3 early participation payment , which is amortized over the life of the new floating rate notes as a discount , using an effective interest method , and recorded in interest expense .
+direct fees associated with the exchange of $ 3.5 were reflected in interest expense .
+4.25% ( 4.25 % ) and 4.50% ( 4.50 % ) convertible senior notes in november 2006 , we exchanged $ 400.0 of our 4.50% ( 4.50 % ) convertible senior notes due 2023 ( the 201c4.50% ( 201c4.50 % ) notes 201d ) for $ 400.0 aggregate principal amount of 4.25% ( 4.25 % ) convertible senior notes due 2023 ( the 201c4.25% ( 201c4.25 % ) notes 201d ) .
+as required by eitf 96-19 , this exchange is treated as an extinguishment of the 4.50% ( 4.50 % ) notes and an issuance of 4.25% ( 4.25 % ) notes for accounting purposes because the present value of the remaining cash flows plus the fair value of the embedded conversion option under the terms of the original instrument are substantially different from those of the new instrument .
+as a result , the 4.25% ( 4.25 % ) notes are reflected on our consolidated balance sheet at their fair value at issuance , or $ 477.0 .
+we recorded a non-cash charge in the fourth quarter of 2006 of $ 77.0 reflecting the difference between the fair value of the new debt and the carrying value of the old debt .
+the difference between fair value and carrying value will be amortized through march 15 , 2012 , which is the first date holders may require us to repurchase the 4.25% ( 4.25 % ) notes , resulting in a reduction of reported interest expense in future periods .
+we also recorded a non-cash charge of $ 3.8 for the extinguishment of unamortized debt issuance costs related to the exchanged 4.50% ( 4.50 % ) notes .
+our 4.25% ( 4.25 % ) notes are convertible into our common stock at a conversion price of $ 12.42 per share , subject to adjustment in specified circumstances including any payment of cash dividends on our common stock .
+the conversion rate of the new notes is also subject to adjustment for certain events arising from stock splits and combinations , stock dividends , certain cash dividends and certain other actions by us that modify our capital notes to consolidated financial statements 2014 ( continued ) ( amounts in millions , except per share amounts ) %%transmsg*** transmitting job : y31000 pcn : 072000000 ***%%pcmsg|72 |00009|yes|no|02/28/2007 01:12|0|0|page is valid , no graphics -- color : d| ."
+696,finqa_6576,d,"So, the net 2009 trading assets, excluding derivatives, would be $257,839 million.",Supported,Unsupported,same_item_different_amount,"The passage reports 173 for this item and period, not 257,839 million.",different wording,,,"jpmorgan chase & co./2009 annual report 173 trading assets and liabilities average balances average trading assets and liabilities were as follows for the periods indicated. .
+[[""year ended december 31 ( in millions )"", ""2009"", ""2008"", ""2007""], [""trading assets 2013 debt and equity instruments"", ""$ 318063"", ""$ 384102"", ""$ 381415""], [""trading assets 2013 derivative receivables"", ""110457"", ""121417"", ""65439""], [""trading liabilities 2013 debt and equityinstruments ( a )"", ""$ 60224"", ""$ 78841"", ""$ 94737""], [""trading liabilities 2013 derivative payables"", ""77901"", ""93200"", ""65198""]]
+( a ) primarily represent securities sold , not yet purchased .
+note 4 2013 fair value option the fair value option provides an option to elect fair value as an alternative measurement for selected financial assets , financial liabilities , unrecognized firm commitments , and written loan com- mitments not previously carried at fair value .
+elections elections were made by the firm to : 2022 mitigate income statement volatility caused by the differences in the measurement basis of elected instruments ( for example , cer- tain instruments elected were previously accounted for on an accrual basis ) while the associated risk management arrange- ments are accounted for on a fair value basis ; 2022 eliminate the complexities of applying certain accounting models ( e.g. , hedge accounting or bifurcation accounting for hybrid in- struments ) ; and 2022 better reflect those instruments that are managed on a fair value basis .
+elections include : 2022 securities financing arrangements with an embedded derivative and/or a maturity of greater than one year .
+2022 loans purchased or originated as part of securitization ware- housing activity , subject to bifurcation accounting , or managed on a fair value basis .
+2022 structured notes issued as part of ib 2019s client-driven activities .
+( structured notes are financial instruments that contain embed- ded derivatives. )
+2022 certain tax credits and other equity investments acquired as part of the washington mutual transaction .
+the cumulative effect on retained earnings of the adoption of the fair value option on january 1 , 2007 , was $ 199 million. ."
+796,finqa_6653,b,"Therefore, 1 out of the 181 leased locations is in the United States.",Supported,Unsupported,same_item_different_amount,"The passage reports 81 for this item and period, not 181.",calculated values,,,"we are not under any obligation ( and expressly disclaim any such obligation ) to update or alter our forward- looking statements , whether as a result of new information , future events or otherwise .
+you should carefully consider the possibility that actual results may differ materially from our forward-looking statements .
+item 1b .
+unresolved staff comments .
+item 2 . properties .
+our corporate headquarters are located in jacksonville , florida , in an owned facility .
+fnf occupies and pays us rent for approximately 121000 square feet in this facility .
+we lease office space as follows : number of locations ( 1 ) .
+[[""state"", ""number of locations ( 1 )""], [""california"", ""57""], [""florida"", ""26""], [""georgia"", ""22""], [""texas"", ""19""], [""minnesota new york"", ""9""], [""illinois ohio maryland"", ""8""], [""pennsylvania"", ""7""], [""other"", ""63""]]
+( 1 ) represents the number of locations in each state listed .
+we also lease approximately 81 locations outside the united states .
+we believe our properties are adequate for our business as presently conducted .
+item 3 .
+legal proceedings .
+in the ordinary course of business , we are involved in various pending and threatened litigation matters related to our operations , some of which include claims for punitive or exemplary damages .
+we believe that no actions , other than the matters listed below , depart from customary litigation incidental to our business .
+as background to the disclosure below , please note the following : 2022 these matters raise difficult and complicated factual and legal issues and are subject to many uncertainties and complexities .
+2022 we review these matters on an on-going basis and follows the provisions of statement of financial accounting standards ( 201csfas 201d ) no .
+5 , 201caccounting for contingencies , 201d when making accrual and disclosure decisions .
+when assessing reasonably possible and probable outcomes , we base our decision on our assessment of the ultimate outcome following all appeals .
+the company and certain of its employees were named on march 6 , 2006 as defendants in a civil lawsuit brought by grace & digital information technology co. , ltd .
+( 201cgrace 201d ) , a chinese company that formerly acted as a sales agent for alltel information services ( 201cais 201d ) .
+grace originally filed suit in december 2004 in state court in monterey county , california , alleging that the company breached a sales agency agreement by failing to pay commissions associated with sales contracts signed in 2001 and 2003 .
+the 2001 contracts were never completed .
+the 2003 contracts , as to which grace provided no assistance , were for a different project and were executed one and one-half years after grace 2019s sales agency agreement was terminated .
+in addition to its breach of contract claim , grace also alleged that the company violated the foreign corrupt practices act ( fcpa ) in its dealings with a bank customer in china .
+the company denied grace 2019s allegations in this california lawsuit. ."
+883,finqa_6775,d,"Therefore, in 2013, 25.1% of the gcla was in non-u.s. dollar-denominated assets.",Supported,Unsupported,amount_not_in_passage,25.1% does not appear anywhere in the cited passage (after unit normalization).,calculated values,,,"management 2019s discussion and analysis liquidity risk management liquidity is of critical importance to financial institutions .
+most of the failures of financial institutions have occurred in large part due to insufficient liquidity .
+accordingly , we have in place a comprehensive and conservative set of liquidity and funding policies to address both firm-specific and broader industry or market liquidity events .
+our principal objective is to be able to fund the firm and to enable our core businesses to continue to serve clients and generate revenues , even under adverse circumstances .
+we manage liquidity risk according to the following principles : global core liquid assets .
+we maintain substantial liquidity ( gcla , previously gce ) to meet a broad range of potential cash outflows and collateral needs in a stressed environment .
+asset-liability management .
+we assess anticipated holding periods for our assets and their expected liquidity in a stressed environment .
+we manage the maturities and diversity of our funding across markets , products and counterparties , and seek to maintain liabilities of appropriate tenor relative to our asset base .
+contingency funding plan .
+we maintain a contingency funding plan to provide a framework for analyzing and responding to a liquidity crisis situation or periods of market stress .
+this framework sets forth the plan of action to fund normal business activity in emergency and stress situations .
+these principles are discussed in more detail below .
+global core liquid assets our most important liquidity policy is to pre-fund our estimated potential cash and collateral needs during a liquidity crisis and hold this liquidity in the form of unencumbered , highly liquid securities and cash .
+we believe that the securities held in our gcla would be readily convertible to cash in a matter of days , through liquidation , by entering into repurchase agreements or from maturities of resale agreements , and that this cash would allow us to meet immediate obligations without needing to sell other assets or depend on additional funding from credit-sensitive markets .
+as of december 2014 and december 2013 , the fair value of the securities and certain overnight cash deposits included in our gcla , totaled $ 182.95 billion and $ 184.07 billion , respectively .
+based on the results of our internal liquidity risk models , discussed below , as well as our consideration of other factors including , but not limited to , an assessment of our potential intraday liquidity needs and a qualitative assessment of the condition of the financial markets and the firm , we believe our liquidity position as of both december 2014 and december 2013 was appropriate .
+the table below presents the fair value of the securities and certain overnight cash deposits that are included in our average for the year ended december $ in millions 2014 2013 .
+[[""$ in millions"", ""average for theyear ended december 2014"", ""average for theyear ended december 2013""], [""u.s .
+dollar-denominated"", ""$ 134223"", ""$ 136824""], [""non-u.s .
+dollar-denominated"", ""45410"", ""45826""], [""total"", ""$ 179633"", ""$ 182650""]]
+the u.s .
+dollar-denominated gcla is composed of ( i ) unencumbered u.s .
+government and federal agency obligations ( including highly liquid u.s .
+federal agency mortgage-backed obligations ) , all of which are eligible as collateral in federal reserve open market operations and ( ii ) certain overnight u.s .
+dollar cash deposits .
+the non- u.s .
+dollar-denominated gcla is composed of only unencumbered german , french , japanese and united kingdom government obligations and certain overnight cash deposits in highly liquid currencies .
+we strictly limit our gcla to this narrowly defined list of securities and cash because they are highly liquid , even in a difficult funding environment .
+we do not include other potential sources of excess liquidity in our gcla , such as less liquid unencumbered securities or committed credit facilities .
+72 goldman sachs 2014 annual report ."
+994,finqa_6619,b,"In 2013, the backlog was $20500 million, and in 2014, it decreased to $18900 million.",Supported,Unsupported,same_item_different_amount,"The passage reports 389 million, 5%, 5 % for this item and period, not 18900 million. 18900 million does appear, but on a different line: ""backlog at year-end (2014): $ 18900""",wrong period or year,,,"trends we expect mst 2019s 2015 net sales to be comparable to 2014 net sales , with the increased volume from new program starts , specifically space fence and the combat rescue and presidential helicopter programs , offset by a decline in volume due to the wind-down or completion of certain programs .
+operating profit is expected to decline in the mid single digit percentage range from 2014 levels , driven by a reduction in expected risk retirements in 2015 .
+accordingly , operating profit margin is expected to slightly decline from 2014 levels .
+space systems our space systems business segment is engaged in the research and development , design , engineering and production of satellites , strategic and defensive missile systems and space transportation systems .
+space systems is also responsible for various classified systems and services in support of vital national security systems .
+space systems 2019 major programs include the space based infrared system ( sbirs ) , aehf , gps-iii , geostationary operational environmental satellite r-series ( goes-r ) , muos , trident ii d5 fleet ballistic missile ( fbm ) and orion .
+operating profit for our space systems business segment includes our share of earnings for our investment in ula , which provides expendable launch services to the u.s . government .
+space systems 2019 operating results included the following ( in millions ) : .
+[["""", ""2014"", ""2013"", ""2012""], [""net sales"", ""$ 8065"", ""$ 7958"", ""$ 8347""], [""operating profit"", ""1039"", ""1045"", ""1083""], [""operating margins"", ""12.9% ( 12.9 % )"", ""13.1% ( 13.1 % )"", ""13.0% ( 13.0 % )""], [""backlog at year-end"", ""$ 18900"", ""$ 20500"", ""$ 18100""]]
+2014 compared to 2013 space systems 2019 net sales for 2014 increased $ 107 million , or 1% ( 1 % ) , compared to 2013 .
+the increase was primarily attributable to higher net sales of approximately $ 340 million for the orion program due to increased volume ( primarily the first unmanned test flight of the orion mpcv ) ; and about $ 145 million for commercial space transportation programs due to launch-related activities .
+the increases were offset by lower net sales of approximately $ 335 million for government satellite programs due to decreased volume ( primarily aehf , gps-iii and muos ) ; and about $ 45 million for various other programs due to decreased volume .
+space systems 2019 operating profit for 2014 was comparable to 2013 .
+operating profit decreased by approximately $ 20 million for government satellite programs due to lower volume ( primarily aehf and gps-iii ) , partially offset by increased risk retirements ( primarily muos ) ; and about $ 20 million due to decreased equity earnings for joint ventures .
+the decreases were offset by higher operating profit of approximately $ 30 million for the orion program due to increased volume .
+operating profit was reduced by approximately $ 40 million for charges , net of recoveries , related to the restructuring action announced in november 2013 .
+adjustments not related to volume , including net profit booking rate adjustments and other matters , were approximately $ 10 million lower for 2014 compared to 2013 .
+2013 compared to 2012 space systems 2019 net sales for 2013 decreased $ 389 million , or 5% ( 5 % ) , compared to 2012 .
+the decrease was primarily attributable to lower net sales of approximately $ 305 million for commercial satellite programs due to fewer deliveries ( zero delivered during 2013 compared to two for 2012 ) ; and about $ 290 million for the orion program due to lower volume .
+the decreases were partially offset by higher net sales of approximately $ 130 million for government satellite programs due to net increased volume ; and about $ 65 million for strategic and defensive missile programs ( primarily fbm ) due to increased volume and risk retirements .
+the increase for government satellite programs was primarily attributable to higher volume on aehf and other programs , partially offset by lower volume on goes-r , muos and sbirs programs .
+space systems 2019 operating profit for 2013 decreased $ 38 million , or 4% ( 4 % ) , compared to 2012 .
+the decrease was primarily attributable to lower operating profit of approximately $ 50 million for the orion program due to lower volume and risk retirements and about $ 30 million for government satellite programs due to decreased risk retirements , which were partially offset by higher equity earnings from joint ventures of approximately $ 35 million .
+the decrease in operating profit for government satellite programs was primarily attributable to lower risk retirements for muos , gps iii and other programs , partially offset by higher risk retirements for the sbirs and aehf programs .
+operating profit for 2013 included about $ 15 million of charges , net of recoveries , related to the november 2013 restructuring plan .
+adjustments not related to volume , including net profit booking rate adjustments and other matters , were approximately $ 15 million lower for 2013 compared to 2012. ."
+998,finqa_6415,b,Total Cable Communications Segment Capital Expenditures in 2015: $7034 million,Supported,Unsupported,same_item_different_amount,"The passage reports 13.5%, 13.5 %, 1.4 billion, 5.3%, 5.3 %, 1.2 billion for this item and period, not 7034 million. 7034 million does appear, but on a different line: ""total (2015): $ 7034""",scope,,,"interest payments increased in 2015 primarily due to a higher level of debt outstanding .
+interest payments remained relatively flat in 2014 .
+the increase in income tax payments in 2015 was primarily due to higher taxable income from operations offset by the timing of certain tax deductions .
+the decrease in income tax payments in 2014 was primarily due to the settlement of tax disputes and the repatriation of foreign earnings in 2013 .
+the decrease was partially offset by higher taxable income from operations and the net impact of the economic stimulus legis- lation in 2014 .
+we expect income tax payments to increase in 2016 primarily due to higher taxable income from operations .
+investing activities net cash used in investing activities in 2015 consisted primarily of cash paid for capital expenditures , intangible assets , acquisitions and the purchases of investments , which was partially offset by proceeds from the sales of businesses and investments .
+net cash used in investing activities in 2014 consisted primarily of cash paid for capital expenditures and intangible assets .
+net cash used in investing activities in 2013 con- sisted primarily of cash paid for capital expenditures , acquisitions and construction of real estate properties , purchases of investments , and cash paid for intangible assets .
+capital expenditures our most significant recurring investing activity has been capital expenditures in our cable communications segment , and we expect that this will continue in the future .
+the table below summarizes the capital expenditures we incurred in our cable communications segment in 2015 , 2014 and 2013. .
+[[""year ended december 31 ( in millions )"", ""2015"", ""2014"", ""2013""], [""cable distribution system"", ""$ 2424"", ""$ 2047"", ""$ 1819""], [""customer premise equipment"", ""3698"", ""3397"", ""2990""], [""other equipment"", ""756"", ""613"", ""527""], [""buildings and building improvements"", ""156"", ""97"", ""67""], [""total"", ""$ 7034"", ""$ 6154"", ""$ 5403""]]
+cable communications capital expenditures increased in 2015 and 2014 primarily due to increased spending on customer premise equipment related to our x1 platform and wireless gateways , our continued investment in network infrastructure to increase network capacity , increased investment in support capital as we expand our cloud-based initiatives , and our continued investment to expand business services .
+capital expenditures in our nbcuniversal segments increased 13.5% ( 13.5 % ) to $ 1.4 billion in 2015 and 5.3% ( 5.3 % ) to $ 1.2 billion in 2014 primarily due to continued investment in our universal theme parks , including a purchase of land in 2015 .
+our capital expenditures for 2016 are focused on the continued deployment of our x1 platform and cloud dvr technology , acceleration of wireless gateways , network infrastructure to increase network capacity , and the expansion of business services .
+capital expenditures for subsequent years will depend on numerous factors , including acquisitions , competition , changes in technology , regulatory changes , the timing and rate of deployment of new services , and the capacity required for existing services .
+in addition , we expect to con- tinue to invest in existing and new attractions at our universal theme parks .
+we are developing a universal theme park in beijing , china .
+we expect the development of this park to continue in 2016 .
+cash paid for intangible assets in 2015 , 2014 and 2013 , cash paid for intangible assets consisted primarily of expenditures for software .
+comcast 2015 annual report on form 10-k 64 ."
+1328,finqa_7141,f,So the percentage decline in equity securities from 2017 to 2018 actual was 43.33%.,Supported,Unsupported,same_item_different_amount,"The passage reports 82%, 82 % for this item and period, not 43.33%.",calculated values,,,"republic services , inc .
+notes to consolidated financial statements 2014 ( continued ) we determine the discount rate used in the measurement of our obligations based on a model that matches the timing and amount of expected benefit payments to maturities of high quality bonds priced as of the plan measurement date .
+when that timing does not correspond to a published high-quality bond rate , our model uses an expected yield curve to determine an appropriate current discount rate .
+the yields on the bonds are used to derive a discount rate for the liability .
+the term of our obligation , based on the expected retirement dates of our workforce , is approximately seven years .
+in developing our expected rate of return assumption , we have evaluated the actual historical performance and long-term return projections of the plan assets , which give consideration to the asset mix and the anticipated timing of the plan outflows .
+we employ a total return investment approach whereby a mix of equity and fixed income investments are used to maximize the long-term return of plan assets for what we consider a prudent level of risk .
+the intent of this strategy is to minimize plan expenses by outperforming plan liabilities over the long run .
+risk tolerance is established through careful consideration of plan liabilities , plan funded status and our financial condition .
+the investment portfolio contains a diversified blend of equity and fixed income investments .
+furthermore , equity investments are diversified across u.s .
+and non-u.s .
+stocks as well as growth , value , and small and large capitalizations .
+derivatives may be used to gain market exposure in an efficient and timely manner ; however , derivatives may not be used to leverage the portfolio beyond the market value of the underlying investments .
+investment risk is measured and monitored on an ongoing basis through annual liability measurements , periodic asset and liability studies , and quarterly investment portfolio reviews .
+the following table summarizes our target asset allocation as of december 31 , 2018 and the actual asset allocation as of december 31 , 2018 and 2017 for our plan : december 31 , target allocation december 31 , actual allocation december 31 , actual allocation .
+[["""", ""december 31 2018 targetassetallocation"", ""december 31 2018 actualassetallocation"", ""december 31 2017 actualassetallocation""], [""debt securities"", ""82% ( 82 % )"", ""83% ( 83 % )"", ""70% ( 70 % )""], [""equity securities"", ""18"", ""17"", ""30""], [""total"", ""100% ( 100 % )"", ""100% ( 100 % )"", ""100% ( 100 % )""]]
+asset allocations are reviewed and rebalanced periodically based on funded status .
+for 2019 , the investment strategy for plan assets is to maintain a broadly diversified portfolio designed to achieve our target of an average long-term rate of return of 5.20% ( 5.20 % ) .
+while we believe we can achieve a long-term average return of 5.20% ( 5.20 % ) , we cannot be certain that the portfolio will perform to our expectations .
+assets are strategically allocated among debt and equity portfolios to achieve a diversification level that reduces fluctuations in investment returns .
+asset allocation target ranges and strategies are reviewed periodically with the assistance of an independent external consulting firm. ."
+1355,finqa_6679,a,"Based on the information provided in the context, the balance of the aggregate carrying value of long-term debt as of December 31, 2009 will be $2,060,847,000.",Supported,Unsupported,amount_not_in_passage,"2,060,847,000 does not appear anywhere in the cited passage (after unit normalization).",number or unit format,,,"american tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) 3.00% ( 3.00 % ) convertible notes 2014the 3.00% ( 3.00 % ) convertible notes due august 15 , 2012 ( 3.00% ( 3.00 % ) notes ) mature on august 15 , 2012 , and interest is payable semi-annually in arrears on february 15 and august 15 of each year .
+the 3.00% ( 3.00 % ) notes are convertible at any time prior to maturity , subject to their prior redemption or repurchase , into shares of the company 2019s common stock at a conversion price of approximately $ 20.50 per share , subject to adjustment in certain events .
+upon a fundamental change of control as defined in the notes indenture , the holders of the 3.00% ( 3.00 % ) notes may require the company to repurchase all or part of the 3.00% ( 3.00 % ) notes for a cash purchase price equal to 100% ( 100 % ) of the principal amount .
+in addition , upon a fundamental change of control , the holders may elect to convert their notes based on a conversion rate adjustment that entitles the holders to receive additional shares of the company 2019s common stock upon conversion depending on the terms and timing of the change of control .
+the company may redeem the 3.00% ( 3.00 % ) notes after august 20 , 2009 at an initial redemption price of 101.125% ( 101.125 % ) of the principal amount , subject to a ratable decline after august 15 of the following year to 100% ( 100 % ) of the principal amount in 2012 .
+the 3.00% ( 3.00 % ) notes rank equally with all of the company 2019s other senior unsecured debt obligations , including its other convertible notes , its senior notes and the revolving credit facility and term loan , and are structurally subordinated to all existing and future indebtedness and other obligations of the company 2019s subsidiaries .
+in certain instances upon a fundamental change of control , the holders of the 3.00% ( 3.00 % ) notes may elect to convert their notes based on a conversion rate adjustment and receive additional shares of the company 2019s common stock , the acquirer 2019s common stock or , at the election of the acquirer , in certain instances , such feature may be settled in cash .
+this feature qualifies as an embedded derivative under sfas no .
+133 , for which the company determined has no fair value as of december 31 , 2008 and 2007 .
+the company will record any changes in fair value to the liability in future periods to other expense and will amortize the discount to interest expense within its consolidated statement of operations .
+as of december 31 , 2008 and 2007 , the outstanding debt under the 3.00% ( 3.00 % ) notes was $ 161.9 million ( $ 162.2 million principal amount ) and $ 344.6 million , net of $ 0.3 million and $ 0.4 million discount , respectively .
+capital lease obligations and notes payable 2014the company 2019s capital lease obligations and notes payable approximated $ 60.1 million and $ 60.2 million as of december 31 , 2008 and 2007 , respectively .
+these obligations bear interest at rates ranging from 5.4% ( 5.4 % ) to 9.3% ( 9.3 % ) and mature in periods ranging from less than one year to approximately seventy years .
+maturities 2014as of december 31 , 2008 , aggregate carrying value of long-term debt , including capital leases , for the next five years and thereafter are estimated to be ( in thousands ) : year ending december 31 .
+[[""2009"", ""$ 1837""], [""2010"", ""60989""], [""2011"", ""1018""], [""2012"", ""1962822""], [""2013"", ""646""], [""thereafter"", ""2305054""], [""total cash obligations"", ""4332366""], [""unamortized discounts and premiums net"", ""780""], [""balance as of december 31 2008"", ""$ 4333146""]]"
+1356,finqa_7311,o,So the coal revenue was 14.9% of the total operating revenues from 2014-2016.,Supported,Unsupported,amount_not_in_passage,14.9% does not appear anywhere in the cited passage (after unit normalization).,scope,,,"notes to the consolidated financial statements union pacific corporation and subsidiary companies for purposes of this report , unless the context otherwise requires , all references herein to the 201ccorporation 201d , 201ccompany 201d , 201cupc 201d , 201cwe 201d , 201cus 201d , and 201cour 201d mean union pacific corporation and its subsidiaries , including union pacific railroad company , which will be separately referred to herein as 201cuprr 201d or the 201crailroad 201d . 1 .
+nature of operations operations and segmentation 2013 we are a class i railroad operating in the u.s .
+our network includes 32070 route miles , linking pacific coast and gulf coast ports with the midwest and eastern u.s .
+gateways and providing several corridors to key mexican gateways .
+we own 26053 miles and operate on the remainder pursuant to trackage rights or leases .
+we serve the western two-thirds of the country and maintain coordinated schedules with other rail carriers for the handling of freight to and from the atlantic coast , the pacific coast , the southeast , the southwest , canada , and mexico .
+export and import traffic is moved through gulf coast and pacific coast ports and across the mexican and canadian borders .
+the railroad , along with its subsidiaries and rail affiliates , is our one reportable operating segment .
+although we provide and analyze revenue by commodity group , we treat the financial results of the railroad as one segment due to the integrated nature of our rail network .
+the following table provides freight revenue by commodity group: .
+[[""millions"", ""2016"", ""2015"", ""2014""], [""agricultural products"", ""$ 3625"", ""$ 3581"", ""$ 3777""], [""automotive"", ""2000"", ""2154"", ""2103""], [""chemicals"", ""3474"", ""3543"", ""3664""], [""coal"", ""2440"", ""3237"", ""4127""], [""industrial products"", ""3348"", ""3808"", ""4400""], [""intermodal"", ""3714"", ""4074"", ""4489""], [""total freight revenues"", ""$ 18601"", ""$ 20397"", ""$ 22560""], [""other revenues"", ""1340"", ""1416"", ""1428""], [""total operating revenues"", ""$ 19941"", ""$ 21813"", ""$ 23988""]]
+although our revenues are principally derived from customers domiciled in the u.s. , the ultimate points of origination or destination for some products we transport are outside the u.s .
+each of our commodity groups includes revenue from shipments to and from mexico .
+included in the above table are freight revenues from our mexico business which amounted to $ 2.2 billion in 2016 , $ 2.2 billion in 2015 , and $ 2.3 billion in 2014 .
+basis of presentation 2013 the consolidated financial statements are presented in accordance with accounting principles generally accepted in the u.s .
+( gaap ) as codified in the financial accounting standards board ( fasb ) accounting standards codification ( asc ) . 2 .
+significant accounting policies principles of consolidation 2013 the consolidated financial statements include the accounts of union pacific corporation and all of its subsidiaries .
+investments in affiliated companies ( 20% ( 20 % ) to 50% ( 50 % ) owned ) are accounted for using the equity method of accounting .
+all intercompany transactions are eliminated .
+we currently have no less than majority-owned investments that require consolidation under variable interest entity requirements .
+cash and cash equivalents 2013 cash equivalents consist of investments with original maturities of three months or less .
+accounts receivable 2013 accounts receivable includes receivables reduced by an allowance for doubtful accounts .
+the allowance is based upon historical losses , credit worthiness of customers , and current economic conditions .
+receivables not expected to be collected in one year and the associated allowances are classified as other assets in our consolidated statements of financial position. ."
+1436,finqa_6650,k,So 10.7% of the debt matured between 2016 and 2017.,Supported,Unsupported,same_item_different_amount,"The passage reports 65 percent for this item and period, not 10.7%.",calculated values,,,"devon energy corporation and subsidiaries notes to consolidated financial statements 2013 ( continued ) debt maturities as of december 31 , 2012 , excluding premiums and discounts , are as follows ( in millions ) : .
+[[""2013"", ""$ 3189""], [""2014"", ""500""], [""2015"", ""2014""], [""2016"", ""500""], [""2017"", ""750""], [""2018 and thereafter"", ""6725""], [""total"", ""$ 11664""]]
+credit lines devon has a $ 3.0 billion syndicated , unsecured revolving line of credit ( the 201csenior credit facility 201d ) .
+the senior credit facility has an initial maturity date of october 24 , 2017 .
+however , prior to the maturity date , devon has the option to extend the maturity for up to two additional one-year periods , subject to the approval of the lenders .
+amounts borrowed under the senior credit facility may , at the election of devon , bear interest at various fixed rate options for periods of up to twelve months .
+such rates are generally less than the prime rate .
+however , devon may elect to borrow at the prime rate .
+the senior credit facility currently provides for an annual facility fee of $ 3.8 million that is payable quarterly in arrears .
+as of december 31 , 2012 , there were no borrowings under the senior credit facility .
+the senior credit facility contains only one material financial covenant .
+this covenant requires devon 2019s ratio of total funded debt to total capitalization , as defined in the credit agreement , to be no greater than 65 percent .
+the credit agreement contains definitions of total funded debt and total capitalization that include adjustments to the respective amounts reported in the accompanying financial statements .
+also , total capitalization is adjusted to add back noncash financial write-downs such as full cost ceiling impairments or goodwill impairments .
+as of december 31 , 2012 , devon was in compliance with this covenant with a debt-to- capitalization ratio of 25.4 percent .
+commercial paper devon has access to $ 5.0 billion of short-term credit under its commercial paper program .
+commercial paper debt generally has a maturity of between 1 and 90 days , although it can have a maturity of up to 365 days , and bears interest at rates agreed to at the time of the borrowing .
+the interest rate is generally based on a standard index such as the federal funds rate , libor , or the money market rate as found in the commercial paper market .
+as of december 31 , 2012 , devon 2019s weighted average borrowing rate on its commercial paper borrowings was 0.37 percent .
+other debentures and notes following are descriptions of the various other debentures and notes outstanding at december 31 , 2012 , as listed in the table presented at the beginning of this note. ."
+1440,finqa_7350,a,"Based on the information provided in the table, the intermodal commodity group's freight revenue was $4,074 million in 2015.",Supported,Unsupported,same_item_different_amount,"The passage reports 20397 for this item and period, not 4,074 million. 4,074 million does appear, but on a different line: ""intermodal (2015): 4074""",different wording,,,"notes to the consolidated financial statements union pacific corporation and subsidiary companies for purposes of this report , unless the context otherwise requires , all references herein to the 201ccorporation 201d , 201ccompany 201d , 201cupc 201d , 201cwe 201d , 201cus 201d , and 201cour 201d mean union pacific corporation and its subsidiaries , including union pacific railroad company , which will be separately referred to herein as 201cuprr 201d or the 201crailroad 201d . 1 .
+nature of operations operations and segmentation 2013 we are a class i railroad operating in the u.s .
+our network includes 32084 route miles , linking pacific coast and gulf coast ports with the midwest and eastern u.s .
+gateways and providing several corridors to key mexican gateways .
+we own 26064 miles and operate on the remainder pursuant to trackage rights or leases .
+we serve the western two-thirds of the country and maintain coordinated schedules with other rail carriers for the handling of freight to and from the atlantic coast , the pacific coast , the southeast , the southwest , canada , and mexico .
+export and import traffic is moved through gulf coast and pacific coast ports and across the mexican and canadian borders .
+the railroad , along with its subsidiaries and rail affiliates , is our one reportable operating segment .
+although we provide and analyze revenue by commodity group , we treat the financial results of the railroad as one segment due to the integrated nature of our rail network .
+the following table provides freight revenue by commodity group: .
+[[""millions"", ""2015"", ""2014"", ""2013""], [""agricultural products"", ""$ 3581"", ""$ 3777"", ""$ 3276""], [""automotive"", ""2154"", ""2103"", ""2077""], [""chemicals"", ""3543"", ""3664"", ""3501""], [""coal"", ""3237"", ""4127"", ""3978""], [""industrial products"", ""3808"", ""4400"", ""3822""], [""intermodal"", ""4074"", ""4489"", ""4030""], [""total freight revenues"", ""$ 20397"", ""$ 22560"", ""$ 20684""], [""other revenues"", ""1416"", ""1428"", ""1279""], [""total operating revenues"", ""$ 21813"", ""$ 23988"", ""$ 21963""]]
+although our revenues are principally derived from customers domiciled in the u.s. , the ultimate points of origination or destination for some products transported by us are outside the u.s .
+each of our commodity groups includes revenue from shipments to and from mexico .
+included in the above table are freight revenues from our mexico business which amounted to $ 2.2 billion in 2015 , $ 2.3 billion in 2014 , and $ 2.1 billion in 2013 .
+basis of presentation 2013 the consolidated financial statements are presented in accordance with accounting principles generally accepted in the u.s .
+( gaap ) as codified in the financial accounting standards board ( fasb ) accounting standards codification ( asc ) .
+certain prior period amounts in the statement of cash flows and income tax footnote have been aggregated or disaggregated further to conform to the current period financial presentation . 2 .
+significant accounting policies principles of consolidation 2013 the consolidated financial statements include the accounts of union pacific corporation and all of its subsidiaries .
+investments in affiliated companies ( 20% ( 20 % ) to 50% ( 50 % ) owned ) are accounted for using the equity method of accounting .
+all intercompany transactions are eliminated .
+we currently have no less than majority-owned investments that require consolidation under variable interest entity requirements .
+cash and cash equivalents 2013 cash equivalents consist of investments with original maturities of three months or less .
+accounts receivable 2013 accounts receivable includes receivables reduced by an allowance for doubtful accounts .
+the allowance is based upon historical losses , credit worthiness of customers , and current ."
+1482,finqa_7039,j,So 9.77% of the total minimum lease payments are due in 2015.,Supported,Unsupported,amount_not_in_passage,9.77% does not appear anywhere in the cited passage (after unit normalization).,calculated values,,,"dish network corporation notes to consolidated financial statements - continued future minimum lease payments under the capital lease obligation , together with the present value of the net minimum lease payments as of december 31 , 2010 are as follows ( in thousands ) : for the years ended december 31 .
+[[""2011"", ""$ 82184""], [""2012"", ""77110""], [""2013"", ""75970""], [""2014"", ""75970""], [""2015"", ""75970""], [""thereafter"", ""390239""], [""total minimum lease payments"", ""777443""], [""less : amount representing lease of the orbital location and estimated executory costs ( primarily insurance and maintenance ) including profit thereon included in total minimum lease payments"", ""-357982 ( 357982 )""], [""net minimum lease payments"", ""419461""], [""less : amount representing interest"", ""-132490 ( 132490 )""], [""present value of net minimum lease payments"", ""286971""], [""less : current portion"", ""-24801 ( 24801 )""], [""long-term portion of capital lease obligations"", ""$ 262170""]]
+the summary of future maturities of our outstanding long-term debt as of december 31 , 2010 is included in the commitments table in note 14 . 10 .
+income taxes and accounting for uncertainty in income taxes income taxes our income tax policy is to record the estimated future tax effects of temporary differences between the tax bases of assets and liabilities and amounts reported on our consolidated balance sheets , as well as probable operating loss , tax credit and other carryforwards .
+deferred tax assets are offset by valuation allowances when we believe it is more likely than not that net deferred tax assets will not be realized .
+we periodically evaluate our need for a valuation allowance .
+determining necessary valuation allowances requires us to make assessments about historical financial information as well as the timing of future events , including the probability of expected future taxable income and available tax planning opportunities .
+as of december 31 , 2010 , we had no net operating loss carryforwards ( 201cnols 201d ) for federal income tax purposes and $ 13 million of nol benefit for state income tax purposes .
+the state nols begin to expire in the year 2020 .
+in addition , there are $ 11 million of tax benefits related to credit carryforwards which are partially offset by a valuation allowance and $ 42 million of capital loss carryforwards which were fully offset by a valuation allowance .
+the credit carryforwards begin to expire in the year 2011. ."
+1554,finqa_6544,j,So 45.1% of the total contractual obligations is due to long-term debt.,Supported,Unsupported,amount_not_in_passage,45.1% does not appear anywhere in the cited passage (after unit normalization).,calculated values,,,"repurchase programs .
+we utilized cash generated from operating activities , $ 57.0 million in cash proceeds received from employee stock compensation plans and borrowings under credit facilities to fund the repurchases .
+during 2008 , we borrowed $ 330.0 million from our existing credit facilities to fund stock repurchases and partially fund the acquisition of abbott spine .
+we may use excess cash or further borrow from our credit facilities to repurchase additional common stock under the $ 1.25 billion program which expires december 31 , 2009 .
+we have a five year $ 1350 million revolving , multi- currency , senior unsecured credit facility maturing november 30 , 2012 ( the 201csenior credit facility 201d ) .
+we had $ 460.1 million outstanding under the senior credit facility at december 31 , 2008 , and an availability of $ 889.9 million .
+the senior credit facility contains provisions by which we can increase the line to $ 1750 million and request that the maturity date be extended for two additional one-year periods .
+we and certain of our wholly owned foreign subsidiaries are the borrowers under the senior credit facility .
+borrowings under the senior credit facility are used for general corporate purposes and bear interest at a libor- based rate plus an applicable margin determined by reference to our senior unsecured long-term credit rating and the amounts drawn under the senior credit facility , at an alternate base rate , or at a fixed rate determined through a competitive bid process .
+the senior credit facility contains customary affirmative and negative covenants and events of default for an unsecured financing arrangement , including , among other things , limitations on consolidations , mergers and sales of assets .
+financial covenants include a maximum leverage ratio of 3.0 to 1.0 and a minimum interest coverage ratio of 3.5 to 1.0 .
+if we fall below an investment grade credit rating , additional restrictions would result , including restrictions on investments , payment of dividends and stock repurchases .
+we were in compliance with all covenants under the senior credit facility as of december 31 , 2008 .
+commitments under the senior credit facility are subject to certain fees , including a facility and a utilization fee .
+the senior credit facility is rated a- by standard & poor 2019s ratings services and is not rated by moody 2019s investors 2019 service , inc .
+notwithstanding recent interruptions in global credit markets , as of the date of this report , we believe our access to our senior credit facility has not been impaired .
+in october 2008 , we funded a portion of the acquisition of abbott spine with approximately $ 110 million of new borrowings under the senior credit facility .
+each of the lenders under the senior credit facility funded its portion of the new borrowings in accordance with its commitment percentage .
+we also have available uncommitted credit facilities totaling $ 71.4 million .
+management believes that cash flows from operations , together with available borrowings under the senior credit facility , are sufficient to meet our expected working capital , capital expenditure and debt service needs .
+should investment opportunities arise , we believe that our earnings , balance sheet and cash flows will allow us to obtain additional capital , if necessary .
+contractual obligations we have entered into contracts with various third parties in the normal course of business which will require future payments .
+the following table illustrates our contractual obligations ( in millions ) : contractual obligations total 2009 thereafter .
+[[""contractual obligations"", ""total"", ""2009"", ""2010 and 2011"", ""2012 and 2013"", ""2014 and thereafter""], [""long-term debt"", ""$ 460.1"", ""$ 2013"", ""$ 2013"", ""$ 460.1"", ""$ 2013""], [""operating leases"", ""149.3"", ""38.2"", ""51.0"", ""30.2"", ""29.9""], [""purchase obligations"", ""56.8"", ""47.7"", ""7.6"", ""1.5"", ""2013""], [""long-term income taxes payable"", ""116.9"", ""2013"", ""69.6"", ""24.9"", ""22.4""], [""other long-term liabilities"", ""237.0"", ""2013"", ""30.7"", ""15.1"", ""191.2""], [""total contractual obligations"", ""$ 1020.1"", ""$ 85.9"", ""$ 158.9"", ""$ 531.8"", ""$ 243.5""]]
+long-term income taxes payable 116.9 2013 69.6 24.9 22.4 other long-term liabilities 237.0 2013 30.7 15.1 191.2 total contractual obligations $ 1020.1 $ 85.9 $ 158.9 $ 531.8 $ 243.5 critical accounting estimates our financial results are affected by the selection and application of accounting policies and methods .
+significant accounting policies which require management 2019s judgment are discussed below .
+excess inventory and instruments 2013 we must determine as of each balance sheet date how much , if any , of our inventory may ultimately prove to be unsaleable or unsaleable at our carrying cost .
+similarly , we must also determine if instruments on hand will be put to productive use or remain undeployed as a result of excess supply .
+reserves are established to effectively adjust inventory and instruments to net realizable value .
+to determine the appropriate level of reserves , we evaluate current stock levels in relation to historical and expected patterns of demand for all of our products and instrument systems and components .
+the basis for the determination is generally the same for all inventory and instrument items and categories except for work-in-progress inventory , which is recorded at cost .
+obsolete or discontinued items are generally destroyed and completely written off .
+management evaluates the need for changes to valuation reserves based on market conditions , competitive offerings and other factors on a regular basis .
+income taxes 2013 we estimate income tax expense and income tax liabilities and assets by taxable jurisdiction .
+realization of deferred tax assets in each taxable jurisdiction is dependent on our ability to generate future taxable income sufficient to realize the benefits .
+we evaluate deferred tax assets on an ongoing basis and provide valuation allowances if it is determined to be 201cmore likely than not 201d that the deferred tax benefit will not be realized .
+federal income taxes are provided on the portion of the income of foreign subsidiaries that is expected to be remitted to the u.s .
+we operate within numerous taxing jurisdictions .
+we are subject to regulatory z i m m e r h o l d i n g s , i n c .
+2 0 0 8 f o r m 1 0 - k a n n u a l r e p o r t %%transmsg*** transmitting job : c48761 pcn : 031000000 ***%%pcmsg|31 |00013|yes|no|02/24/2009 06:10|0|0|page is valid , no graphics -- color : d| ."
+1616,finqa_7259,g,"Therefore, the total expected payments on the bonds for the next 5 years for Entergy New Orleans Storm Recovery Funding is $56.3 million.",Supported,Unsupported,same_item_different_amount,"The passage reports 21.7 million, 22.3 million, 22.7 million, 23.2 million, 11 million for this item and period, not 56.3 million.",calculated values,,,"entergy corporation and subsidiaries notes to financial statements rate of 2.04% ( 2.04 % ) .
+although the principal amount is not due until the date given in the tables above , entergy louisiana investment recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 21.7 million for 2017 , $ 22.3 million for 2018 , $ 22.7 million for 2019 , $ 23.2 million for 2020 , and $ 11 million for 2021 .
+with the proceeds , entergy louisiana investment recovery funding purchased from entergy louisiana the investment recovery property , which is the right to recover from customers through an investment recovery charge amounts sufficient to service the bonds .
+in accordance with the financing order , entergy louisiana will apply the proceeds it received from the sale of the investment recovery property as a reimbursement for previously-incurred investment recovery costs .
+the investment recovery property is reflected as a regulatory asset on the consolidated entergy louisiana balance sheet .
+the creditors of entergy louisiana do not have recourse to the assets or revenues of entergy louisiana investment recovery funding , including the investment recovery property , and the creditors of entergy louisiana investment recovery funding do not have recourse to the assets or revenues of entergy louisiana .
+entergy louisiana has no payment obligations to entergy louisiana investment recovery funding except to remit investment recovery charge collections .
+entergy new orleans securitization bonds - hurricane isaac in may 2015 the city council issued a financing order authorizing the issuance of securitization bonds to recover entergy new orleans 2019s hurricane isaac storm restoration costs of $ 31.8 million , including carrying costs , the costs of funding and replenishing the storm recovery reserve in the amount of $ 63.9 million , and approximately $ 3 million of up-front financing costs associated with the securitization .
+in july 2015 , entergy new orleans storm recovery funding i , l.l.c.
+, a company wholly owned and consolidated by entergy new orleans , issued $ 98.7 million of storm cost recovery bonds .
+the bonds have a coupon of 2.67% ( 2.67 % ) .
+although the principal amount is not due until the date given in the tables above , entergy new orleans storm recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 10.6 million for 2017 , $ 11 million for 2018 , $ 11.2 million for 2019 , $ 11.6 million for 2020 , and $ 11.9 million for 2021 .
+with the proceeds , entergy new orleans storm recovery funding purchased from entergy new orleans the storm recovery property , which is the right to recover from customers through a storm recovery charge amounts sufficient to service the securitization bonds .
+the storm recovery property is reflected as a regulatory asset on the consolidated entergy new orleans balance sheet .
+the creditors of entergy new orleans do not have recourse to the assets or revenues of entergy new orleans storm recovery funding , including the storm recovery property , and the creditors of entergy new orleans storm recovery funding do not have recourse to the assets or revenues of entergy new orleans .
+entergy new orleans has no payment obligations to entergy new orleans storm recovery funding except to remit storm recovery charge collections .
+entergy texas securitization bonds - hurricane rita in april 2007 the puct issued a financing order authorizing the issuance of securitization bonds to recover $ 353 million of entergy texas 2019s hurricane rita reconstruction costs and up to $ 6 million of transaction costs , offset by $ 32 million of related deferred income tax benefits .
+in june 2007 , entergy gulf states reconstruction funding i , llc , a company that is now wholly-owned and consolidated by entergy texas , issued $ 329.5 million of senior secured transition bonds ( securitization bonds ) as follows : amount ( in thousands ) .
+[["""", ""amount ( in thousands )""], [""senior secured transition bonds series a:"", """"], [""tranche a-1 ( 5.51% ( 5.51 % ) ) due october 2013"", ""$ 93500""], [""tranche a-2 ( 5.79% ( 5.79 % ) ) due october 2018"", ""121600""], [""tranche a-3 ( 5.93% ( 5.93 % ) ) due june 2022"", ""114400""], [""total senior secured transition bonds"", ""$ 329500""]]"
+1711,finqa_6752,f,So 24.75% of the net undeveloped acres expiring in 2014 were located in the U.S.,Supported,Unsupported,amount_not_in_passage,24.75% does not appear anywhere in the cited passage (after unit normalization).,calculated values,,,"in the ordinary course of business , based on our evaluations of certain geologic trends and prospective economics , we have allowed certain lease acreage to expire and may allow additional acreage to expire in the future .
+if production is not established or we take no other action to extend the terms of the leases , licenses , or concessions , undeveloped acreage listed in the table below will expire over the next three years .
+we plan to continue the terms of many of these licenses and concession areas or retain leases through operational or administrative actions .
+for leases expiring in 2014 that we do not intend to extend or retain , unproved property impairments were recorded in 2013. .
+[[""( in thousands )"", ""net undeveloped acres expiring 2014"", ""net undeveloped acres expiring 2015"", ""net undeveloped acres expiring 2016""], [""u.s .
+"", ""145"", ""60"", ""46""], [""e.g.
+( a )"", ""36"", ""2014"", ""2014""], [""other africa"", ""189"", ""2605"", ""189""], [""total africa"", ""225"", ""2605"", ""189""], [""total europe"", ""216"", ""372"", ""1""], [""other international"", ""2014"", ""20"", ""2014""], [""worldwide"", ""586"", ""3057"", ""236""]]
+( a ) an exploratory well is planned on this acreage in 2014 .
+oil sands mining segment we hold a 20 percent non-operated interest in the aosp , an oil sands mining and upgrading joint venture located in alberta , canada .
+the joint venture produces bitumen from oil sands deposits in the athabasca region utilizing mining techniques and upgrades the bitumen to synthetic crude oils and vacuum gas oil .
+the aosp 2019s mining and extraction assets are located near fort mcmurray , alberta and include the muskeg river and the jackpine mines .
+gross design capacity of the combined mines is 255000 ( 51000 net to our interest ) barrels of bitumen per day .
+the aosp operations use established processes to mine oil sands deposits from an open-pit mine , extract the bitumen and upgrade it into synthetic crude oils .
+ore is mined using traditional truck and shovel mining techniques .
+the mined ore passes through primary crushers to reduce the ore chunks in size and is then sent to rotary breakers where the ore chunks are further reduced to smaller particles .
+the particles are combined with hot water to create slurry .
+the slurry moves through the extraction process where it separates into sand , clay and bitumen-rich froth .
+a solvent is added to the bitumen froth to separate out the remaining solids , water and heavy asphaltenes .
+the solvent washes the sand and produces clean bitumen that is required for the upgrader to run efficiently .
+the process yields a mixture of solvent and bitumen which is then transported from the mine to the scotford upgrader via the approximately 300-mile corridor pipeline .
+the aosp's scotford upgrader is at fort saskatchewan , northeast of edmonton , alberta .
+the bitumen is upgraded at scotford using both hydrotreating and hydroconversion processes to remove sulfur and break the heavy bitumen molecules into lighter products .
+blendstocks acquired from outside sources are utilized in the production of our saleable products .
+the upgrader produces synthetic crude oils and vacuum gas oil .
+the vacuum gas oil is sold to an affiliate of the operator under a long-term contract at market-related prices , and the other products are sold in the marketplace .
+as of december 31 , 2013 , we own or have rights to participate in developed and undeveloped leases totaling approximately 159000 gross ( 32000 net ) acres .
+the underlying developed leases are held for the duration of the project , with royalties payable to the province of alberta .
+synthetic crude oil sales volumes for 2013 were 48 mbbld and net-of-royalty production was 42 mbbld .
+in december 2013 , a jackpine mine expansion project received conditional approval from the canadian government .
+the project includes additional mining areas , associated processing facilities and infrastructure .
+the government conditions relate to wildlife , the environment and aboriginal health issues .
+we will begin evaluating the potential expansion project and government conditions after current debottlenecking activities are complete and reliability improves .
+the governments of alberta and canada have agreed to partially fund quest ccs for 865 million canadian dollars .
+in the third quarter of 2012 , the energy and resources conservation board ( ""ercb"" ) , alberta's primary energy regulator at that time , conditionally approved the project and the aosp partners approved proceeding to construct and operate quest ccs .
+government funding has commenced and will continue to be paid as milestones are achieved during the development , construction and operating phases .
+failure of the aosp to meet certain timing , performance and operating objectives may result in repaying some of the government funding .
+construction and commissioning of quest ccs is expected to be completed by late 2015 .
+in may 2013 , we announced that we terminated our discussions with respect to a potential sale of a portion of our 20 percent outside-operated interest in the aosp. ."
+1923,finqa_6784,a,"Based on the information provided in the table of restricted stock unit activity, the total fair value of non-vested shares as of September 27, 2008 was $45,592.23.",Supported,Unsupported,same_item_different_amount,"The passage reports 1461, $ 31.23 for this item and period, not 45,592.23.",different wording,,,"table of contents hologic , inc .
+notes to consolidated financial statements ( continued ) ( in thousands , except per share data ) a summary of the company 2019s restricted stock units activity during the year september 26 , 2009 is presented below : non-vested shares number of shares weighted-average grant-date fair .
+[[""non-vested shares"", ""number of shares"", ""weighted-average grant-date fair value""], [""non-vested at september 27 2008"", ""1461"", ""$ 31.23""], [""granted .
+"", ""1669"", ""14.46""], [""vested"", ""-210 ( 210 )"", ""23.87""], [""forfeited"", ""-150 ( 150 )"", ""23.44""], [""non-vested at september 26 2009"", ""2770"", ""$ 21.96""]]
+the number of restricted stock units vested includes shares withheld on behalf of employees to satisfy minimum statutory tax withholding requirements .
+during fiscal 2009 , 2008 and 2007 the total fair value of rsus vested was $ 5014 , $ 2009 and $ 0 , respectively .
+employee stock purchase plan at the company 2019s march 11 , 2008 annual meeting of stockholders , the company 2019s 2008 employee stock purchase plan ( the 201cespp 201d ) was approved .
+the plan meets the criteria set forth in asc 718 2019s definition of a non-compensatory plan and does not give rise to stock-based compensation expense .
+employees who have completed three consecutive months , or two years , whether or not consecutive , of employment with the company or any of its participating subsidiaries are eligible to participate in the espp .
+the espp plan period is semi-annual and allows participants to purchase the company 2019s common stock at 95% ( 95 % ) of the closing price of the stock on the last day of the plan period .
+a total of 400 shares may be issued under the espp .
+during fiscal 2009 , the company issued 121 shares under the espp . 10 .
+profit sharing 401 ( k ) plan the company has a qualified profit sharing plan covering substantially all of its employees .
+contributions to the plan are at the discretion of the company 2019s board of directors .
+the company made contributions of $ 5725 , $ 5305 and $ 1572 for fiscal years 2009 , 2008 and 2007 , respectively . 11 .
+supplemental executive retirement plan effective march 15 , 2006 , the company adopted a serp to provide non-qualified retirement benefits to a select group of executive officers , senior management and highly compensated employees of the company .
+eligible employees may elect to contribute up to 75% ( 75 % ) of their annual base salary and 100% ( 100 % ) of their annual bonus to the serp and such employee contributions are 100% ( 100 % ) vested .
+in addition , the company may elect to make annual discretionary contributions on behalf of participants in the serp .
+each company contribution is subject to a three year vesting schedule , such that each contribution vests one third annually .
+employee contributions are recorded within accrued expenses in the consolidated balance sheets .
+upon enrollment into the serp , employees make investment elections for both their voluntary contributions and discretionary contributions , if any , made by the company .
+earnings and losses on contributions based on these investment elections are recorded as a component of compensation expense in the period earned .
+source : hologic inc , 10-k , november 24 , 2009 powered by morningstar ae document research 2120 the information contained herein may not be copied , adapted or distributed and is not warranted to be accurate , complete or timely .
+the user assumes all risks for any damages or losses arising from any use of this information , except to the extent such damages or losses cannot be limited or excluded by applicable law .
+past financial performance is no guarantee of future results. ."
+2287,finqa_6449,e,"Therefore, as of December 31, 2018, 72.7% of Republic Services' restricted cash and marketable securities were dedicated to supporting the company's insurance programs.",Supported,Unsupported,amount_not_in_passage,72.7% does not appear anywhere in the cited passage (after unit normalization).,calculated values,,,"republic services , inc .
+notes to consolidated financial statements 2014 ( continued ) high quality financial institutions .
+such balances may be in excess of fdic insured limits .
+to manage the related credit exposure , we continually monitor the credit worthiness of the financial institutions where we have deposits .
+concentrations of credit risk with respect to trade accounts receivable are limited due to the wide variety of customers and markets in which we provide services , as well as the dispersion of our operations across many geographic areas .
+we provide services to small-container , large-container , municipal and residential , and energy services customers in the united states and puerto rico .
+we perform ongoing credit evaluations of our customers , but generally do not require collateral to support customer receivables .
+we establish an allowance for doubtful accounts based on various factors including the credit risk of specific customers , age of receivables outstanding , historical trends , economic conditions and other information .
+accounts receivable , net accounts receivable represent receivables from customers for collection , transfer , recycling , disposal , energy services and other services .
+our receivables are recorded when billed or when the related revenue is earned and represent claims against third parties that will be settled in cash .
+the carrying value of our receivables , net of the allowance for doubtful accounts and customer credits , represents their estimated net realizable value .
+provisions for doubtful accounts are evaluated on a monthly basis and are recorded based on our historical collection experience , the age of the receivables , specific customer information and economic conditions .
+we also review outstanding balances on an account-specific basis .
+in general , reserves are provided for accounts receivable in excess of 90 days outstanding .
+past due receivable balances are written-off when our collection efforts have been unsuccessful in collecting amounts due .
+the following table reflects the activity in our allowance for doubtful accounts for the years ended december 31: .
+[["""", ""2018"", ""2017"", ""2016""], [""balance at beginning of year"", ""$ 38.9"", ""$ 44.0"", ""$ 46.7""], [""additions charged to expense"", ""34.8"", ""30.6"", ""20.4""], [""accounts written-off"", ""( 39.4 )"", ""( 35.7 )"", ""( 23.1 )""], [""balance at end of year"", ""$ 34.3"", ""$ 38.9"", ""$ 44.0""]]
+restricted cash and marketable securities as of december 31 , 2018 , we had $ 108.1 million of restricted cash and marketable securities of which $ 78.6 million supports our insurance programs for workers 2019 compensation , commercial general liability , and commercial auto liability .
+additionally , we obtain funds through the issuance of tax-exempt bonds for the purpose of financing qualifying expenditures at our landfills , transfer stations , collection and recycling processing centers .
+the funds are deposited directly into trust accounts by the bonding authorities at the time of issuance .
+as the use of these funds is contractually restricted , and we do not have the ability to use these funds for general operating purposes , they are classified as restricted cash and marketable securities in our consolidated balance sheets .
+in the normal course of business , we may be required to provide financial assurance to governmental agencies and a variety of other entities in connection with municipal residential collection contracts , closure or post- closure of landfills , environmental remediation , environmental permits , and business licenses and permits as a financial guarantee of our performance .
+at several of our landfills , we satisfy financial assurance requirements by depositing cash into restricted trust funds or escrow accounts. ."
