@@ -52,9 +52,16 @@ Baseline/                                 rule-based baseline: code, tests, outp
 
 ## Getting started
 
-Requires Python 3.10+ with `pandas` and `pyarrow`.
+The environment is pinned in the repo: Python **3.14.0** (`.python-version`) and the exact packages in `requirements.txt`. Results were produced on an Apple M5 laptop, CPU only; no GPU is needed.
 
 ```bash
+# 0. Environment
+python3 -m venv .venv && source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+
+# Smoke test: Inserted Error Set, data already in the repo, a few seconds on a laptop
+python3 Baseline/run_inserted_error_set.py
+
 # 1. Get RAGBench into Data/RAGBench/ (either run the notebook or this script;
 #    the script checks SHA256 against the team manifest)
 python3 Baseline/fetch_ragbench.py
@@ -68,7 +75,7 @@ python3 Baseline/error_analysis.py
 python3 -m unittest discover Baseline/tests
 ```
 
-The baseline's one-time test run is done (`--final-test`); don't repeat it.
+The baseline's one-time test run is done (`--final-test`); don't repeat it. **Note:** the runners overwrite `Baseline/outputs/`, and a run without `--final-test` replaces the logged test results with train and validation only. Run `git checkout -- Baseline/outputs` afterwards to restore the committed results.
 
 On macOS with the python.org build of Python, `urllib` downloads in the notebook can fail with `CERTIFICATE_VERIFY_FAILED`. Run *Install Certificates.command* in your Python folder, or use `fetch_ragbench.py`, which downloads with `curl`.
 

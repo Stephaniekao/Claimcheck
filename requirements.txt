@@ -1,0 +1,9 @@
+# Rule-based baseline (Baseline/). Python version: see .python-version (3.14.0).
+# Full pip freeze of a clean venv, including pandas' dependencies.
+# Install: python3 -m pip install -r requirements.txt
+numpy==2.3.5
+pandas==2.3.3
+pyarrow==22.0.0
+python-dateutil==4.0.0
+pytz==2026.6
+tzdata==2026.6
