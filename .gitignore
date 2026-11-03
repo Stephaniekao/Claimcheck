@@ -1,0 +1,7 @@
+# RAGBench is re-downloadable (Data/data_download.ipynb or Baseline/fetch_ragbench.py)
+# and its train CSVs are over GitHub's 100 MB file limit.
+Data/RAGBench/
+
+__pycache__/
+*.pyc
+.DS_Store

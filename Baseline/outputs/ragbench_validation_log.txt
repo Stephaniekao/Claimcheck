@@ -1,0 +1,24 @@
+trial  1: rel_tol=0.0 overlap=0.3 derived=uncertain   agg=lowest           mean claim F1 0.0556  uncertain 0.738
+trial  2: rel_tol=0.0 overlap=0.3 derived=uncertain   agg=lowest_checkable mean claim F1 0.0556  uncertain 0.738
+trial  3: rel_tol=0.0 overlap=0.3 derived=unsupported agg=lowest           mean claim F1 0.0328  uncertain 0.425
+trial  4: rel_tol=0.0 overlap=0.3 derived=unsupported agg=lowest_checkable mean claim F1 0.0328  uncertain 0.425
+trial  5: rel_tol=0.0 overlap=0.5 derived=uncertain   agg=lowest           mean claim F1 0.0540  uncertain 0.749
+trial  6: rel_tol=0.0 overlap=0.5 derived=uncertain   agg=lowest_checkable mean claim F1 0.0540  uncertain 0.749
+trial  7: rel_tol=0.0 overlap=0.5 derived=unsupported agg=lowest           mean claim F1 0.0326  uncertain 0.437
+trial  8: rel_tol=0.0 overlap=0.5 derived=unsupported agg=lowest_checkable mean claim F1 0.0326  uncertain 0.437
+trial  9: rel_tol=0.01 overlap=0.3 derived=uncertain   agg=lowest           mean claim F1 0.0549  uncertain 0.735
+trial 10: rel_tol=0.01 overlap=0.3 derived=uncertain   agg=lowest_checkable mean claim F1 0.0549  uncertain 0.735
+trial 11: rel_tol=0.01 overlap=0.3 derived=unsupported agg=lowest           mean claim F1 0.0325  uncertain 0.432
+trial 12: rel_tol=0.01 overlap=0.3 derived=unsupported agg=lowest_checkable mean claim F1 0.0325  uncertain 0.432
+trial 13: rel_tol=0.01 overlap=0.5 derived=uncertain   agg=lowest           mean claim F1 0.0518  uncertain 0.747
+trial 14: rel_tol=0.01 overlap=0.5 derived=uncertain   agg=lowest_checkable mean claim F1 0.0518  uncertain 0.747
+trial 15: rel_tol=0.01 overlap=0.5 derived=unsupported agg=lowest           mean claim F1 0.0319  uncertain 0.444
+trial 16: rel_tol=0.01 overlap=0.5 derived=unsupported agg=lowest_checkable mean claim F1 0.0319  uncertain 0.444
+
+=== RAGBench validation | rel_tol=0.0 overlap=0.3 derived=uncertain agg=lowest | AC2 satisfiable: False ===
+FinQA claims       n=9379   wrong=150   strict R 0.140  lenient R 0.793  P 0.041  F1 0.063  false alarms 0.054  uncertain 0.731
+FinQA answers      n=1766   wrong=123   strict R 0.301  lenient R 0.951  P 0.084  F1 0.131  false alarms 0.247  uncertain 0.694
+                   rules fired: {('Supported', 'amount_and_keywords_match'): 1976, ('Supported', 'amount_matches_keywords_partial'): 155, ('Supported', 'amount_matches_other_item'): 2001, ('Supported', 'amount_not_in_passage'): 268, ('Supported', 'derived_value'): 2123, ('Supported', 'no_amount'): 2478, ('Supported', 'same_item_different_amount'): 228, ('Unsupported', 'amount_and_keywords_match'): 31, ('Unsupported', 'amount_matches_keywords_partial'): 5, ('Unsupported', 'amount_matches_other_item'): 27, ('Unsupported', 'amount_not_in_passage'): 5, ('Unsupported', 'derived_value'): 45, ('Unsupported', 'no_amount'): 21, ('Unsupported', 'same_item_different_amount'): 16} | 0.81 ms/claim
+TATQA claims       n=12164  wrong=126   strict R 0.095  lenient R 0.762  P 0.032  F1 0.048  false alarms 0.030  uncertain 0.745
+TATQA answers      n=3336   wrong=127   strict R 0.157  lenient R 0.921  P 0.069  F1 0.096  false alarms 0.084  uncertain 0.713
+                   rules fired: {('Supported', 'amount_and_keywords_match'): 2702, ('Supported', 'amount_matches_keywords_partial'): 129, ('Supported', 'amount_matches_other_item'): 1985, ('Supported', 'amount_not_in_passage'): 86, ('Supported', 'derived_value'): 2498, ('Supported', 'no_amount'): 4364, ('Supported', 'same_item_different_amount'): 274, ('Unsupported', 'amount_and_keywords_match'): 30, ('Unsupported', 'amount_matches_keywords_partial'): 2, ('Unsupported', 'amount_matches_other_item'): 13, ('Unsupported', 'amount_not_in_passage'): 3, ('Unsupported', 'derived_value'): 27, ('Unsupported', 'no_amount'): 42, ('Unsupported', 'same_item_different_amount'): 9} | 0.89 ms/claim

@@ -1,0 +1,447 @@
+{
+  "method": "Rule-based baseline (number normalization + keyword matching)",
+  "run_at_utc": "2026-11-03T22:57:08+00:00",
+  "versions": {
+    "rules": "1.2.0",
+    "normalizer": "1.2.0",
+    "keywords": "1.0.0",
+    "evidence": "1.0.0"
+  },
+  "config": {
+    "rel_tol": 0.0,
+    "min_word_overlap": 0.5,
+    "context_window": 8,
+    "derived_policy": "uncertain"
+  },
+  "input_sha256": {
+    "general_claims_300.csv": "68ba5221881438d17825f5806897841ceb7bf1a115b80dfdd8d919e71927a221",
+    "storyboard_b_100.csv": "c36370fa18ac5a013d1647df52e42a2c6fe75e92ff8f4f4ba128d0746bb01990",
+    "source_snapshots.zip": "f80fafd6a57d209a97bef9fa660888f62ef37ad605811d8611db0a824301c92e"
+  },
+  "python": "3.14.0",
+  "splits": {
+    "train": {
+      "overall": {
+        "n": 240,
+        "n_unsupported_gold": 192,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0
+      },
+      "general_claims": {
+        "n": 210,
+        "n_unsupported_gold": 168,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0
+      },
+      "storyboard_b": {
+        "n": 30,
+        "n_unsupported_gold": 24,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0
+      },
+      "reference_flag_everything": {
+        "n": 240,
+        "n_unsupported_gold": 192,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.8,
+        "lenient_precision": 0.8,
+        "f1": 0.888888888888889,
+        "false_alarm_rate": 1.0,
+        "uncertain_rate": 0.0
+      },
+      "targets_met": {
+        "strict_recall>=0.80": true,
+        "precision>=0.60": true,
+        "uncertain_rate<=1/3": true,
+        "storyboard_b_strict_recall>=0.80": true
+      },
+      "per_error_type": [
+        {
+          "error_type": "Metric Confusion",
+          "n": 42,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Numerical",
+          "n": 63,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "n": 24,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported",
+          "n": 42,
+          "Unsupported": 0.0,
+          "Uncertain": 0.0,
+          "Supported": 1.0
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "n": 6,
+          "Unsupported": 0.0,
+          "Uncertain": 0.0,
+          "Supported": 1.0
+        },
+        {
+          "error_type": "Temporal",
+          "n": 42,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Unit",
+          "n": 21,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        }
+      ],
+      "rules_fired": [
+        {
+          "error_type": "Metric Confusion",
+          "rule": "same_item_different_amount",
+          "n": 42
+        },
+        {
+          "error_type": "Numerical",
+          "rule": "same_item_different_amount",
+          "n": 63
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "rule": "same_item_different_amount",
+          "n": 24
+        },
+        {
+          "error_type": "Supported",
+          "rule": "amount_and_keywords_match",
+          "n": 42
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "rule": "amount_and_keywords_match",
+          "n": 6
+        },
+        {
+          "error_type": "Temporal",
+          "rule": "same_item_different_amount",
+          "n": 42
+        },
+        {
+          "error_type": "Unit",
+          "rule": "same_item_different_amount",
+          "n": 21
+        }
+      ],
+      "latency_ms_per_claim": 2.198
+    },
+    "validation": {
+      "overall": {
+        "n": 80,
+        "n_unsupported_gold": 64,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0
+      },
+      "general_claims": {
+        "n": 60,
+        "n_unsupported_gold": 48,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0
+      },
+      "storyboard_b": {
+        "n": 20,
+        "n_unsupported_gold": 16,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0
+      },
+      "reference_flag_everything": {
+        "n": 80,
+        "n_unsupported_gold": 64,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.8,
+        "lenient_precision": 0.8,
+        "f1": 0.888888888888889,
+        "false_alarm_rate": 1.0,
+        "uncertain_rate": 0.0
+      },
+      "targets_met": {
+        "strict_recall>=0.80": true,
+        "precision>=0.60": true,
+        "uncertain_rate<=1/3": true,
+        "storyboard_b_strict_recall>=0.80": true
+      },
+      "per_error_type": [
+        {
+          "error_type": "Metric Confusion",
+          "n": 12,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Numerical",
+          "n": 18,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "n": 16,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported",
+          "n": 12,
+          "Unsupported": 0.0,
+          "Uncertain": 0.0,
+          "Supported": 1.0
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "n": 4,
+          "Unsupported": 0.0,
+          "Uncertain": 0.0,
+          "Supported": 1.0
+        },
+        {
+          "error_type": "Temporal",
+          "n": 12,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Unit",
+          "n": 6,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        }
+      ],
+      "rules_fired": [
+        {
+          "error_type": "Metric Confusion",
+          "rule": "same_item_different_amount",
+          "n": 12
+        },
+        {
+          "error_type": "Numerical",
+          "rule": "same_item_different_amount",
+          "n": 18
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "rule": "same_item_different_amount",
+          "n": 16
+        },
+        {
+          "error_type": "Supported",
+          "rule": "amount_and_keywords_match",
+          "n": 12
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "rule": "amount_and_keywords_match",
+          "n": 4
+        },
+        {
+          "error_type": "Temporal",
+          "rule": "same_item_different_amount",
+          "n": 12
+        },
+        {
+          "error_type": "Unit",
+          "rule": "same_item_different_amount",
+          "n": 6
+        }
+      ],
+      "latency_ms_per_claim": 1.959
+    },
+    "test": {
+      "overall": {
+        "n": 80,
+        "n_unsupported_gold": 64,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0
+      },
+      "general_claims": {
+        "n": 30,
+        "n_unsupported_gold": 24,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0
+      },
+      "storyboard_b": {
+        "n": 50,
+        "n_unsupported_gold": 40,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0
+      },
+      "reference_flag_everything": {
+        "n": 80,
+        "n_unsupported_gold": 64,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.8,
+        "lenient_precision": 0.8,
+        "f1": 0.888888888888889,
+        "false_alarm_rate": 1.0,
+        "uncertain_rate": 0.0
+      },
+      "targets_met": {
+        "strict_recall>=0.80": true,
+        "precision>=0.60": true,
+        "uncertain_rate<=1/3": true,
+        "storyboard_b_strict_recall>=0.80": true
+      },
+      "per_error_type": [
+        {
+          "error_type": "Metric Confusion",
+          "n": 6,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Numerical",
+          "n": 9,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "n": 40,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported",
+          "n": 6,
+          "Unsupported": 0.0,
+          "Uncertain": 0.0,
+          "Supported": 1.0
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "n": 10,
+          "Unsupported": 0.0,
+          "Uncertain": 0.0,
+          "Supported": 1.0
+        },
+        {
+          "error_type": "Temporal",
+          "n": 6,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Unit",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        }
+      ],
+      "rules_fired": [
+        {
+          "error_type": "Metric Confusion",
+          "rule": "same_item_different_amount",
+          "n": 6
+        },
+        {
+          "error_type": "Numerical",
+          "rule": "same_item_different_amount",
+          "n": 9
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "rule": "same_item_different_amount",
+          "n": 40
+        },
+        {
+          "error_type": "Supported",
+          "rule": "amount_and_keywords_match",
+          "n": 6
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "rule": "amount_and_keywords_match",
+          "n": 10
+        },
+        {
+          "error_type": "Temporal",
+          "rule": "same_item_different_amount",
+          "n": 6
+        },
+        {
+          "error_type": "Unit",
+          "rule": "same_item_different_amount",
+          "n": 3
+        }
+      ],
+      "latency_ms_per_claim": 1.205
+    }
+  }
+}

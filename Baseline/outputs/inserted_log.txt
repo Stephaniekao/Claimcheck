@@ -1,0 +1,32 @@
+
+=== train (n=240, 192 wrong claims) ===
+overall      strict R 1.000  lenient R 1.000  P 1.000  F1 1.000  false alarms 0.000  uncertain 0.000
+storyboard B strict R 1.000  lenient R 1.000  P 1.000  false alarms 0.000
+flag-everything reference: R 1.000  P 0.800
+pred                        n  Unsupported  Uncertain  Supported
+error_type                                                      
+Metric Confusion           42          1.0        0.0        0.0
+Numerical                  63          1.0        0.0        0.0
+Segment vs Total Revenue   24          1.0        0.0        0.0
+Supported                  42          0.0        0.0        1.0
+Supported Segment Revenue   6          0.0        0.0        1.0
+Temporal                   42          1.0        0.0        0.0
+Unit                       21          1.0        0.0        0.0
+targets: {'strict_recall>=0.80': True, 'precision>=0.60': True, 'uncertain_rate<=1/3': True, 'storyboard_b_strict_recall>=0.80': True} | 2.27 ms/claim
+
+=== validation (n=80, 64 wrong claims) ===
+overall      strict R 1.000  lenient R 1.000  P 1.000  F1 1.000  false alarms 0.000  uncertain 0.000
+storyboard B strict R 1.000  lenient R 1.000  P 1.000  false alarms 0.000
+flag-everything reference: R 1.000  P 0.800
+pred                        n  Unsupported  Uncertain  Supported
+error_type                                                      
+Metric Confusion           12          1.0        0.0        0.0
+Numerical                  18          1.0        0.0        0.0
+Segment vs Total Revenue   16          1.0        0.0        0.0
+Supported                  12          0.0        0.0        1.0
+Supported Segment Revenue   4          0.0        0.0        1.0
+Temporal                   12          1.0        0.0        0.0
+Unit                        6          1.0        0.0        0.0
+targets: {'strict_recall>=0.80': True, 'precision>=0.60': True, 'uncertain_rate<=1/3': True, 'storyboard_b_strict_recall>=0.80': True} | 1.94 ms/claim
+
+Wrote /Users/jenniferjustin/Claimcheck/Baseline/outputs

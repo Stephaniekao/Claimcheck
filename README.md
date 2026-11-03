@@ -1,1 +1,86 @@
-# Claimcheck
+# ClaimCheck
+
+**Human-in-the-loop, claim-level citation verification for financial documents.**
+
+Team: Wan Chi Kao · Chengyuan Liu · Sharon Jennifer Justin Devaraj — CS6170
+
+AI tools can answer questions about 10-K and 10-Q filings, but their answers may use the wrong number, the wrong reporting period, or the wrong business segment, even when they cite a source. ClaimCheck breaks an answer into claims and checks each claim against the filing passage it cites. Each claim gets:
+
+- a label: **Supported**, **Unsupported** or **Uncertain**
+- a confidence level (for methods that produce a score)
+- a short explanation, with the evidence highlighted
+
+ClaimCheck only advises; it never blocks a claim. "Supported" means *supported by the cited source*, not *verified as true*, and the analyst makes the final call.
+
+## Methods compared
+
+All four methods label the same claims, with the same passages and the same number normalizer (Experiment Card, Fields 3 and 12).
+
+| Row | Method | Owner | Status |
+|---|---|---|---|
+| Baseline | Rule-based number normalization + keyword matching | Sharon | Done, validation results in [Baseline/](Baseline/) |
+| Classical | TF-IDF + logistic regression | Stephanie | Planned |
+| Deep | DeBERTa-v3-large (NLI checkpoint), fine-tuned on RAGBench FinQA/TAT-QA | Chengyuan | Planned |
+| Foundation | LLM judge (Claude; GPT and Gemini if time allows) | Stephanie | Planned |
+
+## Data
+
+| Dataset | Use | Split |
+|---|---|---|
+| [RAGBench](https://huggingface.co/datasets/galileo-ai/ragbench) FinQA + TAT-QA | Develop and evaluate verifiers; sentence-level support labels | Official train / validation / test |
+| Inserted Error Set (400 claims, 40 companies) | Correct SEC XBRL claims, plus copies with deliberately inserted errors: Numerical, Temporal, Metric Confusion, Unit, and Storyboard B (segment revenue presented as total revenue) | Split by company: 240 / 80 / 80 |
+| [FinanceBench](https://huggingface.co/datasets/PatronusAI/financebench) | Final evaluation only, never tuning | 147 test + 3 blind showcase examples |
+
+Details on preparation, leakage screening and reproduction are in [Data/Data Preparation and Split Notes.md](Data/Data%20Preparation%20and%20Split%20Notes.md).
+
+## Evaluation (Experiment Card, Fields 6–10)
+
+- **Main metric:** strict Unsupported recall, i.e. the share of wrong claims labelled Unsupported, reported with precision and F1. Lenient recall also counts Uncertain as caught.
+- **Targets:** strict recall ≥ 0.80 and precision ≥ 0.60 on the Inserted Error Set; strict recall ≥ 0.80 on the Storyboard B slice; AUROC ≥ 0.75 on RAGBench; ECE ≤ 0.10. AUROC and ECE apply only to methods that give a score.
+- **Uncertain cap:** Uncertain labels may be at most ⅓ of claims. Thresholds and configurations are chosen on validation, with at most 20 tuning trials, and the test split is used once.
+
+## Repository layout
+
+```
+Data/
+  data_download.ipynb                     RAGBench + FinanceBench download, Inserted Error Set generation/reproduction
+  Data Preparation and Split Notes.md
+  Inserted Error Set/                     400 claims, locked company split, SEC source snapshots, SHA256 manifest
+  RAGBench/                               created by the download step (git-ignored, ~560 MB)
+Baseline/                                 rule-based baseline: code, tests, outputs
+```
+
+## Getting started
+
+Requires Python 3.10+ with `pandas` and `pyarrow`.
+
+```bash
+# 1. Get RAGBench into Data/RAGBench/ (either run the notebook or this script;
+#    the script checks SHA256 against the team manifest)
+python3 Baseline/fetch_ragbench.py
+
+# 2. Run the baseline on train + validation
+python3 Baseline/run_inserted_error_set.py
+python3 Baseline/run_ragbench.py
+
+# 3. Tests
+python3 -m unittest discover Baseline/tests
+```
+
+On macOS with the python.org build of Python, `urllib` downloads in the notebook can fail with `CERTIFICATE_VERIFY_FAILED`. Run *Install Certificates.command* in your Python folder, or use `fetch_ragbench.py`, which downloads with `curl`.
+
+## Current results (validation)
+
+| Model | Inserted Error Set strict R / P / F1 | Storyboard B strict R | RAGBench FinQA claims strict R / P / F1 | AUROC | ECE |
+|---|---|---|---|---|---|
+| Rule-based baseline | 1.00 / 1.00 / 1.00 | 1.00 | 0.14 / 0.04 / 0.06 | N/A | N/A |
+
+The Inserted Error Set is saturated by simple rules, and 80% of its claims are wrong, so labelling every claim Unsupported also meets the precision target. See [Baseline/README.md](Baseline/README.md) for what this means for comparing the other methods.
+
+## Ethics and scope
+
+- Research prototype only; not investment advice.
+- Licenses: FinanceBench CC-BY-NC-4.0 (non-commercial); RAGBench CC-BY-4.0.
+- Reference answers and labels are kept out of model inputs.
+- User feedback is not used as training data.
+- User-study records hold no names and are deleted within 30 days after final grades.

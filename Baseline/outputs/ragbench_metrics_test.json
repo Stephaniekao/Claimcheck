@@ -1,0 +1,247 @@
+{
+  "split": "test",
+  "config": {
+    "rel_tol": 0.0,
+    "min_word_overlap": 0.3,
+    "derived_policy": "uncertain",
+    "aggregation": "lowest",
+    "ac2_satisfied": false,
+    "chosen_on": "RAGBench validation: Uncertain <= 1/3 (AC2), then mean claim-level Unsupported F1",
+    "n_trials": 16,
+    "versions": {
+      "rules": "1.2.0",
+      "normalizer": "1.2.0",
+      "keywords": "1.0.0"
+    },
+    "chosen_at_utc": "2026-11-03T22:53:41+00:00"
+  },
+  "versions": {
+    "rules": "1.2.0",
+    "normalizer": "1.2.0",
+    "keywords": "1.0.0"
+  },
+  "subsets": {
+    "FinQA": {
+      "claim_level": {
+        "n": 12836,
+        "n_unsupported_gold": 222,
+        "strict_recall": 0.18018018018018017,
+        "lenient_recall": 0.8288288288288288,
+        "precision": 0.05089058524173028,
+        "lenient_precision": 0.018140589569160998,
+        "f1": 0.07936507936507936,
+        "false_alarm_rate": 0.059140637387030286,
+        "uncertain_rate": 0.7289654097849797
+      },
+      "answer_level": {
+        "n": 2294,
+        "n_unsupported_gold": 196,
+        "strict_recall": 0.33163265306122447,
+        "lenient_recall": 0.8979591836734694,
+        "precision": 0.1,
+        "lenient_precision": 0.08110599078341015,
+        "f1": 0.15366430260047284,
+        "false_alarm_rate": 0.278836987607245,
+        "uncertain_rate": 0.6625980819529207
+      },
+      "claim_rules_fired": [
+        {
+          "label": "Supported",
+          "rule": "amount_and_keywords_match",
+          "n": 2655
+        },
+        {
+          "label": "Supported",
+          "rule": "amount_matches_keywords_partial",
+          "n": 217
+        },
+        {
+          "label": "Supported",
+          "rule": "amount_matches_other_item",
+          "n": 2691
+        },
+        {
+          "label": "Supported",
+          "rule": "amount_not_in_passage",
+          "n": 364
+        },
+        {
+          "label": "Supported",
+          "rule": "derived_value",
+          "n": 2866
+        },
+        {
+          "label": "Supported",
+          "rule": "no_amount",
+          "n": 3439
+        },
+        {
+          "label": "Supported",
+          "rule": "same_item_different_amount",
+          "n": 382
+        },
+        {
+          "label": "Unsupported",
+          "rule": "amount_and_keywords_match",
+          "n": 38
+        },
+        {
+          "label": "Unsupported",
+          "rule": "amount_matches_keywords_partial",
+          "n": 4
+        },
+        {
+          "label": "Unsupported",
+          "rule": "amount_matches_other_item",
+          "n": 31
+        },
+        {
+          "label": "Unsupported",
+          "rule": "amount_not_in_passage",
+          "n": 9
+        },
+        {
+          "label": "Unsupported",
+          "rule": "derived_value",
+          "n": 69
+        },
+        {
+          "label": "Unsupported",
+          "rule": "no_amount",
+          "n": 40
+        },
+        {
+          "label": "Unsupported",
+          "rule": "same_item_different_amount",
+          "n": 31
+        }
+      ],
+      "claim_confusion": {
+        "Unsupported": {
+          "Supported": 746,
+          "Unsupported": 40
+        },
+        "Uncertain": {
+          "Supported": 9213,
+          "Unsupported": 144
+        },
+        "Supported": {
+          "Supported": 2655,
+          "Unsupported": 38
+        }
+      },
+      "latency_ms_per_claim": 0.728
+    },
+    "TATQA": {
+      "claim_level": {
+        "n": 12248,
+        "n_unsupported_gold": 147,
+        "strict_recall": 0.047619047619047616,
+        "lenient_recall": 0.7414965986394558,
+        "precision": 0.0231023102310231,
+        "lenient_precision": 0.011804201862681395,
+        "f1": 0.03111111111111111,
+        "false_alarm_rate": 0.024460788364597967,
+        "uncertain_rate": 0.7291802743305029
+      },
+      "answer_level": {
+        "n": 3338,
+        "n_unsupported_gold": 116,
+        "strict_recall": 0.1206896551724138,
+        "lenient_recall": 0.8448275862068966,
+        "precision": 0.05982905982905983,
+        "lenient_precision": 0.03736179946626001,
+        "f1": 0.08,
+        "false_alarm_rate": 0.06828057107386716,
+        "uncertain_rate": 0.7156980227681247
+      },
+      "claim_rules_fired": [
+        {
+          "label": "Supported",
+          "rule": "amount_and_keywords_match",
+          "n": 2976
+        },
+        {
+          "label": "Supported",
+          "rule": "amount_matches_keywords_partial",
+          "n": 119
+        },
+        {
+          "label": "Supported",
+          "rule": "amount_matches_other_item",
+          "n": 1812
+        },
+        {
+          "label": "Supported",
+          "rule": "amount_not_in_passage",
+          "n": 87
+        },
+        {
+          "label": "Supported",
+          "rule": "derived_value",
+          "n": 2529
+        },
+        {
+          "label": "Supported",
+          "rule": "no_amount",
+          "n": 4369
+        },
+        {
+          "label": "Supported",
+          "rule": "same_item_different_amount",
+          "n": 209
+        },
+        {
+          "label": "Unsupported",
+          "rule": "amount_and_keywords_match",
+          "n": 38
+        },
+        {
+          "label": "Unsupported",
+          "rule": "amount_matches_keywords_partial",
+          "n": 2
+        },
+        {
+          "label": "Unsupported",
+          "rule": "amount_matches_other_item",
+          "n": 16
+        },
+        {
+          "label": "Unsupported",
+          "rule": "amount_not_in_passage",
+          "n": 2
+        },
+        {
+          "label": "Unsupported",
+          "rule": "derived_value",
+          "n": 44
+        },
+        {
+          "label": "Unsupported",
+          "rule": "no_amount",
+          "n": 40
+        },
+        {
+          "label": "Unsupported",
+          "rule": "same_item_different_amount",
+          "n": 5
+        }
+      ],
+      "claim_confusion": {
+        "Unsupported": {
+          "Supported": 296,
+          "Unsupported": 7
+        },
+        "Uncertain": {
+          "Supported": 8829,
+          "Unsupported": 102
+        },
+        "Supported": {
+          "Supported": 2976,
+          "Unsupported": 38
+        }
+      },
+      "latency_ms_per_claim": 0.847
+    }
+  }
+}

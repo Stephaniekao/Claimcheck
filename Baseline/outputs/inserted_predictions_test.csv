@@ -1,0 +1,1229 @@
+claim_id,subset,split,claim,evidence,label,error_type,ticker,pred,rule,explanation,evidence_used
+SEC-UNH-01,general,test,"UNITEDHEALTH GROUP INC's revenue for the fiscal period ended 2025-12-31 was USD 447,567.000 million.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Supported,Supported,UNH,Supported,amount_and_keywords_match,"447,567.000 million appears in the passage next to the same line item and period.","Revenues for the fiscal year ended 2025-12-31: USD 447,567 million."
+SEC-UNH-02,general,test,"UNITEDHEALTH GROUP INC's current assets for the fiscal period ended 2025-12-31 was USD 90,582.000 million.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Supported,Supported,UNH,Supported,amount_and_keywords_match,"90,582.000 million appears in the passage next to the same line item and period.","Assets, Current as of 2025-12-31: USD 90,582 million."
+SEC-UNH-03,general,test,"UNITEDHEALTH GROUP INC's net cash from financing activities for the fiscal period ended 2025-12-31 was USD -9,315.200 million.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Unsupported,Numerical,UNH,Unsupported,same_item_different_amount,"The passage reports USD -11,644 million for this item and period, not USD -9,315.200 million.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million."
+SEC-UNH-04,general,test,"UNITEDHEALTH GROUP INC's operating income for the fiscal period ended 2025-12-31 was USD 22,756.800 million.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Unsupported,Numerical,UNH,Unsupported,same_item_different_amount,"The passage reports 18,964 million for this item and period, not 22,756.800 million.","Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million."
+SEC-UNH-05,general,test,"UNITEDHEALTH GROUP INC's revenue for the fiscal period ended 2025-12-31 was USD 537,080.400 million.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Unsupported,Numerical,UNH,Unsupported,same_item_different_amount,"The passage reports 447,567 million for this item and period, not 537,080.400 million.","Revenues for the fiscal year ended 2025-12-31: USD 447,567 million."
+SEC-UNH-06,general,test,"UNITEDHEALTH GROUP INC's current assets for the fiscal period ended 2024-12-31 was USD 90,582.000 million.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Unsupported,Temporal,UNH,Unsupported,same_item_different_amount,"The passage reports 85,779 million for this item and period, not 90,582.000 million. 90,582.000 million does appear, but on a different line: ""Assets, Current as of 2025-12-31: USD 90,582 million.""","Assets, Current as of 2024-12-31: USD 85,779 million. || Assets, Current as of 2025-12-31: USD 90,582 million."
+SEC-UNH-07,general,test,"UNITEDHEALTH GROUP INC's cost of revenue for the fiscal period ended 2024-12-31 was USD 50,655.000 million.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Unsupported,Temporal,UNH,Unsupported,same_item_different_amount,"The passage reports 46,694 million for this item and period, not 50,655.000 million. 50,655.000 million does appear, but on a different line: ""Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.""","Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million. || Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million."
+SEC-UNH-08,general,test,"UNITEDHEALTH GROUP INC's current assets for the fiscal period ended 2025-12-31 was USD 12,056.000 million.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Unsupported,Metric Confusion,UNH,Unsupported,same_item_different_amount,"The passage reports 90,582 million for this item and period, not 12,056.000 million. 12,056.000 million does appear, but on a different line: ""Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.""","Assets, Current as of 2025-12-31: USD 90,582 million. || Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million."
+SEC-UNH-09,general,test,"UNITEDHEALTH GROUP INC's current assets for the fiscal period ended 2025-12-31 was USD -11,644.000 million.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Unsupported,Metric Confusion,UNH,Unsupported,same_item_different_amount,"The passage reports 309,581 million for this item and period, not USD -11,644.000 million. USD -11,644.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.""","Assets as of 2025-12-31: USD 309,581 million. || Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million."
+SEC-UNH-10,general,test,"UNITEDHEALTH GROUP INC's cash and cash equivalents for the fiscal period ended 2025-12-31 was USD 24,365.000 billion.","UNITEDHEALTH GROUP INC Form 10-K (accession 0000731766-26-000062), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 447,567 million.
+Revenues for the fiscal year ended 2024-12-31: USD 400,278 million.
+Revenues for the fiscal year ended 2023-12-31: USD 371,622 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-12-31: USD 50,655 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-12-31: USD 46,694 million.
+Cost of Goods and Services Sold for the fiscal year ended 2023-12-31: USD 38,770 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 18,964 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 32,287 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 32,358 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 12,056 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 14,405 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 22,381 million.
+Assets as of 2025-12-31: USD 309,581 million.
+Assets as of 2024-12-31: USD 298,278 million.
+Assets as of 2023-12-31: USD 273,720 million.
+Assets, Current as of 2025-12-31: USD 90,582 million.
+Assets, Current as of 2024-12-31: USD 85,779 million.
+Liabilities as of 2025-12-31: USD 207,883 million.
+Liabilities as of 2024-12-31: USD 195,687 million.
+Liabilities, Current as of 2025-12-31: USD 114,897 million.
+Liabilities, Current as of 2024-12-31: USD 103,769 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 25,312 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 19,697 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 24,204 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 29,068 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -8,685 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -20,527 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -15,574 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,512 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -11,529 million.",Unsupported,Unit,UNH,Unsupported,same_item_different_amount,"The passage reports 24,365 million for this item and period, not 24,365.000 billion.","Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 24,365 million."
+SEC-NEM-01,general,test,"NEWMONT Corp /DE/'s cash and cash equivalents for the fiscal period ended 2025-12-31 was USD 7,647.000 million.","NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Supported,Supported,NEM,Supported,amount_and_keywords_match,"7,647.000 million appears in the passage next to the same line item and period.","Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million."
+SEC-NEM-02,general,test,"NEWMONT Corp /DE/'s net cash from operating activities for the fiscal period ended 2025-12-31 was USD 10,334.000 million.","NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Supported,Supported,NEM,Supported,amount_and_keywords_match,"10,334.000 million appears in the passage next to the same line item and period.","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million."
+SEC-NEM-03,general,test,"NEWMONT Corp /DE/'s revenue for the fiscal period ended 2025-12-31 was USD 27,202.800 million.","NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Unsupported,Numerical,NEM,Unsupported,same_item_different_amount,"The passage reports 22,669 million for this item and period, not 27,202.800 million.","Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million."
+SEC-NEM-04,general,test,NEWMONT Corp /DE/'s net cash from investing activities for the fiscal period ended 2025-12-31 was USD 727.200 million.,"NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Unsupported,Numerical,NEM,Unsupported,same_item_different_amount,"The passage reports 606 million for this item and period, not 727.200 million.",Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+SEC-NEM-05,general,test,"NEWMONT Corp /DE/'s total assets for the fiscal period ended 2025-12-31 was USD 68,545.200 million.","NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Unsupported,Numerical,NEM,Unsupported,same_item_different_amount,"The passage reports 57,121 million for this item and period, not 68,545.200 million.","Assets as of 2025-12-31: USD 57,121 million."
+SEC-NEM-06,general,test,"NEWMONT Corp /DE/'s net income for the fiscal period ended 2024-12-31 was USD 7,085.000 million.","NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Unsupported,Temporal,NEM,Unsupported,same_item_different_amount,"The passage reports 3,348 million for this item and period, not 7,085.000 million. 7,085.000 million does appear, but on a different line: ""Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.""","Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million. || Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million."
+SEC-NEM-07,general,test,"NEWMONT Corp /DE/'s net cash from financing activities for the fiscal period ended 2024-12-31 was USD -7,040.000 million.","NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Unsupported,Temporal,NEM,Unsupported,same_item_different_amount,"The passage reports USD -2,953 million for this item and period, not USD -7,040.000 million. USD -7,040.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.""","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million. || Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million."
+SEC-NEM-08,general,test,"NEWMONT Corp /DE/'s total liabilities for the fiscal period ended 2025-12-31 was USD 5,712.000 million.","NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Unsupported,Metric Confusion,NEM,Unsupported,same_item_different_amount,"The passage reports 23,079 million for this item and period, not 5,712.000 million. 5,712.000 million does appear, but on a different line: ""Liabilities, Current as of 2025-12-31: USD 5,712 million.""","Liabilities as of 2025-12-31: USD 23,079 million. || Liabilities, Current as of 2025-12-31: USD 5,712 million."
+SEC-NEM-09,general,test,"NEWMONT Corp /DE/'s total liabilities for the fiscal period ended 2025-12-31 was USD 22,669.000 million.","NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Unsupported,Metric Confusion,NEM,Unsupported,same_item_different_amount,"The passage reports 23,079 million for this item and period, not 22,669.000 million. 22,669.000 million does appear, but on a different line: ""Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.""","Liabilities as of 2025-12-31: USD 23,079 million. || Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million."
+SEC-NEM-10,general,test,"NEWMONT Corp /DE/'s total assets for the fiscal period ended 2025-12-31 was USD 57,121.000 billion.","NEWMONT Corp /DE/ Form 10-K (accession 0001164727-26-000010), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 22,669 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 18,682 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 11,812 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 3,348 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD -2,494 million.
+Assets as of 2025-12-31: USD 57,121 million.
+Assets as of 2024-12-31: USD 56,349 million.
+Assets as of 2023-12-31: USD 55,506 million.
+Assets, Current as of 2025-12-31: USD 13,066 million.
+Assets, Current as of 2024-12-31: USD 12,275 million.
+Liabilities as of 2025-12-31: USD 23,079 million.
+Liabilities as of 2024-12-31: USD 26,240 million.
+Liabilities, Current as of 2025-12-31: USD 5,712 million.
+Liabilities, Current as of 2024-12-31: USD 7,543 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 33,867 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 29,928 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 7,647 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 3,619 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 3,002 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 10,334 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 6,363 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 2,763 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 606 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -2,702 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,002 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -7,040 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -2,953 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,603 million.",Unsupported,Unit,NEM,Unsupported,same_item_different_amount,"The passage reports 57,121 million for this item and period, not 57,121.000 billion.","Assets as of 2025-12-31: USD 57,121 million."
+SEC-MDT-01,general,test,"Medtronic plc's net cash from investing activities for the fiscal period ended 2026-04-24 was USD -2,934.000 million.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Supported,Supported,MDT,Supported,amount_and_keywords_match,"USD -2,934.000 million appears in the passage next to the same line item and period.","Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million."
+SEC-MDT-02,general,test,"Medtronic plc's stockholders equity for the fiscal period ended 2026-04-24 was USD 49,463.000 million.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Supported,Supported,MDT,Supported,amount_and_keywords_match,"49,463.000 million appears in the passage next to the same line item and period.","Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million."
+SEC-MDT-03,general,test,"Medtronic plc's net cash from operating activities for the fiscal period ended 2026-04-24 was USD 8,796.000 million.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Unsupported,Numerical,MDT,Unsupported,same_item_different_amount,"The passage reports 7,330 million for this item and period, not 8,796.000 million.","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million."
+SEC-MDT-04,general,test,"Medtronic plc's current assets for the fiscal period ended 2026-04-24 was USD 29,744.400 million.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Unsupported,Numerical,MDT,Unsupported,same_item_different_amount,"The passage reports 24,787 million for this item and period, not 29,744.400 million.","Assets, Current as of 2026-04-24: USD 24,787 million."
+SEC-MDT-05,general,test,"Medtronic plc's net cash from financing activities for the fiscal period ended 2026-04-24 was USD -3,800.800 million.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Unsupported,Numerical,MDT,Unsupported,same_item_different_amount,"The passage reports USD -4,751 million for this item and period, not USD -3,800.800 million.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million."
+SEC-MDT-06,general,test,"Medtronic plc's revenue for the fiscal period ended 2025-04-25 was USD 36,364.000 million.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Unsupported,Temporal,MDT,Unsupported,same_item_different_amount,"The passage reports 33,537 million for this item and period, not 36,364.000 million. 36,364.000 million does appear, but on a different line: ""Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.""","Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million. || Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million."
+SEC-MDT-07,general,test,"Medtronic plc's cost of revenue for the fiscal period ended 2025-04-25 was USD 12,721.000 million.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Unsupported,Temporal,MDT,Unsupported,same_item_different_amount,"The passage reports 11,632 million for this item and period, not 12,721.000 million. 12,721.000 million does appear, but on a different line: ""Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.""","Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million. || Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million."
+SEC-MDT-08,general,test,"Medtronic plc's net cash from financing activities for the fiscal period ended 2026-04-24 was USD 12,721.000 million.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Unsupported,Metric Confusion,MDT,Unsupported,same_item_different_amount,"The passage reports USD -4,751 million for this item and period, not 12,721.000 million. 12,721.000 million does appear, but on a different line: ""Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.""","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million. || Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million."
+SEC-MDT-09,general,test,"Medtronic plc's operating income for the fiscal period ended 2026-04-24 was USD 11,658.000 million.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Unsupported,Metric Confusion,MDT,Unsupported,same_item_different_amount,"The passage reports 6,467 million for this item and period, not 11,658.000 million. 11,658.000 million does appear, but on a different line: ""Liabilities, Current as of 2026-04-24: USD 11,658 million.""","Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million. || Liabilities, Current as of 2026-04-24: USD 11,658 million."
+SEC-MDT-10,general,test,"Medtronic plc's cost of revenue for the fiscal period ended 2026-04-24 was USD 12,721.000 billion.","Medtronic plc Form 10-K (accession 0001628280-26-044354), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-04-24: USD 36,364 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-04-25: USD 33,537 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-04-26: USD 32,364 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-04-25: USD 11,632 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-04-26: USD 11,216 million.
+Operating Income (Loss) for the fiscal year ended 2026-04-24: USD 6,467 million.
+Operating Income (Loss) for the fiscal year ended 2025-04-25: USD 5,955 million.
+Operating Income (Loss) for the fiscal year ended 2024-04-26: USD 5,144 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-04-24: USD 4,801 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-04-25: USD 4,662 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-04-26: USD 3,676 million.
+Assets as of 2026-04-24: USD 93,028 million.
+Assets as of 2025-04-25: USD 91,680 million.
+Assets, Current as of 2026-04-24: USD 24,787 million.
+Assets, Current as of 2025-04-25: USD 23,814 million.
+Liabilities as of 2026-04-24: USD 42,956 million.
+Liabilities as of 2025-04-25: USD 43,424 million.
+Liabilities, Current as of 2026-04-24: USD 11,658 million.
+Liabilities, Current as of 2025-04-25: USD 12,879 million.
+Stockholders' Equity Attributable to Parent as of 2026-04-24: USD 49,463 million.
+Stockholders' Equity Attributable to Parent as of 2025-04-25: USD 48,024 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-04-24: USD 1,949 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-04-25: USD 2,218 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-04-24: USD 7,330 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-04-25: USD 7,044 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-04-26: USD 6,787 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-04-24: USD -2,934 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-04-25: USD -1,937 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-04-26: USD -2,366 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-04-24: USD -4,751 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-04-25: USD -4,361 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-04-26: USD -4,450 million.",Unsupported,Unit,MDT,Unsupported,same_item_different_amount,"The passage reports 12,721 million for this item and period, not 12,721.000 billion.","Cost of Goods and Services Sold for the fiscal year ended 2026-04-24: USD 12,721 million."
+SB-CPB-01,storyboard_b,test,"CAMPBELL'S Co's MealsBeveragesMember revenue for the fiscal period ended 2023-07-30 represented the company's entire revenue of USD 4,907,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-23-000109), revenue by segment for the fiscal year ended 2023-07-30:
+MealsBeveragesMember segment revenue for the fiscal year ended 2023-07-30: USD 4,907,000,000.
+SnacksMember segment revenue for the fiscal year ended 2023-07-30: USD 4,450,000,000.
+Total revenues for the fiscal year ended 2023-07-30: USD 9,357,000,000.",Unsupported,Segment vs Total Revenue,CPB,Unsupported,same_item_different_amount,"The passage reports 9,357,000,000 for this item and period, not 4,907,000,000. 4,907,000,000 does appear, but on a different line: ""MealsBeveragesMember segment revenue for the fiscal year ended 2023-07-30: USD 4,907,000,000.""","Total revenues for the fiscal year ended 2023-07-30: USD 9,357,000,000. || MealsBeveragesMember segment revenue for the fiscal year ended 2023-07-30: USD 4,907,000,000."
+SB-CPB-02,storyboard_b,test,"CAMPBELL'S Co's SnacksMember revenue for the fiscal period ended 2023-07-30 represented the company's entire revenue of USD 4,450,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-23-000109), revenue by segment for the fiscal year ended 2023-07-30:
+MealsBeveragesMember segment revenue for the fiscal year ended 2023-07-30: USD 4,907,000,000.
+SnacksMember segment revenue for the fiscal year ended 2023-07-30: USD 4,450,000,000.
+Total revenues for the fiscal year ended 2023-07-30: USD 9,357,000,000.",Unsupported,Segment vs Total Revenue,CPB,Unsupported,same_item_different_amount,"The passage reports 9,357,000,000 for this item and period, not 4,450,000,000. 4,450,000,000 does appear, but on a different line: ""SnacksMember segment revenue for the fiscal year ended 2023-07-30: USD 4,450,000,000.""","Total revenues for the fiscal year ended 2023-07-30: USD 9,357,000,000. || SnacksMember segment revenue for the fiscal year ended 2023-07-30: USD 4,450,000,000."
+SB-CPB-03,storyboard_b,test,"CAMPBELL'S Co's MealsBeveragesMember revenue for the fiscal period ended 2024-07-28 represented the company's entire revenue of USD 5,258,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-24-000130), revenue by segment for the fiscal year ended 2024-07-28:
+MealsBeveragesMember segment revenue for the fiscal year ended 2024-07-28: USD 5,258,000,000.
+SnacksMember segment revenue for the fiscal year ended 2024-07-28: USD 4,378,000,000.
+Total revenues for the fiscal year ended 2024-07-28: USD 9,636,000,000.",Unsupported,Segment vs Total Revenue,CPB,Unsupported,same_item_different_amount,"The passage reports 9,636,000,000 for this item and period, not 5,258,000,000. 5,258,000,000 does appear, but on a different line: ""MealsBeveragesMember segment revenue for the fiscal year ended 2024-07-28: USD 5,258,000,000.""","Total revenues for the fiscal year ended 2024-07-28: USD 9,636,000,000. || MealsBeveragesMember segment revenue for the fiscal year ended 2024-07-28: USD 5,258,000,000."
+SB-CPB-04,storyboard_b,test,"CAMPBELL'S Co's SnacksMember revenue for the fiscal period ended 2024-07-28 represented the company's entire revenue of USD 4,378,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-24-000130), revenue by segment for the fiscal year ended 2024-07-28:
+MealsBeveragesMember segment revenue for the fiscal year ended 2024-07-28: USD 5,258,000,000.
+SnacksMember segment revenue for the fiscal year ended 2024-07-28: USD 4,378,000,000.
+Total revenues for the fiscal year ended 2024-07-28: USD 9,636,000,000.",Unsupported,Segment vs Total Revenue,CPB,Unsupported,same_item_different_amount,"The passage reports 9,636,000,000 for this item and period, not 4,378,000,000. 4,378,000,000 does appear, but on a different line: ""SnacksMember segment revenue for the fiscal year ended 2024-07-28: USD 4,378,000,000.""","Total revenues for the fiscal year ended 2024-07-28: USD 9,636,000,000. || SnacksMember segment revenue for the fiscal year ended 2024-07-28: USD 4,378,000,000."
+SB-CPB-05,storyboard_b,test,"CAMPBELL'S Co's MealsBeveragesMember revenue for the fiscal period ended 2025-08-03 represented the company's entire revenue of USD 6,050,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-25-000112), revenue by segment for the fiscal year ended 2025-08-03:
+MealsBeveragesMember segment revenue for the fiscal year ended 2025-08-03: USD 6,050,000,000.
+SnacksMember segment revenue for the fiscal year ended 2025-08-03: USD 4,203,000,000.
+Total revenues for the fiscal year ended 2025-08-03: USD 10,253,000,000.",Unsupported,Segment vs Total Revenue,CPB,Unsupported,same_item_different_amount,"The passage reports 10,253,000,000 for this item and period, not 6,050,000,000. 6,050,000,000 does appear, but on a different line: ""MealsBeveragesMember segment revenue for the fiscal year ended 2025-08-03: USD 6,050,000,000.""","Total revenues for the fiscal year ended 2025-08-03: USD 10,253,000,000. || MealsBeveragesMember segment revenue for the fiscal year ended 2025-08-03: USD 6,050,000,000."
+SB-CPB-06,storyboard_b,test,"CAMPBELL'S Co's SnacksMember revenue for the fiscal period ended 2025-08-03 represented the company's entire revenue of USD 4,203,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-25-000112), revenue by segment for the fiscal year ended 2025-08-03:
+MealsBeveragesMember segment revenue for the fiscal year ended 2025-08-03: USD 6,050,000,000.
+SnacksMember segment revenue for the fiscal year ended 2025-08-03: USD 4,203,000,000.
+Total revenues for the fiscal year ended 2025-08-03: USD 10,253,000,000.",Unsupported,Segment vs Total Revenue,CPB,Unsupported,same_item_different_amount,"The passage reports 10,253,000,000 for this item and period, not 4,203,000,000. 4,203,000,000 does appear, but on a different line: ""SnacksMember segment revenue for the fiscal year ended 2025-08-03: USD 4,203,000,000.""","Total revenues for the fiscal year ended 2025-08-03: USD 10,253,000,000. || SnacksMember segment revenue for the fiscal year ended 2025-08-03: USD 4,203,000,000."
+SB-CPB-07,storyboard_b,test,"CAMPBELL'S Co's MealsBeveragesMember revenue for the fiscal period ended 2026-08-02 represented the company's entire revenue of USD 5,928,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-26-000026), revenue by segment for the fiscal year ended 2026-08-02:
+MealsBeveragesMember segment revenue for the fiscal year ended 2026-08-02: USD 5,928,000,000.
+SnacksMember segment revenue for the fiscal year ended 2026-08-02: USD 3,816,000,000.
+Total revenues for the fiscal year ended 2026-08-02: USD 9,744,000,000.",Unsupported,Segment vs Total Revenue,CPB,Unsupported,same_item_different_amount,"The passage reports 9,744,000,000 for this item and period, not 5,928,000,000. 5,928,000,000 does appear, but on a different line: ""MealsBeveragesMember segment revenue for the fiscal year ended 2026-08-02: USD 5,928,000,000.""","Total revenues for the fiscal year ended 2026-08-02: USD 9,744,000,000. || MealsBeveragesMember segment revenue for the fiscal year ended 2026-08-02: USD 5,928,000,000."
+SB-CPB-08,storyboard_b,test,"CAMPBELL'S Co's SnacksMember revenue for the fiscal period ended 2026-08-02 represented the company's entire revenue of USD 3,816,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-26-000026), revenue by segment for the fiscal year ended 2026-08-02:
+MealsBeveragesMember segment revenue for the fiscal year ended 2026-08-02: USD 5,928,000,000.
+SnacksMember segment revenue for the fiscal year ended 2026-08-02: USD 3,816,000,000.
+Total revenues for the fiscal year ended 2026-08-02: USD 9,744,000,000.",Unsupported,Segment vs Total Revenue,CPB,Unsupported,same_item_different_amount,"The passage reports 9,744,000,000 for this item and period, not 3,816,000,000. 3,816,000,000 does appear, but on a different line: ""SnacksMember segment revenue for the fiscal year ended 2026-08-02: USD 3,816,000,000.""","Total revenues for the fiscal year ended 2026-08-02: USD 9,744,000,000. || SnacksMember segment revenue for the fiscal year ended 2026-08-02: USD 3,816,000,000."
+SB-CPB-S01,storyboard_b,test,"CAMPBELL'S Co's MealsBeveragesMember segment revenue for the fiscal period ended 2023-07-30 was USD 4,907,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-23-000109), revenue by segment for the fiscal year ended 2023-07-30:
+MealsBeveragesMember segment revenue for the fiscal year ended 2023-07-30: USD 4,907,000,000.
+SnacksMember segment revenue for the fiscal year ended 2023-07-30: USD 4,450,000,000.
+Total revenues for the fiscal year ended 2023-07-30: USD 9,357,000,000.",Supported,Supported Segment Revenue,CPB,Supported,amount_and_keywords_match,"4,907,000,000 appears in the passage next to the same line item and period.","MealsBeveragesMember segment revenue for the fiscal year ended 2023-07-30: USD 4,907,000,000."
+SB-CPB-S02,storyboard_b,test,"CAMPBELL'S Co's SnacksMember segment revenue for the fiscal period ended 2023-07-30 was USD 4,450,000,000.","CAMPBELL'S Co Form 10-K (accession 0000016732-23-000109), revenue by segment for the fiscal year ended 2023-07-30:
+MealsBeveragesMember segment revenue for the fiscal year ended 2023-07-30: USD 4,907,000,000.
+SnacksMember segment revenue for the fiscal year ended 2023-07-30: USD 4,450,000,000.
+Total revenues for the fiscal year ended 2023-07-30: USD 9,357,000,000.",Supported,Supported Segment Revenue,CPB,Supported,amount_and_keywords_match,"4,450,000,000 appears in the passage next to the same line item and period.","SnacksMember segment revenue for the fiscal year ended 2023-07-30: USD 4,450,000,000."
+SB-CAT-01,storyboard_b,test,"CATERPILLAR INC's EnergyandTransportationMember revenue for the fiscal period ended 2021-12-31 represented the company's entire revenue of USD 16,670,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-22-000050), revenue by segment for the fiscal year ended 2021-12-31:
+EnergyandTransportationMember segment revenue for the fiscal year ended 2021-12-31: USD 16,670,000,000.
+OtherSegmentsMember segment revenue for the fiscal year ended 2021-12-31: USD 511,000,000.
+Total revenues for the fiscal year ended 2021-12-31: USD 50,971,000,000.",Unsupported,Segment vs Total Revenue,CAT,Unsupported,same_item_different_amount,"The passage reports 50,971,000,000 for this item and period, not 16,670,000,000. 16,670,000,000 does appear, but on a different line: ""EnergyandTransportationMember segment revenue for the fiscal year ended 2021-12-31: USD 16,670,000,000.""","Total revenues for the fiscal year ended 2021-12-31: USD 50,971,000,000. || EnergyandTransportationMember segment revenue for the fiscal year ended 2021-12-31: USD 16,670,000,000."
+SB-CAT-02,storyboard_b,test,"CATERPILLAR INC's OtherSegmentsMember revenue for the fiscal period ended 2021-12-31 represented the company's entire revenue of USD 511,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-22-000050), revenue by segment for the fiscal year ended 2021-12-31:
+EnergyandTransportationMember segment revenue for the fiscal year ended 2021-12-31: USD 16,670,000,000.
+OtherSegmentsMember segment revenue for the fiscal year ended 2021-12-31: USD 511,000,000.
+Total revenues for the fiscal year ended 2021-12-31: USD 50,971,000,000.",Unsupported,Segment vs Total Revenue,CAT,Unsupported,same_item_different_amount,"The passage reports 50,971,000,000 for this item and period, not 511,000,000. 511,000,000 does appear, but on a different line: ""OtherSegmentsMember segment revenue for the fiscal year ended 2021-12-31: USD 511,000,000.""","Total revenues for the fiscal year ended 2021-12-31: USD 50,971,000,000. || OtherSegmentsMember segment revenue for the fiscal year ended 2021-12-31: USD 511,000,000."
+SB-CAT-03,storyboard_b,test,"CATERPILLAR INC's EnergyandTransportationMember revenue for the fiscal period ended 2022-12-31 represented the company's entire revenue of USD 19,337,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-23-000011), revenue by segment for the fiscal year ended 2022-12-31:
+EnergyandTransportationMember segment revenue for the fiscal year ended 2022-12-31: USD 19,337,000,000.
+OtherSegmentsMember segment revenue for the fiscal year ended 2022-12-31: USD 450,000,000.
+Total revenues for the fiscal year ended 2022-12-31: USD 59,427,000,000.",Unsupported,Segment vs Total Revenue,CAT,Unsupported,same_item_different_amount,"The passage reports 59,427,000,000 for this item and period, not 19,337,000,000. 19,337,000,000 does appear, but on a different line: ""EnergyandTransportationMember segment revenue for the fiscal year ended 2022-12-31: USD 19,337,000,000.""","Total revenues for the fiscal year ended 2022-12-31: USD 59,427,000,000. || EnergyandTransportationMember segment revenue for the fiscal year ended 2022-12-31: USD 19,337,000,000."
+SB-CAT-04,storyboard_b,test,"CATERPILLAR INC's OtherSegmentsMember revenue for the fiscal period ended 2022-12-31 represented the company's entire revenue of USD 450,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-23-000011), revenue by segment for the fiscal year ended 2022-12-31:
+EnergyandTransportationMember segment revenue for the fiscal year ended 2022-12-31: USD 19,337,000,000.
+OtherSegmentsMember segment revenue for the fiscal year ended 2022-12-31: USD 450,000,000.
+Total revenues for the fiscal year ended 2022-12-31: USD 59,427,000,000.",Unsupported,Segment vs Total Revenue,CAT,Unsupported,same_item_different_amount,"The passage reports 59,427,000,000 for this item and period, not 450,000,000. 450,000,000 does appear, but on a different line: ""OtherSegmentsMember segment revenue for the fiscal year ended 2022-12-31: USD 450,000,000.""","Total revenues for the fiscal year ended 2022-12-31: USD 59,427,000,000. || OtherSegmentsMember segment revenue for the fiscal year ended 2022-12-31: USD 450,000,000."
+SB-CAT-05,storyboard_b,test,"CATERPILLAR INC's EnergyandTransportationMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 23,355,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
+EnergyandTransportationMember segment revenue for the fiscal year ended 2023-12-31: USD 23,355,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 67,060,000,000.",Unsupported,Segment vs Total Revenue,CAT,Unsupported,same_item_different_amount,"The passage reports 67,060,000,000 for this item and period, not 23,355,000,000. 23,355,000,000 does appear, but on a different line: ""EnergyandTransportationMember segment revenue for the fiscal year ended 2023-12-31: USD 23,355,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 67,060,000,000. || EnergyandTransportationMember segment revenue for the fiscal year ended 2023-12-31: USD 23,355,000,000."
+SB-CAT-06,storyboard_b,test,"CATERPILLAR INC's AllOtherSegmentsMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 118,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-25-000008), revenue by segment for the fiscal year ended 2024-12-31:
+AllOtherSegmentsMember segment revenue for the fiscal year ended 2024-12-31: USD 118,000,000.
+EnergyandTransportationMember segment revenue for the fiscal year ended 2024-12-31: USD 24,088,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 64,809,000,000.",Unsupported,Segment vs Total Revenue,CAT,Unsupported,same_item_different_amount,"The passage reports 64,809,000,000 for this item and period, not 118,000,000. 118,000,000 does appear, but on a different line: ""AllOtherSegmentsMember segment revenue for the fiscal year ended 2024-12-31: USD 118,000,000.""","Total revenues for the fiscal year ended 2024-12-31: USD 64,809,000,000. || AllOtherSegmentsMember segment revenue for the fiscal year ended 2024-12-31: USD 118,000,000."
+SB-CAT-07,storyboard_b,test,"CATERPILLAR INC's EnergyandTransportationMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 24,088,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-25-000008), revenue by segment for the fiscal year ended 2024-12-31:
+AllOtherSegmentsMember segment revenue for the fiscal year ended 2024-12-31: USD 118,000,000.
+EnergyandTransportationMember segment revenue for the fiscal year ended 2024-12-31: USD 24,088,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 64,809,000,000.",Unsupported,Segment vs Total Revenue,CAT,Unsupported,same_item_different_amount,"The passage reports 64,809,000,000 for this item and period, not 24,088,000,000. 24,088,000,000 does appear, but on a different line: ""EnergyandTransportationMember segment revenue for the fiscal year ended 2024-12-31: USD 24,088,000,000.""","Total revenues for the fiscal year ended 2024-12-31: USD 64,809,000,000. || EnergyandTransportationMember segment revenue for the fiscal year ended 2024-12-31: USD 24,088,000,000."
+SB-CAT-08,storyboard_b,test,"CATERPILLAR INC's AllOtherSegmentsMember revenue for the fiscal period ended 2025-12-31 represented the company's entire revenue of USD 46,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-26-000008), revenue by segment for the fiscal year ended 2025-12-31:
+AllOtherSegmentsMember segment revenue for the fiscal year ended 2025-12-31: USD 46,000,000.
+Total revenues for the fiscal year ended 2025-12-31: USD 67,589,000,000.",Unsupported,Segment vs Total Revenue,CAT,Unsupported,same_item_different_amount,"The passage reports 67,589,000,000 for this item and period, not 46,000,000. 46,000,000 does appear, but on a different line: ""AllOtherSegmentsMember segment revenue for the fiscal year ended 2025-12-31: USD 46,000,000.""","Total revenues for the fiscal year ended 2025-12-31: USD 67,589,000,000. || AllOtherSegmentsMember segment revenue for the fiscal year ended 2025-12-31: USD 46,000,000."
+SB-CAT-S01,storyboard_b,test,"CATERPILLAR INC's EnergyandTransportationMember segment revenue for the fiscal period ended 2021-12-31 was USD 16,670,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-22-000050), revenue by segment for the fiscal year ended 2021-12-31:
+EnergyandTransportationMember segment revenue for the fiscal year ended 2021-12-31: USD 16,670,000,000.
+OtherSegmentsMember segment revenue for the fiscal year ended 2021-12-31: USD 511,000,000.
+Total revenues for the fiscal year ended 2021-12-31: USD 50,971,000,000.",Supported,Supported Segment Revenue,CAT,Supported,amount_and_keywords_match,"16,670,000,000 appears in the passage next to the same line item and period.","EnergyandTransportationMember segment revenue for the fiscal year ended 2021-12-31: USD 16,670,000,000."
+SB-CAT-S02,storyboard_b,test,"CATERPILLAR INC's OtherSegmentsMember segment revenue for the fiscal period ended 2021-12-31 was USD 511,000,000.","CATERPILLAR INC Form 10-K (accession 0000018230-22-000050), revenue by segment for the fiscal year ended 2021-12-31:
+EnergyandTransportationMember segment revenue for the fiscal year ended 2021-12-31: USD 16,670,000,000.
+OtherSegmentsMember segment revenue for the fiscal year ended 2021-12-31: USD 511,000,000.
+Total revenues for the fiscal year ended 2021-12-31: USD 50,971,000,000.",Supported,Supported Segment Revenue,CAT,Supported,amount_and_keywords_match,"511,000,000 appears in the passage next to the same line item and period.","OtherSegmentsMember segment revenue for the fiscal year ended 2021-12-31: USD 511,000,000."
+SB-KMB-01,storyboard_b,test,"KIMBERLY CLARK CORP's ConsumerTissueMember revenue for the fiscal period ended 2022-12-31 represented the company's entire revenue of USD 6,243,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2022-12-31: USD 6,243,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2022-12-31: USD 54,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2022-12-31: USD 3,256,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2022-12-31: USD 10,622,000,000.
+Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000.",Unsupported,Segment vs Total Revenue,KMB,Unsupported,same_item_different_amount,"The passage reports 20,175,000,000 for this item and period, not 6,243,000,000. 6,243,000,000 does appear, but on a different line: ""ConsumerTissueMember segment revenue for the fiscal year ended 2022-12-31: USD 6,243,000,000.""","Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000. || ConsumerTissueMember segment revenue for the fiscal year ended 2022-12-31: USD 6,243,000,000."
+SB-KMB-02,storyboard_b,test,"KIMBERLY CLARK CORP's CorporateAndOtherMember revenue for the fiscal period ended 2022-12-31 represented the company's entire revenue of USD 54,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2022-12-31: USD 6,243,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2022-12-31: USD 54,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2022-12-31: USD 3,256,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2022-12-31: USD 10,622,000,000.
+Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000.",Unsupported,Segment vs Total Revenue,KMB,Unsupported,same_item_different_amount,"The passage reports 20,175,000,000 for this item and period, not 54,000,000. 54,000,000 does appear, but on a different line: ""CorporateAndOtherMember segment revenue for the fiscal year ended 2022-12-31: USD 54,000,000.""","Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000. || CorporateAndOtherMember segment revenue for the fiscal year ended 2022-12-31: USD 54,000,000."
+SB-KMB-03,storyboard_b,test,"KIMBERLY CLARK CORP's KCProfessionalMember revenue for the fiscal period ended 2022-12-31 represented the company's entire revenue of USD 3,256,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2022-12-31: USD 6,243,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2022-12-31: USD 54,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2022-12-31: USD 3,256,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2022-12-31: USD 10,622,000,000.
+Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000.",Unsupported,Segment vs Total Revenue,KMB,Unsupported,same_item_different_amount,"The passage reports 20,175,000,000 for this item and period, not 3,256,000,000. 3,256,000,000 does appear, but on a different line: ""KCProfessionalMember segment revenue for the fiscal year ended 2022-12-31: USD 3,256,000,000.""","Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000. || KCProfessionalMember segment revenue for the fiscal year ended 2022-12-31: USD 3,256,000,000."
+SB-KMB-04,storyboard_b,test,"KIMBERLY CLARK CORP's PersonalCareMember revenue for the fiscal period ended 2022-12-31 represented the company's entire revenue of USD 10,622,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2022-12-31: USD 6,243,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2022-12-31: USD 54,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2022-12-31: USD 3,256,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2022-12-31: USD 10,622,000,000.
+Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000.",Unsupported,Segment vs Total Revenue,KMB,Unsupported,same_item_different_amount,"The passage reports 20,175,000,000 for this item and period, not 10,622,000,000. 10,622,000,000 does appear, but on a different line: ""PersonalCareMember segment revenue for the fiscal year ended 2022-12-31: USD 10,622,000,000.""","Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000. || PersonalCareMember segment revenue for the fiscal year ended 2022-12-31: USD 10,622,000,000."
+SB-KMB-05,storyboard_b,test,"KIMBERLY CLARK CORP's ConsumerTissueMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 6,290,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-24-000018), revenue by segment for the fiscal year ended 2023-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2023-12-31: USD 6,290,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2023-12-31: USD 46,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2023-12-31: USD 3,404,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2023-12-31: USD 10,691,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 17,146,000,000.",Unsupported,Segment vs Total Revenue,KMB,Unsupported,same_item_different_amount,"The passage reports 17,146,000,000 for this item and period, not 6,290,000,000. 6,290,000,000 does appear, but on a different line: ""ConsumerTissueMember segment revenue for the fiscal year ended 2023-12-31: USD 6,290,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 17,146,000,000. || ConsumerTissueMember segment revenue for the fiscal year ended 2023-12-31: USD 6,290,000,000."
+SB-KMB-06,storyboard_b,test,"KIMBERLY CLARK CORP's CorporateAndOtherMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 46,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-24-000018), revenue by segment for the fiscal year ended 2023-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2023-12-31: USD 6,290,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2023-12-31: USD 46,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2023-12-31: USD 3,404,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2023-12-31: USD 10,691,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 17,146,000,000.",Unsupported,Segment vs Total Revenue,KMB,Unsupported,same_item_different_amount,"The passage reports 17,146,000,000 for this item and period, not 46,000,000. 46,000,000 does appear, but on a different line: ""CorporateAndOtherMember segment revenue for the fiscal year ended 2023-12-31: USD 46,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 17,146,000,000. || CorporateAndOtherMember segment revenue for the fiscal year ended 2023-12-31: USD 46,000,000."
+SB-KMB-07,storyboard_b,test,"KIMBERLY CLARK CORP's KCProfessionalMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 3,404,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-24-000018), revenue by segment for the fiscal year ended 2023-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2023-12-31: USD 6,290,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2023-12-31: USD 46,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2023-12-31: USD 3,404,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2023-12-31: USD 10,691,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 17,146,000,000.",Unsupported,Segment vs Total Revenue,KMB,Unsupported,same_item_different_amount,"The passage reports 17,146,000,000 for this item and period, not 3,404,000,000. 3,404,000,000 does appear, but on a different line: ""KCProfessionalMember segment revenue for the fiscal year ended 2023-12-31: USD 3,404,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 17,146,000,000. || KCProfessionalMember segment revenue for the fiscal year ended 2023-12-31: USD 3,404,000,000."
+SB-KMB-08,storyboard_b,test,"KIMBERLY CLARK CORP's PersonalCareMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 10,691,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-24-000018), revenue by segment for the fiscal year ended 2023-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2023-12-31: USD 6,290,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2023-12-31: USD 46,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2023-12-31: USD 3,404,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2023-12-31: USD 10,691,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 17,146,000,000.",Unsupported,Segment vs Total Revenue,KMB,Unsupported,same_item_different_amount,"The passage reports 17,146,000,000 for this item and period, not 10,691,000,000. 10,691,000,000 does appear, but on a different line: ""PersonalCareMember segment revenue for the fiscal year ended 2023-12-31: USD 10,691,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 17,146,000,000. || PersonalCareMember segment revenue for the fiscal year ended 2023-12-31: USD 10,691,000,000."
+SB-KMB-S01,storyboard_b,test,"KIMBERLY CLARK CORP's ConsumerTissueMember segment revenue for the fiscal period ended 2022-12-31 was USD 6,243,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2022-12-31: USD 6,243,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2022-12-31: USD 54,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2022-12-31: USD 3,256,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2022-12-31: USD 10,622,000,000.
+Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000.",Supported,Supported Segment Revenue,KMB,Supported,amount_and_keywords_match,"6,243,000,000 appears in the passage next to the same line item and period.","ConsumerTissueMember segment revenue for the fiscal year ended 2022-12-31: USD 6,243,000,000."
+SB-KMB-S02,storyboard_b,test,"KIMBERLY CLARK CORP's CorporateAndOtherMember segment revenue for the fiscal period ended 2022-12-31 was USD 54,000,000.","KIMBERLY CLARK CORP Form 10-K (accession 0000055785-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
+ConsumerTissueMember segment revenue for the fiscal year ended 2022-12-31: USD 6,243,000,000.
+CorporateAndOtherMember segment revenue for the fiscal year ended 2022-12-31: USD 54,000,000.
+KCProfessionalMember segment revenue for the fiscal year ended 2022-12-31: USD 3,256,000,000.
+PersonalCareMember segment revenue for the fiscal year ended 2022-12-31: USD 10,622,000,000.
+Total revenues for the fiscal year ended 2022-12-31: USD 20,175,000,000.",Supported,Supported Segment Revenue,KMB,Supported,amount_and_keywords_match,"54,000,000 appears in the passage next to the same line item and period.","CorporateAndOtherMember segment revenue for the fiscal year ended 2022-12-31: USD 54,000,000."
+SB-PG-01,storyboard_b,test,"PROCTER & GAMBLE Co's BabyFeminineFamilyCareMember revenue for the fiscal period ended 2023-06-30 represented the company's entire revenue of USD 20,217,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-23-000073), revenue by segment for the fiscal year ended 2023-06-30:
+BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000.
+CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000.
+FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000.
+GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000.
+HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000.
+Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000.",Unsupported,Segment vs Total Revenue,PG,Unsupported,same_item_different_amount,"The passage reports 82,006,000,000 for this item and period, not 20,217,000,000. 20,217,000,000 does appear, but on a different line: ""BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000.""","Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000. || BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000."
+SB-PG-02,storyboard_b,test,"PROCTER & GAMBLE Co's BeautySegmentMember revenue for the fiscal period ended 2023-06-30 represented the company's entire revenue of USD 15,008,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-23-000073), revenue by segment for the fiscal year ended 2023-06-30:
+BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000.
+CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000.
+FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000.
+GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000.
+HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000.
+Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000.",Unsupported,Segment vs Total Revenue,PG,Unsupported,same_item_different_amount,"The passage reports 82,006,000,000 for this item and period, not 15,008,000,000. 15,008,000,000 does appear, but on a different line: ""BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000.""","Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000. || BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000."
+SB-PG-03,storyboard_b,test,"PROCTER & GAMBLE Co's CorporateMember revenue for the fiscal period ended 2023-06-30 represented the company's entire revenue of USD 765,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-23-000073), revenue by segment for the fiscal year ended 2023-06-30:
+BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000.
+CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000.
+FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000.
+GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000.
+HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000.
+Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000.",Unsupported,Segment vs Total Revenue,PG,Unsupported,same_item_different_amount,"The passage reports 82,006,000,000 for this item and period, not 765,000,000. 765,000,000 does appear, but on a different line: ""CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000.""","Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000. || CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000."
+SB-PG-04,storyboard_b,test,"PROCTER & GAMBLE Co's FabricHomeCareMember revenue for the fiscal period ended 2023-06-30 represented the company's entire revenue of USD 28,371,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-23-000073), revenue by segment for the fiscal year ended 2023-06-30:
+BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000.
+CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000.
+FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000.
+GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000.
+HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000.
+Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000.",Unsupported,Segment vs Total Revenue,PG,Unsupported,same_item_different_amount,"The passage reports 82,006,000,000 for this item and period, not 28,371,000,000. 28,371,000,000 does appear, but on a different line: ""FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000.""","Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000. || FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000."
+SB-PG-05,storyboard_b,test,"PROCTER & GAMBLE Co's GroomingMember revenue for the fiscal period ended 2023-06-30 represented the company's entire revenue of USD 6,419,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-23-000073), revenue by segment for the fiscal year ended 2023-06-30:
+BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000.
+CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000.
+FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000.
+GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000.
+HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000.
+Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000.",Unsupported,Segment vs Total Revenue,PG,Unsupported,same_item_different_amount,"The passage reports 82,006,000,000 for this item and period, not 6,419,000,000. 6,419,000,000 does appear, but on a different line: ""GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000.""","Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000. || GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000."
+SB-PG-06,storyboard_b,test,"PROCTER & GAMBLE Co's HealthCareSegMember revenue for the fiscal period ended 2023-06-30 represented the company's entire revenue of USD 11,226,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-23-000073), revenue by segment for the fiscal year ended 2023-06-30:
+BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000.
+CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000.
+FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000.
+GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000.
+HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000.
+Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000.",Unsupported,Segment vs Total Revenue,PG,Unsupported,same_item_different_amount,"The passage reports 82,006,000,000 for this item and period, not 11,226,000,000. 11,226,000,000 does appear, but on a different line: ""HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000.""","Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000. || HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000."
+SB-PG-07,storyboard_b,test,"PROCTER & GAMBLE Co's BabyFeminineFamilyCareSegmentMember revenue for the fiscal period ended 2024-06-30 represented the company's entire revenue of USD 20,277,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-24-000083), revenue by segment for the fiscal year ended 2024-06-30:
+BabyFeminineFamilyCareSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 20,277,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 15,220,000,000.
+Total revenues for the fiscal year ended 2024-06-30: USD 84,039,000,000.",Unsupported,Segment vs Total Revenue,PG,Unsupported,same_item_different_amount,"The passage reports 84,039,000,000 for this item and period, not 20,277,000,000. 20,277,000,000 does appear, but on a different line: ""BabyFeminineFamilyCareSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 20,277,000,000.""","Total revenues for the fiscal year ended 2024-06-30: USD 84,039,000,000. || BabyFeminineFamilyCareSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 20,277,000,000."
+SB-PG-08,storyboard_b,test,"PROCTER & GAMBLE Co's BeautySegmentMember revenue for the fiscal period ended 2024-06-30 represented the company's entire revenue of USD 15,220,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-24-000083), revenue by segment for the fiscal year ended 2024-06-30:
+BabyFeminineFamilyCareSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 20,277,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 15,220,000,000.
+Total revenues for the fiscal year ended 2024-06-30: USD 84,039,000,000.",Unsupported,Segment vs Total Revenue,PG,Unsupported,same_item_different_amount,"The passage reports 84,039,000,000 for this item and period, not 15,220,000,000. 15,220,000,000 does appear, but on a different line: ""BeautySegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 15,220,000,000.""","Total revenues for the fiscal year ended 2024-06-30: USD 84,039,000,000. || BeautySegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 15,220,000,000."
+SB-PG-S01,storyboard_b,test,"PROCTER & GAMBLE Co's BabyFeminineFamilyCareMember segment revenue for the fiscal period ended 2023-06-30 was USD 20,217,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-23-000073), revenue by segment for the fiscal year ended 2023-06-30:
+BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000.
+CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000.
+FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000.
+GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000.
+HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000.
+Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000.",Supported,Supported Segment Revenue,PG,Supported,amount_and_keywords_match,"20,217,000,000 appears in the passage next to the same line item and period.","BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000."
+SB-PG-S02,storyboard_b,test,"PROCTER & GAMBLE Co's BeautySegmentMember segment revenue for the fiscal period ended 2023-06-30 was USD 15,008,000,000.","PROCTER & GAMBLE Co Form 10-K (accession 0000080424-23-000073), revenue by segment for the fiscal year ended 2023-06-30:
+BabyFeminineFamilyCareMember segment revenue for the fiscal year ended 2023-06-30: USD 20,217,000,000.
+BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000.
+CorporateMember segment revenue for the fiscal year ended 2023-06-30: USD 765,000,000.
+FabricHomeCareMember segment revenue for the fiscal year ended 2023-06-30: USD 28,371,000,000.
+GroomingMember segment revenue for the fiscal year ended 2023-06-30: USD 6,419,000,000.
+HealthCareSegMember segment revenue for the fiscal year ended 2023-06-30: USD 11,226,000,000.
+Total revenues for the fiscal year ended 2023-06-30: USD 82,006,000,000.",Supported,Supported Segment Revenue,PG,Supported,amount_and_keywords_match,"15,008,000,000 appears in the passage next to the same line item and period.","BeautySegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 15,008,000,000."
+SB-WY-01,storyboard_b,test,"WEYERHAEUSER CO's REENRMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 363,000,000.","WEYERHAEUSER CO Form 10-K (accession 0000950170-24-016434), revenue by segment for the fiscal year ended 2023-12-31:
+REENRMember segment revenue for the fiscal year ended 2023-12-31: USD 363,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2023-12-31: USD 1,654,000,000.
+WoodProductsMember segment revenue for the fiscal year ended 2023-12-31: USD 5,657,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 7,674,000,000.",Unsupported,Segment vs Total Revenue,WY,Unsupported,same_item_different_amount,"The passage reports 7,674,000,000 for this item and period, not 363,000,000. 363,000,000 does appear, but on a different line: ""REENRMember segment revenue for the fiscal year ended 2023-12-31: USD 363,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 7,674,000,000. || REENRMember segment revenue for the fiscal year ended 2023-12-31: USD 363,000,000."
+SB-WY-02,storyboard_b,test,"WEYERHAEUSER CO's TimberlandsMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 1,654,000,000.","WEYERHAEUSER CO Form 10-K (accession 0000950170-24-016434), revenue by segment for the fiscal year ended 2023-12-31:
+REENRMember segment revenue for the fiscal year ended 2023-12-31: USD 363,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2023-12-31: USD 1,654,000,000.
+WoodProductsMember segment revenue for the fiscal year ended 2023-12-31: USD 5,657,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 7,674,000,000.",Unsupported,Segment vs Total Revenue,WY,Unsupported,same_item_different_amount,"The passage reports 7,674,000,000 for this item and period, not 1,654,000,000. 1,654,000,000 does appear, but on a different line: ""TimberlandsMember segment revenue for the fiscal year ended 2023-12-31: USD 1,654,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 7,674,000,000. || TimberlandsMember segment revenue for the fiscal year ended 2023-12-31: USD 1,654,000,000."
+SB-WY-03,storyboard_b,test,"WEYERHAEUSER CO's WoodProductsMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 5,657,000,000.","WEYERHAEUSER CO Form 10-K (accession 0000950170-24-016434), revenue by segment for the fiscal year ended 2023-12-31:
+REENRMember segment revenue for the fiscal year ended 2023-12-31: USD 363,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2023-12-31: USD 1,654,000,000.
+WoodProductsMember segment revenue for the fiscal year ended 2023-12-31: USD 5,657,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 7,674,000,000.",Unsupported,Segment vs Total Revenue,WY,Unsupported,same_item_different_amount,"The passage reports 7,674,000,000 for this item and period, not 5,657,000,000. 5,657,000,000 does appear, but on a different line: ""WoodProductsMember segment revenue for the fiscal year ended 2023-12-31: USD 5,657,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 7,674,000,000. || WoodProductsMember segment revenue for the fiscal year ended 2023-12-31: USD 5,657,000,000."
+SB-WY-04,storyboard_b,test,"WEYERHAEUSER CO's REENRMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 391,000,000.","WEYERHAEUSER CO Form 10-K (accession 0000950170-25-021254), revenue by segment for the fiscal year ended 2024-12-31:
+REENRMember segment revenue for the fiscal year ended 2024-12-31: USD 391,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2024-12-31: USD 1,512,000,000.
+WoodProductsMember segment revenue for the fiscal year ended 2024-12-31: USD 5,221,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 7,124,000,000.",Unsupported,Segment vs Total Revenue,WY,Unsupported,same_item_different_amount,"The passage reports 7,124,000,000 for this item and period, not 391,000,000. 391,000,000 does appear, but on a different line: ""REENRMember segment revenue for the fiscal year ended 2024-12-31: USD 391,000,000.""","Total revenues for the fiscal year ended 2024-12-31: USD 7,124,000,000. || REENRMember segment revenue for the fiscal year ended 2024-12-31: USD 391,000,000."
+SB-WY-05,storyboard_b,test,"WEYERHAEUSER CO's TimberlandsMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 1,512,000,000.","WEYERHAEUSER CO Form 10-K (accession 0000950170-25-021254), revenue by segment for the fiscal year ended 2024-12-31:
+REENRMember segment revenue for the fiscal year ended 2024-12-31: USD 391,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2024-12-31: USD 1,512,000,000.
+WoodProductsMember segment revenue for the fiscal year ended 2024-12-31: USD 5,221,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 7,124,000,000.",Unsupported,Segment vs Total Revenue,WY,Unsupported,same_item_different_amount,"The passage reports 7,124,000,000 for this item and period, not 1,512,000,000. 1,512,000,000 does appear, but on a different line: ""TimberlandsMember segment revenue for the fiscal year ended 2024-12-31: USD 1,512,000,000.""","Total revenues for the fiscal year ended 2024-12-31: USD 7,124,000,000. || TimberlandsMember segment revenue for the fiscal year ended 2024-12-31: USD 1,512,000,000."
+SB-WY-06,storyboard_b,test,"WEYERHAEUSER CO's WoodProductsMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 5,221,000,000.","WEYERHAEUSER CO Form 10-K (accession 0000950170-25-021254), revenue by segment for the fiscal year ended 2024-12-31:
+REENRMember segment revenue for the fiscal year ended 2024-12-31: USD 391,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2024-12-31: USD 1,512,000,000.
+WoodProductsMember segment revenue for the fiscal year ended 2024-12-31: USD 5,221,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 7,124,000,000.",Unsupported,Segment vs Total Revenue,WY,Unsupported,same_item_different_amount,"The passage reports 7,124,000,000 for this item and period, not 5,221,000,000. 5,221,000,000 does appear, but on a different line: ""WoodProductsMember segment revenue for the fiscal year ended 2024-12-31: USD 5,221,000,000.""","Total revenues for the fiscal year ended 2024-12-31: USD 7,124,000,000. || WoodProductsMember segment revenue for the fiscal year ended 2024-12-31: USD 5,221,000,000."
+SB-WY-07,storyboard_b,test,"WEYERHAEUSER CO's REENRMember revenue for the fiscal period ended 2025-12-31 represented the company's entire revenue of USD 454,000,000.","WEYERHAEUSER CO Form 10-K (accession 0001193125-26-051422), revenue by segment for the fiscal year ended 2025-12-31:
+REENRMember segment revenue for the fiscal year ended 2025-12-31: USD 454,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2025-12-31: USD 1,494,000,000.
+Total revenues for the fiscal year ended 2025-12-31: USD 6,905,000,000.",Unsupported,Segment vs Total Revenue,WY,Unsupported,same_item_different_amount,"The passage reports 6,905,000,000 for this item and period, not 454,000,000. 454,000,000 does appear, but on a different line: ""REENRMember segment revenue for the fiscal year ended 2025-12-31: USD 454,000,000.""","Total revenues for the fiscal year ended 2025-12-31: USD 6,905,000,000. || REENRMember segment revenue for the fiscal year ended 2025-12-31: USD 454,000,000."
+SB-WY-08,storyboard_b,test,"WEYERHAEUSER CO's TimberlandsMember revenue for the fiscal period ended 2025-12-31 represented the company's entire revenue of USD 1,494,000,000.","WEYERHAEUSER CO Form 10-K (accession 0001193125-26-051422), revenue by segment for the fiscal year ended 2025-12-31:
+REENRMember segment revenue for the fiscal year ended 2025-12-31: USD 454,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2025-12-31: USD 1,494,000,000.
+Total revenues for the fiscal year ended 2025-12-31: USD 6,905,000,000.",Unsupported,Segment vs Total Revenue,WY,Unsupported,same_item_different_amount,"The passage reports 6,905,000,000 for this item and period, not 1,494,000,000. 1,494,000,000 does appear, but on a different line: ""TimberlandsMember segment revenue for the fiscal year ended 2025-12-31: USD 1,494,000,000.""","Total revenues for the fiscal year ended 2025-12-31: USD 6,905,000,000. || TimberlandsMember segment revenue for the fiscal year ended 2025-12-31: USD 1,494,000,000."
+SB-WY-S01,storyboard_b,test,"WEYERHAEUSER CO's REENRMember segment revenue for the fiscal period ended 2023-12-31 was USD 363,000,000.","WEYERHAEUSER CO Form 10-K (accession 0000950170-24-016434), revenue by segment for the fiscal year ended 2023-12-31:
+REENRMember segment revenue for the fiscal year ended 2023-12-31: USD 363,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2023-12-31: USD 1,654,000,000.
+WoodProductsMember segment revenue for the fiscal year ended 2023-12-31: USD 5,657,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 7,674,000,000.",Supported,Supported Segment Revenue,WY,Supported,amount_and_keywords_match,"363,000,000 appears in the passage next to the same line item and period.","REENRMember segment revenue for the fiscal year ended 2023-12-31: USD 363,000,000."
+SB-WY-S02,storyboard_b,test,"WEYERHAEUSER CO's TimberlandsMember segment revenue for the fiscal period ended 2023-12-31 was USD 1,654,000,000.","WEYERHAEUSER CO Form 10-K (accession 0000950170-24-016434), revenue by segment for the fiscal year ended 2023-12-31:
+REENRMember segment revenue for the fiscal year ended 2023-12-31: USD 363,000,000.
+TimberlandsMember segment revenue for the fiscal year ended 2023-12-31: USD 1,654,000,000.
+WoodProductsMember segment revenue for the fiscal year ended 2023-12-31: USD 5,657,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 7,674,000,000.",Supported,Supported Segment Revenue,WY,Supported,amount_and_keywords_match,"1,654,000,000 appears in the passage next to the same line item and period.","TimberlandsMember segment revenue for the fiscal year ended 2023-12-31: USD 1,654,000,000."
