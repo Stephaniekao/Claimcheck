@@ -11,7 +11,8 @@ For each amount in the claim:
                  says "segment"), or nothing in the claim can be checked.
 
 A claim is Unsupported if any amount is Unsupported, Supported if every amount
-is Supported, and Uncertain otherwise. No training, no randomness, no score.
+is Supported, and Uncertain otherwise. No training and no randomness. The
+labels come from these rules alone; score.py adds a support score that ranks them.
 """
 from __future__ import annotations
 
@@ -54,6 +55,18 @@ class Verdict:
     rule: str
     explanation: str
     evidence: list[str] = field(default_factory=list)
+
+
+@dataclass
+class AmountCheck:
+    """The verdict for one claim amount, plus the claim key words it was judged on."""
+    quantity: Quantity
+    verdict: Verdict
+    items: set[str]
+    words: set[str]
+    periods: set[str]
+    scope: str | None
+    segments: set[str]
 
 
 # Sentences that compute something ("(136/964) * 100 = 14.09%", "grew by 8.9%")
@@ -194,23 +207,14 @@ def analyse_passage(passage: str | list[str]) -> list[Unit]:
     return [analyse_unit(t) for t in split_passage(passage)]
 
 
-def verify(claim: str, passage: str | None, cfg: Config = Config(), units: list[Unit] | None = None) -> Verdict:
-    if units is None:
-        if not passage or not passage.strip():
-            return Verdict(UNCERTAIN, "no_passage", "No cited passage, so the claim cannot be checked.")
-        units = analyse_passage(passage)
-    if not units:
-        return Verdict(UNCERTAIN, "no_passage", "No cited passage, so the claim cannot be checked.")
-
-    claim = clean_text(claim)
-    amounts = extract_quantities(claim)
-    if not amounts:
-        return Verdict(UNCERTAIN, "no_amount", "The claim has no number the rules can read, so it cannot be checked by number matching.")
+def check_amounts(claim: str, amounts: list[Quantity], units: list[Unit], cfg: Config) -> list[AmountCheck]:
+    """Apply the rules to each amount in the (cleaned) claim. verify() rolls these up
+    into one label; score.py reuses the same checks to rank claims."""
     claim_periods = extract_periods(claim)
     claim_scope = kw.scope_of(claim)
     claim_segments = kw.find_segments(claim)
 
-    per_amount: list[Verdict] = []
+    checks: list[AmountCheck] = []
     for q in amounts:
         ctx = _local_context(claim, q, cfg.context_window)
         items = kw.find_items(ctx) or kw.find_items(claim)
@@ -261,8 +265,24 @@ def verify(claim: str, passage: str | None, cfg: Config = Config(), units: list[
         else:
             v = Verdict(UNSUPPORTED, "amount_not_in_passage",
                         f"{shown} does not appear anywhere in the cited passage (after unit normalization).")
-        per_amount.append(v)
+        checks.append(AmountCheck(q, v, items, words, claim_periods, claim_scope, claim_segments))
 
+    return checks
+
+
+def verify(claim: str, passage: str | None, cfg: Config = Config(), units: list[Unit] | None = None) -> Verdict:
+    if units is None:
+        if not passage or not passage.strip():
+            return Verdict(UNCERTAIN, "no_passage", "No cited passage, so the claim cannot be checked.")
+        units = analyse_passage(passage)
+    if not units:
+        return Verdict(UNCERTAIN, "no_passage", "No cited passage, so the claim cannot be checked.")
+
+    claim = clean_text(claim)
+    amounts = extract_quantities(claim)
+    if not amounts:
+        return Verdict(UNCERTAIN, "no_amount", "The claim has no number the rules can read, so it cannot be checked by number matching.")
+    per_amount = [c.verdict for c in check_amounts(claim, amounts, units, cfg)]
     labels = {v.label for v in per_amount}
     if UNSUPPORTED in labels:
         return next(v for v in per_amount if v.label == UNSUPPORTED)

@@ -1,0 +1,81 @@
+claim_id,subset,error_type,label,pred,rule,score
+SEC-UNH-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-UNH-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-UNH-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-UNH-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-UNH-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-UNH-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-UNH-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-UNH-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-UNH-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-UNH-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-NEM-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-NEM-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-NEM-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-NEM-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-NEM-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-NEM-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-NEM-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-NEM-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-NEM-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-NEM-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MDT-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-MDT-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-MDT-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MDT-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MDT-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MDT-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MDT-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MDT-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MDT-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MDT-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CPB-01,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CPB-02,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CPB-03,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CPB-04,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CPB-05,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CPB-06,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CPB-07,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CPB-08,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CPB-S01,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-CPB-S02,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-CAT-01,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CAT-02,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CAT-03,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CAT-04,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CAT-05,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CAT-06,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CAT-07,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CAT-08,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-CAT-S01,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-CAT-S02,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-KMB-01,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-KMB-02,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-KMB-03,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-KMB-04,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-KMB-05,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-KMB-06,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-KMB-07,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-KMB-08,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-KMB-S01,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-KMB-S02,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-PG-01,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-PG-02,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-PG-03,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-PG-04,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-PG-05,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-PG-06,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-PG-07,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-PG-08,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-PG-S01,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-PG-S02,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-WY-01,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-WY-02,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-WY-03,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-WY-04,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-WY-05,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-WY-06,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-WY-07,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-WY-08,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
+SB-WY-S01,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-WY-S02,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667

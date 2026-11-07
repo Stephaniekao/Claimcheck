@@ -1,0 +1,13 @@
+{
+  "weights_name": "number_heavy",
+  "weights": {
+    "number": 0.7,
+    "item": 0.1,
+    "period": 0.1,
+    "scope": 0.1
+  },
+  "chosen_on": "RAGBench validation: mean claim-level AUROC (FinQA, TAT-QA)",
+  "n_trials": 4,
+  "trials_used_in_total_with_rules_1.2.0": 20,
+  "chosen_at_utc": "2026-11-07T14:42:59+00:00"
+}

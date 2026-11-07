@@ -61,3 +61,48 @@ def meets_targets(overall: dict, storyboard: dict | None) -> dict:
     if storyboard is not None:
         out["storyboard_b_strict_recall>=0.80"] = storyboard["strict_recall"] >= TARGETS["storyboard_b_strict_recall"]
     return out
+
+
+# --- Score-based metrics (Field 7), for the support score. -------------------
+# The positive class is still Unsupported, so a claim's risk = 1 - support score.
+
+def auroc(gold: pd.Series, risk: pd.Series) -> float:
+    """Probability a wrong claim gets a higher risk than a correct one (ties count half)."""
+    pos = gold.eq("Unsupported").to_numpy()
+    n_pos, n_neg = int(pos.sum()), int((~pos).sum())
+    if not n_pos or not n_neg:
+        return float("nan")
+    ranks = pd.Series(risk.to_numpy()).rank(method="average").to_numpy()
+    return float((ranks[pos].sum() - n_pos * (n_pos + 1) / 2) / (n_pos * n_neg))
+
+
+def _pr_points(gold: pd.Series, risk: pd.Series) -> pd.DataFrame:
+    """Precision and recall when flagging every claim with risk >= t, for each distinct t."""
+    df = pd.DataFrame({"pos": gold.eq("Unsupported").to_numpy(), "risk": risk.to_numpy()})
+    g = df.groupby("risk", sort=True)["pos"].agg(["sum", "count"]).iloc[::-1]
+    tp, flagged = g["sum"].cumsum(), g["count"].cumsum()
+    return pd.DataFrame({"threshold": g.index, "precision": tp / flagged,
+                         "recall": tp / max(int(df.pos.sum()), 1)}).reset_index(drop=True)
+
+
+def average_precision(gold: pd.Series, risk: pd.Series) -> float:
+    pts = _pr_points(gold, risk)
+    prev_r = pts.recall.shift(fill_value=0.0)
+    return float(((pts.recall - prev_r) * pts.precision).sum())
+
+
+def precision_at_recall(gold: pd.Series, risk: pd.Series, target: float = 0.80) -> dict:
+    """Best precision among thresholds whose recall reaches the target (Field 7)."""
+    pts = _pr_points(gold, risk)
+    ok = pts[pts.recall >= target]
+    if ok.empty:
+        return {"precision": float("nan"), "recall": float("nan"), "risk_threshold": float("nan")}
+    best = ok.loc[ok.precision.idxmax()]
+    return {"precision": float(best.precision), "recall": float(best.recall), "risk_threshold": float(best.threshold)}
+
+
+def score_metrics(gold: pd.Series, score: pd.Series) -> dict:
+    risk = 1 - score
+    return {"n": int(len(gold)), "auroc": auroc(gold, risk), "average_precision": average_precision(gold, risk),
+            "base_rate": float(gold.eq("Unsupported").mean()), "n_distinct_scores": int(score.nunique()),
+            "precision_at_recall_0.80": precision_at_recall(gold, risk, 0.80)}

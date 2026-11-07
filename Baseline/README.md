@@ -1,8 +1,8 @@
 # Rule-based baseline
 
-Baseline row of the Experiment Card (owner: Sharon). Number normalization plus keyword matching, with no training, no randomness and no API. Each claim gets Supported / Uncertain / Unsupported, plus the rule that fired, an explanation, and the passage lines it used. It gives no score, so AUROC, ECE and the precision–recall curve do not apply.
+Baseline row of the Experiment Card (owner: Sharon). Number normalization plus keyword matching, with no training, no randomness and no API. Each claim gets Supported / Uncertain / Unsupported, plus the rule that fired, an explanation, and the passage lines it used. A rule-based **support score** (0–1) was added later, after the test run; see [Support score](#support-score-added-after-the-test-run).
 
-**Status:** frozen at rules 1.2.0 / normalizer 1.2.0. The one-time test run is done (Field 5), so any further rule change is a new version and must not be re-judged on this test split.
+**Status:** labels frozen at rules 1.2.0 / normalizer 1.2.0. The one-time test run is done (Field 5), so any further rule change is a new version and must not be re-judged on this test split. Support score 1.0.0 was added afterwards; it does not change any label, and it had its own single test run.
 
 ## Run
 
@@ -10,8 +10,9 @@ Baseline row of the Experiment Card (owner: Sharon). Number normalization plus k
 python3 Baseline/run_inserted_error_set.py      # train + validation
 python3 Baseline/run_ragbench.py                # RAGBench validation: 16-trial config search
 python3 Baseline/error_analysis.py              # Field 9 samples from the saved test outputs
+python3 Baseline/run_support_score.py           # support score: 4 weight trials on RAGBench validation
 python3 -m unittest discover Baseline/tests
-# done once already; do not repeat:  --final-test  on both runners
+# done once already; do not repeat:  --final-test  on all three runners
 ```
 
 Results go to `outputs/`; each JSON records the code versions and input SHA256s.
@@ -48,6 +49,38 @@ Flag-all F1 is what you get by labelling every claim Unsupported. Latency is abo
 - **Inserted Error Set:** it meets every target that applies (strict recall ≥ 0.80, precision ≥ 0.60, Storyboard B recall ≥ 0.80). But flagging every claim also gets recall 1.0 and precision 0.80, so these targets can't tell methods apart.
 - **RAGBench:** the baseline breaks the Uncertain cap (AC2, ≤ ⅓) at 73% Uncertain, and at answer level on FinQA it's no better than flagging everything. Both are noted for the team.
 
+## Support score (added after the test run)
+
+`claimcheck_baseline/score.py`, `run_support_score.py`; results in `outputs/support_score/`.
+
+**What it is.** A number from 0 to 1 for how strongly the passage supports the claim under the baseline's own rules. It is a *support score*, not a confidence that the label is right, so it is not calibrated and ECE still does not apply.
+
+**How it works.**
+- **The label sets the band:** Unsupported 0–⅓, Uncertain ⅓–⅔, Supported ⅔–1. Thresholds ⅓ and ⅔ give back exactly the 1.2.0 labels, and the runner checks this on every split and stops if any label differs. So a right number next to the wrong line item, year or segment can never score as Supported.
+- **Four features rank claims inside the band:**
+  - same number (unit and scale are part of this check, so there is no separate unit feature)
+  - same line item, or the share of the claim's key words found on the line
+  - same year
+  - same segment/total scope
+
+  A feature the claim or line doesn't mention is skipped, and the other weights are rescaled. Each amount takes its best passage line; a claim takes its weakest amount.
+- **Weights:** chosen on RAGBench validation by mean claim-level AUROC, from 4 settings. That brings the total to 20 trials, the Field 5 limit. The winner was number 0.7 / item 0.1 / year 0.1 / scope 0.1; all four settings were within 0.015 AUROC of each other.
+
+**Test results** (single run; risk = 1 − score; Unsupported is the positive class):
+
+| | AUROC | Average precision (base rate) | Precision at recall 0.80 | AUROC from the label alone |
+|---|---|---|---|---|
+| Inserted Error Set (and Storyboard B) | 1.00 | 1.00 (0.80) | 1.00 | 1.00 |
+| RAGBench FinQA, claims | 0.57 | 0.029 (0.017) | 0.019 | 0.57 |
+| RAGBench FinQA, answers | 0.49 | 0.092 (0.085) | 0.085 | — |
+| RAGBench TAT-QA, claims | 0.46 | 0.011 (0.012) | 0.012 | 0.50 |
+| RAGBench TAT-QA, answers | 0.55 | 0.040 (0.035) | 0.041 | — |
+
+**What it shows.**
+- **RAGBench:** the score is close to chance, well short of the 0.75 target. Wrong and correct claims are labelled Supported at the same rate (about 21% each on FinQA validation), so ranking inside the bands can't help much; on TAT-QA it is slightly worse than the label alone. Matching numbers and words does not separate RAGBench's errors, which gives the trained models a concrete floor to beat.
+- **Inserted Error Set:** it is again saturated. Only two distinct scores occur, so 1.00 says nothing about ranking.
+- **How to report it:** report it next to the official 1.2.0 row, marked as added after the test run. We had already read the 1.2.0 test errors when we designed it.
+
 ## Error analysis (Field 9)
 
 The baseline made no errors on the Inserted Error Set, so there are none to inspect there. For RAGBench, `outputs/error_analysis/` has, for each subset, 30 missed errors and 20 false alarms (seed 42), each with its passage. Each row has a suggested category from a keyword heuristic, plus empty `reviewer_1_category` and `reviewer_2_category` columns for the team's manual pass. See [outputs/error_analysis/summary.md](outputs/error_analysis/summary.md).
@@ -66,5 +99,6 @@ The baseline made no errors on the Inserted Error Set, so there are none to insp
 - **Signs:** amounts are compared by absolute value, because text often carries the sign in words ("net cash used in …"). A pure sign error (+5bn vs −5bn) is not caught. The Inserted Error Set has no sign errors.
 - **Calculation cue words are broad** ("about", "over", "margin", "approximately"). A wrong number in such a sentence becomes Uncertain rather than Unsupported.
 - **The line-item lexicon is small** (15 items), so RAGBench rows with business-specific labels fall back to word overlap.
+- **Support score is not a confidence:** it ranks claims by rule agreement and is not calibrated; on RAGBench it is near chance.
 - **Scope:** the baseline covers claim verification only. Claim splitting, retrieval and the interface are other parts of the pipeline.
 - **FinanceBench is not evaluated:** its 147 answers still need claim splitting and hand labels.

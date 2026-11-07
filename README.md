@@ -18,7 +18,7 @@ All four methods label the same claims, with the same passages and the same numb
 
 | Row | Method | Owner | Status |
 |---|---|---|---|
-| Baseline | Rule-based number normalization + keyword matching | Sharon | Done; test results and error analysis in [Baseline/](Baseline/) |
+| Baseline | Rule-based number normalization + keyword matching, plus a rule-based support score | Sharon | Done; test results, support score and error analysis in [Baseline/](Baseline/) |
 | Classical | TF-IDF + logistic regression | Stephanie | Planned |
 | Deep | DeBERTa-v3-large (NLI checkpoint), fine-tuned on RAGBench FinQA/TAT-QA | Chengyuan | Planned |
 | Foundation | LLM judge (Claude; GPT and Gemini if time allows) | Stephanie | Planned |
@@ -83,7 +83,7 @@ On macOS with the python.org build of Python, `urllib` downloads in the notebook
 
 | Model | Inserted Error Set strict R / P / F1 | Storyboard B strict R | RAGBench claims strict R / P / F1 (FinQA · TAT-QA) | AUROC | Seeds | ECE | Training | Latency | Inspectability |
 |---|---|---|---|---|---|---|---|---|---|
-| Rule-based baseline (rules 1.2.0) | 1.00 / 1.00 / 1.00 | 1.00 | 0.18 / 0.05 / 0.08 · 0.05 / 0.02 / 0.03 | N/A | N/A (deterministic) | N/A | none | ~1 ms/claim (CPU) | Each label comes from a named rule and the passage line it used |
+| Rule-based baseline (rules 1.2.0) | 1.00 / 1.00 / 1.00 | 1.00 | 0.18 / 0.05 / 0.08 · 0.05 / 0.02 / 0.03 | 0.57 · 0.46 (support score 1.0.0, added after the test run) | N/A (deterministic) | N/A (score not calibrated) | none | ~1 ms/claim (CPU) | Each label comes from a named rule and the passage line it used |
 | *Label everything Unsupported* | *1.00 / 0.80 / 0.89* | *1.00* | *1.00 / 0.02 / 0.03 · 1.00 / 0.01 / 0.02* | | | | | | |
 | TF-IDF + LR | | | | | | | | | |
 | DeBERTa-v3-large | | | | | | | | | |
@@ -91,6 +91,7 @@ On macOS with the python.org build of Python, `urllib` downloads in the notebook
 
 **Points for the team:**
 - **The Inserted Error Set is saturated by simple rules.** 80% of its claims are wrong, so labelling every claim Unsupported also meets the recall and precision targets. We should add a check that a method beats that reference.
+- **The baseline's support score is near chance on RAGBench** (AUROC 0.57 FinQA, 0.46 TAT-QA), so the 0.75 target is a real step up from number and keyword matching.
 - **The baseline labels 73% of RAGBench claims Uncertain,** over the ⅓ cap, because most RAGBench sentences are calculations or contain no number.
 
 Details, error analysis and limitations: [Baseline/README.md](Baseline/README.md).
