@@ -33,6 +33,16 @@ All four methods label the same claims, with the same passages and the same numb
 
 Details on preparation, leakage screening and reproduction are in [Data/README.md](Data/README.md).
 
+### Inserted Error Set Update
+
+The Inserted Error Set has been updated from v1 to v2. The current dataset contains 400 claims from the same 40 companies, with 200 Supported and 200 Unsupported claims, compared to approximately 80% Unsupported in v1.
+
+The updated generation notebook is `Data/data_download__v2.ipynb`. The original notebook is retained for reference. Company assignments and train, validation, and test splits remain unchanged (240 / 80 / 80).
+
+The existing baseline results were generated using v1 and need to be updated after rerunning the baseline on v2.
+
+For details on data preparation, error types, splitting, and reproducibility, see [Data/README.md](Data/README.md).
+
 ## Evaluation (Experiment Card, Fields 6–10)
 
 - **Main metric:** strict Unsupported recall, i.e. the share of wrong claims labelled Unsupported, reported with precision and F1. Lenient recall also counts Uncertain as caught.
