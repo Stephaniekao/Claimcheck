@@ -37,6 +37,17 @@ Claim decomposition, label conversion, and other model preprocessing steps were 
 
 **Source:** SEC financial filings and XBRL data
 
+### Dataset Versions
+
+Two generation notebooks are retained in the repository:
+
+- **v1 (`Data/data_download.ipynb`):** The original dataset contained 400 claims, with approximately 80% labeled Unsupported.
+- **v2 (`Data/data_download__v2.ipynb`):** The updated dataset contains 400 claims, with 200 Supported and 200 Unsupported claims. It introduces more challenging errors, including small numerical changes (1% to 5%), transposed digits, and flipped signs.
+
+Both versions use the same 40 companies and the same company assignments across training, validation, and testing.
+
+The current dataset is v2, and the existing CSV files have been updated without changing their filenames.
+
 ### Data Leakage Prevention
 
 To reduce the risk of data leakage, we screened candidate companies against FinanceBench company information and the processed RAGBench FinQA and TAT-QA datasets.
@@ -51,7 +62,9 @@ The selected companies and their assignments are recorded in `locked_company_spl
 
 The dataset contains 300 General Claims from 30 companies and 100 Storyboard B claims from 10 additional companies.
 
-General Claims include Supported, Numerical, Temporal, Metric Confusion, and Unit examples. Storyboard B focuses on errors where segment revenue is incorrectly presented as the company's total revenue.
+General Claims include Supported claims and five types of inserted errors: Small Numerical, Transposed Digits or Flipped Sign, Temporal, Metric Confusion, and Unit. Storyboard B focuses on errors where segment revenue is incorrectly presented as the company's total revenue.
+
+The updated dataset contains 200 Supported and 200 Unsupported claims. Each split maintains an equal number of Supported and Unsupported claims.
 
 | Dataset | Training | Validation | Testing | Total |
 |---|---:|---:|---:|---:|
