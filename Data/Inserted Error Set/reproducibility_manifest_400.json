@@ -1,12 +1,24 @@
 {
   "company_count": 40,
-  "format": "ClaimCheck 40-company, 400-claim automatic segment extraction v3",
+  "format": "ClaimCheck Inserted Error Set v2, 40 companies, 400 claims",
   "general_claim_count": 300,
   "general_company_count": 30,
+  "general_label_counts": {
+    "Supported": 150,
+    "Unsupported": 150
+  },
   "general_split_counts": {
     "test": 30,
     "train": 210,
     "validation": 60
+  },
+  "generation_quotas": {
+    "Digit or Sign": 1,
+    "Metric Confusion": 1,
+    "Small Numerical": 1,
+    "Supported": 5,
+    "Temporal": 1,
+    "Unit": 1
   },
   "input_sha256": {
     "Data/FinanceBench/financebench_document_information.jsonl": "1c69127783879de8cdadb159d2181f39bc3123b8e0ebf74031c3969d69189575",
@@ -18,15 +30,15 @@
     "Data/RAGBench/TATQA/validation.csv": "518cb046a8ae0f989fbcf88b6c3c6addc0c4c3be76432cec4cf17921320aa6a9"
   },
   "output_sha256": {
-    "general_claims_300.csv": "68ba5221881438d17825f5806897841ceb7bf1a115b80dfdd8d919e71927a221",
-    "general_claims_test.csv": "9fd2d0fcca2f66300df2c5ffafb59053ee555937f49af7a36bfa8acd25ff6890",
-    "general_claims_train.csv": "de786b77960782b9198708173c576979690ce2a239f352ad877b02711d9f9dff",
-    "general_claims_validation.csv": "b62d38350ab7a803e465cc377d6557b02d1cd4c589e8c59a9ded9abbbadae8fa",
+    "general_claims_300.csv": "120ced12a734836d59cb371010aa8ba74e84302db341545bb5f80c2fe7803f0a",
+    "general_claims_test.csv": "541d3c605066aa56951bf84c738ef819cab7dd4be2e67e3f00341bef50de212d",
+    "general_claims_train.csv": "36ff09638f29fbbcf26dfd6b606642b51e119f1e3464c3f7633ec98f1a2a3559",
+    "general_claims_validation.csv": "2b962010d93ecdfc3e20960058b16379cda8ab09dda8def9688aff197d8cebcc",
     "locked_company_split_40.csv": "0b6f56b4849181d9c017908d3e0cae871706af9986b84234c7df39982fef16d5",
-    "storyboard_b_100.csv": "c36370fa18ac5a013d1647df52e42a2c6fe75e92ff8f4f4ba128d0746bb01990",
-    "storyboard_b_test.csv": "1e7bf9ae71af318d3ad7c0bc2001af4a01ca11b58e737fe4db0abcd5728bff0b",
-    "storyboard_b_train.csv": "8dbdf59050a4f4e064fb574caf5b677c46878bde7c2bdc5457e4ded7a95002a7",
-    "storyboard_b_validation.csv": "a6693584676e23502f39741663b81c5fdc5dc8122efd537e4a656779211ded25"
+    "storyboard_b_100.csv": "ea859d53027524c2f30d3d2b2b23db0b2b30ca27bc36d5a0443114b9234b94a6",
+    "storyboard_b_test.csv": "22be7a03ede492cdb26469e9bfe58a73235ee34aac47584167d60bb3be12bad9",
+    "storyboard_b_train.csv": "abb81ed0b78b701ad0d3144a8337b8aaf5e5000e1e243253ded23e70d3cfe539",
+    "storyboard_b_validation.csv": "78bbadf8bb769c7da81f6930018dea4e906ff5d54f994b16bb1e5c623b9575de"
   },
   "python_packages": {
     "pandas": "2.3.3",
@@ -380,12 +392,16 @@
   "storyboard_claim_count": 100,
   "storyboard_company_count": 10,
   "storyboard_label_counts": {
-    "Supported": 20,
-    "Unsupported": 80
+    "Supported": 50,
+    "Unsupported": 50
   },
   "storyboard_split_counts": {
     "test": 50,
     "train": 30,
     "validation": 20
+  },
+  "total_label_counts": {
+    "Supported": 200,
+    "Unsupported": 200
   }
 }
