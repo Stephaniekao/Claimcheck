@@ -1,6 +1,14 @@
-# Data Preparation and Split Notes
+## Data Preparation and Split Notes
 
 This document explains how the datasets were prepared and split for the ClaimCheck project, with a focus on preventing data leakage and reproducing the results.
+
+## Current Dataset Version
+
+The current Inserted Error Set is v2. Please use Data/data_download__v2.ipynb for dataset generation. The original Data/data_download.ipynb is retained for reference only.
+
+The v2 dataset contains 400 claims from 40 companies, with 200 Supported and 200 Unsupported claims. The company assignments and train, validation, and test splits remain unchanged from v1.
+
+The updated dataset files are available in Data/Inserted Error Set/.
 
 ## 1. RAGBench
 
