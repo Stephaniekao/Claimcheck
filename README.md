@@ -28,7 +28,7 @@ All four methods label the same claims, with the same passages and the same numb
 | Dataset | Use | Split |
 |---|---|---|
 | [RAGBench](https://huggingface.co/datasets/galileo-ai/ragbench) FinQA + TAT-QA | Develop and evaluate verifiers; sentence-level support labels | Official train / validation / test |
-| Inserted Error Set (400 claims, 40 companies) | Correct SEC XBRL claims, plus copies with deliberately inserted errors: Numerical, Temporal, Metric Confusion, Unit, and Storyboard B (segment revenue presented as total revenue) | Split by company: 240 / 80 / 80 |
+| Inserted Error Set v2 (400 claims, 40 companies, 50% Supported) | Correct SEC XBRL claims, plus copies with deliberately inserted errors: Small Numerical (1–5%), Transposed Digits, Flipped Sign, Temporal, Metric Confusion, Unit, and Storyboard B (segment revenue presented as total revenue) | Split by company: 240 / 80 / 80 |
 | [FinanceBench](https://huggingface.co/datasets/PatronusAI/financebench) | Final evaluation only, never tuning | 147 test + 3 blind showcase examples |
 
 Details on preparation, leakage screening and reproduction are in [Data/README.md](Data/README.md).
@@ -37,7 +37,7 @@ Details on preparation, leakage screening and reproduction are in [Data/README.m
 
 The Inserted Error Set has been updated from v1 to v2. The current dataset contains 400 claims from the same 40 companies, with 200 Supported and 200 Unsupported claims, compared to approximately 80% Unsupported in v1.
 
-The updated generation notebook is `Data/data_download__v2.ipynb`. The original notebook is retained for reference. Company assignments and train, validation, and test splits remain unchanged (240 / 80 / 80).
+The updated generation notebook is `Data/data_download_v2.ipynb`. The original notebook is retained for reference. Company assignments and train, validation, and test splits remain unchanged (240 / 80 / 80).
 
 The existing baseline results were generated using v1 and need to be updated after rerunning the baseline on v2.
 
@@ -69,6 +69,15 @@ The environment is pinned in the repo: Python **3.14.0** (`.python-version`) and
 python3 -m venv .venv && source .venv/bin/activate
 python3 -m pip install -r requirements.txt
 
+# Everything in one command (train + validation; never the test splits):
+./run_all.sh --quick     # unit tests + smoke test on the Inserted Error Set, a few seconds
+./run_all.sh --fetch     # also downloads RAGBench, then runs RAGBench and the support score (~1 min)
+./run_all.sh             # same, once RAGBench is in Data/RAGBench/
+```
+
+The individual steps, if you want to run them one by one:
+
+```bash
 # Smoke test: Inserted Error Set, data already in the repo, a few seconds on a laptop
 python3 Baseline/run_inserted_error_set.py
 
@@ -78,14 +87,15 @@ python3 Baseline/fetch_ragbench.py
 
 # 2. Run the baseline on train + validation
 python3 Baseline/run_inserted_error_set.py
-python3 Baseline/run_ragbench.py
+python3 Baseline/run_ragbench.py --no-search     # saved config; without the flag it re-runs the 16-trial search
+python3 Baseline/run_support_score.py
 
 # 3. Error analysis from the saved test outputs, then tests
 python3 Baseline/error_analysis.py
 python3 -m unittest discover Baseline/tests
 ```
 
-The baseline's one-time test run is done (`--final-test`); don't repeat it. **Note:** the runners overwrite `Baseline/outputs/`, and a run without `--final-test` replaces the logged test results with train and validation only. Run `git checkout -- Baseline/outputs` afterwards to restore the committed results.
+Don't run `--final-test` yourself: each test split is used once, and `run_ragbench.py --final-test` refuses to run again. Train/validation runs rewrite the train/validation files in `Baseline/outputs/` but keep the logged test results. Every results JSON records the commit, the dataset version and the hardware that produced it.
 
 On macOS with the python.org build of Python, `urllib` downloads in the notebook can fail with `CERTIFICATE_VERIFY_FAILED`. Run *Install Certificates.command* in your Python folder, or use `fetch_ragbench.py`, which downloads with `curl`.
 

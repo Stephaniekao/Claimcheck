@@ -73,7 +73,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Supported,Supported,CL,Supported,amount_and_keywords_match,"1,288.000 million appears in the passage next to the same line item and period.","Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million."
-SEC-CL-03,general,validation,"COLGATE PALMOLIVE CO's net cash from operating activities for the fiscal period ended 2025-12-31 was USD 5,037.600 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+SEC-CL-03,general,validation,"COLGATE PALMOLIVE CO's total liabilities for the fiscal period ended 2025-12-31 was USD 15,965.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
@@ -109,8 +109,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Numerical,CL,Unsupported,same_item_different_amount,"The passage reports 4,198 million for this item and period, not 5,037.600 million.","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million."
-SEC-CL-04,general,validation,"COLGATE PALMOLIVE CO's net income for the fiscal period ended 2025-12-31 was USD 2,558.400 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Supported,Supported,CL,Supported,amount_and_keywords_match,"15,965.000 million appears in the passage next to the same line item and period.","Liabilities as of 2025-12-31: USD 15,965 million."
+SEC-CL-04,general,validation,"COLGATE PALMOLIVE CO's net cash from operating activities for the fiscal period ended 2025-12-31 was USD 4,198.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
@@ -146,8 +146,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Numerical,CL,Unsupported,same_item_different_amount,"The passage reports 2,132 million for this item and period, not 2,558.400 million.","Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million."
-SEC-CL-05,general,validation,"COLGATE PALMOLIVE CO's total assets for the fiscal period ended 2025-12-31 was USD 19,596.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Supported,Supported,CL,Supported,amount_and_keywords_match,"4,198.000 million appears in the passage next to the same line item and period.","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million."
+SEC-CL-05,general,validation,"COLGATE PALMOLIVE CO's gross profit for the fiscal period ended 2025-12-31 was USD 12,251.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
@@ -183,8 +183,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Numerical,CL,Unsupported,same_item_different_amount,"The passage reports 16,330 million for this item and period, not 19,596.000 million.","Assets as of 2025-12-31: USD 16,330 million."
-SEC-CL-06,general,validation,"COLGATE PALMOLIVE CO's revenue for the fiscal period ended 2024-12-31 was USD 20,382.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Supported,Supported,CL,Supported,amount_and_keywords_match,"12,251.000 million appears in the passage next to the same line item and period.","Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million."
+SEC-CL-06,general,validation,"COLGATE PALMOLIVE CO's net cash from operating activities for the fiscal period ended 2025-12-31 was USD 4,376.835 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
@@ -220,8 +220,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Temporal,CL,Unsupported,same_item_different_amount,"The passage reports 20,101 million for this item and period, not 20,382.000 million. 20,382.000 million does appear, but on a different line: ""Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.""","Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million. || Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million."
-SEC-CL-07,general,validation,"COLGATE PALMOLIVE CO's net cash from financing activities for the fiscal period ended 2024-12-31 was USD -3,256.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Small Numerical,CL,Unsupported,same_item_different_amount,"The passage reports 4,198 million for this item and period, not 4,376.835 million.","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million."
+SEC-CL-07,general,validation,"COLGATE PALMOLIVE CO's revenue for the fiscal period ended 2025-12-31 was USD 23,082.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
@@ -257,8 +257,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Temporal,CL,Unsupported,same_item_different_amount,"The passage reports USD -3,389 million for this item and period, not USD -3,256.000 million. USD -3,256.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.""","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million. || Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million."
-SEC-CL-08,general,validation,"COLGATE PALMOLIVE CO's cost of revenue for the fiscal period ended 2025-12-31 was USD 12,251.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Transposed Digits,CL,Unsupported,same_item_different_amount,"The passage reports 20,382 million for this item and period, not 23,082.000 million.","Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million."
+SEC-CL-08,general,validation,"COLGATE PALMOLIVE CO's cash and cash equivalents for the fiscal period ended 2024-12-31 was USD 1,288.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
@@ -294,8 +294,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Metric Confusion,CL,Unsupported,same_item_different_amount,"The passage reports 8,131 million for this item and period, not 12,251.000 million. 12,251.000 million does appear, but on a different line: ""Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.""","Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million. || Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million."
-SEC-CL-09,general,validation,"COLGATE PALMOLIVE CO's total liabilities for the fiscal period ended 2025-12-31 was USD 3,306.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Temporal,CL,Unsupported,same_item_different_amount,"The passage reports 1,096 million for this item and period, not 1,288.000 million. 1,288.000 million does appear, but on a different line: ""Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.""","Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million. || Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million."
+SEC-CL-09,general,validation,"COLGATE PALMOLIVE CO's revenue for the fiscal period ended 2025-12-31 was USD 6,853.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
@@ -331,8 +331,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Metric Confusion,CL,Unsupported,same_item_different_amount,"The passage reports 15,965 million for this item and period, not 3,306.000 million. 3,306.000 million does appear, but on a different line: ""Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.""","Liabilities as of 2025-12-31: USD 15,965 million. || Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million."
-SEC-CL-10,general,validation,"COLGATE PALMOLIVE CO's cash and cash equivalents for the fiscal period ended 2025-12-31 was USD 1,288.000 billion.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Metric Confusion,CL,Unsupported,same_item_different_amount,"The passage reports 20,382 million for this item and period, not 6,853.000 million. 6,853.000 million does appear, but on a different line: ""Liabilities, Current as of 2025-12-31: USD 6,853 million.""","Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million. || Liabilities, Current as of 2025-12-31: USD 6,853 million."
+SEC-CL-10,general,validation,"COLGATE PALMOLIVE CO's total liabilities for the fiscal period ended 2025-12-31 was USD 15,965.000 billion.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
@@ -368,7 +368,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Unit,CL,Unsupported,same_item_different_amount,"The passage reports 1,288 million for this item and period, not 1,288.000 billion.","Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million."
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million.",Unsupported,Unit,CL,Unsupported,same_item_different_amount,"The passage reports 15,965 million for this item and period, not 15,965.000 billion.","Liabilities as of 2025-12-31: USD 15,965 million."
 SEC-TJX-01,general,validation,"TJX COMPANIES INC /DE/'s cost of revenue for the fiscal period ended 2026-01-31 was USD 41,679.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
@@ -433,7 +433,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Supported,Supported,TJX,Supported,amount_and_keywords_match,"15,202.000 million appears in the passage next to the same line item and period.","Assets, Current as of 2026-01-31: USD 15,202 million."
-SEC-TJX-03,general,validation,"TJX COMPANIES INC /DE/'s cost of revenue for the fiscal period ended 2026-01-31 was USD 50,014.800 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+SEC-TJX-03,general,validation,"TJX COMPANIES INC /DE/'s net income for the fiscal period ended 2026-01-31 was USD 5,494.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
@@ -464,8 +464,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Numerical,TJX,Unsupported,same_item_different_amount,"The passage reports 41,679 million for this item and period, not 50,014.800 million.","Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million."
-SEC-TJX-04,general,validation,"TJX COMPANIES INC /DE/'s current assets for the fiscal period ended 2026-01-31 was USD 18,242.400 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Supported,Supported,TJX,Supported,amount_and_keywords_match,"5,494.000 million appears in the passage next to the same line item and period.","Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million."
+SEC-TJX-04,general,validation,"TJX COMPANIES INC /DE/'s cash and cash equivalents for the fiscal period ended 2026-01-31 was USD 6,230.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
@@ -496,8 +496,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Numerical,TJX,Unsupported,same_item_different_amount,"The passage reports 15,202 million for this item and period, not 18,242.400 million.","Assets, Current as of 2026-01-31: USD 15,202 million."
-SEC-TJX-05,general,validation,"TJX COMPANIES INC /DE/'s net cash from financing activities for the fiscal period ended 2026-01-31 was USD -3,294.400 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Supported,Supported,TJX,Supported,amount_and_keywords_match,"6,230.000 million appears in the passage next to the same line item and period.","Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million."
+SEC-TJX-05,general,validation,"TJX COMPANIES INC /DE/'s net cash from investing activities for the fiscal period ended 2026-01-31 was USD -1,981.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
@@ -528,8 +528,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Numerical,TJX,Unsupported,same_item_different_amount,"The passage reports USD -4,118 million for this item and period, not USD -3,294.400 million.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million."
-SEC-TJX-06,general,validation,"TJX COMPANIES INC /DE/'s current assets for the fiscal period ended 2025-02-01 was USD 15,202.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Supported,Supported,TJX,Supported,amount_and_keywords_match,"USD -1,981.000 million appears in the passage next to the same line item and period.","Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million."
+SEC-TJX-06,general,validation,"TJX COMPANIES INC /DE/'s cost of revenue for the fiscal period ended 2026-01-31 was USD 43,587.898 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
@@ -560,8 +560,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Temporal,TJX,Unsupported,same_item_different_amount,"The passage reports 12,991 million for this item and period, not 15,202.000 million. 15,202.000 million does appear, but on a different line: ""Assets, Current as of 2026-01-31: USD 15,202 million.""","Assets, Current as of 2025-02-01: USD 12,991 million. || Assets, Current as of 2026-01-31: USD 15,202 million."
-SEC-TJX-07,general,validation,"TJX COMPANIES INC /DE/'s stockholders equity for the fiscal period ended 2025-02-01 was USD 10,190.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Small Numerical,TJX,Unsupported,same_item_different_amount,"The passage reports 41,679 million for this item and period, not 43,587.898 million.","Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million."
+SEC-TJX-07,general,validation,"TJX COMPANIES INC /DE/'s current assets for the fiscal period ended 2026-01-31 was USD -15,202.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
@@ -592,8 +592,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Temporal,TJX,Unsupported,same_item_different_amount,"The passage reports 8,393 million for this item and period, not 10,190.000 million. 10,190.000 million does appear, but on a different line: ""Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.""","Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million. || Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million."
-SEC-TJX-08,general,validation,"TJX COMPANIES INC /DE/'s current assets for the fiscal period ended 2026-01-31 was USD 60,372.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Flipped Sign,TJX,Unsupported,same_item_different_amount,"The passage reports 35,767 million for this item and period, not USD -15,202.000 million.","Assets as of 2026-01-31: USD 35,767 million."
+SEC-TJX-08,general,validation,"TJX COMPANIES INC /DE/'s net cash from investing activities for the fiscal period ended 2025-02-01 was USD -1,981.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
@@ -624,8 +624,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Metric Confusion,TJX,Unsupported,same_item_different_amount,"The passage reports 15,202 million for this item and period, not 60,372.000 million. 60,372.000 million does appear, but on a different line: ""Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.""","Assets, Current as of 2026-01-31: USD 15,202 million. || Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million."
-SEC-TJX-09,general,validation,"TJX COMPANIES INC /DE/'s stockholders equity for the fiscal period ended 2026-01-31 was USD 35,767.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Temporal,TJX,Unsupported,same_item_different_amount,"The passage reports USD -2,477 million for this item and period, not USD -1,981.000 million. USD -1,981.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.""","Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million. || Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million."
+SEC-TJX-09,general,validation,"TJX COMPANIES INC /DE/'s cost of revenue for the fiscal period ended 2026-01-31 was USD 5,494.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
@@ -656,8 +656,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Metric Confusion,TJX,Unsupported,same_item_different_amount,"The passage reports 10,190 million for this item and period, not 35,767.000 million. 35,767.000 million does appear, but on a different line: ""Assets as of 2026-01-31: USD 35,767 million.""","Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million. || Assets as of 2026-01-31: USD 35,767 million."
-SEC-TJX-10,general,validation,"TJX COMPANIES INC /DE/'s cash and cash equivalents for the fiscal period ended 2026-01-31 was USD 6,230.000 billion.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Metric Confusion,TJX,Unsupported,same_item_different_amount,"The passage reports 41,679 million for this item and period, not 5,494.000 million. 5,494.000 million does appear, but on a different line: ""Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.""","Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million. || Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million."
+SEC-TJX-10,general,validation,"TJX COMPANIES INC /DE/'s revenue for the fiscal period ended 2026-01-31 was USD 60,372.000 billion.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
 Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
@@ -688,7 +688,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Unit,TJX,Unsupported,same_item_different_amount,"The passage reports 6,230 million for this item and period, not 6,230.000 billion.","Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million."
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million.",Unsupported,Unit,TJX,Unsupported,same_item_different_amount,"The passage reports 60,372 million for this item and period, not 60,372.000 billion.","Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million."
 SEC-SCHW-01,general,validation,"SCHWAB CHARLES CORP's stockholders equity for the fiscal period ended 2025-12-31 was USD 49,425.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
 Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
@@ -743,7 +743,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Supported,Supported,SCHW,Supported,amount_and_keywords_match,"9,311.000 million appears in the passage next to the same line item and period.","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million."
-SEC-SCHW-03,general,validation,"SCHWAB CHARLES CORP's net cash from financing activities for the fiscal period ended 2025-12-31 was USD -23,761.600 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+SEC-SCHW-03,general,validation,"SCHWAB CHARLES CORP's total assets for the fiscal period ended 2025-12-31 was USD 490,995.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
 Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
 Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
@@ -769,8 +769,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Numerical,SCHW,Unsupported,same_item_different_amount,"The passage reports USD -29,702 million for this item and period, not USD -23,761.600 million.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million."
-SEC-SCHW-04,general,validation,"SCHWAB CHARLES CORP's total liabilities for the fiscal period ended 2025-12-31 was USD 529,884.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Supported,Supported,SCHW,Supported,amount_and_keywords_match,"490,995.000 million appears in the passage next to the same line item and period.","Assets as of 2025-12-31: USD 490,995 million."
+SEC-SCHW-04,general,validation,"SCHWAB CHARLES CORP's net cash from financing activities for the fiscal period ended 2025-12-31 was USD -29,702.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
 Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
 Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
@@ -796,8 +796,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Numerical,SCHW,Unsupported,same_item_different_amount,"The passage reports 441,570 million for this item and period, not 529,884.000 million.","Liabilities as of 2025-12-31: USD 441,570 million."
-SEC-SCHW-05,general,validation,"SCHWAB CHARLES CORP's total assets for the fiscal period ended 2025-12-31 was USD 589,194.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Supported,Supported,SCHW,Supported,amount_and_keywords_match,"USD -29,702.000 million appears in the passage next to the same line item and period.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million."
+SEC-SCHW-05,general,validation,"SCHWAB CHARLES CORP's total liabilities for the fiscal period ended 2025-12-31 was USD 441,570.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
 Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
 Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
@@ -823,8 +823,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Numerical,SCHW,Unsupported,same_item_different_amount,"The passage reports 490,995 million for this item and period, not 589,194.000 million.","Assets as of 2025-12-31: USD 490,995 million."
-SEC-SCHW-06,general,validation,"SCHWAB CHARLES CORP's net cash from financing activities for the fiscal period ended 2024-12-31 was USD -29,702.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Supported,Supported,SCHW,Supported,amount_and_keywords_match,"441,570.000 million appears in the passage next to the same line item and period.","Liabilities as of 2025-12-31: USD 441,570 million."
+SEC-SCHW-06,general,validation,"SCHWAB CHARLES CORP's net cash from financing activities for the fiscal period ended 2025-12-31 was USD -30,349.504 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
 Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
 Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
@@ -850,8 +850,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Temporal,SCHW,Unsupported,same_item_different_amount,"The passage reports USD -47,060 million for this item and period, not USD -29,702.000 million. USD -29,702.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.""","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million. || Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million."
-SEC-SCHW-07,general,validation,"SCHWAB CHARLES CORP's total liabilities for the fiscal period ended 2024-12-31 was USD 441,570.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Small Numerical,SCHW,Unsupported,same_item_different_amount,"The passage reports USD -29,702 million for this item and period, not USD -30,349.504 million.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million."
+SEC-SCHW-07,general,validation,"SCHWAB CHARLES CORP's net cash from financing activities for the fiscal period ended 2025-12-31 was USD 29,702.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
 Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
 Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
@@ -877,8 +877,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Temporal,SCHW,Unsupported,same_item_different_amount,"The passage reports 431,468 million for this item and period, not 441,570.000 million. 441,570.000 million does appear, but on a different line: ""Liabilities as of 2025-12-31: USD 441,570 million.""","Liabilities as of 2024-12-31: USD 431,468 million. || Liabilities as of 2025-12-31: USD 441,570 million."
-SEC-SCHW-08,general,validation,"SCHWAB CHARLES CORP's stockholders equity for the fiscal period ended 2025-12-31 was USD -29,702.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Flipped Sign,SCHW,Unsupported,same_item_different_amount,"The passage reports USD -29,702 million for this item and period, not 29,702.000 million.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million."
+SEC-SCHW-08,general,validation,"SCHWAB CHARLES CORP's cash and cash equivalents for the fiscal period ended 2024-12-31 was USD 46,030.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
 Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
 Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
@@ -904,8 +904,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Metric Confusion,SCHW,Unsupported,same_item_different_amount,"The passage reports 49,425 million for this item and period, not USD -29,702.000 million. USD -29,702.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.""","Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million. || Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million."
-SEC-SCHW-09,general,validation,"SCHWAB CHARLES CORP's net cash from operating activities for the fiscal period ended 2025-12-31 was USD 46,030.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Temporal,SCHW,Unsupported,same_item_different_amount,"The passage reports 42,083 million for this item and period, not 46,030.000 million. 46,030.000 million does appear, but on a different line: ""Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.""","Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million. || Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million."
+SEC-SCHW-09,general,validation,"SCHWAB CHARLES CORP's cash and cash equivalents for the fiscal period ended 2025-12-31 was USD 24,538.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
 Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
 Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
@@ -931,8 +931,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Metric Confusion,SCHW,Unsupported,same_item_different_amount,"The passage reports 9,311 million for this item and period, not 46,030.000 million. 46,030.000 million does appear, but on a different line: ""Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.""","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million. || Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million."
-SEC-SCHW-10,general,validation,"SCHWAB CHARLES CORP's total assets for the fiscal period ended 2025-12-31 was USD 490,995.000 billion.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Metric Confusion,SCHW,Unsupported,same_item_different_amount,"The passage reports 46,030 million for this item and period, not 24,538.000 million. 24,538.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.""","Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million. || Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million."
+SEC-SCHW-10,general,validation,"SCHWAB CHARLES CORP's net income for the fiscal period ended 2025-12-31 was USD 8,852.000 billion.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
 Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
 Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
@@ -958,7 +958,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Unit,SCHW,Unsupported,same_item_different_amount,"The passage reports 490,995 million for this item and period, not 490,995.000 billion.","Assets as of 2025-12-31: USD 490,995 million."
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million.",Unsupported,Unit,SCHW,Unsupported,same_item_different_amount,"The passage reports 8,852 million for this item and period, not 8,852.000 billion.","Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million."
 SEC-NOC-01,general,validation,"NORTHROP GRUMMAN CORP /DE/'s net cash from operating activities for the fiscal period ended 2025-12-31 was USD 4,757.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
 Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
@@ -1023,7 +1023,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Supported,Supported,NOC,Supported,amount_and_keywords_match,"13,882.000 million appears in the passage next to the same line item and period.","Liabilities, Current as of 2025-12-31: USD 13,882 million."
-SEC-NOC-03,general,validation,"NORTHROP GRUMMAN CORP /DE/'s total assets for the fiscal period ended 2025-12-31 was USD 61,652.400 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+SEC-NOC-03,general,validation,"NORTHROP GRUMMAN CORP /DE/'s total liabilities for the fiscal period ended 2025-12-31 was USD 34,703.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
 Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
 Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
@@ -1054,8 +1054,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Numerical,NOC,Unsupported,same_item_different_amount,"The passage reports 51,377 million for this item and period, not 61,652.400 million.","Assets as of 2025-12-31: USD 51,377 million."
-SEC-NOC-04,general,validation,"NORTHROP GRUMMAN CORP /DE/'s net income for the fiscal period ended 2025-12-31 was USD 5,018.400 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Supported,Supported,NOC,Supported,amount_and_keywords_match,"34,703.000 million appears in the passage next to the same line item and period.","Liabilities as of 2025-12-31: USD 34,703 million."
+SEC-NOC-04,general,validation,"NORTHROP GRUMMAN CORP /DE/'s net income for the fiscal period ended 2025-12-31 was USD 4,182.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
 Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
 Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
@@ -1086,8 +1086,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Numerical,NOC,Unsupported,same_item_different_amount,"The passage reports 4,182 million for this item and period, not 5,018.400 million.","Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million."
-SEC-NOC-05,general,validation,"NORTHROP GRUMMAN CORP /DE/'s total liabilities for the fiscal period ended 2025-12-31 was USD 41,643.600 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Supported,Supported,NOC,Supported,amount_and_keywords_match,"4,182.000 million appears in the passage next to the same line item and period.","Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million."
+SEC-NOC-05,general,validation,"NORTHROP GRUMMAN CORP /DE/'s current assets for the fiscal period ended 2025-12-31 was USD 15,287.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
 Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
 Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
@@ -1118,8 +1118,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Numerical,NOC,Unsupported,same_item_different_amount,"The passage reports 34,703 million for this item and period, not 41,643.600 million.","Liabilities as of 2025-12-31: USD 34,703 million."
-SEC-NOC-06,general,validation,"NORTHROP GRUMMAN CORP /DE/'s net income for the fiscal period ended 2024-12-31 was USD 4,182.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Supported,Supported,NOC,Supported,amount_and_keywords_match,"15,287.000 million appears in the passage next to the same line item and period.","Assets, Current as of 2025-12-31: USD 15,287 million."
+SEC-NOC-06,general,validation,"NORTHROP GRUMMAN CORP /DE/'s total assets for the fiscal period ended 2025-12-31 was USD 52,846.382 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
 Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
 Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
@@ -1150,8 +1150,40 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Temporal,NOC,Unsupported,same_item_different_amount,"The passage reports 4,174 million for this item and period, not 4,182.000 million. 4,182.000 million does appear, but on a different line: ""Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.""","Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million. || Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million."
-SEC-NOC-07,general,validation,"NORTHROP GRUMMAN CORP /DE/'s total liabilities for the fiscal period ended 2024-12-31 was USD 34,703.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Small Numerical,NOC,Unsupported,same_item_different_amount,"The passage reports 51,377 million for this item and period, not 52,846.382 million.","Assets as of 2025-12-31: USD 51,377 million."
+SEC-NOC-07,general,validation,"NORTHROP GRUMMAN CORP /DE/'s net income for the fiscal period ended 2025-12-31 was USD -4,182.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Flipped Sign,NOC,Unsupported,same_item_different_amount,"The passage reports 4,182 million for this item and period, not USD -4,182.000 million.","Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million."
+SEC-NOC-08,general,validation,"NORTHROP GRUMMAN CORP /DE/'s total liabilities for the fiscal period ended 2024-12-31 was USD 34,703.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
 Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
 Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
@@ -1183,7 +1215,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Temporal,NOC,Unsupported,same_item_different_amount,"The passage reports 34,069 million for this item and period, not 34,703.000 million. 34,703.000 million does appear, but on a different line: ""Liabilities as of 2025-12-31: USD 34,703 million.""","Liabilities as of 2024-12-31: USD 34,069 million. || Liabilities as of 2025-12-31: USD 34,703 million."
-SEC-NOC-08,general,validation,"NORTHROP GRUMMAN CORP /DE/'s net cash from investing activities for the fiscal period ended 2025-12-31 was USD 4,511.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+SEC-NOC-09,general,validation,"NORTHROP GRUMMAN CORP /DE/'s net cash from operating activities for the fiscal period ended 2025-12-31 was USD -3,552.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
 Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
 Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
@@ -1214,8 +1246,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Metric Confusion,NOC,Unsupported,same_item_different_amount,"The passage reports USD -1,155 million for this item and period, not 4,511.000 million. 4,511.000 million does appear, but on a different line: ""Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.""","Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million. || Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million."
-SEC-NOC-09,general,validation,"NORTHROP GRUMMAN CORP /DE/'s net cash from operating activities for the fiscal period ended 2025-12-31 was USD 34,703.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Metric Confusion,NOC,Unsupported,same_item_different_amount,"The passage reports 4,757 million for this item and period, not USD -3,552.000 million. USD -3,552.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.""","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million. || Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million."
+SEC-NOC-10,general,validation,"NORTHROP GRUMMAN CORP /DE/'s net cash from financing activities for the fiscal period ended 2025-12-31 was USD -3,552.000 billion.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
 Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
 Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
@@ -1246,39 +1278,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Metric Confusion,NOC,Unsupported,same_item_different_amount,"The passage reports 4,757 million for this item and period, not 34,703.000 million. 34,703.000 million does appear, but on a different line: ""Liabilities as of 2025-12-31: USD 34,703 million.""","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million. || Liabilities as of 2025-12-31: USD 34,703 million."
-SEC-NOC-10,general,validation,"NORTHROP GRUMMAN CORP /DE/'s cash and cash equivalents for the fiscal period ended 2025-12-31 was USD 4,403.000 billion.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
-Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
-Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
-Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
-Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
-Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
-Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
-Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
-Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
-Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
-Assets as of 2025-12-31: USD 51,377 million.
-Assets as of 2024-12-31: USD 49,359 million.
-Assets, Current as of 2025-12-31: USD 15,287 million.
-Assets, Current as of 2024-12-31: USD 14,274 million.
-Liabilities as of 2025-12-31: USD 34,703 million.
-Liabilities as of 2024-12-31: USD 34,069 million.
-Liabilities, Current as of 2025-12-31: USD 13,882 million.
-Liabilities, Current as of 2024-12-31: USD 14,128 million.
-Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
-Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
-Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
-Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
-Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
-Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
-Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
-Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
-Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
-Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
-Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Unit,NOC,Unsupported,same_item_different_amount,"The passage reports 4,403 million for this item and period, not 4,403.000 billion.","Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million."
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million.",Unsupported,Unit,NOC,Unsupported,same_item_different_amount,"The passage reports USD -3,552 million for this item and period, not USD -3,552.000 billion.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million."
 SEC-PRU-01,general,validation,"PRUDENTIAL FINANCIAL INC's stockholders equity for the fiscal period ended 2025-12-31 was USD 32,438.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
 Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
@@ -1329,7 +1329,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Supported,Supported,PRU,Supported,amount_and_keywords_match,"738,159.000 million appears in the passage next to the same line item and period.","Liabilities as of 2025-12-31: USD 738,159 million."
-SEC-PRU-03,general,validation,"PRUDENTIAL FINANCIAL INC's net cash from financing activities for the fiscal period ended 2025-12-31 was USD 24,927.600 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+SEC-PRU-03,general,validation,"PRUDENTIAL FINANCIAL INC's revenue for the fiscal period ended 2025-12-31 was USD 60,774.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
 Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
 Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
@@ -1353,8 +1353,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Numerical,PRU,Unsupported,same_item_different_amount,"The passage reports 20,773 million for this item and period, not 24,927.600 million.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million."
-SEC-PRU-04,general,validation,"PRUDENTIAL FINANCIAL INC's revenue for the fiscal period ended 2025-12-31 was USD 72,928.800 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Supported,Supported,PRU,Supported,amount_and_keywords_match,"60,774.000 million appears in the passage next to the same line item and period.","Revenues for the fiscal year ended 2025-12-31: USD 60,774 million."
+SEC-PRU-04,general,validation,"PRUDENTIAL FINANCIAL INC's net cash from investing activities for the fiscal period ended 2025-12-31 was USD -25,892.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
 Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
 Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
@@ -1378,8 +1378,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Numerical,PRU,Unsupported,same_item_different_amount,"The passage reports 60,774 million for this item and period, not 72,928.800 million.","Revenues for the fiscal year ended 2025-12-31: USD 60,774 million."
-SEC-PRU-05,general,validation,"PRUDENTIAL FINANCIAL INC's stockholders equity for the fiscal period ended 2025-12-31 was USD 38,925.600 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Supported,Supported,PRU,Supported,amount_and_keywords_match,"USD -25,892.000 million appears in the passage next to the same line item and period.","Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million."
+SEC-PRU-05,general,validation,"PRUDENTIAL FINANCIAL INC's net cash from operating activities for the fiscal period ended 2025-12-31 was USD 6,271.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
 Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
 Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
@@ -1403,8 +1403,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Numerical,PRU,Unsupported,same_item_different_amount,"The passage reports 32,438 million for this item and period, not 38,925.600 million.","Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million."
-SEC-PRU-06,general,validation,"PRUDENTIAL FINANCIAL INC's total liabilities for the fiscal period ended 2024-12-31 was USD 738,159.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Supported,Supported,PRU,Supported,amount_and_keywords_match,"6,271.000 million appears in the passage next to the same line item and period.","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million."
+SEC-PRU-06,general,validation,"PRUDENTIAL FINANCIAL INC's net cash from financing activities for the fiscal period ended 2025-12-31 was USD 20,997.348 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
 Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
 Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
@@ -1428,8 +1428,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Temporal,PRU,Unsupported,same_item_different_amount,"The passage reports 705,461 million for this item and period, not 738,159.000 million. 738,159.000 million does appear, but on a different line: ""Liabilities as of 2025-12-31: USD 738,159 million.""","Liabilities as of 2024-12-31: USD 705,461 million. || Liabilities as of 2025-12-31: USD 738,159 million."
-SEC-PRU-07,general,validation,"PRUDENTIAL FINANCIAL INC's cash and cash equivalents for the fiscal period ended 2024-12-31 was USD 19,712.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Small Numerical,PRU,Unsupported,same_item_different_amount,"The passage reports 20,773 million for this item and period, not 20,997.348 million.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million."
+SEC-PRU-07,general,validation,"PRUDENTIAL FINANCIAL INC's total liabilities for the fiscal period ended 2025-12-31 was USD 783,159.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
 Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
 Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
@@ -1453,8 +1453,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Temporal,PRU,Unsupported,same_item_different_amount,"The passage reports 18,497 million for this item and period, not 19,712.000 million. 19,712.000 million does appear, but on a different line: ""Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.""","Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million. || Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million."
-SEC-PRU-08,general,validation,"PRUDENTIAL FINANCIAL INC's total assets for the fiscal period ended 2025-12-31 was USD 6,271.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Transposed Digits,PRU,Unsupported,same_item_different_amount,"The passage reports 738,159 million for this item and period, not 783,159.000 million.","Liabilities as of 2025-12-31: USD 738,159 million."
+SEC-PRU-08,general,validation,"PRUDENTIAL FINANCIAL INC's net cash from investing activities for the fiscal period ended 2024-12-31 was USD -25,892.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
 Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
 Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
@@ -1478,8 +1478,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Metric Confusion,PRU,Unsupported,same_item_different_amount,"The passage reports 773,740 million for this item and period, not 6,271.000 million. 6,271.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.""","Assets as of 2025-12-31: USD 773,740 million. || Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million."
-SEC-PRU-09,general,validation,"PRUDENTIAL FINANCIAL INC's net cash from investing activities for the fiscal period ended 2025-12-31 was USD 60,774.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Temporal,PRU,Unsupported,same_item_different_amount,"The passage reports USD -28,585 million for this item and period, not USD -25,892.000 million. USD -25,892.000 million does appear, but on a different line: ""Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.""","Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million. || Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million."
+SEC-PRU-09,general,validation,"PRUDENTIAL FINANCIAL INC's net cash from financing activities for the fiscal period ended 2025-12-31 was USD 60,774.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
 Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
 Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
@@ -1503,8 +1503,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Metric Confusion,PRU,Unsupported,same_item_different_amount,"The passage reports USD -25,892 million for this item and period, not 60,774.000 million. 60,774.000 million does appear, but on a different line: ""Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.""","Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million. || Revenues for the fiscal year ended 2025-12-31: USD 60,774 million."
-SEC-PRU-10,general,validation,"PRUDENTIAL FINANCIAL INC's total liabilities for the fiscal period ended 2025-12-31 was USD 738,159.000 billion.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Metric Confusion,PRU,Unsupported,same_item_different_amount,"The passage reports 20,773 million for this item and period, not 60,774.000 million. 60,774.000 million does appear, but on a different line: ""Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.""","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million. || Revenues for the fiscal year ended 2025-12-31: USD 60,774 million."
+SEC-PRU-10,general,validation,"PRUDENTIAL FINANCIAL INC's net cash from investing activities for the fiscal period ended 2025-12-31 was USD -25,892.000 billion.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
 Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
 Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
 Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
@@ -1528,7 +1528,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Unit,PRU,Unsupported,same_item_different_amount,"The passage reports 738,159 million for this item and period, not 738,159.000 billion.","Liabilities as of 2025-12-31: USD 738,159 million."
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million.",Unsupported,Unit,PRU,Unsupported,same_item_different_amount,"The passage reports USD -25,892 million for this item and period, not USD -25,892.000 billion.","Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million."
 SEC-LULU-01,general,validation,"lululemon athletica inc.'s net cash from financing activities for the fiscal period ended 2026-02-01 was USD -1,208.656 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
@@ -1603,7 +1603,7 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Supported,Supported,LULU,Supported,amount_and_keywords_match,"8,456.743 million appears in the passage next to the same line item and period.","Assets as of 2026-02-01: USD 8,456.743 million."
-SEC-LULU-03,general,validation,"lululemon athletica inc.'s current liabilities for the fiscal period ended 2026-02-01 was USD 2,265.058 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+SEC-LULU-03,general,validation,"lululemon athletica inc.'s revenue for the fiscal period ended 2026-02-01 was USD 11,102.600 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
@@ -1639,8 +1639,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Numerical,LULU,Unsupported,same_item_different_amount,"The passage reports 1,887.548 million for this item and period, not 2,265.058 million.","Liabilities, Current as of 2026-02-01: USD 1,887.548 million."
-SEC-LULU-04,general,validation,"lululemon athletica inc.'s gross profit for the fiscal period ended 2026-02-01 was USD 7,540.958 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Supported,Supported,LULU,Supported,amount_and_keywords_match,"11,102.600 million appears in the passage next to the same line item and period.","Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million."
+SEC-LULU-04,general,validation,"lululemon athletica inc.'s current assets for the fiscal period ended 2026-02-01 was USD 4,262.701 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
@@ -1676,8 +1676,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Numerical,LULU,Unsupported,same_item_different_amount,"The passage reports 6,284.132 million for this item and period, not 7,540.958 million.","Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million."
-SEC-LULU-05,general,validation,lululemon athletica inc.'s net cash from financing activities for the fiscal period ended 2026-02-01 was USD -966.925 million.,"lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Supported,Supported,LULU,Supported,amount_and_keywords_match,"4,262.701 million appears in the passage next to the same line item and period.","Assets, Current as of 2026-02-01: USD 4,262.701 million."
+SEC-LULU-05,general,validation,"lululemon athletica inc.'s total liabilities for the fiscal period ended 2026-02-01 was USD 3,494.903 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
@@ -1713,8 +1713,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Numerical,LULU,Unsupported,same_item_different_amount,"The passage reports USD -1,208.656 million for this item and period, not USD -966.925 million.","Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million."
-SEC-LULU-06,general,validation,"lululemon athletica inc.'s total liabilities for the fiscal period ended 2025-02-02 was USD 3,494.903 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Supported,Supported,LULU,Supported,amount_and_keywords_match,"3,494.903 million appears in the passage next to the same line item and period.","Liabilities as of 2026-02-01: USD 3,494.903 million."
+SEC-LULU-06,general,validation,"lululemon athletica inc.'s current liabilities for the fiscal period ended 2026-02-01 was USD 1,969.656 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
@@ -1750,8 +1750,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Temporal,LULU,Unsupported,same_item_different_amount,"The passage reports 3,279.245 million for this item and period, not 3,494.903 million. 3,494.903 million does appear, but on a different line: ""Liabilities as of 2026-02-01: USD 3,494.903 million.""","Liabilities as of 2025-02-02: USD 3,279.245 million. || Liabilities as of 2026-02-01: USD 3,494.903 million."
-SEC-LULU-07,general,validation,"lululemon athletica inc.'s net income for the fiscal period ended 2025-02-02 was USD 1,579.183 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Small Numerical,LULU,Unsupported,same_item_different_amount,"The passage reports 1,887.548 million for this item and period, not 1,969.656 million.","Liabilities, Current as of 2026-02-01: USD 1,887.548 million."
+SEC-LULU-07,general,validation,"lululemon athletica inc.'s total liabilities for the fiscal period ended 2026-02-01 was USD -3,494.903 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
@@ -1787,8 +1787,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Temporal,LULU,Unsupported,same_item_different_amount,"The passage reports 1,814.616 million for this item and period, not 1,579.183 million. 1,579.183 million does appear, but on a different line: ""Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.""","Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million. || Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million."
-SEC-LULU-08,general,validation,"lululemon athletica inc.'s total assets for the fiscal period ended 2026-02-01 was USD 4,262.701 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Flipped Sign,LULU,Unsupported,same_item_different_amount,"The passage reports 3,494.903 million for this item and period, not USD -3,494.903 million.","Liabilities as of 2026-02-01: USD 3,494.903 million."
+SEC-LULU-08,general,validation,"lululemon athletica inc.'s current liabilities for the fiscal period ended 2025-02-02 was USD 1,887.548 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
@@ -1824,8 +1824,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Metric Confusion,LULU,Unsupported,same_item_different_amount,"The passage reports 8,456.743 million for this item and period, not 4,262.701 million. 4,262.701 million does appear, but on a different line: ""Assets, Current as of 2026-02-01: USD 4,262.701 million.""","Assets as of 2026-02-01: USD 8,456.743 million. || Assets, Current as of 2026-02-01: USD 4,262.701 million."
-SEC-LULU-09,general,validation,"lululemon athletica inc.'s total assets for the fiscal period ended 2026-02-01 was USD 2,210.615 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Temporal,LULU,Unsupported,same_item_different_amount,"The passage reports 1,839.63 million for this item and period, not 1,887.548 million. 1,887.548 million does appear, but on a different line: ""Liabilities, Current as of 2026-02-01: USD 1,887.548 million.""","Liabilities, Current as of 2025-02-02: USD 1,839.63 million. || Liabilities, Current as of 2026-02-01: USD 1,887.548 million."
+SEC-LULU-09,general,validation,"lululemon athletica inc.'s net cash from operating activities for the fiscal period ended 2026-02-01 was USD 1,887.548 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
@@ -1861,8 +1861,8 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Metric Confusion,LULU,Unsupported,same_item_different_amount,"The passage reports 8,456.743 million for this item and period, not 2,210.615 million. 2,210.615 million does appear, but on a different line: ""Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.""","Assets as of 2026-02-01: USD 8,456.743 million. || Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million."
-SEC-LULU-10,general,validation,"lululemon athletica inc.'s revenue for the fiscal period ended 2026-02-01 was USD 11,102.600 billion.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Metric Confusion,LULU,Unsupported,same_item_different_amount,"The passage reports 1,602.477 million for this item and period, not 1,887.548 million. 1,887.548 million does appear, but on a different line: ""Liabilities, Current as of 2026-02-01: USD 1,887.548 million.""","Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million. || Liabilities, Current as of 2026-02-01: USD 1,887.548 million."
+SEC-LULU-10,general,validation,"lululemon athletica inc.'s total liabilities for the fiscal period ended 2026-02-01 was USD 3,494.903 billion.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
 Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
@@ -1898,84 +1898,80 @@ Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 20
 Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
 Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
-Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Unit,LULU,Unsupported,same_item_different_amount,"The passage reports 11,102.6 million for this item and period, not 11,102.600 billion.","Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million."
-SB-PH-01,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2023-06-30 represented the company's entire revenue of USD 4,359,501,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-23-000042), revenue by segment for the fiscal year ended 2023-06-30:
-AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 4,359,501,000.
-DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 14,705,693,000.
-Total revenues for the fiscal year ended 2023-06-30: USD 19,065,000,000.",Unsupported,Segment vs Total Revenue,PH,Unsupported,same_item_different_amount,"The passage reports 19,065,000,000 for this item and period, not 4,359,501,000. 4,359,501,000 does appear, but on a different line: ""AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 4,359,501,000.""","Total revenues for the fiscal year ended 2023-06-30: USD 19,065,000,000. || AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 4,359,501,000."
-SB-PH-02,storyboard_b,validation,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember revenue for the fiscal period ended 2023-06-30 represented the company's entire revenue of USD 14,705,693,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-23-000042), revenue by segment for the fiscal year ended 2023-06-30:
-AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 4,359,501,000.
-DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 14,705,693,000.
-Total revenues for the fiscal year ended 2023-06-30: USD 19,065,000,000.",Unsupported,Segment vs Total Revenue,PH,Unsupported,same_item_different_amount,"The passage reports 19,065,000,000 for this item and period, not 14,705,693,000. 14,705,693,000 does appear, but on a different line: ""DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 14,705,693,000.""","Total revenues for the fiscal year ended 2023-06-30: USD 19,065,000,000. || DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 14,705,693,000."
-SB-PH-03,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2024-06-30 represented the company's entire revenue of USD 5,472,460,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million.",Unsupported,Unit,LULU,Unsupported,same_item_different_amount,"The passage reports 3,494.903 million for this item and period, not 3,494.903 billion.","Liabilities as of 2026-02-01: USD 3,494.903 million."
+SB-PH-01,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2024-06-30 represented the company's entire revenue of USD 5,472,460,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
 AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000.
 DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000.
 Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000.",Unsupported,Segment vs Total Revenue,PH,Unsupported,same_item_different_amount,"The passage reports 19,930,000,000 for this item and period, not 5,472,460,000. 5,472,460,000 does appear, but on a different line: ""AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000.""","Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000. || AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000."
-SB-PH-04,storyboard_b,validation,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember revenue for the fiscal period ended 2024-06-30 represented the company's entire revenue of USD 14,457,146,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
+SB-PH-02,storyboard_b,validation,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember revenue for the fiscal period ended 2024-06-30 represented the company's entire revenue of USD 14,457,146,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
 AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000.
 DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000.
 Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000.",Unsupported,Segment vs Total Revenue,PH,Unsupported,same_item_different_amount,"The passage reports 19,930,000,000 for this item and period, not 14,457,146,000. 14,457,146,000 does appear, but on a different line: ""DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000.""","Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000. || DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000."
-SB-PH-05,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2025-06-30 represented the company's entire revenue of USD 6,185,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
+SB-PH-03,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2025-06-30 represented the company's entire revenue of USD 6,185,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
 AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000.
 DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000.
 Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000.",Unsupported,Segment vs Total Revenue,PH,Unsupported,same_item_different_amount,"The passage reports 19,850,000,000 for this item and period, not 6,185,000,000. 6,185,000,000 does appear, but on a different line: ""AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000.""","Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000. || AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000."
-SB-PH-06,storyboard_b,validation,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember revenue for the fiscal period ended 2025-06-30 represented the company's entire revenue of USD 13,665,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
+SB-PH-04,storyboard_b,validation,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember revenue for the fiscal period ended 2025-06-30 represented the company's entire revenue of USD 13,665,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
 AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000.
 DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000.
 Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000.",Unsupported,Segment vs Total Revenue,PH,Unsupported,same_item_different_amount,"The passage reports 19,850,000,000 for this item and period, not 13,665,000,000. 13,665,000,000 does appear, but on a different line: ""DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000.""","Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000. || DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000."
-SB-PH-07,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2026-06-30 represented the company's entire revenue of USD 7,061,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-26-000105), revenue by segment for the fiscal year ended 2026-06-30:
+SB-PH-05,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2026-06-30 represented the company's entire revenue of USD 7,061,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-26-000105), revenue by segment for the fiscal year ended 2026-06-30:
 AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 7,061,000,000.
-DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 14,438,000,000.
 Total revenues for the fiscal year ended 2026-06-30: USD 21,499,000,000.",Unsupported,Segment vs Total Revenue,PH,Unsupported,same_item_different_amount,"The passage reports 21,499,000,000 for this item and period, not 7,061,000,000. 7,061,000,000 does appear, but on a different line: ""AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 7,061,000,000.""","Total revenues for the fiscal year ended 2026-06-30: USD 21,499,000,000. || AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 7,061,000,000."
-SB-PH-08,storyboard_b,validation,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember revenue for the fiscal period ended 2026-06-30 represented the company's entire revenue of USD 14,438,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-26-000105), revenue by segment for the fiscal year ended 2026-06-30:
+SB-PH-S01,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember segment revenue for the fiscal period ended 2024-06-30 was USD 5,472,460,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000.
+Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000.",Supported,Supported Segment Revenue,PH,Supported,amount_and_keywords_match,"5,472,460,000 appears in the passage next to the same line item and period.","AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000."
+SB-PH-S02,storyboard_b,validation,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember segment revenue for the fiscal period ended 2024-06-30 was USD 14,457,146,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000.
+Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000.",Supported,Supported Segment Revenue,PH,Supported,amount_and_keywords_match,"14,457,146,000 appears in the passage next to the same line item and period.","DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000."
+SB-PH-S03,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember segment revenue for the fiscal period ended 2025-06-30 was USD 6,185,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000.
+Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000.",Supported,Supported Segment Revenue,PH,Supported,amount_and_keywords_match,"6,185,000,000 appears in the passage next to the same line item and period.","AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000."
+SB-PH-S04,storyboard_b,validation,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember segment revenue for the fiscal period ended 2025-06-30 was USD 13,665,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000.
+Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000.",Supported,Supported Segment Revenue,PH,Supported,amount_and_keywords_match,"13,665,000,000 appears in the passage next to the same line item and period.","DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000."
+SB-PH-S05,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember segment revenue for the fiscal period ended 2026-06-30 was USD 7,061,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-26-000105), revenue by segment for the fiscal year ended 2026-06-30:
 AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 7,061,000,000.
-DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 14,438,000,000.
-Total revenues for the fiscal year ended 2026-06-30: USD 21,499,000,000.",Unsupported,Segment vs Total Revenue,PH,Unsupported,same_item_different_amount,"The passage reports 21,499,000,000 for this item and period, not 14,438,000,000. 14,438,000,000 does appear, but on a different line: ""DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 14,438,000,000.""","Total revenues for the fiscal year ended 2026-06-30: USD 21,499,000,000. || DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 14,438,000,000."
-SB-PH-S01,storyboard_b,validation,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember segment revenue for the fiscal period ended 2023-06-30 was USD 4,359,501,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-23-000042), revenue by segment for the fiscal year ended 2023-06-30:
-AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 4,359,501,000.
-DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 14,705,693,000.
-Total revenues for the fiscal year ended 2023-06-30: USD 19,065,000,000.",Supported,Supported Segment Revenue,PH,Supported,amount_and_keywords_match,"4,359,501,000 appears in the passage next to the same line item and period.","AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 4,359,501,000."
-SB-PH-S02,storyboard_b,validation,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember segment revenue for the fiscal period ended 2023-06-30 was USD 14,705,693,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-23-000042), revenue by segment for the fiscal year ended 2023-06-30:
-AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 4,359,501,000.
-DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 14,705,693,000.
-Total revenues for the fiscal year ended 2023-06-30: USD 19,065,000,000.",Supported,Supported Segment Revenue,PH,Supported,amount_and_keywords_match,"14,705,693,000 appears in the passage next to the same line item and period.","DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2023-06-30: USD 14,705,693,000."
-SB-SO-01,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2022-12-31 represented the company's entire revenue of USD 22,873,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
-ElectricUtilitiesMember segment revenue for the fiscal year ended 2022-12-31: USD 22,873,000,000.
-SouthernCompanyGasMember segment revenue for the fiscal year ended 2022-12-31: USD 5,962,000,000.
-Total revenues for the fiscal year ended 2022-12-31: USD 25,941,000,000.",Unsupported,Segment vs Total Revenue,SO,Unsupported,same_item_different_amount,"The passage reports 25,941,000,000 for this item and period, not 22,873,000,000. 22,873,000,000 does appear, but on a different line: ""ElectricUtilitiesMember segment revenue for the fiscal year ended 2022-12-31: USD 22,873,000,000.""","Total revenues for the fiscal year ended 2022-12-31: USD 25,941,000,000. || ElectricUtilitiesMember segment revenue for the fiscal year ended 2022-12-31: USD 22,873,000,000."
-SB-SO-02,storyboard_b,validation,"SOUTHERN CO's SouthernCompanyGasMember revenue for the fiscal period ended 2022-12-31 represented the company's entire revenue of USD 5,962,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
-ElectricUtilitiesMember segment revenue for the fiscal year ended 2022-12-31: USD 22,873,000,000.
-SouthernCompanyGasMember segment revenue for the fiscal year ended 2022-12-31: USD 5,962,000,000.
-Total revenues for the fiscal year ended 2022-12-31: USD 25,941,000,000.",Unsupported,Segment vs Total Revenue,SO,Unsupported,same_item_different_amount,"The passage reports 25,941,000,000 for this item and period, not 5,962,000,000. 5,962,000,000 does appear, but on a different line: ""SouthernCompanyGasMember segment revenue for the fiscal year ended 2022-12-31: USD 5,962,000,000.""","Total revenues for the fiscal year ended 2022-12-31: USD 25,941,000,000. || SouthernCompanyGasMember segment revenue for the fiscal year ended 2022-12-31: USD 5,962,000,000."
-SB-SO-03,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 19,998,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
+Total revenues for the fiscal year ended 2026-06-30: USD 21,499,000,000.",Supported,Supported Segment Revenue,PH,Supported,amount_and_keywords_match,"7,061,000,000 appears in the passage next to the same line item and period.","AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 7,061,000,000."
+SB-SO-01,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 19,998,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
 ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000.
 SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000.
 Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000.",Unsupported,Segment vs Total Revenue,SO,Unsupported,same_item_different_amount,"The passage reports 24,828,000,000 for this item and period, not 19,998,000,000. 19,998,000,000 does appear, but on a different line: ""ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000. || ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000."
-SB-SO-04,storyboard_b,validation,"SOUTHERN CO's SouthernCompanyGasMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 4,702,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
+SB-SO-02,storyboard_b,validation,"SOUTHERN CO's SouthernCompanyGasMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 4,702,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
 ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000.
 SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000.
 Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000.",Unsupported,Segment vs Total Revenue,SO,Unsupported,same_item_different_amount,"The passage reports 24,828,000,000 for this item and period, not 4,702,000,000. 4,702,000,000 does appear, but on a different line: ""SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000.""","Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000. || SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000."
-SB-SO-05,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 21,603,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
+SB-SO-03,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 21,603,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
 ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000.
 SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000.
 Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000.",Unsupported,Segment vs Total Revenue,SO,Unsupported,same_item_different_amount,"The passage reports 26,764,000,000 for this item and period, not 21,603,000,000. 21,603,000,000 does appear, but on a different line: ""ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000.""","Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000. || ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000."
-SB-SO-06,storyboard_b,validation,"SOUTHERN CO's SouthernCompanyGasMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 4,456,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
+SB-SO-04,storyboard_b,validation,"SOUTHERN CO's SouthernCompanyGasMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 4,456,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
 ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000.
 SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000.
 Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000.",Unsupported,Segment vs Total Revenue,SO,Unsupported,same_item_different_amount,"The passage reports 26,764,000,000 for this item and period, not 4,456,000,000. 4,456,000,000 does appear, but on a different line: ""SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000.""","Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000. || SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000."
-SB-SO-07,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2025-12-31 represented the company's entire revenue of USD 23,777,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-26-000006), revenue by segment for the fiscal year ended 2025-12-31:
+SB-SO-05,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2025-12-31 represented the company's entire revenue of USD 23,777,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-26-000006), revenue by segment for the fiscal year ended 2025-12-31:
 ElectricUtilitiesMember segment revenue for the fiscal year ended 2025-12-31: USD 23,777,000,000.
-SouthernCompanyGasMember segment revenue for the fiscal year ended 2025-12-31: USD 5,044,000,000.
 Total revenues for the fiscal year ended 2025-12-31: USD 28,942,000,000.",Unsupported,Segment vs Total Revenue,SO,Unsupported,same_item_different_amount,"The passage reports 28,942,000,000 for this item and period, not 23,777,000,000. 23,777,000,000 does appear, but on a different line: ""ElectricUtilitiesMember segment revenue for the fiscal year ended 2025-12-31: USD 23,777,000,000.""","Total revenues for the fiscal year ended 2025-12-31: USD 28,942,000,000. || ElectricUtilitiesMember segment revenue for the fiscal year ended 2025-12-31: USD 23,777,000,000."
-SB-SO-08,storyboard_b,validation,"SOUTHERN CO's SouthernCompanyGasMember revenue for the fiscal period ended 2025-12-31 represented the company's entire revenue of USD 5,044,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-26-000006), revenue by segment for the fiscal year ended 2025-12-31:
+SB-SO-S01,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember segment revenue for the fiscal period ended 2023-12-31 was USD 19,998,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000.",Supported,Supported Segment Revenue,SO,Supported,amount_and_keywords_match,"19,998,000,000 appears in the passage next to the same line item and period.","ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000."
+SB-SO-S02,storyboard_b,validation,"SOUTHERN CO's SouthernCompanyGasMember segment revenue for the fiscal period ended 2023-12-31 was USD 4,702,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000.",Supported,Supported Segment Revenue,SO,Supported,amount_and_keywords_match,"4,702,000,000 appears in the passage next to the same line item and period.","SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000."
+SB-SO-S03,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember segment revenue for the fiscal period ended 2024-12-31 was USD 21,603,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000.",Supported,Supported Segment Revenue,SO,Supported,amount_and_keywords_match,"21,603,000,000 appears in the passage next to the same line item and period.","ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000."
+SB-SO-S04,storyboard_b,validation,"SOUTHERN CO's SouthernCompanyGasMember segment revenue for the fiscal period ended 2024-12-31 was USD 4,456,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000.",Supported,Supported Segment Revenue,SO,Supported,amount_and_keywords_match,"4,456,000,000 appears in the passage next to the same line item and period.","SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000."
+SB-SO-S05,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember segment revenue for the fiscal period ended 2025-12-31 was USD 23,777,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-26-000006), revenue by segment for the fiscal year ended 2025-12-31:
 ElectricUtilitiesMember segment revenue for the fiscal year ended 2025-12-31: USD 23,777,000,000.
-SouthernCompanyGasMember segment revenue for the fiscal year ended 2025-12-31: USD 5,044,000,000.
-Total revenues for the fiscal year ended 2025-12-31: USD 28,942,000,000.",Unsupported,Segment vs Total Revenue,SO,Unsupported,same_item_different_amount,"The passage reports 28,942,000,000 for this item and period, not 5,044,000,000. 5,044,000,000 does appear, but on a different line: ""SouthernCompanyGasMember segment revenue for the fiscal year ended 2025-12-31: USD 5,044,000,000.""","Total revenues for the fiscal year ended 2025-12-31: USD 28,942,000,000. || SouthernCompanyGasMember segment revenue for the fiscal year ended 2025-12-31: USD 5,044,000,000."
-SB-SO-S01,storyboard_b,validation,"SOUTHERN CO's ElectricUtilitiesMember segment revenue for the fiscal period ended 2022-12-31 was USD 22,873,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
-ElectricUtilitiesMember segment revenue for the fiscal year ended 2022-12-31: USD 22,873,000,000.
-SouthernCompanyGasMember segment revenue for the fiscal year ended 2022-12-31: USD 5,962,000,000.
-Total revenues for the fiscal year ended 2022-12-31: USD 25,941,000,000.",Supported,Supported Segment Revenue,SO,Supported,amount_and_keywords_match,"22,873,000,000 appears in the passage next to the same line item and period.","ElectricUtilitiesMember segment revenue for the fiscal year ended 2022-12-31: USD 22,873,000,000."
-SB-SO-S02,storyboard_b,validation,"SOUTHERN CO's SouthernCompanyGasMember segment revenue for the fiscal period ended 2022-12-31 was USD 5,962,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-23-000012), revenue by segment for the fiscal year ended 2022-12-31:
-ElectricUtilitiesMember segment revenue for the fiscal year ended 2022-12-31: USD 22,873,000,000.
-SouthernCompanyGasMember segment revenue for the fiscal year ended 2022-12-31: USD 5,962,000,000.
-Total revenues for the fiscal year ended 2022-12-31: USD 25,941,000,000.",Supported,Supported Segment Revenue,SO,Supported,amount_and_keywords_match,"5,962,000,000 appears in the passage next to the same line item and period.","SouthernCompanyGasMember segment revenue for the fiscal year ended 2022-12-31: USD 5,962,000,000."
+Total revenues for the fiscal year ended 2025-12-31: USD 28,942,000,000.",Supported,Supported Segment Revenue,SO,Supported,amount_and_keywords_match,"23,777,000,000 appears in the passage next to the same line item and period.","ElectricUtilitiesMember segment revenue for the fiscal year ended 2025-12-31: USD 23,777,000,000."

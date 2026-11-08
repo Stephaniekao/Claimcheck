@@ -18,7 +18,7 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from claimcheck_baseline import evidence, metrics, rules  # noqa: E402
+from claimcheck_baseline import evidence, metrics, provenance, rules  # noqa: E402
 
 OUT = Path(__file__).resolve().parent / "outputs"
 
@@ -66,6 +66,7 @@ def main() -> None:
         "config": cfg.__dict__,
         "input_sha256": evidence.input_hashes(),
         "python": platform.python_version(),
+        "provenance": provenance.provenance(),
         "splits": {},
     }
     for split in splits:
@@ -87,7 +88,14 @@ def main() -> None:
         print(metrics.per_error_type(res).round(3).to_string())
         print("targets:", s["targets_met"], f"| {ms:.2f} ms/claim")
 
-    (OUT / "inserted_metrics.json").write_text(json.dumps(report, indent=2, default=float))
+    out_path = OUT / "inserted_metrics.json"
+    if not args.final_test and out_path.exists():
+        # A train/validation run keeps the logged one-time test result instead of dropping it.
+        old = json.loads(out_path.read_text())
+        if "test" in old.get("splits", {}):
+            report["splits"]["test"] = old["splits"]["test"]
+            report["test_from"] = {k: old.get(k) for k in ("run_at_utc", "versions", "provenance")}
+    out_path.write_text(json.dumps(report, indent=2, default=float))
     print(f"\nWrote {OUT}")
 
 

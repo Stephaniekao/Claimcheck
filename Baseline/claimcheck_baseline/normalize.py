@@ -14,7 +14,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
-NORMALIZER_VERSION = "1.2.0"
+NORMALIZER_VERSION = "1.3.0"  # 1.3.0: Quantity.negative_marked + signs_conflict()
 
 SCALE_WORDS = {
     "thousand": 1e3, "thousands": 1e3, "k": 1e3,
@@ -59,6 +59,8 @@ class Quantity:
     raw: str
     start: int
     end: int
+    negative_marked: bool = False  # written with a minus sign attached to it ("-7,085", "USD -7,085")
+    bracketed: bool = False        # accounting brackets "(1,234)": may or may not mean negative
 
     def describe(self) -> str:
         return self.raw.strip()
@@ -109,6 +111,29 @@ def _is_marker(m: re.Match) -> bool:
         return False
     num = m.group("num")
     return "," not in num and "." not in num and int(num) < 13
+
+
+def _minus_is_sign(m: re.Match, text: str) -> bool:
+    """True for a minus that makes the number negative ("-7,085", "USD -7,085", "$-5").
+
+    Not counted: subtraction ("$469 - $77", "2019-2018"), list dashes ("- Total ..."),
+    en/em dashes used as punctuation, and accounting brackets "(1,234)", which
+    tables use for costs and outflows that the text states as positive.
+    """
+    sign = m.group("sign")
+    if sign not in ("-", "−"):
+        return False
+    i = m.start("sign")
+    after = text[m.end("sign"):m.end("sign") + 1]
+    if after.isspace():
+        return False  # "- 77": a dash or an operator, not a sign
+    if m.group("cur"):
+        return True  # "$-5", "USD -7,085": the currency belongs to this number
+    j = i - 1
+    while j >= 0 and text[j] == " ":
+        j -= 1
+    prev = text[j] if j >= 0 else ""
+    return not (prev.isdigit() or prev in ")%$€£¥₹=+-−*/×")
 
 
 def extract_quantities(text: str) -> list[Quantity]:
@@ -163,7 +188,9 @@ def extract_quantities(text: str) -> list[Quantity]:
         if pct:
             end = m.end("pct")
         start = m.start("cur") if m.group("cur") else m.start("num")
-        out.append(Quantity(value, unit, bool(scale_word), half_ulp, text[start:end], start, end))
+        marked = _minus_is_sign(m, clean)
+        bracketed = bool(m.group("open")) and bool(m.group("close"))
+        out.append(Quantity(value, unit, bool(scale_word), half_ulp, text[start:end], start, end, marked, bracketed))
     return out
 
 
@@ -199,3 +226,36 @@ def quantities_match(claim: Quantity, passage: Quantity, rel_tol: float = 0.0) -
         if abs(c - p) <= tol:
             return True
     return False
+
+
+# Words that make a plain number negative in meaning ("net cash used in financing
+# activities was $11.6 billion"). Bracketed alternatives in a line label, such as
+# "Net Income (Loss)" or "Provided by (Used in)", are ignored: they name the line,
+# they do not say the value is negative.
+_NEGATIVE_WORDS = re.compile(
+    r"\b(?:used\s+(?:in|for|by)|net\s+loss(?:es)?|(?:operating|pre-?tax|a|the)\s+loss(?:es)?|loss(?:es)?\s+(?:of|was|were|totaled|amounted)|"
+    r"deficits?|outflows?|negative|decrease[ds]?|decreasing|declined?|declines|declining|fell|fall|dropped|reductions?|"
+    r"reduced|lower|down|repaid|repayments?|paid|payments?|impairments?|write-?(?:downs?|offs?))\b",
+    re.I)
+
+_LABEL_ALTERNATIVE = re.compile(r"\(\s*[A-Za-z][A-Za-z \-]*\)")
+
+
+def has_negative_wording(text: str) -> bool:
+    return bool(_NEGATIVE_WORDS.search(_LABEL_ALTERNATIVE.sub(" ", text)))
+
+
+def signs_conflict(claim: Quantity, claim_context: str, passage: Quantity, passage_text: str) -> bool:
+    """True if one side writes the amount with a minus and the other as a plain positive.
+
+    Example: the filing says "Net Income (Loss) ...: USD 7,085 million" and the
+    claim says "USD -7,085 million". The plain side never conflicts when it is in
+    accounting brackets "(7,085)" or sits next to negative wording ("used in",
+    "net loss", "decreased"), since either can mean the value is negative.
+    """
+    if claim.negative_marked == passage.negative_marked:
+        return False
+    plain, plain_text = (passage, passage_text) if claim.negative_marked else (claim, claim_context)
+    if plain.bracketed:
+        return False
+    return not has_negative_wording(plain_text)

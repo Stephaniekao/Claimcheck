@@ -2,20 +2,27 @@
 
 Baseline row of the Experiment Card (owner: Sharon). Number normalization plus keyword matching, with no training, no randomness and no API. Each claim gets Supported / Uncertain / Unsupported, plus the rule that fired, an explanation, and the passage lines it used. A rule-based **support score** (0–1) was added later, after the test run; see [Support score](#support-score-added-after-the-test-run).
 
-**Status:** labels frozen at rules 1.2.0 / normalizer 1.2.0. The one-time test run is done (Field 5), so any further rule change is a new version and must not be re-judged on this test split. Support score 1.0.0 was added afterwards; it does not change any label, and it had its own single test run.
+**Status:** rules 1.3.0 / normalizer 1.3.0, which adds a sign check for the Flipped Sign errors in Inserted Error Set v2 and was developed on v2 train and validation only.
+- **RAGBench:** the official test result stays rules 1.2.0. That split was used once, so 1.3.0 is checked on RAGBench validation only, where it changes 4 of about 21,500 claims.
+- **Inserted Error Set v2:** its one test run is still to come. The tables below are v1 results until then.
+- **Support score 1.0.0:** added after the 1.2.0 test run. It never changes a label.
 
 ## Run
 
 ```bash
+./run_all.sh                                    # all of the below on train + validation (see --help)
+
 python3 Baseline/run_inserted_error_set.py      # train + validation
-python3 Baseline/run_ragbench.py                # RAGBench validation: 16-trial config search
+python3 Baseline/run_ragbench.py --no-search    # RAGBench validation with the saved config
+python3 Baseline/run_ragbench.py                # (re-runs the 16-trial config search)
+python3 Baseline/run_support_score.py           # support score with the saved weights
 python3 Baseline/error_analysis.py              # Field 9 samples from the saved test outputs
-python3 Baseline/run_support_score.py           # support score: 4 weight trials on RAGBench validation
 python3 -m unittest discover Baseline/tests
-# done once already; do not repeat:  --final-test  on all three runners
 ```
 
-Results go to `outputs/`; each JSON records the code versions and input SHA256s.
+`--final-test` is run once per test split, by hand. The RAGBench test was used with rules 1.2.0, so `run_ragbench.py --final-test` refuses later versions; they are checked on validation instead.
+
+Results go to `outputs/`. Each JSON records the code versions, input SHA256s, git commit, Inserted Error Set version and hardware. Results for Inserted Error Set v1 (rules 1.2.0, including its test run) are in `outputs/archive/inserted-v1_rules-1.2.0/`.
 
 ## Rules
 
@@ -56,9 +63,9 @@ Flag-all F1 is what you get by labelling every claim Unsupported. Latency is abo
 **What it is.** A number from 0 to 1 for how strongly the passage supports the claim under the baseline's own rules. It is a *support score*, not a confidence that the label is right, so it is not calibrated and ECE still does not apply.
 
 **How it works.**
-- **The label sets the band:** Unsupported 0–⅓, Uncertain ⅓–⅔, Supported ⅔–1. Thresholds ⅓ and ⅔ give back exactly the 1.2.0 labels, and the runner checks this on every split and stops if any label differs. So a right number next to the wrong line item, year or segment can never score as Supported.
+- **The label sets the band:** Unsupported 0–⅓, Uncertain ⅓–⅔, Supported ⅔–1. Thresholds ⅓ and ⅔ give back exactly the rules' labels, and the runner checks this against the saved predictions on every split and stops if any label differs. So a right number next to the wrong line item, year or segment can never score as Supported.
 - **Four features rank claims inside the band:**
-  - same number (unit and scale are part of this check, so there is no separate unit feature)
+  - same number (unit, scale and, from rules 1.3.0, sign are part of this check, so there is no separate unit feature)
   - same line item, or the share of the claim's key words found on the line
   - same year
   - same segment/total scope
@@ -94,9 +101,18 @@ The baseline made no errors on the Inserted Error Set, so there are none to insp
 - **Storyboard B result differs from Field 3:** Field 3 expected these claims to come out Uncertain. Because the passage states total revenue, they come out Unsupported instead; without a total line they would be Uncertain, and `tests/` covers both cases. The card's text should be updated.
 - **RAGBench claims** are `response_sentences`; gold labels come from `unsupported_response_sentence_keys` (sentences) and `adherence_score` (answers), both produced by RAGBench's GPT-4 annotator, not humans. `id` repeats across generator models, so group answers by row. Once the team's claim splitter replaces the sentences, every method's results change.
 
-## Known limitations (not fixed, because the test run is done)
+## Sign check (rules 1.3.0)
 
-- **Signs:** amounts are compared by absolute value, because text often carries the sign in words ("net cash used in …"). A pure sign error (+5bn vs −5bn) is not caught. The Inserted Error Set has no sign errors.
+A claim amount written with a minus does not match a passage amount written as a plain positive, and the reverse. Example: the filing says "Net Income (Loss) …: USD 7,085 million" and the claim says "USD -7,085 million". To avoid false alarms, a sign is ignored when it can't be trusted:
+- **Subtraction and dashes:** only a minus attached to the number counts ("-7,085", "USD -7,085", "$-5"). "$469 - $77" and "- Total …" do not.
+- **Accounting brackets:** "(5,860)" never conflicts, because tables bracket costs that the answer states as positive.
+- **Negative wording:** a plain number next to "used in", "net loss", "decreased" and similar words may mean a negative, so it never conflicts. Bracketed alternatives in a line label ("Net Income (Loss)", "Provided by (Used in)") don't count as negative wording.
+
+`Config(sign_check=False)` reproduces rules 1.2.0. On v2 train and validation the check catches 17 of 17 Flipped Sign claims (1.2.0 caught 4), with no other label changed. A first version that treated brackets and subtraction as signs raised RAGBench false alarms by about a point, so it was narrowed before being kept.
+
+## Known limitations
+
+- **Signs:** a flip is not caught when the plain side uses negative wording or brackets (see above), or when the sign is written only in words ("a loss of $5 million" vs "income of $5 million").
 - **Calculation cue words are broad** ("about", "over", "margin", "approximately"). A wrong number in such a sentence becomes Uncertain rather than Unsupported.
 - **The line-item lexicon is small** (15 items), so RAGBench rows with business-specific labels fall back to word overlap.
 - **Support score is not a confidence:** it ranks claims by rule agreement and is not calibrated; on RAGBench it is near chance.

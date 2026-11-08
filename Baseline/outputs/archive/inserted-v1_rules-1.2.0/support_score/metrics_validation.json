@@ -1,0 +1,132 @@
+{
+  "split": "validation",
+  "weights": {
+    "weights_name": "number_heavy",
+    "weights": {
+      "number": 0.7,
+      "item": 0.1,
+      "period": 0.1,
+      "scope": 0.1
+    },
+    "chosen_on": "RAGBench validation: mean claim-level AUROC (FinQA, TAT-QA)",
+    "n_trials": 4,
+    "trials_used_in_total_with_rules_1.2.0": 20,
+    "chosen_at_utc": "2026-11-07T14:42:59+00:00"
+  },
+  "versions": {
+    "rules": "1.2.0",
+    "normalizer": "1.2.0",
+    "keywords": "1.0.0",
+    "score": "1.0.0"
+  },
+  "python": "3.14.0",
+  "note": "Added after the rules 1.2.0 test run; labels unchanged.",
+  "ragbench": {
+    "FinQA": {
+      "claim_level": {
+        "n": 9379,
+        "auroc": 0.5466244085671976,
+        "average_precision": 0.02316889299670508,
+        "base_rate": 0.015993176244802218,
+        "n_distinct_scores": 234,
+        "precision_at_recall_0.80": {
+          "precision": 0.016990603681297463,
+          "recall": 0.88,
+          "risk_threshold": 0.01708333333333334
+        }
+      },
+      "answer_level": {
+        "n": 1766,
+        "auroc": 0.4994779527831797,
+        "average_precision": 0.08131959231141331,
+        "base_rate": 0.0696489241223103,
+        "n_distinct_scores": 147,
+        "precision_at_recall_0.80": {
+          "precision": 0.0706163973668462,
+          "recall": 0.959349593495935,
+          "risk_threshold": 0.03083333333333338
+        }
+      }
+    },
+    "TATQA": {
+      "claim_level": {
+        "n": 12164,
+        "auroc": 0.4699621832451206,
+        "average_precision": 0.011450884945777994,
+        "base_rate": 0.01035843472541927,
+        "n_distinct_scores": 234,
+        "precision_at_recall_0.80": {
+          "precision": 0.010471726338885011,
+          "recall": 0.8333333333333334,
+          "risk_threshold": 0.009226190476190443
+        }
+      },
+      "answer_level": {
+        "n": 3336,
+        "auroc": 0.565215204285192,
+        "average_precision": 0.045615729109225595,
+        "base_rate": 0.03806954436450839,
+        "n_distinct_scores": 184,
+        "precision_at_recall_0.80": {
+          "precision": 0.04500199123855038,
+          "recall": 0.889763779527559,
+          "risk_threshold": 0.37140350877192985
+        }
+      }
+    }
+  },
+  "inserted_error_set": {
+    "train": {
+      "overall": {
+        "n": 240,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "base_rate": 0.8,
+        "n_distinct_scores": 2,
+        "precision_at_recall_0.80": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "risk_threshold": 1.0
+        }
+      },
+      "storyboard_b": {
+        "n": 30,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "base_rate": 0.8,
+        "n_distinct_scores": 2,
+        "precision_at_recall_0.80": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "risk_threshold": 1.0
+        }
+      }
+    },
+    "validation": {
+      "overall": {
+        "n": 80,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "base_rate": 0.8,
+        "n_distinct_scores": 2,
+        "precision_at_recall_0.80": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "risk_threshold": 1.0
+        }
+      },
+      "storyboard_b": {
+        "n": 20,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "base_rate": 0.8,
+        "n_distinct_scores": 2,
+        "precision_at_recall_0.80": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "risk_threshold": 1.0
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from claimcheck_baseline.normalize import extract_periods, extract_quantities, quantities_match  # noqa: E402
-from claimcheck_baseline.rules import verify  # noqa: E402
+from claimcheck_baseline.rules import Config, verify  # noqa: E402
 
 
 def q(text):
@@ -97,6 +97,34 @@ class Rules(unittest.TestCase):
         table = 'Revenue table [["", "2019", "2018"], ["total revenue", "$ 5,000", "$ 4,000"]]'
         self.assertEqual(verify("Total revenue in 2019 was $5,000.", table).label, "Supported")
         self.assertEqual(verify("Total revenue in 2018 was $5,000.", table).label, "Unsupported")
+
+
+class SignCheck(unittest.TestCase):  # rules 1.3.0
+    NI = "Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 7,085 million."
+    CF = "Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -11,644 million."
+
+    def test_minus_counts_only_when_attached(self):
+        marks = lambda t: [x.negative_marked for x in extract_quantities(t)]
+        self.assertEqual(marks("USD -7,085 million"), [True])
+        self.assertEqual(marks("$-5 million"), [True])
+        self.assertEqual(marks("$469 - $77 = $392"), [False, False, False])  # subtraction
+        self.assertEqual(marks("(1,234)"), [False])                          # brackets are not a minus
+
+    def test_flipped_sign_is_unsupported(self):
+        claim = "ACME's net income for the fiscal period ended 2025-12-31 was USD -7,085.000 million."
+        self.assertEqual(verify(claim, self.NI).label, "Unsupported")
+        self.assertEqual(verify(claim, self.NI, Config(sign_check=False)).label, "Supported")  # rules 1.2.0
+
+    def test_negative_value_stated_positive_is_unsupported(self):
+        claim = "ACME's net cash from financing activities for the fiscal period ended 2025-12-31 was USD 11,644 million."
+        self.assertEqual(verify(claim, self.CF).label, "Unsupported")
+
+    def test_matching_signs_and_negative_wording_still_match(self):
+        self.assertEqual(verify("Net cash from financing activities in 2025 was USD -11,644 million.", self.CF).label, "Supported")
+        used = "Net cash used in financing activities for the fiscal year ended 2025-12-31: USD 11,644 million."
+        self.assertEqual(verify("Net cash from financing activities in 2025 was USD -11,644 million.", used).label, "Supported")
+        brackets = "Net cash from financing activities for the fiscal year ended 2025-12-31: (11,644)"
+        self.assertEqual(verify("Net cash from financing activities in 2025 was -11,644.", brackets).label, "Supported")
 
 
 if __name__ == "__main__":

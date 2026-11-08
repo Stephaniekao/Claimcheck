@@ -1,7 +1,11 @@
 """Run the rule-based baseline on RAGBench FinQA and TAT-QA.
 
     python Baseline/run_ragbench.py                  # validation: pick config (<= 20 trials, Field 5)
+    python Baseline/run_ragbench.py --no-search      # validation with the already chosen config (no new trials)
     python Baseline/run_ragbench.py --final-test     # test once with the chosen config
+
+The RAGBench test split was used once, with rules 1.2.0. Later rule versions are
+checked on validation with --no-search; --final-test refuses to run them.
 
 Claims = RAGBench `response_sentences` (the same split for every method).
 Passage = the retrieved `documents_sentences` for that answer.
@@ -22,7 +26,7 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from claimcheck_baseline import metrics, rules  # noqa: E402
+from claimcheck_baseline import metrics, provenance, rules  # noqa: E402
 
 PROJECT = Path(__file__).resolve().parents[1]
 RAG = PROJECT / "Data" / "RAGBench"
@@ -35,6 +39,7 @@ ORDER = {"Unsupported": 0, "Uncertain": 1, "Supported": 2}
 #   lowest_checkable: same, but sentences with no number (rule "no_amount") are
 #                     skipped; an answer with nothing checkable is Uncertain
 AGGREGATIONS = ["lowest", "lowest_checkable"]
+TEST_RUN_RULES = "1.2.0"  # the one RAGBench test run (Field 5)
 # 2 x 2 x 2 x 2 = 16 trials (Field 5 allows 20).
 GRID = {"rel_tol": [0.0, 0.01], "min_word_overlap": [0.3, 0.5], "derived_policy": ["uncertain", "unsupported"],
         "aggregation": AGGREGATIONS}
@@ -90,11 +95,18 @@ def line(name: str, m: dict) -> str:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--final-test", action="store_true")
+    ap.add_argument("--no-search", action="store_true", help="validation with the saved config, no new trials")
     args = ap.parse_args()
     OUT.mkdir(exist_ok=True)
     chosen_path = OUT / "ragbench_chosen_config.json"
+    if args.final_test and rules.RULES_VERSION != TEST_RUN_RULES:
+        sys.exit(f"RAGBench test was already used once (rules {TEST_RUN_RULES}); "
+                 f"evaluate rules {rules.RULES_VERSION} on validation with --no-search instead.")
 
-    if not args.final_test:
+    if args.no_search:
+        chosen = json.loads(chosen_path.read_text())
+        split, data = "validation", {s: load(s, "validation") for s in SUBSETS}
+    elif not args.final_test:
         val = {s: load(s, "validation") for s in SUBSETS}
         trials, cache = [], {}
         for rel_tol, overlap, policy, how in itertools.product(*GRID.values()):
@@ -134,7 +146,8 @@ def main() -> None:
 
     cfg = rules.Config(rel_tol=chosen["rel_tol"], min_word_overlap=chosen["min_word_overlap"],
                        derived_policy=chosen["derived_policy"])
-    report = {"split": split, "config": chosen, "versions": rules.versions(), "subsets": {}}
+    report = {"split": split, "config": chosen, "versions": rules.versions(),
+              "provenance": provenance.provenance(include_inserted=False), "subsets": {}}
     print(f"\n=== RAGBench {split} | rel_tol={cfg.rel_tol} overlap={cfg.min_word_overlap} "
           f"derived={cfg.derived_policy} agg={chosen['aggregation']} | AC2 satisfiable: {chosen['ac2_satisfied']} ===")
     for s in SUBSETS:

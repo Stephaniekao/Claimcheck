@@ -4,7 +4,7 @@ This document explains how the datasets were prepared and split for the ClaimChe
 
 ## Current Dataset Version
 
-The current Inserted Error Set is v2. Please use Data/data_download__v2.ipynb for dataset generation. The original Data/data_download.ipynb is retained for reference only.
+The current Inserted Error Set is v2. Please use Data/data_download_v2.ipynb for dataset generation. The original Data/data_download.ipynb is retained for reference only.
 
 The v2 dataset contains 400 claims from 40 companies, with 200 Supported and 200 Unsupported claims. The company assignments and train, validation, and test splits remain unchanged from v1.
 
@@ -50,7 +50,7 @@ Claim decomposition, label conversion, and other model preprocessing steps were 
 Two generation notebooks are retained in the repository:
 
 - **v1 (`Data/data_download.ipynb`):** The original dataset contained 400 claims, with approximately 80% labeled Unsupported.
-- **v2 (`Data/data_download__v2.ipynb`):** The updated dataset contains 400 claims, with 200 Supported and 200 Unsupported claims. It introduces more challenging errors, including small numerical changes (1% to 5%), transposed digits, and flipped signs.
+- **v2 (`Data/data_download_v2.ipynb`):** The updated dataset contains 400 claims, with 200 Supported and 200 Unsupported claims. It introduces more challenging errors, including small numerical changes (1% to 5%), transposed digits, and flipped signs.
 
 Both versions use the same 40 companies and the same company assignments across training, validation, and testing.
 
@@ -131,3 +131,12 @@ The three blind test examples are kept separate for the final showcase and exclu
 - The saved company assignments and source snapshots should be used for reproducibility.
 - Changes to the source data, generation rules, or split assignments should be documented.
 - Successful SHA256 verification confirms reproducibility, but does not replace manual review of financial claims.
+
+### Known Limitations of v2
+
+Two wording patterns in the v2 claims can reveal the label without reading the evidence. They are kept for now and may be fixed in a later version:
+
+- **Unit errors are the only claims written in billions.** All 30 Unit errors say "billion" and the other 270 General Claims say "million", so a model could learn "billion = Unsupported".
+- **Small Numerical errors always have non-zero decimals** (for example "USD 12,027.088 million"). So do 34 of the 150 Supported claims, so this cue is weaker.
+
+The rule-based baseline is not affected, because it compares values with the passage. Methods trained or tuned on these claims (for example TF-IDF + LR) should be read with this in mind, and a claim-only model (trained without the evidence) can measure how much these cues help.

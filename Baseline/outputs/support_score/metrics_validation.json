@@ -14,19 +14,37 @@
     "chosen_at_utc": "2026-11-07T14:42:59+00:00"
   },
   "versions": {
-    "rules": "1.2.0",
-    "normalizer": "1.2.0",
+    "rules": "1.3.0",
+    "normalizer": "1.3.0",
     "keywords": "1.0.0",
     "score": "1.0.0"
   },
   "python": "3.14.0",
+  "provenance": {
+    "git": {
+      "commit": "405db0d1607a7b29748d1a97c7da6b778cd5d73d",
+      "uncommitted_changes": true
+    },
+    "python": "3.14.0",
+    "hardware": {
+      "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "cpu": "Apple M5",
+      "gpu": null
+    },
+    "inserted_error_set": {
+      "format": "ClaimCheck Inserted Error Set v2, 40 companies, 400 claims",
+      "version": "v2",
+      "manifest_sha256": "df935f540b33ac1ab70b69b7b0b4fd21397e4dac6b6be6b5db6755f8f3bff4b0"
+    }
+  },
   "note": "Added after the rules 1.2.0 test run; labels unchanged.",
   "ragbench": {
     "FinQA": {
       "claim_level": {
         "n": 9379,
-        "auroc": 0.5466244085671976,
-        "average_precision": 0.02316889299670508,
+        "auroc": 0.5465016072525012,
+        "average_precision": 0.023159427943476734,
         "base_rate": 0.015993176244802218,
         "n_distinct_scores": 234,
         "precision_at_recall_0.80": {
@@ -51,24 +69,24 @@
     "TATQA": {
       "claim_level": {
         "n": 12164,
-        "auroc": 0.4699621832451206,
-        "average_precision": 0.011450884945777994,
+        "auroc": 0.46964045074196265,
+        "average_precision": 0.01143518102725857,
         "base_rate": 0.01035843472541927,
         "n_distinct_scores": 234,
         "precision_at_recall_0.80": {
-          "precision": 0.010471726338885011,
+          "precision": 0.010469638049655998,
           "recall": 0.8333333333333334,
           "risk_threshold": 0.009226190476190443
         }
       },
       "answer_level": {
         "n": 3336,
-        "auroc": 0.565215204285192,
-        "average_precision": 0.045615729109225595,
+        "auroc": 0.5645109841170134,
+        "average_precision": 0.045513389408522176,
         "base_rate": 0.03806954436450839,
         "n_distinct_scores": 184,
         "precision_at_recall_0.80": {
-          "precision": 0.04500199123855038,
+          "precision": 0.04496617588539594,
           "recall": 0.889763779527559,
           "risk_threshold": 0.37140350877192985
         }
@@ -81,7 +99,7 @@
         "n": 240,
         "auroc": 1.0,
         "average_precision": 1.0,
-        "base_rate": 0.8,
+        "base_rate": 0.5,
         "n_distinct_scores": 2,
         "precision_at_recall_0.80": {
           "precision": 1.0,
@@ -93,7 +111,7 @@
         "n": 30,
         "auroc": 1.0,
         "average_precision": 1.0,
-        "base_rate": 0.8,
+        "base_rate": 0.5,
         "n_distinct_scores": 2,
         "precision_at_recall_0.80": {
           "precision": 1.0,
@@ -107,7 +125,7 @@
         "n": 80,
         "auroc": 1.0,
         "average_precision": 1.0,
-        "base_rate": 0.8,
+        "base_rate": 0.5,
         "n_distinct_scores": 2,
         "precision_at_recall_0.80": {
           "precision": 1.0,
@@ -119,7 +137,7 @@
         "n": 20,
         "auroc": 1.0,
         "average_precision": 1.0,
-        "base_rate": 0.8,
+        "base_rate": 0.5,
         "n_distinct_scores": 2,
         "precision_at_recall_0.80": {
           "precision": 1.0,

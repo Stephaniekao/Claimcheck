@@ -1109,7 +1109,7 @@ answer,key,label,answer_label,pred,rule,score
 264,b,Supported,Supported,Uncertain,no_amount,0.44333333333333336
 264,c,Supported,Supported,Uncertain,derived_value,0.3539583333333334
 264,d,Supported,Supported,Uncertain,derived_value,0.3539583333333334
-264,e,Supported,Supported,Uncertain,amount_matches_other_item,0.3539583333333334
+264,e,Supported,Supported,Uncertain,derived_value,0.3539583333333334
 264,f,Supported,Supported,Uncertain,derived_value,0.3539583333333334
 264,g,Supported,Supported,Uncertain,derived_value,0.3539583333333334
 264,h,Supported,Supported,Uncertain,derived_value,0.37000000000000005
@@ -1266,7 +1266,7 @@ answer,key,label,answer_label,pred,rule,score
 303,b,Supported,Supported,Uncertain,no_amount,0.3333333333333333
 303,c,Supported,Supported,Uncertain,derived_value,0.3539583333333334
 303,d,Supported,Supported,Uncertain,amount_matches_other_item,0.3333333333333333
-303,e,Supported,Supported,Uncertain,amount_matches_other_item,0.3333333333333333
+303,e,Supported,Supported,Uncertain,derived_value,0.3333333333333333
 303,f,Supported,Supported,Uncertain,derived_value,0.3333333333333333
 303,g,Supported,Supported,Uncertain,derived_value,0.4323333333333334
 304,a,Supported,Supported,Uncertain,derived_value,0.38833333333333336
@@ -1888,7 +1888,7 @@ answer,key,label,answer_label,pred,rule,score
 471,b,Supported,Supported,Uncertain,no_amount,0.44333333333333336
 471,c,Supported,Supported,Uncertain,derived_value,0.3539583333333334
 471,d,Supported,Supported,Uncertain,amount_matches_other_item,0.3333333333333333
-471,e,Supported,Supported,Uncertain,amount_matches_other_item,0.3539583333333334
+471,e,Supported,Supported,Uncertain,derived_value,0.3539583333333334
 471,f,Supported,Supported,Uncertain,derived_value,0.3539583333333334
 471,g,Supported,Supported,Uncertain,derived_value,0.3539583333333334
 471,h,Supported,Supported,Uncertain,derived_value,0.4066666666666667
@@ -4540,7 +4540,7 @@ answer,key,label,answer_label,pred,rule,score
 1030,f,Supported,Supported,Supported,amount_and_keywords_match,0.9722222222222222
 1030,g,Supported,Supported,Uncertain,no_amount,0.3333333333333333
 1030,h,Supported,Supported,Uncertain,amount_matches_other_item,0.3333333333333333
-1030,i,Supported,Supported,Uncertain,amount_matches_other_item,0.3333333333333333
+1030,i,Supported,Supported,Uncertain,derived_value,0.3333333333333333
 1030,j,Supported,Supported,Uncertain,derived_value,0.3333333333333333
 1030,k,Supported,Supported,Uncertain,derived_value,0.37000000000000005
 1031,a,Unsupported,Unsupported,Supported,amount_and_keywords_match,0.9966666666666667
@@ -7098,9 +7098,9 @@ answer,key,label,answer_label,pred,rule,score
 1411,a,Supported,Supported,Uncertain,amount_matches_other_item,0.59
 1411,b,Supported,Supported,Uncertain,no_amount,0.4653333333333333
 1411,c,Supported,Supported,Uncertain,amount_matches_other_item,0.6266666666666666
-1411,d,Supported,Supported,Uncertain,amount_matches_other_item,0.59
+1411,d,Supported,Supported,Unsupported,amount_not_in_passage,0.036666666666666674
 1411,e,Supported,Supported,Unsupported,amount_not_in_passage,0.036666666666666674
-1411,f,Supported,Supported,Uncertain,amount_matches_other_item,0.59
+1411,f,Supported,Supported,Unsupported,amount_not_in_passage,0.036666666666666674
 1412,a,Supported,Supported,Supported,amount_and_keywords_match,0.9783333333333334
 1412,b,Supported,Supported,Uncertain,no_amount,0.5973333333333334
 1412,c,Supported,Supported,Uncertain,amount_matches_other_item,0.3333333333333333

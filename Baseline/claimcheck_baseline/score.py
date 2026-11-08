@@ -18,8 +18,8 @@ however well the number matches.
 Inside the band, each claim amount is compared with every passage line on four
 features, combined with weights (chosen on RAGBench validation):
 
-    number   the line contains the same amount (after normalization; unit and
-             scale are part of this check)
+    number   the line contains the same amount (after normalization; unit,
+             scale and, from rules 1.3.0, sign are part of this check)
     item     same line item (lexicon), or share of the claim's key words on the line
     period   same year / date            (skipped when either side names none)
     scope    same segment / total scope  (skipped when either side names none)
@@ -34,7 +34,7 @@ from dataclasses import dataclass
 
 from . import keywords as kw
 from . import rules
-from .normalize import extract_quantities, quantities_match
+from .normalize import extract_quantities
 
 SCORE_VERSION = "1.0.0"
 
@@ -71,7 +71,7 @@ def _scope_feature(c: rules.AmountCheck, u: rules.Unit) -> float | None:
 
 def line_score(c: rules.AmountCheck, u: rules.Unit, w: Weights, cfg: rules.Config) -> float:
     """Weighted agreement between one claim amount and one passage line, in [0, 1]."""
-    feats = [(w.number, 1.0 if any(quantities_match(c.quantity, pq, cfg.rel_tol) for pq in u.quantities) else 0.0)]
+    feats = [(w.number, 1.0 if rules.amount_in_unit(c.quantity, c.context, u, cfg) else 0.0)]
     if c.items:
         feats.append((w.item, 1.0 if c.items & u.items else 0.0))
     else:
@@ -96,7 +96,7 @@ def amount_score(c: rules.AmountCheck, units: list[rules.Unit], w: Weights, cfg:
         f = 0.0  # a line about the same item and period states another amount: the clearest contradiction
     elif rule in ("amount_and_keywords_match", "amount_matches_keywords_partial", "amount_matches_other_item"):
         f = max((line_score(c, u, w, cfg) for u in units
-                 if any(quantities_match(c.quantity, pq, cfg.rel_tol) for pq in u.quantities)), default=0.0)
+                 if rules.amount_in_unit(c.quantity, c.context, u, cfg)), default=0.0)
     else:  # amount_not_in_passage, derived_value: how close the nearest line comes
         f = max((line_score(c, u, w, cfg) for u in units), default=0.0)
     return _in_band(c.verdict.label, f)

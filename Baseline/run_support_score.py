@@ -1,7 +1,11 @@
 """Rule-based support score (score 1.0.0), added after the rules 1.2.0 test run.
 
-    python Baseline/run_support_score.py                # validation: pick weights (4 trials)
-    python Baseline/run_support_score.py --final-test   # test once with the chosen weights
+    python Baseline/run_support_score.py                # validation (weights: reuse saved choice, else 4 trials)
+    python Baseline/run_support_score.py --final-test   # test: Inserted Error Set only
+
+Labels are not changed: the script checks every label against the predictions
+saved by run_inserted_error_set.py / run_ragbench.py for the same split, and
+stops if any differs. Run those first.
 
 Labels are not changed: the script checks every label against the saved
 rules 1.2.0 predictions and stops if any differs. Results go to
@@ -23,7 +27,7 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from claimcheck_baseline import evidence, metrics, rules, score  # noqa: E402
+from claimcheck_baseline import evidence, metrics, provenance, rules, score  # noqa: E402
 from run_ragbench import OUT as BASE_OUT, SUBSETS, load  # noqa: E402
 
 OUT = BASE_OUT / "support_score"
@@ -80,7 +84,10 @@ def main() -> None:
                            derived_policy=chosen_cfg["derived_policy"])
     chosen_path = OUT / "chosen_weights.json"
 
-    if not args.final_test:
+    if not args.final_test and chosen_path.exists():
+        chosen = json.loads(chosen_path.read_text())  # weights already chosen: no new trials
+        split, splits_ies = "validation", ["train", "validation"]
+    elif not args.final_test:
         split = "validation"
         ws = [score.WEIGHT_TRIALS[n] for n in NAMES]
         trials = {n: {} for n in NAMES}
@@ -110,10 +117,13 @@ def main() -> None:
     w = score.Weights(**chosen["weights"])
 
     report = {"split": split, "weights": chosen, "versions": {**rules.versions(), "score": score.SCORE_VERSION},
-              "python": platform.python_version(), "note": "Added after the rules 1.2.0 test run; labels unchanged.",
+              "python": platform.python_version(), "provenance": provenance.provenance(),
+              "note": "Added after the rules 1.2.0 test run; labels unchanged.",
               "ragbench": {}, "inserted_error_set": {}}
+    # RAGBench test was used once (rules 1.2.0, support score 1.0.0); later runs score validation only.
+    rag_subsets = SUBSETS if split == "validation" else []
     print(f"\n=== support score {score.SCORE_VERSION} | {split} | weights {chosen['weights_name']} {chosen['weights']} ===")
-    for s in SUBSETS:
+    for s in rag_subsets:
         claims = score_ragbench(load(s, split), rag_cfg, [w])
         check_labels(claims, BASE_OUT / f"ragbench_{s.lower()}_{split}_claims.csv", ["answer", "key"])
         claims.to_csv(OUT / f"ragbench_{s.lower()}_{split}_scores.csv", index=False)
@@ -129,14 +139,20 @@ def main() -> None:
         report["inserted_error_set"][sp] = {"overall": metrics.score_metrics(res.label, res.score),
                                             "storyboard_b": metrics.score_metrics(sb.label, sb.score)}
 
-    for name, block in [*((f"RAGBench {s}", report["ragbench"][s]) for s in SUBSETS),
+    for name, block in [*((f"RAGBench {s}", report["ragbench"][s]) for s in rag_subsets),
                         *((f"Inserted {sp}", report["inserted_error_set"][sp]) for sp in splits_ies)]:
         for lvl, m in block.items():
             p80 = m["precision_at_recall_0.80"]
             print(f"{name:<20} {lvl:<12} n={m['n']:<6} AUROC {m['auroc']:.3f}  AP {m['average_precision']:.3f} "
                   f"(base rate {m['base_rate']:.3f})  P@R0.80 {p80['precision']:.3f}  distinct scores {m['n_distinct_scores']}")
-    (OUT / f"metrics_{split}.json").write_text(json.dumps(report, indent=2, default=float))
-    print("Labels identical to rules 1.2.0 on every split checked.")
+    out_path = OUT / f"metrics_{split}.json"
+    if not rag_subsets and out_path.exists():
+        # Keep the one RAGBench test result rather than dropping it from the file.
+        old = json.loads(out_path.read_text())
+        report["ragbench"] = old.get("ragbench", {})
+        report["ragbench_from"] = old.get("ragbench_from", {"versions": old.get("versions"), "weights": old.get("weights")})
+    out_path.write_text(json.dumps(report, indent=2, default=float))
+    print(f"Labels identical to the saved rules {rules.RULES_VERSION} predictions on every split checked.")
 
 
 if __name__ == "__main__":

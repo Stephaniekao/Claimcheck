@@ -21,9 +21,10 @@ import re
 from dataclasses import dataclass, field
 
 from . import keywords as kw
-from .normalize import NORMALIZER_VERSION, Quantity, extract_periods, extract_quantities, quantities_match, years_of
+from .normalize import (NORMALIZER_VERSION, Quantity, extract_periods, extract_quantities, quantities_match,
+                        signs_conflict, years_of)
 
-RULES_VERSION = "1.2.0"
+RULES_VERSION = "1.3.0"  # 1.3.0: sign check (Config.sign_check); 1.2.0 = sign_check=False
 
 SUPPORTED, UNSUPPORTED, UNCERTAIN = "Supported", "Unsupported", "Uncertain"
 
@@ -35,6 +36,8 @@ class Config:
     context_window: int = 8           # words on each side of a claim amount used as its key words
     derived_policy: str = "uncertain" # amount not in passage in a sentence that computes something:
                                       # "uncertain" (abstain) or "unsupported" (flag it)
+    sign_check: bool = True           # 1.3.0: "-7,085" does not match a plain "7,085" (and vice versa)
+                                      # unless the plain side has negative wording; False = rules 1.2.0
 
 
 @dataclass
@@ -67,6 +70,7 @@ class AmountCheck:
     periods: set[str]
     scope: str | None
     segments: set[str]
+    context: str = ""  # claim words around the amount
 
 
 # Sentences that compute something ("(136/964) * 100 = 14.09%", "grew by 8.9%")
@@ -207,6 +211,14 @@ def analyse_passage(passage: str | list[str]) -> list[Unit]:
     return [analyse_unit(t) for t in split_passage(passage)]
 
 
+def amount_in_unit(q: Quantity, context: str, u: Unit, cfg: Config) -> bool:
+    """Does this passage line state the claim amount (same value, unit, scale and, with
+    sign_check, the same sign)?"""
+    return any(quantities_match(q, pq, cfg.rel_tol)
+               and not (cfg.sign_check and signs_conflict(q, context, pq, u.text))
+               for pq in u.quantities)
+
+
 def check_amounts(claim: str, amounts: list[Quantity], units: list[Unit], cfg: Config) -> list[AmountCheck]:
     """Apply the rules to each amount in the (cleaned) claim. verify() rolls these up
     into one label; score.py reuses the same checks to rank claims."""
@@ -223,7 +235,7 @@ def check_amounts(claim: str, amounts: list[Quantity], units: list[Unit], cfg: C
         same_item_other_value = []
         for u in units:
             level = keyword_match(items, claim_periods, claim_scope, claim_segments, words, u, cfg)
-            has_amount = any(quantities_match(q, pq, cfg.rel_tol) for pq in u.quantities)
+            has_amount = amount_in_unit(q, ctx, u, cfg)
             if has_amount:
                 matched[level].append(u)
             elif level == "full" and any(_same_kind(q, pq) for pq in u.quantities):
@@ -265,7 +277,7 @@ def check_amounts(claim: str, amounts: list[Quantity], units: list[Unit], cfg: C
         else:
             v = Verdict(UNSUPPORTED, "amount_not_in_passage",
                         f"{shown} does not appear anywhere in the cited passage (after unit normalization).")
-        checks.append(AmountCheck(q, v, items, words, claim_periods, claim_scope, claim_segments))
+        checks.append(AmountCheck(q, v, items, words, claim_periods, claim_scope, claim_segments, ctx))
 
     return checks
 

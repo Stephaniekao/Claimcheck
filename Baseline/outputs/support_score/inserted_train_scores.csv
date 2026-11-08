@@ -1,212 +1,212 @@
 claim_id,subset,error_type,label,pred,rule,score
 SEC-AEP-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-AEP-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-AEP-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-AEP-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-AEP-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-AEP-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-AEP-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-AEP-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-AEP-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-AEP-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-AEP-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-AEP-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-AEP-07,general,Transposed Digits,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-AEP-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-AEP-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-AEP-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-TGT-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-TGT-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-TGT-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TGT-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TGT-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TGT-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TGT-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TGT-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-TGT-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-TGT-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-TGT-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-TGT-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-TGT-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-TGT-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-TGT-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-TGT-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-USB-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-USB-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-USB-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-USB-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-USB-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-USB-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-USB-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-USB-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-USB-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-USB-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-USB-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-USB-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-USB-07,general,Transposed Digits,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-USB-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-USB-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-USB-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-LOW-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-LOW-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-LOW-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-LOW-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-LOW-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-LOW-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-LOW-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-LOW-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-LOW-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-LOW-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-LOW-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-LOW-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-LOW-07,general,Transposed Digits,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-LOW-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-LOW-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-LOW-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-PAYX-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-PAYX-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-PAYX-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PAYX-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PAYX-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PAYX-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PAYX-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PAYX-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-PAYX-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-PAYX-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-PAYX-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-PAYX-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-PAYX-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-PAYX-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-PAYX-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-PAYX-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-O-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-O-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-O-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-O-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-O-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-O-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-O-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-O-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-O-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-O-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-O-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-O-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-O-07,general,Transposed Digits,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-O-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-O-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-O-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-T-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-T-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-T-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-T-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-T-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-T-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-T-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-T-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-T-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-T-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-T-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-T-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-T-07,general,Transposed Digits,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-T-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-T-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-T-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-REGN-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-REGN-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-REGN-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-REGN-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-REGN-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-REGN-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-REGN-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-REGN-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-REGN-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-REGN-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-REGN-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-REGN-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-REGN-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-REGN-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-REGN-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-REGN-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-ROP-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-ROP-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-ROP-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ROP-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ROP-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ROP-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ROP-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ROP-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-ROP-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-ROP-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-ROP-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-ROP-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-ROP-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-ROP-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-ROP-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-ROP-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-VLO-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-VLO-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-VLO-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-VLO-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-VLO-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-VLO-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-VLO-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-VLO-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-VLO-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-VLO-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-VLO-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-VLO-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-VLO-07,general,Transposed Digits,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-VLO-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-VLO-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-VLO-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-MET-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-MET-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-MET-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-MET-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-MET-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-MET-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-MET-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-MET-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MET-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-MET-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-MET-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-MET-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MET-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-MET-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-MET-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-MET-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-EXC-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-EXC-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-EXC-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-EXC-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-EXC-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-EXC-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-EXC-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-EXC-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-EXC-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-EXC-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-EXC-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-EXC-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-EXC-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-EXC-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-EXC-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-EXC-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-TSLA-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-TSLA-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-TSLA-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TSLA-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TSLA-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TSLA-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TSLA-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-TSLA-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-TSLA-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-TSLA-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-TSLA-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-TSLA-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-TSLA-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-TSLA-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-TSLA-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-TSLA-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-PLTR-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-PLTR-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-PLTR-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PLTR-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PLTR-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PLTR-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PLTR-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-PLTR-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-PLTR-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-PLTR-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-PLTR-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-PLTR-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-PLTR-07,general,Transposed Digits,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-PLTR-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-PLTR-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-PLTR-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-DUK-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-DUK-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-DUK-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-DUK-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-DUK-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-DUK-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-DUK-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-DUK-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-DUK-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-DUK-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-DUK-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-DUK-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-DUK-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-DUK-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-DUK-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-DUK-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-META-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-META-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-META-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-META-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-META-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-META-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-META-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-META-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-META-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-META-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-META-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-META-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-META-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-META-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-META-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-META-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-V-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-V-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-V-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-V-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-V-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-V-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-V-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-V-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-V-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-V-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-V-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-V-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-V-07,general,Transposed Digits,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-V-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-V-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-V-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-CRWD-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-CRWD-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-CRWD-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-CRWD-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-CRWD-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-CRWD-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-CRWD-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-CRWD-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-CRWD-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-CRWD-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-CRWD-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-CRWD-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-CRWD-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-CRWD-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-CRWD-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-CRWD-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-ZTS-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-ZTS-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-ZTS-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ZTS-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ZTS-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ZTS-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ZTS-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ZTS-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-ZTS-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-ZTS-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-ZTS-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-ZTS-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-ZTS-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-ZTS-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-ZTS-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-ZTS-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-ICE-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-ICE-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-ICE-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ICE-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ICE-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ICE-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ICE-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-ICE-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-ICE-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-ICE-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-ICE-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-ICE-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-ICE-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-ICE-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-ICE-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-ICE-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-HLT-01,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SEC-HLT-02,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
-SEC-HLT-03,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-HLT-04,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-HLT-05,general,Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-HLT-06,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-HLT-07,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
-SEC-HLT-08,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-HLT-03,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-HLT-04,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-HLT-05,general,Supported,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SEC-HLT-06,general,Small Numerical,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-HLT-07,general,Flipped Sign,Unsupported,Unsupported,same_item_different_amount,0.0
+SEC-HLT-08,general,Temporal,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-HLT-09,general,Metric Confusion,Unsupported,Unsupported,same_item_different_amount,0.0
 SEC-HLT-10,general,Unit,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-CMI-01,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
@@ -214,28 +214,28 @@ SB-CMI-02,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_ite
 SB-CMI-03,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-CMI-04,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-CMI-05,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
-SB-CMI-06,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
-SB-CMI-07,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
-SB-CMI-08,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-CMI-S01,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SB-CMI-S02,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-CMI-S03,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-CMI-S04,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-CMI-S05,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SB-ECL-01,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-ECL-02,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-ECL-03,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-ECL-04,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-ECL-05,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
-SB-ECL-06,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
-SB-ECL-07,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
-SB-ECL-08,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-ECL-S01,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SB-ECL-S02,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-ECL-S03,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-ECL-S04,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-ECL-S05,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SB-SHW-01,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-SHW-02,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-SHW-03,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-SHW-04,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-SHW-05,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
-SB-SHW-06,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
-SB-SHW-07,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
-SB-SHW-08,storyboard_b,Segment vs Total Revenue,Unsupported,Unsupported,same_item_different_amount,0.0
 SB-SHW-S01,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
 SB-SHW-S02,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-SHW-S03,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-SHW-S04,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
+SB-SHW-S05,storyboard_b,Supported Segment Revenue,Supported,Supported,amount_and_keywords_match,0.9966666666666667
