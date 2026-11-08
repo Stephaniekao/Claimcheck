@@ -14,12 +14,30 @@
     "chosen_at_utc": "2026-11-07T14:42:59+00:00"
   },
   "versions": {
-    "rules": "1.2.0",
-    "normalizer": "1.2.0",
+    "rules": "1.3.0",
+    "normalizer": "1.3.0",
     "keywords": "1.0.0",
     "score": "1.0.0"
   },
   "python": "3.14.0",
+  "provenance": {
+    "git": {
+      "commit": "fafeaeea02b16fc2563a9fda0f9cad44682ff511",
+      "uncommitted_changes": false
+    },
+    "python": "3.14.0",
+    "hardware": {
+      "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "cpu": "Apple M5",
+      "gpu": null
+    },
+    "inserted_error_set": {
+      "format": "ClaimCheck Inserted Error Set v2, 40 companies, 400 claims",
+      "version": "v2",
+      "manifest_sha256": "df935f540b33ac1ab70b69b7b0b4fd21397e4dac6b6be6b5db6755f8f3bff4b0"
+    }
+  },
   "note": "Added after the rules 1.2.0 test run; labels unchanged.",
   "ragbench": {
     "FinQA": {
@@ -81,7 +99,7 @@
         "n": 80,
         "auroc": 1.0,
         "average_precision": 1.0,
-        "base_rate": 0.8,
+        "base_rate": 0.5,
         "n_distinct_scores": 2,
         "precision_at_recall_0.80": {
           "precision": 1.0,
@@ -93,7 +111,7 @@
         "n": 50,
         "auroc": 1.0,
         "average_precision": 1.0,
-        "base_rate": 0.8,
+        "base_rate": 0.5,
         "n_distinct_scores": 2,
         "precision_at_recall_0.80": {
           "precision": 1.0,
@@ -101,6 +119,27 @@
           "risk_threshold": 1.0
         }
       }
+    }
+  },
+  "ragbench_from": {
+    "versions": {
+      "rules": "1.2.0",
+      "normalizer": "1.2.0",
+      "keywords": "1.0.0",
+      "score": "1.0.0"
+    },
+    "weights": {
+      "weights_name": "number_heavy",
+      "weights": {
+        "number": 0.7,
+        "item": 0.1,
+        "period": 0.1,
+        "scope": 0.1
+      },
+      "chosen_on": "RAGBench validation: mean claim-level AUROC (FinQA, TAT-QA)",
+      "n_trials": 4,
+      "trials_used_in_total_with_rules_1.2.0": 20,
+      "chosen_at_utc": "2026-11-07T14:42:59+00:00"
     }
   }
 }

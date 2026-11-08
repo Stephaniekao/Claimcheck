@@ -39,7 +39,7 @@ The Inserted Error Set has been updated from v1 to v2. The current dataset conta
 
 The updated generation notebook is `Data/data_download_v2.ipynb`. The original notebook is retained for reference. Company assignments and train, validation, and test splits remain unchanged (240 / 80 / 80).
 
-The existing baseline results were generated using v1 and need to be updated after rerunning the baseline on v2.
+The baseline has been re-run on v2 (rules 1.3.0, which adds a sign check for the new Flipped Sign errors). Its v1 results are archived in `Baseline/outputs/archive/`.
 
 For details on data preparation, error types, splitting, and reproducibility, see [Data/README.md](Data/README.md).
 
@@ -103,14 +103,15 @@ On macOS with the python.org build of Python, `urllib` downloads in the notebook
 
 | Model | Inserted Error Set strict R / P / F1 | Storyboard B strict R | RAGBench claims strict R / P / F1 (FinQA · TAT-QA) | AUROC | Seeds | ECE | Training | Latency | Inspectability |
 |---|---|---|---|---|---|---|---|---|---|
-| Rule-based baseline (rules 1.2.0) | 1.00 / 1.00 / 1.00 | 1.00 | 0.18 / 0.05 / 0.08 · 0.05 / 0.02 / 0.03 | 0.57 · 0.46 (support score 1.0.0, added after the test run) | N/A (deterministic) | N/A (score not calibrated) | none | ~1 ms/claim (CPU) | Each label comes from a named rule and the passage line it used |
-| *Label everything Unsupported* | *1.00 / 0.80 / 0.89* | *1.00* | *1.00 / 0.02 / 0.03 · 1.00 / 0.01 / 0.02* | | | | | | |
+| Rule-based baseline (Inserted v2: rules 1.3.0; RAGBench: rules 1.2.0) | 1.00 / 1.00 / 1.00 | 1.00 | 0.18 / 0.05 / 0.08 · 0.05 / 0.02 / 0.03 | 0.57 · 0.46 (support score 1.0.0, added after the test run) | N/A (deterministic) | N/A (score not calibrated) | none | ~1 ms/claim (CPU) | Each label comes from a named rule and the passage line it used |
+| *Label everything Unsupported* | *1.00 / 0.50 / 0.67* | *1.00* | *1.00 / 0.02 / 0.03 · 1.00 / 0.01 / 0.02* | | | | | | |
 | TF-IDF + LR | | | | | | | | | |
 | DeBERTa-v3-large | | | | | | | | | |
 | LLM judge | | | | | | | | | |
 
 **Points for the team:**
-- **The Inserted Error Set is saturated by simple rules.** 80% of its claims are wrong, so labelling every claim Unsupported also meets the recall and precision targets. We should add a check that a method beats that reference.
+- **The Inserted Error Set is still saturated by simple rules.** v2's 50/50 labels fixed the trivial reference (flagging everything now fails the precision target), but number and keyword matching still scores 1.00, because the passages list each fact cleanly. Harder passages, such as real 10-K text with distractor lines, would be needed to separate methods here.
+- **v2 claims contain two wording giveaways** ("billion" marks every Unit error; odd decimals mark Small Numerical errors). Trained methods should be checked with a claim-only model; see [Data/README.md](Data/README.md).
 - **The baseline's support score is near chance on RAGBench** (AUROC 0.57 FinQA, 0.46 TAT-QA), so the 0.75 target is a real step up from number and keyword matching.
 - **The baseline labels 73% of RAGBench claims Uncertain,** over the ⅓ cap, because most RAGBench sentences are calculations or contain no number.
 

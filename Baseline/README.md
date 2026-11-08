@@ -4,7 +4,7 @@ Baseline row of the Experiment Card (owner: Sharon). Number normalization plus k
 
 **Status:** rules 1.3.0 / normalizer 1.3.0, which adds a sign check for the Flipped Sign errors in Inserted Error Set v2 and was developed on v2 train and validation only.
 - **RAGBench:** the official test result stays rules 1.2.0. That split was used once, so 1.3.0 is checked on RAGBench validation only, where it changes 4 of about 21,500 claims.
-- **Inserted Error Set v2:** its one test run is still to come. The tables below are v1 results until then.
+- **Inserted Error Set v2:** tested once with rules 1.3.0 at commit `fafeaee` (results below).
 - **Support score 1.0.0:** added after the 1.2.0 test run. It never changes a label.
 
 ## Run
@@ -41,19 +41,24 @@ A claim is Unsupported if any of its amounts is Unsupported, and Supported only 
 
 ## Test results
 
-| | n | Strict R | Lenient R | Precision | F1 | False alarms | Uncertain | Flag-all F1 |
-|---|---|---|---|---|---|---|---|---|
-| Inserted Error Set | 80 | 1.00 | 1.00 | 1.00 | 1.00 | 0.00 | 0.00 | 0.89 |
-| Storyboard B slice | 50 | 1.00 | 1.00 | 1.00 | 1.00 | 0.00 | 0.00 | 0.89 |
-| RAGBench FinQA, claims | 12,836 | 0.18 | 0.83 | 0.05 | 0.08 | 0.06 | 0.73 | 0.03 |
-| RAGBench FinQA, answers | 2,294 | 0.33 | 0.90 | 0.10 | 0.15 | 0.28 | 0.66 | 0.16 |
-| RAGBench TAT-QA, claims | 12,248 | 0.05 | 0.74 | 0.02 | 0.03 | 0.02 | 0.73 | 0.02 |
-| RAGBench TAT-QA, answers | 3,338 | 0.12 | 0.85 | 0.06 | 0.08 | 0.07 | 0.72 | 0.07 |
+| | Rules | n | Strict R | Lenient R | Precision | F1 | False alarms | Uncertain | Flag-all F1 |
+|---|---|---|---|---|---|---|---|---|---|
+| Inserted Error Set v2 | 1.3.0 | 80 | 1.00 | 1.00 | 1.00 | 1.00 | 0.00 | 0.00 | 0.67 |
+| Storyboard B slice (v2) | 1.3.0 | 50 | 1.00 | 1.00 | 1.00 | 1.00 | 0.00 | 0.00 | 0.67 |
+| RAGBench FinQA, claims | 1.2.0 | 12,836 | 0.18 | 0.83 | 0.05 | 0.08 | 0.06 | 0.73 | 0.03 |
+| RAGBench FinQA, answers | 1.2.0 | 2,294 | 0.33 | 0.90 | 0.10 | 0.15 | 0.28 | 0.66 | 0.16 |
+| RAGBench TAT-QA, claims | 1.2.0 | 12,248 | 0.05 | 0.74 | 0.02 | 0.03 | 0.02 | 0.73 | 0.02 |
+| RAGBench TAT-QA, answers | 1.2.0 | 3,338 | 0.12 | 0.85 | 0.06 | 0.08 | 0.07 | 0.72 | 0.07 |
 
-Flag-all F1 is what you get by labelling every claim Unsupported. Latency is about 1 ms per claim on a laptop CPU. Validation results were within a few points of these, with TAT-QA strict recall 0.095 on validation vs 0.048 on test.
+Flag-all F1 is what you get by labelling every claim Unsupported. Latency is about 1 ms per claim on a laptop CPU. RAGBench validation results were within a few points of these, with TAT-QA strict recall 0.095 on validation vs 0.048 on test.
+
+- **v2 test, every error type caught:** Small Numerical 3/3, Transposed Digits 2/2, Flipped Sign 1/1, Temporal 3/3, Metric Confusion 3/3, Unit 3/3, Storyboard B 25/25, and all 40 correct claims Supported.
+- **Small error-type counts:** the general test split has only 15 wrong claims, and a single Flipped Sign. Train and validation (17 Flipped Sign claims, all caught by 1.3.0, 4 by 1.2.0) are the better evidence for the sign check.
+- **Support score on v2 test:** AUROC 1.00, but with only two distinct scores, so it says nothing about ranking.
+- **v1 history** (rules 1.2.0, 80% Unsupported): 1.00 on every metric, flag-all F1 0.89. Files are in `outputs/archive/inserted-v1_rules-1.2.0/`.
 
 **Against Field 10:**
-- **Inserted Error Set:** it meets every target that applies (strict recall ≥ 0.80, precision ≥ 0.60, Storyboard B recall ≥ 0.80). But flagging every claim also gets recall 1.0 and precision 0.80, so these targets can't tell methods apart.
+- **Inserted Error Set v2:** it meets every target that applies (strict recall ≥ 0.80, precision ≥ 0.60, Storyboard B recall ≥ 0.80). With v2's 50/50 labels, flagging every claim now gets precision 0.50 and fails the precision target, so the target separates real methods from the trivial one. The set is still easy for number lookup: the passages list each fact as "item for date: value".
 - **RAGBench:** the baseline breaks the Uncertain cap (AC2, ≤ ⅓) at 73% Uncertain, and at answer level on FinQA it's no better than flagging everything. Both are noted for the team.
 
 ## Support score (added after the test run)
