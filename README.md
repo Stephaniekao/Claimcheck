@@ -31,7 +31,7 @@ All four methods label the same claims, with the same passages and the same numb
 | Inserted Error Set (400 claims, 40 companies) | Correct SEC XBRL claims, plus copies with deliberately inserted errors: Numerical, Temporal, Metric Confusion, Unit, and Storyboard B (segment revenue presented as total revenue) | Split by company: 240 / 80 / 80 |
 | [FinanceBench](https://huggingface.co/datasets/PatronusAI/financebench) | Final evaluation only, never tuning | 147 test + 3 blind showcase examples |
 
-Details on preparation, leakage screening and reproduction are in [Data/Data Preparation and Split Notes.md](Data/Data%20Preparation%20and%20Split%20Notes.md).
+Details on preparation, leakage screening and reproduction are in [Data/README.md).
 
 ## Evaluation (Experiment Card, Fields 6–10)
 
