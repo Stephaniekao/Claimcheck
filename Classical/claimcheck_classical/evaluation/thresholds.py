@@ -451,3 +451,182 @@ def select_dual_thresholds(
             len(eligible_indices)
         ),
     }
+
+
+# ============================================================
+# 3. UPPER THRESHOLD: FILL UNCERTAIN UP TO THE LIMIT
+# ============================================================
+
+def widen_upper_threshold(
+    y_true,
+    p_supported,
+    dual_result: dict,
+    max_uncertain_rate: float = 1 / 3,
+    max_uncertain_count: int | None = None,
+) -> dict:
+    """Move the upper threshold up so Uncertain holds up to the limit.
+
+    Team rule (Experiment Card, Field 8): the lower threshold is chosen
+    first by select_dual_thresholds(), which gives the highest strict
+    recall with Unsupported precision >= 0.60. The upper threshold does
+    not change strict recall or precision, so it is then set as high as
+    possible while Uncertain stays at most max_uncertain_rate of claims.
+
+    Uses the same decision rule as predict.classify_support_probability:
+        p < lower           -> Unsupported
+        lower <= p <= upper -> Uncertain
+        p > upper           -> Supported
+
+    max_uncertain_count, when given, replaces the rate-based limit.
+    An infeasible result is returned unchanged.
+    """
+
+    if not dual_result.get("feasible"):
+        return dict(dual_result)
+
+    y = np.asarray(y_true)
+    p = np.asarray(p_supported, dtype=float)
+
+    if len(y) == 0 or len(y) != len(p):
+        raise ValueError("Inputs must have equal nonzero lengths.")
+
+    lower = float(dual_result["lower_threshold"])
+    upper = float(dual_result["upper_threshold"])
+
+    n = len(p)
+    budget = (
+        int(max_uncertain_count)
+        if max_uncertain_count is not None
+        else int(np.floor(max_uncertain_rate * n))
+    )
+
+    # Candidate upper values: observed scores at or above the lower
+    # threshold. Uncertain count for upper = v is #(lower <= p <= v).
+    above = np.sort(p[p >= lower])
+    values, counts = np.unique(above, return_counts=True)
+    cumulative = np.cumsum(counts)
+
+    fits = values[(cumulative <= budget) & (values <= 1.0)]
+
+    if fits.size and fits[-1] > upper:
+        upper = float(fits[-1])
+
+    uncertain = (p >= lower) & (p <= upper)
+    unsupported = p < lower
+    n_unsupported = int(np.sum(y == 1))
+
+    result = dict(dual_result)
+    result.update({
+        "upper_threshold": upper,
+        "upper_rule": "fill Uncertain up to max_uncertain_rate",
+        "uncertain_rate": float(uncertain.mean()),
+        "coverage": float(1 - uncertain.mean()),
+        "predicted_uncertain": int(uncertain.sum()),
+        "lenient_recall": float(
+            np.sum((unsupported | uncertain) & (y == 1)) / n_unsupported
+        ),
+    })
+
+    return result
+
+
+# ============================================================
+# 4. THRESHOLDS WITH CLAIMS THAT MUST BE UNCERTAIN
+# ============================================================
+
+def select_thresholds_with_forced_uncertain(
+    y_true,
+    p_supported,
+    forced_uncertain,
+    min_precision: float = 0.60,
+    max_uncertain_rate: float = 1 / 3,
+) -> dict:
+    """Card thresholds when some claims are Uncertain whatever their score.
+
+    Experiment Card, Field 12: claims the normalizer cannot read (and
+    claims with no cited passage) are labeled Uncertain. They still
+    count toward the one-third Uncertain limit (AC2), so the scored
+    claims get only what is left of it.
+
+    1. Lower threshold: select_dual_thresholds() on the scored claims,
+       which maximizes strict recall with precision >= min_precision.
+       Strict recall over all claims has the same best threshold,
+       because forced claims are never labeled Unsupported.
+    2. Upper threshold: widen_upper_threshold() with the rest of the
+       Uncertain budget.
+
+    Returns the thresholds, every claim's label, and the counts.
+    """
+
+    y = np.asarray(y_true)
+    p = np.asarray(p_supported, dtype=float)
+    forced = np.asarray(forced_uncertain, dtype=bool)
+
+    if not (len(y) == len(p) == len(forced)) or len(y) == 0:
+        raise ValueError("Inputs must have equal nonzero lengths.")
+
+    n = len(y)
+    n_forced = int(forced.sum())
+    total_budget = int(np.floor(max_uncertain_rate * n))
+    scored_budget = total_budget - n_forced
+    ac2_satisfiable = scored_budget >= 0
+    scored_budget = max(scored_budget, 0)
+
+    scored = ~forced
+    n_scored = int(scored.sum())
+
+    info = {
+        "n_claims": n,
+        "n_forced_uncertain": n_forced,
+        "forced_uncertain_rate": n_forced / n,
+        "uncertain_budget_total": total_budget,
+        "uncertain_budget_scored": scored_budget,
+        "ac2_satisfiable": bool(ac2_satisfiable),
+    }
+
+    if n_scored == 0 or not np.any(y[scored] == 1):
+        result = {
+            "feasible": False,
+            "reason": "No scored claim is Unsupported.",
+            "lower_threshold": None,
+            "upper_threshold": None,
+        }
+    else:
+        # Rate that gives exactly scored_budget after flooring.
+        rate = min((scored_budget + 0.5) / n_scored, 1.0)
+
+        result = select_dual_thresholds(
+            y_true=y[scored],
+            p_supported=p[scored],
+            min_precision=min_precision,
+            max_uncertain_rate=rate,
+        )
+
+        result = widen_upper_threshold(
+            y[scored],
+            p[scored],
+            result,
+            max_uncertain_count=scored_budget,
+        )
+
+    labels = np.full(n, "Uncertain", dtype=object)
+
+    if result["feasible"]:
+        lower = result["lower_threshold"]
+        upper = result["upper_threshold"]
+
+        labels[scored] = np.where(
+            p[scored] < lower,
+            "Unsupported",
+            np.where(p[scored] > upper, "Supported", "Uncertain"),
+        )
+
+    result = {
+        **result,
+        **info,
+        "min_precision": float(min_precision),
+        "max_uncertain_rate": float(max_uncertain_rate),
+        "labels": labels,
+    }
+
+    return result

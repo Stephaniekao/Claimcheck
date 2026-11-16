@@ -66,19 +66,29 @@ def build_feature_matrix(
     )
 
     # Calculate financial consistency features.
-    numerical_scores = [
-        compute_numerical_consistency(claim, source)
-        for claim, source in zip(claims, evidence)
-    ]
+
 
     period_scores = [
         compute_period_consistency(claim, source)
         for claim, source in zip(claims, evidence)
     ]
 
+    # Scope reads the original evidence, one line at a time,
+    # because evidence_clean has no line breaks.
+    raw_evidence = (
+        df["evidence"].fillna("").astype(str).tolist()
+        if "evidence" in df.columns
+        else evidence
+    )
+
+    numerical_scores = [
+        compute_numerical_consistency(claim, source)
+        for claim, source in zip(claims, raw_evidence)
+    ]
+
     scope_scores = [
         compute_scope_consistency(claim, source)
-        for claim, source in zip(claims, evidence)
+        for claim, source in zip(claims, raw_evidence)
     ]
 
     # Build the initial feature matrix.

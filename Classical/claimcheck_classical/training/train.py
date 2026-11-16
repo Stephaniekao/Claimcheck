@@ -261,6 +261,7 @@ def train_logistic_regression(
     C: float | None = None,
     ngram_range: tuple[int, int] = (1, 2),
     max_features: int = 10000,
+    random_state: int | None = None,
 ) -> Pipeline:
     """Train scaled numeric features plus claim TF-IDF with L2 LR.
 
@@ -283,6 +284,10 @@ def train_logistic_regression(
 
     if C is not None:
         config["C"] = float(C)
+
+    # The seed run (Field 5) changes the solver seed as well.
+    if random_state is not None:
+        config["random_state"] = int(random_state)
 
     # Standardize the numeric features.
     transformers = [

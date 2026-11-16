@@ -62,6 +62,34 @@ def _read_csv(path: Path) -> pd.DataFrame:
     return pd.read_csv(path)
 
 
+def _read_adherence(parquet_path: Path, df: pd.DataFrame) -> pd.Series:
+    """Read adherence_score from the parquet file, row by row.
+
+    The rows must line up with the CSV, so the ids are compared.
+    Returns missing values when the parquet file is not there.
+    """
+
+    if not parquet_path.is_file():
+        return pd.Series([None] * len(df), index=df.index, dtype=object)
+
+    parquet = pd.read_parquet(
+        parquet_path,
+        columns=["id", "adherence_score"],
+    )
+
+    if len(parquet) != len(df) or not (
+        parquet["id"].astype(str).to_numpy() == df["id"].astype(str).to_numpy()
+    ).all():
+        raise ValueError(
+            f"Rows of {parquet_path.name} do not line up with the CSV."
+        )
+
+    return pd.Series(
+        parquet["adherence_score"].astype(bool).to_numpy(),
+        index=df.index,
+    )
+
+
 # ============================================================
 # 3. RAGBENCH ANSWER-LEVEL LOADING
 # ============================================================
@@ -106,6 +134,13 @@ def load_ragbench(subset: str, split: str) -> pd.DataFrame:
             raise ValueError(
                 f"Invalid JSON in {path}, column {column}"
             ) from exc
+
+    # The answer-level gold label (adherence_score) is not one of the
+    # 12 CSV columns, so read it from the parquet file saved next to
+    # the CSV by the same download step. It is a gold label only,
+    # never a model input.
+    if "adherence_score" not in df.columns:
+        df["adherence_score"] = _read_adherence(path.with_suffix(".parquet"), df)
 
     # Preserve the original CSV row position for identification.
     df["answer_row"] = range(len(df))
@@ -156,8 +191,13 @@ def expand_ragbench_claims(
                 else "Supported"
             )
 
+            # Answer-level gold label, used for answer AUROC only.
+            # It is never a model input.
+            adherence = getattr(record, "adherence_score", None)
+
             rows.append(
                 {
+                    "adherence_score": adherence,
                     "source": "RAGBench",
                     "subset": record.subset,
                     "split": record.split,
@@ -183,6 +223,7 @@ def expand_ragbench_claims(
             "claim",
             "evidence",
             "label",
+            "adherence_score",
         ],
     )
 
@@ -211,66 +252,25 @@ def load_ragbench_claims(
 def load_inserted_errors(
     split: str | None = None,
 ) -> pd.DataFrame:
-    """Load existing General and Storyboard B claims without resplitting."""
+    """Load Inserted Error Set v2 claims with the team's shared passages.
 
-    # Validate the requested split when provided.
+    Experiment Card, Field 12: every method reads the same cited
+    passages, built by Baseline/claimcheck_baseline/evidence.py from
+    the filing only (never from the claim or label). No resplitting.
+
+    Columns: claim_id, subset ("general" or "storyboard_b"), split,
+    claim, evidence (model inputs), label and error_type (evaluation
+    only), and ticker.
+    """
+
+    from .shared import load_inserted_error_set
+
     if split is not None:
         _validate_split(split)
 
-    # Locate the existing Inserted Error Set directory.
-    folder = DATA_DIR / "Inserted Error Set"
+    df = load_inserted_error_set(split)
 
-    # Load one requested split or all three existing splits.
-    splits = (split,) if split is not None else VALID_SPLITS
+    if not df["label"].isin(("Supported", "Unsupported")).all():
+        raise ValueError("Invalid labels in the Inserted Error Set.")
 
-    frames = []
-
-    # Load both Inserted Error Set subsets for each split.
-    for current_split in splits:
-        for subset, prefix in (
-            ("General", "general_claims"),
-            ("Storyboard B", "storyboard_b"),
-        ):
-
-            # Construct the existing split-specific CSV path.
-            path = folder / f"{prefix}_{current_split}.csv"
-            df = _read_csv(path)
-
-            # Check required claim-level columns.
-            required = {
-                "claim_id",
-                "claim",
-                "label",
-                "split",
-            }
-
-            missing = required - set(df.columns)
-
-            if missing:
-                raise ValueError(
-                    f"Missing columns in {path.name}: {sorted(missing)}"
-                )
-
-            # Ensure the CSV matches its predefined split.
-            if not df["split"].eq(current_split).all():
-                raise ValueError(
-                    f"Split mismatch in {path.name}"
-                )
-
-            # Validate the original binary claim labels.
-            if not df["label"].isin(
-                ("Supported", "Unsupported")
-            ).all():
-                raise ValueError(
-                    f"Invalid labels in {path.name}"
-                )
-
-            # Identify the Inserted Error Set subset.
-            df["subset"] = subset
-
-            # Collect the loaded subset without resampling.
-            frames.append(df)
-
-    # Combine the existing subsets and preserve all original columns.
-    return pd.concat(frames, ignore_index=True)
-
+    return df
