@@ -1,5 +1,12 @@
 ## Classical Machine Learning Model
 
+## Summary
+
+- **Status:** training, tuning, thresholds, and prediction work. The test splits are not used yet.
+- **Result (validation):** the default model has an answer-level AUROC of 0.583, below the 0.75 target.
+- **Run:** `bash run_all.sh` (see How to Run for the data setup).
+- **Open questions for the team:** see the end of this file.
+- 
 ## Overview
 
 This folder contains the classical machine learning model for ClaimCheck. We use TF-IDF, financial features, and Logistic Regression to check whether a financial claim is supported by its cited evidence.
