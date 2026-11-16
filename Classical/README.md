@@ -6,19 +6,19 @@ This folder contains the classical machine learning model for ClaimCheck. We use
 
 The model is trained with two labels, Supported and Unsupported. We use thresholds selected on validation data to produce three final predictions: Supported, Unsupported, and Uncertain.
 
-The model uses the team's shared components from `Baseline/` (Experiment Card, Field 12): the number normalizer, the Inserted Error Set passages, and the precision-at-recall metric. A change to any of them changes this model's results, so their versions and checksums are saved with every run.
+The model uses some shared parts from the `Baseline/` folder: the number normalizer, the passages for Inserted Error Set v2, and the code for precision at recall 0.80. The Experiment Card says all methods should use the same inputs (Field 12). If one of these shared parts changes, our results also change, so we save their versions with every run.
 
-All results in this README are validation results. The test splits have not been used yet. Some results depend on team decisions that are still open; these are marked **(pending)**.
+All results in this README are validation results. The test splits have not been used yet.
 
 ## Data
 
-We use RAGBench FinQA and TATQA for training, validation, and testing. The data is stored in `Data/RAGBench`, and we keep the original train, validation, and test splits to avoid data leakage. The RAGBench CSV and parquet files are not stored in git. Create them with `python fetch_ragbench.py` from the repository root, or by running the first two code cells of `Data/data_download_v2.ipynb`.
+We use RAGBench FinQA and TATQA for training, validation, and testing. The data is stored in `Data/RAGBench`, and we keep the original train, validation, and test splits to avoid data leakage. The RAGBench CSV and parquet files are not stored in git. Create them with `python fetch_ragbench.py` from the main folder of the repository, or by running the first two code cells of `Data/data_download_v2.ipynb`.
 
 The original RAGBench data is at the answer level. Our data loader converts each answer into individual claims and assigns labels based on the original annotations. The annotation fields are used for labels only, not as model inputs.
 
-The answer-level gold label is `adherence_score`, the same label the baseline uses. It is not one of the 12 CSV columns, so the loader reads it from the parquet file saved by the same download step and checks that the rows line up with the CSV.
+For the answer level, we use `adherence_score` as the gold label. The baseline uses the same label. This column is not in the CSV files, so the data loader reads it from the parquet files. It also checks that the rows in the two files are in the same order.
 
-We also use Inserted Error Set v2 (400 claims) for evaluation. The passages are built by the team's shared `evidence.py`, so every method reads the same passage for each claim. The model is not trained on this set. Following the Experiment Card (Field 4), its training split was used only to develop the scope feature rules.
+We also use Inserted Error Set v2, which contains 400 claims, for evaluation. The passages come from the shared `evidence.py`, so every method reads the same passage for each claim. The model is not trained on this set. As the Experiment Card says (Field 4), we only used its training split to develop the rules of the scope feature.
 
 ### Training Data Distribution
 
@@ -42,36 +42,36 @@ The combined validation set contains 21,267 Supported claims and 276 Unsupported
 
 ## Project Structure
 
-All paths below are relative to `Classical/`. The model needs the `Baseline/` folder in the same repository, because `shared.py` imports the shared components from there.
+All paths below are relative to `Classical/`. The `Baseline/` folder must also be in the repository, because `shared.py` reads the shared parts from there.
 
 | File | Description |
 |---|---|
 | `claimcheck_classical/config.py` | Model settings, random seed, tuning parameters, and output paths |
-| `claimcheck_classical/shared.py` | Imports the team's shared normalizer, passages, and precision-at-recall metric from `Baseline/` |
-| `claimcheck_classical/data_loader.py` | Loads RAGBench (with `adherence_score`) and the Inserted Error Set with shared passages |
+| `claimcheck_classical/shared.py` | Reads the shared normalizer, passages, and precision at recall code from `Baseline/` |
+| `claimcheck_classical/data_loader.py` | Loads RAGBench (with `adherence_score`) and Inserted Error Set v2 with the shared passages |
 | `claimcheck_classical/preprocessing.py` | Normalizes claim and evidence text |
 | `claimcheck_classical/model_io.py` | Saves and loads the trained model and TF-IDF vectorizer |
 | `claimcheck_classical/provenance.py` | Saves file checksums, library versions, hardware, and the git commit with each trained model |
 | `claimcheck_classical/features/text_features.py` | Creates TF-IDF vectors and calculates cosine similarity |
-| `claimcheck_classical/features/numerical_features.py` | Compares claim and passage amounts with the shared normalizer |
+| `claimcheck_classical/features/numerical_features.py` | Compares the numbers in the claim and the passage with the shared normalizer |
 | `claimcheck_classical/features/period_features.py` | Checks reporting years and quarters |
-| `claimcheck_classical/features/scope_features.py` | Checks financial scope, one passage line at a time |
+| `claimcheck_classical/features/scope_features.py` | Checks financial scope for each line of the passage |
 | `claimcheck_classical/features/feature_builder.py` | Combines seven features into one feature matrix |
 | `claimcheck_classical/features/evidence_features.py` | Extra evidence-aware features, answer-level scores, and trial sampling |
 | `claimcheck_classical/training/train.py` | Trains Logistic Regression |
-| `claimcheck_classical/training/tune.py` | Runs the 20-trial search and evaluates the best model |
+| `claimcheck_classical/training/tune.py` | Runs the 20 trials and evaluates the best model |
 | `claimcheck_classical/evaluation/metrics.py` | Calculates binary and three-label metrics |
 | `claimcheck_classical/evaluation/calibration.py` | Calculates Brier score and ECE |
 | `claimcheck_classical/evaluation/thresholds.py` | Selects the lower and upper thresholds |
-| `claimcheck_classical/evaluation/inserted_validation.py` | Evaluates the saved model on Inserted Error Set v2 train and validation |
+| `claimcheck_classical/evaluation/inserted_validation.py` | Tests the saved model on Inserted Error Set v2 train and validation |
 | `claimcheck_classical/evaluation/error_analysis.py` | Builds prediction tables and error cases |
 | `claimcheck_classical/evaluation/feature_analysis.py` | Analyzes feature distributions and individual cases |
 | `claimcheck_classical/evaluation/feature_diagnostics.py` | Calculates single-feature ROC-AUC and shows example claims |
 | `claimcheck_classical/evaluation/feature_ablation.py` | Compares different feature sets on validation data |
 | `claimcheck_classical/inference/predict.py` | Predicts three labels for new claim and evidence pairs using the saved thresholds |
-| `run.py` | Older training and validation pipeline on a sample (does not use the current threshold rule) |
+| `run.py` | Older training and validation pipeline on a sample. It does not use the current threshold rule. |
 | `requirements.txt` | Python packages needed by the Classical model |
-| `run_all.sh` | Runs all tests, the full tuning run, and the Inserted Error Set evaluation |
+| `run_all.sh` | Runs all tests, the full tuning run, and the Inserted Error Set v2 test |
 | `.gitignore` | Excludes trained models, caches, and old results from git |
 | `tests/test_features.py` | Unit tests for feature engineering |
 | `tests/test_period_fix.py` | Tests for the period parsing fix and the extra features |
@@ -81,8 +81,8 @@ All paths below are relative to `Classical/`. The model needs the `Baseline/` fo
 | `tests/test_predict.py` | Tests prediction, missing passages, and the saved thresholds |
 | `tests/test_provenance.py` | Tests checksums and the saved run record |
 | `tests/test_ragbench_integration.py` | Integration tests using RAGBench data |
-| `tests/test_shared_components.py` | Tests the shared normalizer features, the team threshold rules, and answer aggregation |
-| `tests/test_inserted_validation.py` | Tests the Inserted Error Set evaluation and that it refuses the test split |
+| `tests/test_shared_components.py` | Tests the shared normalizer features, the threshold rules, and the answer rules |
+| `tests/test_inserted_validation.py` | Tests the Inserted Error Set v2 code and checks that it does not run the test split |
 
 ## Model Pipeline
 
@@ -92,10 +92,10 @@ The current pipeline follows these steps:
 2. **Preprocessing:** Normalize claim and evidence text.
 3. **Feature Engineering:** Fit TF-IDF using training data only and calculate seven features.
 4. **Training:** Train Logistic Regression using Supported = 0 and Unsupported = 1.
-5. **Tuning:** Run 18 random trials over n-gram range, vocabulary size, and regularization strength C, plus 2 answer aggregation rules, for 20 trials in total. Trials are scored on the validation splits only.
+5. **Tuning:** Run 18 random trials over n-gram range, vocabulary size, and regularization strength C. We also compare 2 answer rules, so there are 20 trials in total. Trials are scored on the validation splits only.
 6. **Validation:** Evaluate the best model on the original validation splits without fitting TF-IDF again. Calculate ECE and select two thresholds on validation data.
-7. **Inserted Error Set:** Apply the saved model and thresholds to Inserted Error Set v2 train and validation.
-8. **Final Evaluation:** Test the selected model once on the RAGBench test splits and the Inserted Error Set v2 test split (not done yet).
+7. **Inserted Error Set v2:** Use the saved model and thresholds on the train and validation splits.
+8. **Final Evaluation:** Test the selected model once on the RAGBench test splits and the Inserted Error Set v2 test split. This is not done yet.
 
 ### Feature Matrix
 
@@ -106,20 +106,20 @@ Each claim and evidence pair produces seven features:
 | Feature | Description |
 |---|---|
 | `cosine_similarity` | TF-IDF similarity between claim and evidence |
-| `numerical_consistency` | Checks that every claim amount appears in the passage, using the shared normalizer |
+| `numerical_consistency` | Checks if every number in the claim is in the passage, using the shared normalizer |
 | `period_consistency` | Checks reporting years and quarters |
-| `scope_consistency` | Checks that each amount has the same scope (total or segment) as its passage line |
+| `scope_consistency` | Checks if each number has the same scope (total or segment) as its line in the passage |
 | `numerical_missing` | Indicates insufficient numerical information |
 | `period_missing` | Indicates insufficient period information |
 | `scope_missing` | Indicates insufficient scope information |
 
 When a consistency score cannot be determined, the feature builder replaces NaN with 0 and adds a missing indicator. These indicators are different from the final Uncertain prediction.
 
-**Numbers.** The numerical and scope features read numbers with the team's shared normalizer (normalizer 1.3.0). So `$4.1 billion`, `4,100 million`, and `4.1B` are the same value, rounding is allowed, dates such as `2025-12-31` are not read as amounts, and a minus sign must agree as in the baseline's sign check. Accounting brackets such as `(5,860)` never count as a conflict.
+The numerical and scope features read numbers with the shared normalizer (version 1.3.0). It treats `$4.1 billion`, `4,100 million`, and `4.1B` as the same value, and it allows rounding. It does not read dates such as `2025-12-31` as numbers. It also checks the minus sign in the same way as the baseline, and numbers in brackets such as `(5,860)` are not counted as a conflict.
 
-**Scope.** The scope feature reads the original passage one line at a time, so each amount takes the scope of its own line. The keyword "entire" was added to the total scope words. It was found while developing the feature on the Inserted Error Set v2 training split, as the Experiment Card allows (Field 4).
+The scope feature reads the passage one line at a time, so each number gets the scope of its own line. We added the word "entire" to the total scope words. We found this word in the Inserted Error Set v2 training split, which the Experiment Card allows (Field 4).
 
-**Period.** The period feature still uses our own parser, because it also reads quarters, which the shared normalizer does not.
+The period feature still uses our own parser, because it can read quarters and the shared normalizer cannot.
 
 ### Model Settings
 
@@ -127,20 +127,20 @@ The model standardizes the features and then uses Logistic Regression with L2 re
 
 The tuning search uses n-gram ranges (1,1), (1,2), and (1,3), vocabulary sizes 5,000, 10,000, and 20,000, and C values 0.01, 0.1, 1, and 10. The 18 trials are chosen randomly from these combinations. The best trial has the highest Average Precision on validation data.
 
-The rule that combines claim scores into an answer score is also chosen on validation, from two candidates: the lowest claim score (`min`) and the average claim score (`mean`). The Experiment Card (Field 6) asks for this rule to be chosen on validation. Like the baseline, we count these two candidates toward the 20-trial limit (Field 5), so the search uses 18 trials. **(pending: team to confirm)**
+We also choose the answer rule on validation data. The answer rule turns the claim scores of one answer into one answer score. We compare two rules: the lowest claim score (`min`) and the average claim score (`mean`). The Experiment Card says to choose this rule on the validation split (Field 6). The baseline counts this kind of choice in the 20 trials, so we do the same. This is why the search uses 18 trials.
 
 ### Thresholds
 
-We select two thresholds on the RAGBench validation P(Supported), following Field 8 and the team's decisions:
+We select two thresholds on the RAGBench validation P(Supported). The rule follows Field 8 and our team decisions:
 
-1. **Lower threshold:** the highest strict recall with Unsupported precision of at least 0.60.
-2. **Upper threshold:** set as high as possible while Uncertain stays at most one third of claims. The upper threshold does not change strict recall or precision, so this uses the Uncertain label as much as AC2 allows.
+1. The lower threshold gives the highest strict recall, while Unsupported precision is at least 0.60.
+2. The upper threshold is as high as possible, while the Uncertain rate stays at one third or lower. The upper threshold does not change strict recall or precision, so we can use the Uncertain label as much as AC2 allows.
 
-The decision rule is the same in tuning and inference: P(Supported) below the lower threshold is Unsupported, above the upper threshold is Supported, and Uncertain otherwise. If no pair of thresholds meets the conditions, the model labels every claim as Uncertain.
+Tuning and prediction use the same rule. If P(Supported) is below the lower threshold, the claim is Unsupported. If it is above the upper threshold, the claim is Supported. Otherwise, it is Uncertain. If no pair of thresholds meets the conditions, the model labels every claim as Uncertain.
 
-**Claims that are always Uncertain (Field 12).** A claim without a cited passage, or a claim the shared normalizer cannot read, is labeled Uncertain instead of being guessed. These claims count toward the one-third Uncertain limit, so the scored claims get only the rest of it.
+Some claims are always labeled Uncertain, as Field 12 says. These are claims without a cited passage and claims that the shared normalizer cannot read. They are counted in the one third Uncertain limit, so the other claims get less space in the Uncertain label.
 
-We define "cannot read" as: the claim contains a digit, but the normalizer finds neither an amount nor a period in it (for example "1.2x" or "Form 10-K"). A claim with no digits is not a failure; the model still scores it from its text. The baseline's `no_amount` rule is wider and also makes claims without numbers Uncertain. With the wider rule, about 27% of FinQA and 36% of TATQA validation claims would be Uncertain before the model scores anything, so TATQA alone would break the one-third limit. **(pending: team to confirm the definition)**
+A claim "cannot be read" when it has a digit, but the normalizer finds no number and no year in it. Examples are "1.2x" and "Form 10-K". A claim with no digits is not counted, because the model can still score it from its text. The baseline uses a wider rule (`no_amount`), which also labels claims without numbers as Uncertain. With the wider rule, about 27% of FinQA and 36% of TATQA validation claims would be Uncertain before the model scores them. TATQA would then go over the one third limit.
 
 The selected thresholds are saved in `models/classical_model_full_best.json`, and `predict_with_frozen_model()` reads them from there.
 
@@ -165,7 +165,7 @@ Before the first run, install the packages and create the RAGBench CSV and parqu
 pip install -r requirements.txt
 ```
 
-`pyarrow` is needed to read `adherence_score` from the parquet files.
+We need `pyarrow` to read `adherence_score` from the parquet files.
 
 The simplest way to reproduce the main result is:
 
@@ -173,7 +173,7 @@ The simplest way to reproduce the main result is:
 bash run_all.sh
 ```
 
-This runs all tests, the full tuning run, and the Inserted Error Set evaluation. The steps below run each part separately.
+This runs all tests, the full tuning run, and the Inserted Error Set v2 test. The steps below run each part separately.
 
 ### 1. Run Tests
 
@@ -181,7 +181,7 @@ This runs all tests, the full tuning run, and the Inserted Error Set evaluation.
 python -m unittest discover -s tests -v
 ```
 
-The test suite contains 58 tests: 11 feature tests, 5 period and extra feature tests, 4 model pipeline tests, 5 unit parsing tests, 7 integration tests, 4 threshold tests, 4 provenance tests, 6 prediction tests, 9 shared component tests, and 3 Inserted Error Set evaluation tests.
+The test suite contains 58 tests: 11 feature tests, 5 period and extra feature tests, 4 model pipeline tests, 5 unit parsing tests, 7 integration tests, 4 threshold tests, 4 provenance tests, 6 prediction tests, 9 shared part tests, and 3 Inserted Error Set v2 tests.
 
 ### 2. Analyze Features
 
@@ -207,7 +207,7 @@ This command randomly selects up to 1,000 training claims from each dataset usin
 python -m claimcheck_classical.training.tune --full-data
 ```
 
-This command trains on all training claims, runs the 18 trials, chooses the answer aggregation rule, and evaluates the best model on the validation splits. It saves the trial table, the best model, predictions, coefficients, and calibration results to `outputs/` and `models/`.
+This command trains on all training claims, runs the 18 trials, chooses the answer rule, and evaluates the best model on the validation splits. It saves the trial table, the best model, predictions, coefficients, and calibration results to `outputs/` and `models/`.
 
 Running `tune` without `--full-data` uses a small stratified sample. It is only a smoke test, and its scores are not meaningful because the training data is not imbalanced like the real data.
 
@@ -217,7 +217,7 @@ Running `tune` without `--full-data` uses a small stratified sample. It is only 
 python -m claimcheck_classical.evaluation.inserted_validation
 ```
 
-This command applies the saved model and thresholds to Inserted Error Set v2 train and validation. The thresholds are not refitted. The test split is refused; it is evaluated once at the end.
+This command uses the saved model and thresholds on Inserted Error Set v2 train and validation. It does not select new thresholds. It will not run the test split, because we use the test split only once at the end.
 
 ### 6. Predict New Claims
 
@@ -243,20 +243,20 @@ The evidence should store one sentence per line. The trained model file is not s
 | File | Description |
 |---|---|
 | `models/classical_model_full_best.joblib` | Trained model and TF-IDF vectorizer (not committed) |
-| `models/classical_model_full_best.json` | Thresholds, settings, SHA256 checksums of the model, the RAGBench files and the shared components, normalizer version, git commit, library versions, and hardware |
+| `models/classical_model_full_best.json` | Thresholds, settings, SHA256 checksums of the model, the RAGBench files, and the shared parts, normalizer version, git commit, library versions, and hardware |
 | `outputs/tuning_trials_full.csv` | Results of all 18 trials |
 | `outputs/evaluation_full_best.json` | Validation metrics of the best trial |
 | `outputs/predictions_full_best.csv` | Validation predictions |
 | `outputs/calibration_full_best.csv` | Calibration table |
 | `outputs/coefficients_full_best.csv` | All model coefficients |
 | `outputs/inserted_error_set/inserted_validation.json` | Inserted Error Set v2 train and validation metrics |
-| `outputs/inserted_error_set/predictions_{train,validation}.csv` | Inserted Error Set predictions with feature values |
+| `outputs/inserted_error_set/predictions_train.csv` and `predictions_validation.csv` | Inserted Error Set v2 predictions with feature values |
 
 The random seed is 42. Small differences can appear when the library versions change, so the library versions are saved in the run record.
 
 ## Current Validation Results
 
-These results use the shared normalizer, line-by-line scope, `adherence_score` as the answer gold, and the current threshold rule. They replace the earlier results below.
+These results use the shared normalizer, the scope feature for each line, `adherence_score` as the answer gold label, and the current threshold rule. They replace the earlier results in the next section.
 
 ### RAGBench Validation
 
@@ -269,8 +269,8 @@ The best trial uses n-gram range (1,3), vocabulary size 10,000, and C = 10.
 | ROC-AUC (claims) | 0.6277 |
 | Average Precision (claims) | 0.0290 |
 | Answer AUROC (`mean` rule) | 0.6031 |
-| Answer AUROC, FinQA | 0.6078 |
-| Answer AUROC, TATQA | 0.5745 |
+| Answer AUROC (FinQA) | 0.6078 |
+| Answer AUROC (TATQA) | 0.5745 |
 | Precision at recall 0.80 | 0.0152 |
 | ECE | 0.0052 |
 | Strict Recall | 0.0072 |
@@ -279,13 +279,13 @@ The best trial uses n-gram range (1,3), vocabulary size 10,000, and C = 10.
 | Uncertain Rate | 0.3333 |
 | Claims the normalizer cannot read | 968 (4.5%) |
 
-**Answer rule.** The `mean` rule was chosen on validation (answer AUROC 0.6031, against 0.5713 for `min`). The baseline uses the lowest claim label, so the two rows of the comparison table use different answer rules. The answer AUROC values in `tuning_trials_full.csv` use `min`, so they cannot be compared directly with 0.6031.
+The `mean` rule was chosen on validation. Its answer AUROC is 0.6031, and the `min` rule gives 0.5713. The baseline uses the lowest claim label, so the two methods use different answer rules. The answer AUROC in `tuning_trials_full.csv` uses the `min` rule, so it cannot be compared directly with 0.6031.
 
-**Answer gold.** `adherence_score` and "any claim is Unsupported" give different labels for 97 validation answers. So the two labels are not identical, and we use `adherence_score`, as the baseline does.
+For 97 validation answers, `adherence_score` and "any claim is Unsupported" give different labels. This means the two labels are not the same. We use `adherence_score`, like the baseline.
 
-**Thresholds.** The model labels only 3 validation claims as Unsupported, and 2 of them are correct. The precision condition is met, but strict recall is close to 0, so the model does not detect incorrect claims in practice. Because the upper threshold now fills the Uncertain label up to one third, lenient recall rose from 0.0072 to 0.5181: about half of the incorrect claims are sent to the analyst to check. Precision at recall 0.80 is close to the base rate of 0.013, so the model ranks claims only a little better than chance.
+The model labels only 3 validation claims as Unsupported, and 2 of them are correct. The precision condition is met, but the strict recall is close to 0. This means the model does not really find incorrect claims. Because the upper threshold now fills the Uncertain label up to one third, the lenient recall went up from 0.0072 to 0.5181. About half of the incorrect claims are sent to the analyst to check. The precision at recall 0.80 is close to the base rate of 0.013, so the model ranks claims only a little better than random.
 
-**Calibration.** The ECE is low because the predicted probabilities are close to the base rate of Unsupported claims, not because the model separates the two labels well.
+The ECE is low because the predicted probabilities are close to the base rate of Unsupported claims, not because the model separates the two labels well.
 
 Coefficients of the best model (standardized features, predicting Unsupported):
 
@@ -299,39 +299,39 @@ Coefficients of the best model (standardized features, predicting Unsupported):
 | `period_missing` | -0.6598 |
 | `scope_missing` | -0.0977 |
 
-The coefficient of `numerical_consistency` is stronger than before (-0.2016 with our own parser), so the shared normalizer helps a little. The coefficient of `scope_consistency` is still close to 0: RAGBench has no scope signal, so the model does not learn to use the scope feature. The coefficient of `cosine_similarity` is still positive, which matches the single-feature result below.
+The coefficient of `numerical_consistency` is larger than before (it was -0.2016 with our own parser), so the shared normalizer helps a little. The coefficient of `scope_consistency` is still close to 0. RAGBench has no scope signal, so the model does not learn to use the scope feature. The coefficient of `cosine_similarity` is still positive, which matches the single-feature result below.
 
-The model does not reach the target AUROC of 0.75 on RAGBench.
+This model does not reach the target AUROC of 0.75 on RAGBench.
 
 ### Inserted Error Set v2
 
-We applied the saved model and the RAGBench thresholds to Inserted Error Set v2. The thresholds were not refitted.
+We used the saved model and the RAGBench thresholds on Inserted Error Set v2. We did not select new thresholds.
 
-| | Train (240) | Validation (80) | Storyboard B, validation (20) |
+| Result | Train (240) | Validation (80) | Storyboard B, validation (20) |
 |---|---:|---:|---:|
 | Strict recall | 0.000 | 0.000 | 0.000 |
 | Lenient recall | 1.000 | 1.000 | 1.000 |
 | Uncertain rate | 1.000 | 1.000 | 1.000 |
 | AUROC | 0.788 | 0.814 | 0.920 |
-| Average Precision (base rate 0.500) | 0.857 | 0.872 | — |
-| Precision at recall 0.80 | 0.615 | 0.627 | — |
+| Average Precision (base rate 0.500) | 0.857 | 0.872 | N/A |
+| Precision at recall 0.80 | 0.615 | 0.627 | N/A |
 | ECE | 0.463 | 0.461 | 0.457 |
 
-Storyboard B AUROC on train is 0.791. The train split was used to develop the scope keywords, so its results are development results.
+The Storyboard B AUROC on train is 0.791. We used the train split to develop the scope words, so the train results are not an independent check.
 
-**Every claim is labeled Uncertain.** On Inserted Error Set v2, P(Supported) lies between 0.931 and 0.976 on both splits. The RAGBench thresholds put Uncertain between 0.894 and 0.980, so every claim falls inside the Uncertain band. No claim is low enough to be Unsupported or high enough to be Supported.
+Every claim is labeled Uncertain. On both splits, P(Supported) is between 0.931 and 0.976. With the RAGBench thresholds, the Uncertain range is from 0.894 to 0.980. So every claim is inside the Uncertain range. No claim is low enough to be Unsupported, and no claim is high enough to be Supported.
 
-**The ranking is better than on RAGBench.** The median P(Supported) is about 0.971 for Supported claims and about 0.953 for Unsupported claims, on both splits, which gives the AUROC of about 0.81. Precision at recall 0.80 is 0.627, so a threshold that meets both targets exists on this set. But it was measured on the same validation data, so it is not a result. The Storyboard B AUROC of 0.920 comes from only 20 claims, and the scope coefficient is close to 0, so it does not come from the scope feature. We will check which features produce it in the error analysis.
+The ranking is better than on RAGBench. On both splits, the median P(Supported) is about 0.971 for Supported claims and about 0.953 for Unsupported claims. This gives an AUROC of about 0.81. The precision at recall 0.80 is 0.627, so there is a threshold that meets both targets on this set. But we measured it on the same validation data, so we cannot use it as a result. The Storyboard B AUROC of 0.920 comes from only 20 claims. The scope coefficient is close to 0, so this result does not come from the scope feature. We will check which features cause it in the error analysis.
 
-**Calibration fails.** All scores lie in a band 0.045 wide. The model gives every claim about a 95% chance of being correct, while half of them are wrong, so the ECE is about 0.46.
+The calibration is not good. All scores are in a range of only 0.045. The model gives every claim about a 95% chance of being correct, but half of the claims are wrong. This is why the ECE is about 0.46.
 
-This is the case Field 8 and Field 12 warn about: when the tool that writes the answers changes, the calibration and the thresholds stop working. Whether to refit the thresholds on Inserted Error Set v2 validation is an open question for the team (see below).
+Field 8 and Field 12 of the Experiment Card talk about this problem. When the tool that writes the answers changes, the calibration and the thresholds may not work anymore.
 
-With the current rule, the model meets none of the Field 10 targets on Inserted Error Set v2.
+With the current rule, the model does not meet any Field 10 target on Inserted Error Set v2.
 
 ## Earlier Experiments
 
-The results in this section came before the change to the shared normalizer, line-by-line scope, `adherence_score`, and the current threshold rule. We keep them as a record of how the model developed.
+These results came before we changed to the shared normalizer, the scope feature for each line, `adherence_score`, and the current threshold rule. We keep them to show how the model changed over time.
 
 ### Feature Analysis
 
@@ -380,9 +380,9 @@ We found a bug in `period_features.py`. A year at the end of a sentence, such as
 
 ### Number Unit Parsing Fix
 
-We found that unit abbreviations were read as the wrong number. For example, `$4.1B` became 4.0 and `$2.5M` became 2.0, while `$4.1 billion` was read correctly. We converted B, bn, M, mm, mn, and K to the correct values and added tests. Compared with the run before the fix, the best ROC-AUC changed from 0.6178 to 0.6181 and the answer AUROC from 0.5832 to 0.5831.
+We found that unit abbreviations were read as the wrong number. For example, `$4.1B` became 4.0 and `$2.5M` became 2.0, while `$4.1 billion` was read correctly. We changed B, bn, M, mm, mn, and K to the correct values and added tests. Compared with the run before the fix, the best ROC-AUC changed from 0.6178 to 0.6181 and the answer AUROC from 0.5832 to 0.5831.
 
-The features now use the shared normalizer instead. Our own parser is kept only for the older tests and tools. It also read dates such as `2025-12-31` as the numbers 12 and 31, which the shared normalizer does not.
+Now the features use the shared normalizer. We keep our own parser only for the older tests and tools. Our parser also read dates such as `2025-12-31` as the numbers 12 and 31, but the shared normalizer does not.
 
 ### First Full Training Data Run
 
@@ -396,9 +396,9 @@ This run used the original seven features on the complete training splits (163,8
 
 The result is almost the same for all three n-gram ranges, because the n-gram range only changes one feature, the cosine similarity. No thresholds met the precision requirement, so all claims became Uncertain.
 
-### Full Training Data with Tuning (earlier version)
+### Full Training Data with Tuning (Earlier Version)
 
-We ran the 20-trial search on the complete training splits using our own number parser. The answer gold was "any claim is Unsupported", and the answer score used the `min` rule.
+We ran the 20 trials on the complete training splits with our own number parser. The answer gold label was "any claim is Unsupported", and the answer score used the `min` rule.
 
 | Result | Value |
 |---|---:|
@@ -415,7 +415,7 @@ We ran the 20-trial search on the complete training splits using our own number 
 | Unsupported Precision | 0.6667 |
 | Uncertain Rate | 0.0000 |
 
-The Uncertain rate was 0 because the upper threshold was set just above the lower threshold. The current rule fills the Uncertain label up to one third instead.
+The Uncertain rate was 0 because the upper threshold was set just above the lower threshold. The current rule fills the Uncertain label up to one third.
 
 ### Single-Feature Analysis
 
@@ -435,13 +435,13 @@ The numerical and scope features are close to 0.5. In RAGBench, many Unsupported
 
 We also checked eight Unsupported claims by hand. We found three patterns:
 
-- Calculated values, such as percentages and averages. These look the same as correct calculations on the surface.
-- Inference or hedging wording, such as "This suggests" or "Based on the information provided".
-- At least one claim that appears almost word for word in the evidence. This may be an annotation error.
+1. Calculated values, such as percentages and averages. These look the same as correct calculations on the surface.
+2. Inference or hedging wording, such as "This suggests" or "Based on the information provided".
+3. At least one claim that appears almost word for word in the evidence. This may be an annotation error.
 
 ### Feature Set Comparison
 
-We compared different feature sets using the same Logistic Regression settings (C = 1, no tuning). We trained on all 2,933 Unsupported claims and 20,000 sampled Supported claims from each dataset. We evaluated on the complete validation splits. The answer score is the lowest claim support probability in each answer, and the answer gold was "any claim is Unsupported".
+We compared different feature sets using the same Logistic Regression settings (C = 1, no tuning). We trained on all 2,933 Unsupported claims and 20,000 sampled Supported claims from each dataset. We evaluated on the complete validation splits. The answer score is the lowest claim support probability in each answer, and the answer gold label was "any claim is Unsupported".
 
 | Feature Set | ROC-AUC | Average Precision | Answer AUROC | FinQA | TATQA |
 |---|---:|---:|---:|---:|---:|
@@ -457,38 +457,29 @@ The extra numeric features did not help much. The claim wording helped the most,
 
 We think class imbalance was not the main problem. Class weights and sampling do not change how the model ranks claims, so they cannot fix a low ROC-AUC. The features themselves have limited signal.
 
-### Inserted Error Set v2 (constructed claims)
+### Inserted Error Set v2 (Constructed Claims)
 
-Before the shared passages were available, we tested the numeric features on constructed claims that follow the v2 claim templates. Temporal and Metric Confusion errors were not separated, and the scope feature did not work, because `normalize_text` removed line breaks and every number got the scope `mixed`. The scope feature now reads the passage line by line, and the results on the real v2 passages are in the section above.
+Before we had the shared passages, we tested the numeric features on claims that we made with the v2 claim templates. The Temporal and Metric Confusion errors were not separated. The scope feature also did not work, because `normalize_text` removed the line breaks, so every number got the scope `mixed`. Now the scope feature reads the passage line by line. The results with the real v2 passages are in the section above.
 
 ## Current Status and Next Steps
 
-We have completed data loading, preprocessing, feature engineering with the shared normalizer, training, tuning, validation metrics, calibration (ECE), threshold selection, the Inserted Error Set v2 evaluation on train and validation, error analysis export, prediction for new claims with the saved thresholds, and a saved run record with checksums and versions.
+We have completed data loading, preprocessing, feature engineering with the shared normalizer, training, tuning, validation metrics, calibration (ECE), threshold selection, the Inserted Error Set v2 test on train and validation, error analysis export, prediction for new claims with the saved thresholds, and a saved run record with checksums and versions.
 
-The model reaches an answer-level AUROC of 0.6031 on RAGBench validation, below the target of 0.75. On Inserted Error Set v2 validation, it ranks claims much better (AUROC 0.814), but the RAGBench thresholds label every claim Uncertain. These are validation results only. If the final results do not reach the targets, we will report this as described in Field 10 and Field 11 of the Experiment Card.
+The model reaches an answer-level AUROC of 0.6031 on RAGBench validation. This is below the target of 0.75. On Inserted Error Set v2 validation, the model ranks claims much better (AUROC 0.814), but the RAGBench thresholds label every claim as Uncertain. These are validation results only. If the final results do not reach the targets, we will report this as described in Field 10 and Field 11 of the Experiment Card.
 
 Our targets from the Experiment Card are at least 0.80 strict recall and at least 0.60 precision for Unsupported claims on Inserted Error Set v2, and at least 0.75 AUROC on the RAGBench test splits. The model must also reach at least 0.80 strict recall on the Storyboard B slice.
 
-### Decisions made with the team
+### Team Decisions
 
-1. Thresholds are selected on RAGBench validation. Inserted Error Set v2 validation is only reported. Precision of at least 0.60 cannot be reached on RAGBench at a 1.3% base rate, so it is reported as missed, together with precision at recall 0.80.
-2. The lower threshold is chosen first. The upper threshold then fills the Uncertain label up to one third of claims.
-3. The answer-level gold is `adherence_score`, as in the baseline.
-4. The Inserted Error Set v2 training split is used only to develop the scope feature rules, not to fit model weights (Experiment Card, Fields 3 and 4).
-5. The model uses the team's shared normalizer and passages (Field 12).
+1. We select the thresholds on RAGBench validation and only report Inserted Error Set v2 validation. Precision of at least 0.60 is not possible on RAGBench because only 1.3% of the claims are Unsupported. We report it as missed, and we also report precision at recall 0.80.
+2. We choose the lower threshold first. Then the upper threshold fills the Uncertain label up to one third of the claims.
+3. We use `adherence_score` as the answer gold label, like the baseline.
+4. We use the Inserted Error Set v2 training split only to develop the rules of the scope feature. We do not use it to train the model (Experiment Card, Fields 3 and 4).
+5. We use the shared normalizer and passages from `Baseline/` (Field 12).
 
-### Open questions for the team
+### Next Steps
 
-1. **Normalizer failures:** should "cannot read" use our narrower definition or the baseline's `no_amount` rule? The wider rule would break the one-third Uncertain limit on TATQA.
-2. **Trial budget:** should the two answer aggregation rules count toward the 20 trials, as in the baseline?
-3. **Answer gold:** 97 validation answers have different labels under `adherence_score` and "any claim is Unsupported". The team should know this, since it affects every method's answer-level results.
-4. **Thresholds on Inserted Error Set v2:** keep the RAGBench thresholds and report that every claim is Uncertain, or refit thresholds (with Platt or temperature scaling) on Inserted Error Set v2 validation as Field 8 allows? Refitting would need the same rule for DeBERTa and the LLM, and the thresholds would sit inside a band 0.045 wide, chosen on only 80 claims.
-5. **Extensions:** can we report the extra features and the claim wording as a comparison?
-
-### Next steps
-
-1. Agree on the open questions above.
-2. Run three seeds and report the mean and spread (Field 5). Logistic Regression is deterministic, so the seed changes the trial sampling.
-3. Group the errors into the categories from Field 9, using the Inserted Error Set predictions with feature values.
-4. Record the training time and the inference time per claim. The Inserted Error Set evaluation takes about 3 ms per claim on a laptop CPU.
-5. Write `final_test.py`, which evaluates the RAGBench test splits and the Inserted Error Set v2 test split once, with ECE and a reliability diagram on the test split and the Storyboard B slice.
+1. Run three seeds and report the mean and the spread (Field 5). Logistic Regression always gives the same result for the same data, so the seed changes which trials are chosen.
+2. Group the errors into the categories from Field 9. We will use the Inserted Error Set v2 predictions, which include the feature values.
+3. Record the training time and the prediction time per claim. On a laptop CPU, the Inserted Error Set v2 test takes about 3 ms per claim.
+4. Write `final_test.py`. It will test the RAGBench test splits and the Inserted Error Set v2 test split only once, with ECE and a reliability diagram on the test split and the Storyboard B slice.
