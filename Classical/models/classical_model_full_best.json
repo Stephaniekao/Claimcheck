@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-11-16T07:02:14Z",
+  "model_file": "classical_model_full_best.joblib",
+  "model_sha256": "8d26e92b9702dc8e8dfacbef898cb56c1892be3985f5a46d42be1b9c0dc27dc0",
+  "git": {
+    "commit": "unknown",
+    "uncommitted_changes": null
+  },
+  "libraries": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.7.2"
+  },
+  "input_sha256": {
+    "FinQA_train": "32aa4c7743efea8a5f837b237c0e6bff8b1f423c46b27b217c0ffeceb46cfe37",
+    "FinQA_validation": "0e4dca93dbd5d4a4aba6dc7d9fc0bf0741594ea88f199e576c297f522143c81a",
+    "TATQA_train": "2a56530a4fb8a09459d9f3b9030795336773ff681fac2c554e0842fb4e148a01",
+    "TATQA_validation": "518cb046a8ae0f989fbcf88b6c3c6addc0c4c3be76432cec4cf17921320aa6a9"
+  },
+  "experiment": "full_best",
+  "random_seed": 42,
+  "card_version": true,
+  "use_extra_features": false,
+  "use_claim_text": false,
+  "numeric_features": [
+    "cosine_similarity",
+    "numerical_consistency",
+    "period_consistency",
+    "scope_consistency",
+    "numerical_missing",
+    "period_missing",
+    "scope_missing"
+  ],
+  "model_config": {
+    "solver": "liblinear",
+    "max_iter": 2000,
+    "random_state": 42
+  },
+  "best_config": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 10000,
+    "C": 10.0
+  },
+  "train_claims": 163878,
+  "validation_claims": 21543,
+  "thresholds": {
+    "feasible": true,
+    "lower_threshold": 0.9107882435812955,
+    "upper_threshold": 0.9107882435812956,
+    "min_precision": 0.6,
+    "max_uncertain_rate": 0.3333333333333333
+  },
+  "validation_metrics": {
+    "roc_auc": 0.6180799605839624,
+    "pr_auc": 0.029122519420833617,
+    "answer_auroc": 0.5831144338923688,
+    "ece": 0.005166613343264747,
+    "strict_recall": 0.007246376811594203,
+    "unsupported_precision": 0.6666666666666666,
+    "uncertain_rate": 4.6418790326324094e-05
+  }
+}

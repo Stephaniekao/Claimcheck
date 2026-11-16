@@ -1,0 +1,95 @@
+{
+  "experiment": "full_best",
+  "random_seed": 42,
+  "best_config": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 10000,
+    "C": 10.0
+  },
+  "validation_claims": 21543,
+  "binary_metrics": {
+    "n": 21543,
+    "supported_gold": 21267,
+    "unsupported_gold": 276,
+    "threshold": 0.5,
+    "accuracy": 0.9871884138699345,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tn": 21267,
+    "fp": 0,
+    "fn": 276,
+    "tp": 0,
+    "roc_auc": 0.6180799605839624,
+    "pr_auc": 0.029122519420833617
+  },
+  "binary_threshold": {
+    "threshold": 0.013335298577970348,
+    "precision": 0.014637904468412942,
+    "recall": 0.8260869565217391,
+    "f1": 0.028766086298258893,
+    "target_recall": 0.8
+  },
+  "calibration": {
+    "brier_score": 0.012639520195473647,
+    "ece": 0.005166613343264747,
+    "n_bins": 10
+  },
+  "answer_level_auroc": {
+    "overall": 0.5831144338923688,
+    "answers": 5102,
+    "unsupported_answers": 153,
+    "FinQA": 0.5324357988057296,
+    "TATQA": 0.5924436614923748
+  },
+  "dual_threshold": {
+    "feasible": true,
+    "reason": null,
+    "lower_threshold": 0.9107882435812955,
+    "upper_threshold": 0.9107882435812956,
+    "strict_recall": 0.007246376811594203,
+    "lenient_recall": 0.007246376811594203,
+    "unsupported_precision": 0.6666666666666666,
+    "strict_f1": 0.014336917562724014,
+    "uncertain_rate": 4.6418790326324094e-05,
+    "coverage": 0.9999535812096737,
+    "predicted_unsupported": 3,
+    "true_unsupported": 2,
+    "predicted_uncertain": 1,
+    "min_precision": 0.6,
+    "max_uncertain_rate": 0.3333333333333333,
+    "candidates_checked": 19750,
+    "feasible_candidates": 2
+  },
+  "three_label_metrics": {
+    "n": 21543,
+    "supported_gold": 21267,
+    "unsupported_gold": 276,
+    "predicted_supported": 21539,
+    "predicted_uncertain": 1,
+    "predicted_unsupported": 3,
+    "strict_recall": 0.007246376811594203,
+    "lenient_recall": 0.007246376811594203,
+    "unsupported_precision": 0.6666666666666666,
+    "strict_f1": 0.014336917562724014,
+    "uncertain_rate": 4.6418790326324094e-05,
+    "coverage": 0.9999535812096737,
+    "strict_tp": 2,
+    "false_unsupported": 1,
+    "missed_unsupported": 274,
+    "uncertain_unsupported": 0,
+    "uncertain_supported": 1,
+    "decision_counts": {
+      "supported_to_supported": 21265,
+      "supported_to_uncertain": 1,
+      "supported_to_unsupported": 1,
+      "unsupported_to_supported": 274,
+      "unsupported_to_uncertain": 0,
+      "unsupported_to_unsupported": 2
+    }
+  },
+  "fallback_all_uncertain": false
+}

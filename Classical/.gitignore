@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Trained models are rebuilt by run_all.sh.
+# The checksum is saved in models/classical_model_full_best.json.
+*.joblib
+
+# Older or experimental results
+outputs/archive/
+models/archive/
+outputs/before_unit_fix/
