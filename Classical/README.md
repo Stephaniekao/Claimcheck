@@ -25,6 +25,62 @@ We ran the final test once. The model, thresholds, and answer rule were all chos
 
 The model does not meet the Field 10 targets. On RAGBench, it ranks claims only a little better than random, and it labels no claim as Unsupported. On Inserted Error Set v2, it ranks claims well, but the thresholds from RAGBench put every claim in the Uncertain range. The three seeds give the same model, so the spread across seeds is 0. The details are in the Final Test Results section.
 
+## Quick Start
+
+### See the results without running anything
+
+All results are already saved in this folder.
+
+| What | Where |
+|---|---|
+| Final test results and the Field 10 check | `outputs/final_test/final_test_results.json` |
+| Our row for the comparison table | `outputs/final_test/comparison_table_row.md` |
+| Reliability diagrams | `outputs/final_test/reliability_ragbench_test.png`, `reliability_inserted_test.png`, and `reliability_storyboard_b_test.png` |
+| Error samples for Field 9 | `outputs/final_test/error_analysis/` |
+| Validation results of the best model | `outputs/evaluation_full_best.json` |
+| Results of the three seeds | `outputs/seed_summary_validation.csv` |
+| Inserted Error Set v2 validation results | `outputs/inserted_error_set/inserted_validation.json` |
+
+### Run the model again
+
+Before the first run:
+
+1. Make sure the `Baseline/` folder is in the repository. The model uses the shared normalizer and passages from it.
+2. Create the RAGBench files with `python fetch_ragbench.py` from the main folder of the repository.
+3. Install the packages from the `Classical/` folder:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then run these two commands from the `Classical/` folder:
+
+```bash
+bash run_all.sh
+bash run_seeds.sh
+```
+
+`run_all.sh` runs the 62 tests, the tuning with seed 42, and the Inserted Error Set v2 validation. `run_seeds.sh` runs the tuning again with seeds 43 and 44. Each tuning run takes several minutes on a laptop.
+
+If everything is the same as our run, `run_all.sh` prints these numbers for the best trial:
+
+| Result | Value |
+|---|---:|
+| Claim ROC AUC | 0.6277 |
+| Answer AUROC | 0.6031 |
+| Strict recall | 0.0072 |
+| Uncertain rate | 0.3333 |
+
+Small differences can appear if the library versions are different.
+
+### About the final test
+
+The final test was run once, and `outputs/final_test/final_test_lock.json` stops it from running again. This follows Field 5 of the Experiment Card: the test set is used only once. Please do not delete the lock file. The test results are already saved, so there is no need to run it again.
+
+### Use the model on new claims
+
+See step 8 in How to Run. It shows how to label new claim and evidence pairs with the saved model.
+
 ## Data
 
 We use RAGBench FinQA and TATQA for training, validation, and testing. The data is stored in `Data/RAGBench`, and we keep the original train, validation, and test splits to avoid data leakage. The RAGBench CSV and parquet files are not stored in git. Create them with `python fetch_ragbench.py` from the main folder of the repository, or by running the first two code cells of `Data/data_download_v2.ipynb`.
