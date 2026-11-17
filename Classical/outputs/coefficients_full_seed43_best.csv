@@ -1,0 +1,8 @@
+group,feature,coefficient
+numeric,cosine_similarity,0.2491408134251271
+numeric,numerical_consistency,-0.3037242302039434
+numeric,period_consistency,-0.547791150923987
+numeric,scope_consistency,-0.05457487515524676
+numeric,numerical_missing,-0.475761642158338
+numeric,period_missing,-0.6598150752078594
+numeric,scope_missing,-0.09767242724301178

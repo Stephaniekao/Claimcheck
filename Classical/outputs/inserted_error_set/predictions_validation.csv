@@ -1,0 +1,1977 @@
+claim_id,subset,split,error_type,label,predicted_label,reason,p_supported,p_unsupported,numerical_consistency,period_consistency,scope_consistency,numerical_missing,period_missing,scope_missing,cosine_similarity,claim,evidence
+SEC-CL-01,general,validation,Supported,Supported,Uncertain,,0.9622952346302255,0.037704765369774504,1.0,1.0,0.0,0.0,0.0,0.0,0.5528393964021009,"COLGATE PALMOLIVE CO's total assets for the fiscal period ended 2025-12-31 was USD 16,330.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-CL-02,general,validation,Supported,Supported,Uncertain,,0.9711137853442781,0.028886214655721956,1.0,1.0,0.0,0.0,0.0,1.0,0.5473032091314841,"COLGATE PALMOLIVE CO's cash and cash equivalents for the fiscal period ended 2025-12-31 was USD 1,288.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-CL-03,general,validation,Supported,Supported,Uncertain,,0.9613827462319267,0.03861725376807335,1.0,1.0,0.0,0.0,0.0,0.0,0.5674274863210347,"COLGATE PALMOLIVE CO's total liabilities for the fiscal period ended 2025-12-31 was USD 15,965.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-CL-04,general,validation,Supported,Supported,Uncertain,,0.9719600163032076,0.028039983696792423,1.0,1.0,0.0,0.0,0.0,1.0,0.5293454593860593,"COLGATE PALMOLIVE CO's net cash from operating activities for the fiscal period ended 2025-12-31 was USD 4,198.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-CL-05,general,validation,Supported,Supported,Uncertain,,0.9704074049634464,0.029592595036553693,1.0,1.0,0.0,0.0,0.0,1.0,0.5619065383457568,"COLGATE PALMOLIVE CO's gross profit for the fiscal period ended 2025-12-31 was USD 12,251.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-CL-06,general,validation,Small Numerical,Unsupported,Uncertain,,0.9465717602342525,0.053428239765747516,0.0,1.0,0.0,0.0,0.0,1.0,0.5479943643757181,"COLGATE PALMOLIVE CO's net cash from operating activities for the fiscal period ended 2025-12-31 was USD 4,376.835 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-CL-07,general,validation,Transposed Digits,Unsupported,Uncertain,,0.9432213698387723,0.05677863016122778,0.0,1.0,0.0,0.0,0.0,1.0,0.5857630941864213,"COLGATE PALMOLIVE CO's revenue for the fiscal period ended 2025-12-31 was USD 23,082.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-CL-08,general,validation,Temporal,Unsupported,Uncertain,,0.9713820949577696,0.028617905042230413,1.0,1.0,0.0,0.0,0.0,1.0,0.5416653576787848,"COLGATE PALMOLIVE CO's cash and cash equivalents for the fiscal period ended 2024-12-31 was USD 1,288.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-CL-09,general,validation,Metric Confusion,Unsupported,Uncertain,,0.9686991267982622,0.03130087320173776,1.0,1.0,0.0,0.0,0.0,1.0,0.5958714205750054,"COLGATE PALMOLIVE CO's revenue for the fiscal period ended 2025-12-31 was USD 6,853.000 million.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-CL-10,general,validation,Unit,Unsupported,Uncertain,,0.9313566150933715,0.06864338490662847,0.0,1.0,0.0,0.0,0.0,0.0,0.5483936134088828,"COLGATE PALMOLIVE CO's total liabilities for the fiscal period ended 2025-12-31 was USD 15,965.000 billion.","COLGATE PALMOLIVE CO Form 10-K (accession 0000021665-26-000006), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-12-31: USD 20,382 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-12-31: USD 20,101 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2023-12-31: USD 19,457 million.
+Cost of Revenue for the fiscal year ended 2025-12-31: USD 8,131 million.
+Cost of Revenue for the fiscal year ended 2024-12-31: USD 7,940 million.
+Cost of Revenue for the fiscal year ended 2023-12-31: USD 8,131 million.
+Gross Profit for the fiscal year ended 2025-12-31: USD 12,251 million.
+Gross Profit for the fiscal year ended 2024-12-31: USD 12,161 million.
+Gross Profit for the fiscal year ended 2023-12-31: USD 11,326 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 3,306 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,268 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 3,984 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 2,132 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,889 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,300 million.
+Assets as of 2025-12-31: USD 16,330 million.
+Assets as of 2024-12-31: USD 16,046 million.
+Assets, Current as of 2025-12-31: USD 5,709 million.
+Assets, Current as of 2024-12-31: USD 5,317 million.
+Liabilities as of 2025-12-31: USD 15,965 million.
+Liabilities as of 2024-12-31: USD 15,502 million.
+Liabilities, Current as of 2025-12-31: USD 6,853 million.
+Liabilities, Current as of 2024-12-31: USD 5,759 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 54 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 212 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 1,288 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 1,096 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,198 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,107 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,745 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -817 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -534 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -742 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,256 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -3,389 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -2,793 million."
+SEC-TJX-01,general,validation,Supported,Supported,Uncertain,,0.9761836101407801,0.023816389859219907,1.0,1.0,0.0,0.0,0.0,1.0,0.4310053666025066,"TJX COMPANIES INC /DE/'s cost of revenue for the fiscal period ended 2026-01-31 was USD 41,679.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-TJX-02,general,validation,Supported,Supported,Uncertain,,0.9750984100199828,0.024901589980017284,1.0,1.0,0.0,0.0,0.0,1.0,0.4578034673454171,"TJX COMPANIES INC /DE/'s current assets for the fiscal period ended 2026-01-31 was USD 15,202.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-TJX-03,general,validation,Supported,Supported,Uncertain,,0.9753623794566455,0.024637620543354517,1.0,1.0,0.0,0.0,0.0,1.0,0.4513913014659266,"TJX COMPANIES INC /DE/'s net income for the fiscal period ended 2026-01-31 was USD 5,494.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-TJX-04,general,validation,Supported,Supported,Uncertain,,0.9748217482464668,0.025178251753533134,1.0,1.0,0.0,0.0,0.0,1.0,0.4644532444346672,"TJX COMPANIES INC /DE/'s cash and cash equivalents for the fiscal period ended 2026-01-31 was USD 6,230.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-TJX-05,general,validation,Supported,Supported,Uncertain,,0.9724692500241363,0.02753074997586369,1.0,1.0,0.0,0.0,0.0,1.0,0.5182837028942169,"TJX COMPANIES INC /DE/'s net cash from investing activities for the fiscal period ended 2026-01-31 was USD -1,981.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-TJX-06,general,validation,Small Numerical,Unsupported,Uncertain,,0.9567242592613986,0.0432757407386014,0.0,1.0,0.0,0.0,0.0,1.0,0.4180726511220653,"TJX COMPANIES INC /DE/'s cost of revenue for the fiscal period ended 2026-01-31 was USD 43,587.898 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-TJX-07,general,validation,Flipped Sign,Unsupported,Uncertain,,0.953832535769769,0.04616746423023103,0.0,1.0,0.0,0.0,0.0,1.0,0.4578034673454171,"TJX COMPANIES INC /DE/'s current assets for the fiscal period ended 2026-01-31 was USD -15,202.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-TJX-08,general,validation,Temporal,Unsupported,Uncertain,,0.9708903124968775,0.029109687503122476,1.0,1.0,0.0,0.0,0.0,1.0,0.5519602794887196,"TJX COMPANIES INC /DE/'s net cash from investing activities for the fiscal period ended 2025-02-01 was USD -1,981.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-TJX-09,general,validation,Metric Confusion,Unsupported,Uncertain,,0.9764697477068004,0.023530252293199622,1.0,1.0,0.0,0.0,0.0,1.0,0.42374097740226624,"TJX COMPANIES INC /DE/'s cost of revenue for the fiscal period ended 2026-01-31 was USD 5,494.000 million.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-TJX-10,general,validation,Unit,Unsupported,Uncertain,,0.9560569879182708,0.04394301208172921,0.0,1.0,0.0,0.0,0.0,1.0,0.4274605586023378,"TJX COMPANIES INC /DE/'s revenue for the fiscal period ended 2026-01-31 was USD 60,372.000 billion.","TJX COMPANIES INC /DE/ Form 10-K (accession 0000109198-26-000008), selected XBRL financial data:
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2026-01-31: USD 60,372 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2025-02-01: USD 56,360 million.
+Revenue from Contract with Customer, Including Assessed Tax for the fiscal year ended 2024-02-03: USD 54,217 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-01-31: USD 41,679 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-01: USD 39,112 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-02-03: USD 37,951 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-01-31: USD 5,494 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-01: USD 4,864 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-02-03: USD 4,474 million.
+Assets as of 2026-01-31: USD 35,767 million.
+Assets as of 2025-02-01: USD 31,749 million.
+Assets as of 2024-02-03: USD 29,747 million.
+Assets, Current as of 2026-01-31: USD 15,202 million.
+Assets, Current as of 2025-02-01: USD 12,991 million.
+Liabilities, Current as of 2026-01-31: USD 13,361 million.
+Liabilities, Current as of 2025-02-01: USD 11,008 million.
+Stockholders' Equity Attributable to Parent as of 2026-01-31: USD 10,190 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-01: USD 8,393 million.
+Stockholders' Equity Attributable to Parent as of 2024-02-03: USD 7,302 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-28: USD 6,364 million.
+Cash and Cash Equivalents, at Carrying Value as of 2026-01-31: USD 6,230 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-02-01: USD 5,335 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-01-31: USD 6,874 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-01: USD 6,116 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-02-03: USD 6,057 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-01-31: USD -1,981 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-01: USD -2,477 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-02-03: USD -1,717 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-01-31: USD -4,118 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-01: USD -3,838 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-02-03: USD -4,215 million."
+SEC-SCHW-01,general,validation,Supported,Supported,Uncertain,,0.9715346749300562,0.02846532506994384,1.0,1.0,0.0,0.0,0.0,1.0,0.5384363490959897,"SCHWAB CHARLES CORP's stockholders equity for the fiscal period ended 2025-12-31 was USD 49,425.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-SCHW-02,general,validation,Supported,Supported,Uncertain,,0.972779280813528,0.027220719186471974,1.0,1.0,0.0,0.0,0.0,1.0,0.5114513251777936,"SCHWAB CHARLES CORP's net cash from operating activities for the fiscal period ended 2025-12-31 was USD 9,311.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-SCHW-03,general,validation,Supported,Supported,Uncertain,,0.9649883890959703,0.035011610904029766,1.0,1.0,0.0,0.0,0.0,0.0,0.5077153244719353,"SCHWAB CHARLES CORP's total assets for the fiscal period ended 2025-12-31 was USD 490,995.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-SCHW-04,general,validation,Supported,Supported,Uncertain,,0.9709909577038377,0.029009042296162278,1.0,1.0,0.0,0.0,0.0,1.0,0.5498671883859418,"SCHWAB CHARLES CORP's net cash from financing activities for the fiscal period ended 2025-12-31 was USD -29,702.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-SCHW-05,general,validation,Supported,Supported,Uncertain,,0.9662434262231119,0.033756573776888114,1.0,1.0,0.0,0.0,0.0,0.0,0.4855326158853141,"SCHWAB CHARLES CORP's total liabilities for the fiscal period ended 2025-12-31 was USD 441,570.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-SCHW-06,general,validation,Small Numerical,Unsupported,Uncertain,,0.9472869196076452,0.052713080392354804,0.0,1.0,0.0,0.0,0.0,1.0,0.5396439042642969,"SCHWAB CHARLES CORP's net cash from financing activities for the fiscal period ended 2025-12-31 was USD -30,349.504 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-SCHW-07,general,validation,Flipped Sign,Unsupported,Uncertain,,0.9464101134555565,0.05358988654444347,0.0,1.0,0.0,0.0,0.0,1.0,0.5498671883859418,"SCHWAB CHARLES CORP's net cash from financing activities for the fiscal period ended 2025-12-31 was USD 29,702.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-SCHW-08,general,validation,Temporal,Unsupported,Uncertain,,0.9716936883357004,0.028306311664299595,1.0,1.0,0.0,0.0,0.0,1.0,0.535053263496636,"SCHWAB CHARLES CORP's cash and cash equivalents for the fiscal period ended 2024-12-31 was USD 46,030.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-SCHW-09,general,validation,Metric Confusion,Unsupported,Uncertain,,0.9721630396554336,0.027836960344566446,1.0,1.0,0.0,0.0,0.0,1.0,0.5249588914970741,"SCHWAB CHARLES CORP's cash and cash equivalents for the fiscal period ended 2025-12-31 was USD 24,538.000 million.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-SCHW-10,general,validation,Unit,Unsupported,Uncertain,,0.9500367007405135,0.049963299259486504,0.0,1.0,0.0,0.0,0.0,1.0,0.5065065285050679,"SCHWAB CHARLES CORP's net income for the fiscal period ended 2025-12-31 was USD 8,852.000 billion.","SCHWAB CHARLES CORP Form 10-K (accession 0000316709-26-000009), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 23,921 million.
+Revenues for the fiscal year ended 2024-12-31: USD 19,606 million.
+Revenues for the fiscal year ended 2023-12-31: USD 18,837 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 8,852 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 5,942 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 5,067 million.
+Assets as of 2025-12-31: USD 490,995 million.
+Assets as of 2024-12-31: USD 479,843 million.
+Liabilities as of 2025-12-31: USD 441,570 million.
+Liabilities as of 2024-12-31: USD 431,468 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 49,425 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 48,375 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 40,958 million.
+Stockholders' Equity Attributable to Parent as of 2022-12-31: USD 36,608 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 46,030 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 42,083 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 43,337 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 9,311 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 2,670 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 19,587 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD 24,538 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD 35,431 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD 57,411 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -29,702 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -47,060 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -61,245 million."
+SEC-NOC-01,general,validation,Supported,Supported,Uncertain,,0.9723633925095347,0.027636607490465266,1.0,1.0,0.0,0.0,0.0,1.0,0.5205994503440793,"NORTHROP GRUMMAN CORP /DE/'s net cash from operating activities for the fiscal period ended 2025-12-31 was USD 4,757.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-NOC-02,general,validation,Supported,Supported,Uncertain,,0.9727907805405753,0.027209219459424616,1.0,1.0,0.0,0.0,0.0,1.0,0.5111964449075427,"NORTHROP GRUMMAN CORP /DE/'s current liabilities for the fiscal period ended 2025-12-31 was USD 13,882.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-NOC-03,general,validation,Supported,Supported,Uncertain,,0.9642096768930413,0.03579032310695875,1.0,1.0,0.0,0.0,0.0,0.0,0.5210968410019904,"NORTHROP GRUMMAN CORP /DE/'s total liabilities for the fiscal period ended 2025-12-31 was USD 34,703.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-NOC-04,general,validation,Supported,Supported,Uncertain,,0.9726253670680842,0.027374632931915773,1.0,1.0,0.0,0.0,0.0,1.0,0.5148526358774582,"NORTHROP GRUMMAN CORP /DE/'s net income for the fiscal period ended 2025-12-31 was USD 4,182.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-NOC-05,general,validation,Supported,Supported,Uncertain,,0.9725633620976277,0.027436637902372305,1.0,1.0,0.0,0.0,0.0,1.0,0.5162176227317388,"NORTHROP GRUMMAN CORP /DE/'s current assets for the fiscal period ended 2025-12-31 was USD 15,287.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-NOC-06,general,validation,Small Numerical,Unsupported,Uncertain,,0.9351895249564285,0.06481047504357156,0.0,1.0,0.0,0.0,0.0,0.0,0.5122689620199645,"NORTHROP GRUMMAN CORP /DE/'s total assets for the fiscal period ended 2025-12-31 was USD 52,846.382 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-NOC-07,general,validation,Flipped Sign,Unsupported,Uncertain,,0.9493572099036391,0.05064279009636091,0.0,1.0,0.0,0.0,0.0,1.0,0.5148526358774582,"NORTHROP GRUMMAN CORP /DE/'s net income for the fiscal period ended 2025-12-31 was USD -4,182.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-NOC-08,general,validation,Temporal,Unsupported,Uncertain,,0.9645623681385684,0.035437631861431555,1.0,1.0,0.0,0.0,0.0,0.0,0.5150712434145204,"NORTHROP GRUMMAN CORP /DE/'s total liabilities for the fiscal period ended 2024-12-31 was USD 34,703.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-NOC-09,general,validation,Metric Confusion,Unsupported,Uncertain,,0.9729339672209639,0.027066032779036034,1.0,1.0,0.0,0.0,0.0,1.0,0.5080140523693971,"NORTHROP GRUMMAN CORP /DE/'s net cash from operating activities for the fiscal period ended 2025-12-31 was USD -3,552.000 million.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-NOC-10,general,validation,Unit,Unsupported,Uncertain,,0.9491588410994454,0.050841158900554594,0.0,1.0,0.0,0.0,0.0,1.0,0.5172691852280676,"NORTHROP GRUMMAN CORP /DE/'s net cash from financing activities for the fiscal period ended 2025-12-31 was USD -3,552.000 billion.","NORTHROP GRUMMAN CORP /DE/ Form 10-K (accession 0001133421-26-000003), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 41,954 million.
+Revenues for the fiscal year ended 2024-12-31: USD 41,033 million.
+Revenues for the fiscal year ended 2023-12-31: USD 39,290 million.
+Operating Income (Loss) for the fiscal year ended 2025-12-31: USD 4,511 million.
+Operating Income (Loss) for the fiscal year ended 2024-12-31: USD 4,370 million.
+Operating Income (Loss) for the fiscal year ended 2023-12-31: USD 2,537 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 4,182 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 4,174 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,056 million.
+Assets as of 2025-12-31: USD 51,377 million.
+Assets as of 2024-12-31: USD 49,359 million.
+Assets, Current as of 2025-12-31: USD 15,287 million.
+Assets, Current as of 2024-12-31: USD 14,274 million.
+Liabilities as of 2025-12-31: USD 34,703 million.
+Liabilities as of 2024-12-31: USD 34,069 million.
+Liabilities, Current as of 2025-12-31: USD 13,882 million.
+Liabilities, Current as of 2024-12-31: USD 14,128 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 16,674 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 15,290 million.
+Stockholders' Equity Attributable to Parent as of 2023-12-31: USD 14,795 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 4,403 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 4,353 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 4,757 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 4,388 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 3,875 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -1,155 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -1,749 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -1,582 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD -3,552 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD -1,395 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD -1,761 million."
+SEC-PRU-01,general,validation,Supported,Supported,Uncertain,,0.97142715311153,0.0285728468884699,1.0,1.0,0.0,0.0,0.0,1.0,0.5407135462589484,"PRUDENTIAL FINANCIAL INC's stockholders equity for the fiscal period ended 2025-12-31 was USD 32,438.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-PRU-02,general,validation,Supported,Supported,Uncertain,,0.964568320841784,0.035431679158215955,1.0,1.0,0.0,0.0,0.0,0.0,0.5149690488562673,"PRUDENTIAL FINANCIAL INC's total liabilities for the fiscal period ended 2025-12-31 was USD 738,159.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-PRU-03,general,validation,Supported,Supported,Uncertain,,0.9723454953058998,0.027654504694100253,1.0,1.0,0.0,0.0,0.0,1.0,0.5209901190907233,"PRUDENTIAL FINANCIAL INC's revenue for the fiscal period ended 2025-12-31 was USD 60,774.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-PRU-04,general,validation,Supported,Supported,Uncertain,,0.9701306214354845,0.029869378564515596,1.0,1.0,0.0,0.0,0.0,1.0,0.5675366266529193,"PRUDENTIAL FINANCIAL INC's net cash from investing activities for the fiscal period ended 2025-12-31 was USD -25,892.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-PRU-05,general,validation,Supported,Supported,Uncertain,,0.9723012531818384,0.027698746818161698,1.0,1.0,0.0,0.0,0.0,1.0,0.5219548042565143,"PRUDENTIAL FINANCIAL INC's net cash from operating activities for the fiscal period ended 2025-12-31 was USD 6,271.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-PRU-06,general,validation,Small Numerical,Unsupported,Uncertain,,0.9463263431583392,0.05367365684166076,0.0,1.0,0.0,0.0,0.0,1.0,0.5508356474160144,"PRUDENTIAL FINANCIAL INC's net cash from financing activities for the fiscal period ended 2025-12-31 was USD 20,997.348 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-PRU-07,general,validation,Transposed Digits,Unsupported,Uncertain,,0.9349100654030235,0.06508993459697654,0.0,1.0,0.0,0.0,0.0,0.0,0.5149690488562673,"PRUDENTIAL FINANCIAL INC's total liabilities for the fiscal period ended 2025-12-31 was USD 783,159.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-PRU-08,general,validation,Temporal,Unsupported,Uncertain,,0.9703494520293691,0.029650547970630953,1.0,1.0,0.0,0.0,0.0,1.0,0.5630895792004809,"PRUDENTIAL FINANCIAL INC's net cash from investing activities for the fiscal period ended 2024-12-31 was USD -25,892.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-PRU-09,general,validation,Metric Confusion,Unsupported,Uncertain,,0.9705274820176876,0.02947251798231247,1.0,1.0,0.0,0.0,0.0,1.0,0.5594481414429637,"PRUDENTIAL FINANCIAL INC's net cash from financing activities for the fiscal period ended 2025-12-31 was USD 60,774.000 million.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-PRU-10,general,validation,Unit,Unsupported,Uncertain,,0.9462044107719424,0.053795589228057585,0.0,1.0,0.0,0.0,0.0,1.0,0.552242749162671,"PRUDENTIAL FINANCIAL INC's net cash from investing activities for the fiscal period ended 2025-12-31 was USD -25,892.000 billion.","PRUDENTIAL FINANCIAL INC Form 10-K (accession 0001137774-26-000048), selected XBRL financial data:
+Revenues for the fiscal year ended 2025-12-31: USD 60,774 million.
+Revenues for the fiscal year ended 2024-12-31: USD 70,405 million.
+Revenues for the fiscal year ended 2023-12-31: USD 53,979 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-12-31: USD 3,576 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-12-31: USD 2,727 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2023-12-31: USD 2,488 million.
+Assets as of 2025-12-31: USD 773,740 million.
+Assets as of 2024-12-31: USD 735,587 million.
+Liabilities as of 2025-12-31: USD 738,159 million.
+Liabilities as of 2024-12-31: USD 705,461 million.
+Stockholders' Equity Attributable to Parent as of 2025-12-31: USD 32,438 million.
+Stockholders' Equity Attributable to Parent as of 2024-12-31: USD 27,872 million.
+Cash and Cash Equivalents, at Carrying Value as of 2025-12-31: USD 19,712 million.
+Cash and Cash Equivalents, at Carrying Value as of 2024-12-31: USD 18,497 million.
+Cash and Cash Equivalents, at Carrying Value as of 2023-12-31: USD 19,419 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-12-31: USD 6,271 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-12-31: USD 8,502 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2023-12-31: USD 6,510 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-12-31: USD -25,892 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-12-31: USD -28,585 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2023-12-31: USD -12,122 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-12-31: USD 20,773 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-12-31: USD 19,394 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2023-12-31: USD 7,739 million."
+SEC-LULU-01,general,validation,Supported,Supported,Uncertain,,0.9706813607777837,0.02931863922221635,1.0,1.0,0.0,0.0,0.0,1.0,0.5562834689581255,"lululemon athletica inc.'s net cash from financing activities for the fiscal period ended 2026-02-01 was USD -1,208.656 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SEC-LULU-02,general,validation,Supported,Supported,Uncertain,,0.9618943310555911,0.0381056689444089,1.0,1.0,0.0,0.0,0.0,0.0,0.5592900004350645,"lululemon athletica inc.'s total assets for the fiscal period ended 2026-02-01 was USD 8,456.743 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SEC-LULU-03,general,validation,Supported,Supported,Uncertain,,0.9716013754063368,0.028398624593663196,1.0,1.0,0.0,0.0,0.0,1.0,0.5370195042405952,"lululemon athletica inc.'s revenue for the fiscal period ended 2026-02-01 was USD 11,102.600 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SEC-LULU-04,general,validation,Supported,Supported,Uncertain,,0.9713437689171713,0.028656231082828682,1.0,1.0,0.0,0.0,0.0,1.0,0.5424738154661825,"lululemon athletica inc.'s current assets for the fiscal period ended 2026-02-01 was USD 4,262.701 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SEC-LULU-05,general,validation,Supported,Supported,Uncertain,,0.9623986319581291,0.037601368041870864,1.0,1.0,0.0,0.0,0.0,0.0,0.5511650282057486,"lululemon athletica inc.'s total liabilities for the fiscal period ended 2026-02-01 was USD 3,494.903 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SEC-LULU-06,general,validation,Small Numerical,Unsupported,Uncertain,,0.943163801384027,0.056836198615972965,0.0,1.0,0.0,0.0,0.0,1.0,0.5863935470404208,"lululemon athletica inc.'s current liabilities for the fiscal period ended 2026-02-01 was USD 1,969.656 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SEC-LULU-07,general,validation,Flipped Sign,Unsupported,Uncertain,,0.9310540438020608,0.06894595619793915,0.0,1.0,0.0,0.0,0.0,0.0,0.5511650282057486,"lululemon athletica inc.'s total liabilities for the fiscal period ended 2026-02-01 was USD -3,494.903 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SEC-LULU-08,general,validation,Temporal,Unsupported,Uncertain,,0.9694210154271823,0.030578984572817748,1.0,1.0,0.0,0.0,0.0,1.0,0.5817430299838129,"lululemon athletica inc.'s current liabilities for the fiscal period ended 2025-02-02 was USD 1,887.548 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SEC-LULU-09,general,validation,Metric Confusion,Unsupported,Uncertain,,0.9714101543618534,0.028589845638146635,1.0,1.0,0.0,0.0,0.0,1.0,0.5410727999834088,"lululemon athletica inc.'s net cash from operating activities for the fiscal period ended 2026-02-01 was USD 1,887.548 million.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SEC-LULU-10,general,validation,Unit,Unsupported,Uncertain,,0.9330857597015173,0.0669142402984827,0.0,1.0,0.0,0.0,0.0,0.0,0.5323347883893814,"lululemon athletica inc.'s total liabilities for the fiscal period ended 2026-02-01 was USD 3,494.903 billion.","lululemon athletica inc. Form 10-K (accession 0001397187-26-000020), selected XBRL financial data:
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2026-02-01: USD 11,102.6 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2025-02-02: USD 10,588.126 million.
+Revenue from Contract with Customer, Excluding Assessed Tax for the fiscal year ended 2024-01-28: USD 9,619.278 million.
+Cost of Goods and Services Sold for the fiscal year ended 2026-02-01: USD 4,818.468 million.
+Cost of Goods and Services Sold for the fiscal year ended 2025-02-02: USD 4,317.315 million.
+Cost of Goods and Services Sold for the fiscal year ended 2024-01-28: USD 4,009.873 million.
+Gross Profit for the fiscal year ended 2026-02-01: USD 6,284.132 million.
+Gross Profit for the fiscal year ended 2025-02-02: USD 6,270.811 million.
+Gross Profit for the fiscal year ended 2024-01-28: USD 5,609.405 million.
+Operating Income (Loss) for the fiscal year ended 2026-02-01: USD 2,210.615 million.
+Operating Income (Loss) for the fiscal year ended 2025-02-02: USD 2,505.697 million.
+Operating Income (Loss) for the fiscal year ended 2024-01-28: USD 2,132.676 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2026-02-01: USD 1,579.183 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2025-02-02: USD 1,814.616 million.
+Net Income (Loss) Attributable to Parent for the fiscal year ended 2024-01-28: USD 1,550.19 million.
+Assets as of 2026-02-01: USD 8,456.743 million.
+Assets as of 2025-02-02: USD 7,603.292 million.
+Assets, Current as of 2026-02-01: USD 4,262.701 million.
+Assets, Current as of 2025-02-02: USD 3,980.302 million.
+Liabilities as of 2026-02-01: USD 3,494.903 million.
+Liabilities as of 2025-02-02: USD 3,279.245 million.
+Liabilities, Current as of 2026-02-01: USD 1,887.548 million.
+Liabilities, Current as of 2025-02-02: USD 1,839.63 million.
+Stockholders' Equity Attributable to Parent as of 2026-02-01: USD 4,961.84 million.
+Stockholders' Equity Attributable to Parent as of 2025-02-02: USD 4,324.047 million.
+Stockholders' Equity Attributable to Parent as of 2024-01-28: USD 4,232.081 million.
+Stockholders' Equity Attributable to Parent as of 2023-01-29: USD 3,148.799 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2026-02-01: USD 1,602.477 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2025-02-02: USD 2,272.713 million.
+Net Cash Provided by (Used in) Operating Activities for the fiscal year ended 2024-01-28: USD 2,296.164 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2026-02-01: USD -662.118 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2025-02-02: USD -798.174 million.
+Net Cash Provided by (Used in) Investing Activities for the fiscal year ended 2024-01-28: USD -654.132 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2026-02-01: USD -1,208.656 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2025-02-02: USD -1,652.508 million.
+Net Cash Provided by (Used in) Financing Activities for the fiscal year ended 2024-01-28: USD -548.828 million."
+SB-PH-01,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.9584669268877207,0.04153307311227931,1.0,1.0,0.0,0.0,0.0,0.0,0.611921903614463,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2024-06-30 represented the company's entire revenue of USD 5,472,460,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000.
+Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000."
+SB-PH-02,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.9584590597052159,0.04154094029478409,1.0,1.0,0.0,0.0,0.0,0.0,0.6120378566410745,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember revenue for the fiscal period ended 2024-06-30 represented the company's entire revenue of USD 14,457,146,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000.
+Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000."
+SB-PH-03,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.9548625498064269,0.045137450193573105,1.0,1.0,0.0,0.0,0.0,0.0,0.6629656053765941,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2025-06-30 represented the company's entire revenue of USD 6,185,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000.
+Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000."
+SB-PH-04,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.9548706364948877,0.04512936350511236,1.0,1.0,0.0,0.0,0.0,0.0,0.6628555013237181,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember revenue for the fiscal period ended 2025-06-30 represented the company's entire revenue of USD 13,665,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000.
+Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000."
+SB-PH-05,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.95697702048686,0.04302297951314008,1.0,1.0,0.0,0.0,0.0,0.0,0.6335153167183365,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember revenue for the fiscal period ended 2026-06-30 represented the company's entire revenue of USD 7,061,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-26-000105), revenue by segment for the fiscal year ended 2026-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 7,061,000,000.
+Total revenues for the fiscal year ended 2026-06-30: USD 21,499,000,000."
+SB-PH-S01,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9614024042383509,0.03859759576164911,1.0,1.0,1.0,0.0,0.0,0.0,0.704923884510785,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember segment revenue for the fiscal period ended 2024-06-30 was USD 5,472,460,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000.
+Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000."
+SB-PH-S02,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9614336504929768,0.03856634950702319,1.0,1.0,1.0,0.0,0.0,0.0,0.7044296026090224,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember segment revenue for the fiscal period ended 2024-06-30 was USD 14,457,146,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-24-000044), revenue by segment for the fiscal year ended 2024-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 5,472,460,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2024-06-30: USD 14,457,146,000.
+Total revenues for the fiscal year ended 2024-06-30: USD 19,930,000,000."
+SB-PH-S03,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9585329065453588,0.04146709345464119,1.0,1.0,1.0,0.0,0.0,0.0,0.7487557828330828,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember segment revenue for the fiscal period ended 2025-06-30 was USD 6,185,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000.
+Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000."
+SB-PH-S04,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9587437873895053,0.041256212610494704,1.0,1.0,1.0,0.0,0.0,0.0,0.7456350344278888,"Parker-Hannifin Corp's DiversifiedIndustrialSegmentMember segment revenue for the fiscal period ended 2025-06-30 was USD 13,665,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-25-000035), revenue by segment for the fiscal year ended 2025-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 6,185,000,000.
+DiversifiedIndustrialSegmentMember segment revenue for the fiscal year ended 2025-06-30: USD 13,665,000,000.
+Total revenues for the fiscal year ended 2025-06-30: USD 19,850,000,000."
+SB-PH-S05,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9605048472689043,0.039495152731095766,1.0,1.0,1.0,0.0,0.0,0.0,0.7189607671488619,"Parker-Hannifin Corp's AerospaceSystemsSegmentMember segment revenue for the fiscal period ended 2026-06-30 was USD 7,061,000,000.","Parker-Hannifin Corp Form 10-K (accession 0000076334-26-000105), revenue by segment for the fiscal year ended 2026-06-30:
+AerospaceSystemsSegmentMember segment revenue for the fiscal year ended 2026-06-30: USD 7,061,000,000.
+Total revenues for the fiscal year ended 2026-06-30: USD 21,499,000,000."
+SB-SO-01,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.9541613423007063,0.04583865769929371,1.0,1.0,0.0,0.0,0.0,0.0,0.6724421377183336,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 19,998,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000."
+SB-SO-02,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.954132193011302,0.04586780698869798,1.0,1.0,0.0,0.0,0.0,0.0,0.6728330832514025,"SOUTHERN CO's SouthernCompanyGasMember revenue for the fiscal period ended 2023-12-31 represented the company's entire revenue of USD 4,702,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000."
+SB-SO-03,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.9544656141929498,0.04553438580705014,1.0,1.0,0.0,0.0,0.0,0.0,0.6683471026698682,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 21,603,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000."
+SB-SO-04,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.954452857984754,0.045547142015245956,1.0,1.0,0.0,0.0,0.0,0.0,0.6685193043220152,"SOUTHERN CO's SouthernCompanyGasMember revenue for the fiscal period ended 2024-12-31 represented the company's entire revenue of USD 4,456,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000."
+SB-SO-05,storyboard_b,validation,Segment vs Total Revenue,Unsupported,Uncertain,,0.9561645396391424,0.04383546036085758,1.0,1.0,0.0,0.0,0.0,0.0,0.6449915540184001,"SOUTHERN CO's ElectricUtilitiesMember revenue for the fiscal period ended 2025-12-31 represented the company's entire revenue of USD 23,777,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-26-000006), revenue by segment for the fiscal year ended 2025-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2025-12-31: USD 23,777,000,000.
+Total revenues for the fiscal year ended 2025-12-31: USD 28,942,000,000."
+SB-SO-S01,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9575079213714814,0.04249207862851858,1.0,1.0,1.0,0.0,0.0,0.0,0.763711207511483,"SOUTHERN CO's ElectricUtilitiesMember segment revenue for the fiscal period ended 2023-12-31 was USD 19,998,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000."
+SB-SO-S02,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9573240035088202,0.04267599649117981,1.0,1.0,1.0,0.0,0.0,0.0,0.7663581863300647,"SOUTHERN CO's SouthernCompanyGasMember segment revenue for the fiscal period ended 2023-12-31 was USD 4,702,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-24-000009), revenue by segment for the fiscal year ended 2023-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2023-12-31: USD 19,998,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2023-12-31: USD 4,702,000,000.
+Total revenues for the fiscal year ended 2023-12-31: USD 24,828,000,000."
+SB-SO-S03,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9582740185853807,0.04172598141461922,1.0,1.0,1.0,0.0,0.0,0.0,0.7525662748026022,"SOUTHERN CO's ElectricUtilitiesMember segment revenue for the fiscal period ended 2024-12-31 was USD 21,603,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000."
+SB-SO-S04,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9581176037795442,0.041882396220455705,1.0,1.0,1.0,0.0,0.0,0.0,0.7548575522757148,"SOUTHERN CO's SouthernCompanyGasMember segment revenue for the fiscal period ended 2024-12-31 was USD 4,456,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-25-000018), revenue by segment for the fiscal year ended 2024-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2024-12-31: USD 21,603,000,000.
+SouthernCompanyGasMember segment revenue for the fiscal year ended 2024-12-31: USD 4,456,000,000.
+Total revenues for the fiscal year ended 2024-12-31: USD 26,764,000,000."
+SB-SO-S05,storyboard_b,validation,Supported Segment Revenue,Supported,Uncertain,,0.9597721360166297,0.04022786398337028,1.0,1.0,1.0,0.0,0.0,0.0,0.7301946632392156,"SOUTHERN CO's ElectricUtilitiesMember segment revenue for the fiscal period ended 2025-12-31 was USD 23,777,000,000.","SOUTHERN CO Form 10-K (accession 0000092122-26-000006), revenue by segment for the fiscal year ended 2025-12-31:
+ElectricUtilitiesMember segment revenue for the fiscal year ended 2025-12-31: USD 23,777,000,000.
+Total revenues for the fiscal year ended 2025-12-31: USD 28,942,000,000."
