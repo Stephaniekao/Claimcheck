@@ -23,7 +23,7 @@ We ran the final test once. The model, thresholds, and answer rule were all chos
 | ECE | 0.003 | 0.459 |
 | Storyboard B strict recall | N/A | 0.000 |
 
-The model does not meet the Field 10 targets. On RAGBench, it ranks claims only a little better than random, and it labels no claim as Unsupported. On Inserted Error Set v2, it ranks claims well, but the thresholds from RAGBench put every claim in the Uncertain range. The three seeds give the same model, so the spread across seeds is 0. The details are in the Final Test Results section.
+The model does not meet the Field 10 targets. On RAGBench, it ranks claims only a little better than random. It labels only 5 test claims as Unsupported, and all 5 are correct claims. On Inserted Error Set v2, it ranks claims well, but the thresholds from RAGBench put every claim in the Uncertain range. The three seeds give the same model, so the spread across seeds is 0. The details are in the Final Test Results section.
 
 ## Quick Start
 
@@ -46,7 +46,7 @@ All results are already saved in this folder.
 Before the first run:
 
 1. Make sure the `Baseline/` folder is in the repository. The model uses the shared normalizer and passages from it.
-2. Create the RAGBench files with `python fetch_ragbench.py` from the main folder of the repository.
+2. Create the RAGBench files with `python Baseline/fetch_ragbench.py` from the main folder of the repository.
 3. Install the packages from the `Classical/` folder:
 
 ```bash
@@ -83,7 +83,7 @@ See step 8 in How to Run. It shows how to label new claim and evidence pairs wit
 
 ## Data
 
-We use RAGBench FinQA and TATQA for training, validation, and testing. The data is stored in `Data/RAGBench`, and we keep the original train, validation, and test splits to avoid data leakage. The RAGBench CSV and parquet files are not stored in git. Create them with `python fetch_ragbench.py` from the main folder of the repository, or by running the first two code cells of `Data/data_download_v2.ipynb`.
+We use RAGBench FinQA and TATQA for training, validation, and testing. The data is stored in `Data/RAGBench`, and we keep the original train, validation, and test splits to avoid data leakage. The RAGBench CSV and parquet files are not stored in git. Create them with `python Baseline/fetch_ragbench.py` from the main folder of the repository, or by running the first two code cells of `Data/data_download_v2.ipynb`.
 
 The original RAGBench data is at the answer level. Our data loader converts each answer into individual claims and assigns labels based on the original annotations. The annotation fields are used for labels only, not as model inputs.
 
@@ -402,7 +402,7 @@ This model does not reach the target AUROC of 0.75 on RAGBench.
 
 We ran the tuning with seeds 42, 43, and 44 (Field 5). All three seeds chose the same best configuration: n-gram range (1,3), vocabulary size 10,000, and C = 10. So every validation metric is the same for the three seeds, and the standard deviation is 0. Logistic Regression always gives the same result for the same data and settings. The 18 trials of each seed also show that the model is not sensitive to the settings: the ROC-AUC of all trials is between 0.6207 and 0.6288.
 
-The training time of the best trial is 455 seconds on average (standard deviation 10 seconds), or about 0.13 CPU hours. It does not need a GPU.
+The training time of the best trial is 455 seconds on average over the three seeds (standard deviation 10 seconds). For seed 42, the main model, it is 446 seconds, or about 0.12 CPU hours. It does not need a GPU.
 
 ### Inserted Error Set v2
 
@@ -443,15 +443,16 @@ We ran `final_test.py` once. Nothing was chosen on test. The model, the threshol
 | Answer AUROC (TATQA) | 0.5724 | 0.5745 |
 | ROC-AUC (claims) | 0.6171 | 0.6277 |
 | Strict Recall | 0.0000 | 0.0072 |
+| Unsupported Precision | 0.0000 (5 claims labeled Unsupported, all 5 are really Supported) | 0.6667 (3 claims labeled Unsupported, 2 are really Unsupported) |
 | Lenient Recall | 0.5041 | 0.5181 |
 | Uncertain Rate | 0.3327 | 0.3333 |
 | ECE | 0.0032 | 0.0052 |
 
 The test results are a little lower than the validation results. The difference is about 0.02, which is close to noise.
 
-The strict recall is 0 on test. On validation, the lower threshold was set by only 3 claims, so it is very low. On test, no claim has a score below it. This matches the validation result: the model does not really label claims as Unsupported.
+The strict recall is 0 on test. On validation, the lower threshold was set by only 3 claims, so it is very low. On test, only 5 claims have a score below it (3 in FinQA and 2 in TATQA), and all 5 are correct claims. So the strict recall and the precision on RAGBench test are both 0. This matches the validation result: the model does not really label claims as Unsupported.
 
-The Uncertain rate and the lenient recall are almost the same as on validation. So the rule that fills the Uncertain label up to one third works in the same way on test. About half of the incorrect claims are sent to the analyst to check.
+The Uncertain rate and the lenient recall are almost the same as on validation. The Uncertain rate is 0.309 on FinQA and 0.357 on TATQA, so it is one third only for the two subsets together. So the rule that fills the Uncertain label up to one third works in the same way on test. About half of the incorrect claims are sent to the analyst to check.
 
 The answer AUROC for both subsets together (0.5816) is higher than the answer AUROC of each subset (0.5678 and 0.5724). This is not an error. FinQA and TATQA have different rates of Unsupported answers and different score ranges, so when we put them together, part of the ranking comes from the difference between the two subsets.
 
@@ -487,7 +488,7 @@ The Classical model does not meet the Field 10 targets. As Field 10 and Field 11
 |---|---|---|---|---|---|---|---|
 | TF-IDF + Logistic Regression | 0.00 / N/A / N/A / 0.58 | 0.00 | AUROC ± 0.000 | 0.003 (RAGBench) / 0.459 (Inserted) | 0 GPU (0.12 CPU hours) | 2.7 | 7 standardized coefficients |
 
-Strict recall, precision, and F1 come from the Inserted Error Set v2 test split. AUROC is the answer AUROC on the RAGBench test splits. Precision and F1 are N/A because the model labels no claim as Unsupported. The inference latency includes building the features, on a laptop CPU.
+Strict recall, precision, and F1 come from the Inserted Error Set v2 test split. AUROC is the answer AUROC on the RAGBench test splits. Precision and F1 are N/A on Inserted Error Set v2 because the model labels no claim there as Unsupported. The inference latency includes building the features, on a laptop CPU.
 
 The test results, the lock file, the reliability diagrams, and the error samples are in `outputs/final_test/`.
 
