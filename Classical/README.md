@@ -8,7 +8,7 @@ The model is trained with two labels, Supported and Unsupported. We use threshol
 
 The model uses some shared parts from the `Baseline/` folder: the number normalizer, the passages for Inserted Error Set v2, and the code for precision at recall 0.80. The Experiment Card says all methods should use the same inputs (Field 12). If one of these shared parts changes, our results also change, so we save their versions with every run.
 
-All results in this README are validation results. The test splits have not been used yet.
+We ran the final test once, with the model, thresholds, and answer rule chosen on validation. The test results are in the Final Test Results section. The other results in this README are validation results.
 
 ## Data
 
@@ -99,7 +99,7 @@ The current pipeline follows these steps:
 5. **Tuning:** Run 18 random trials over n-gram range, vocabulary size, and regularization strength C. We also compare 2 answer rules, so there are 20 trials in total. Trials are scored on the validation splits only.
 6. **Validation:** Evaluate the best model on the original validation splits without fitting TF-IDF again. Calculate ECE and select two thresholds on validation data.
 7. **Inserted Error Set v2:** Use the saved model and thresholds on the train and validation splits.
-8. **Final Evaluation:** Test the selected model once on the RAGBench test splits and the Inserted Error Set v2 test split with `final_test.py`. This is not done yet.
+8. **Final Evaluation:** Test the selected model once on the RAGBench test splits and the Inserted Error Set v2 test split with `final_test.py`. This is done, and the lock file stops a second test run.
 
 ### Feature Matrix
 
@@ -314,7 +314,7 @@ The best trial uses n-gram range (1,3), vocabulary size 10,000, and C = 10.
 
 The `mean` rule was chosen on validation. Its answer AUROC is 0.6031, and the `min` rule gives 0.5713. The baseline uses the lowest claim label, so the two methods use different answer rules. The answer AUROC in `tuning_trials_full.csv` uses the `min` rule, so it cannot be compared directly with 0.6031.
 
-For 97 validation answers, `adherence_score` and "any claim is Unsupported" give different labels. This means the two labels are not the same. We use `adherence_score`, like the baseline.
+For 97 validation answers, `adherence_score` and "any claim is Unsupported" give different labels. The difference is only in one direction. Every answer with an unsupported sentence also has `adherence_score` = False. But 97 answers have `adherence_score` = False and no unsupported sentence. So `adherence_score` marks 250 answers as Unsupported, and "any claim" marks 153. With the `mean` rule, the answer AUROC is 0.6031 with `adherence_score` and 0.5734 with "any claim". We use `adherence_score` because the baseline uses it, so the two methods can be compared.
 
 The model labels only 3 validation claims as Unsupported, and 2 of them are correct. The precision condition is met, but the strict recall is close to 0. This means the model does not really find incorrect claims. Because the upper threshold now fills the Uncertain label up to one third, the lenient recall went up from 0.0072 to 0.5181. About half of the incorrect claims are sent to the analyst to check. The precision at recall 0.80 is close to the base rate of 0.013, so the model ranks claims only a little better than random.
 
@@ -335,6 +335,12 @@ Coefficients of the best model (standardized features, predicting Unsupported):
 The coefficient of `numerical_consistency` is larger than before (it was -0.2016 with our own parser), so the shared normalizer helps a little. The coefficient of `scope_consistency` is still close to 0. RAGBench has no scope signal, so the model does not learn to use the scope feature. The coefficient of `cosine_similarity` is still positive, which matches the single-feature result below.
 
 This model does not reach the target AUROC of 0.75 on RAGBench.
+
+### Three Seeds
+
+We ran the tuning with seeds 42, 43, and 44 (Field 5). All three seeds chose the same best configuration: n-gram range (1,3), vocabulary size 10,000, and C = 10. So every validation metric is the same for the three seeds, and the standard deviation is 0. Logistic Regression always gives the same result for the same data and settings. The 18 trials of each seed also show that the model is not sensitive to the settings: the ROC-AUC of all trials is between 0.6207 and 0.6288.
+
+The training time of the best trial is 455 seconds on average (standard deviation 10 seconds), or about 0.13 CPU hours. It does not need a GPU.
 
 ### Inserted Error Set v2
 
@@ -361,6 +367,67 @@ The calibration is not good. All scores are in a range of only 0.045. The model 
 Field 8 and Field 12 of the Experiment Card talk about this problem. When the tool that writes the answers changes, the calibration and the thresholds may not work anymore.
 
 With the current rule, the model does not meet any Field 10 target on Inserted Error Set v2.
+
+## Final Test Results
+
+We ran `final_test.py` once. Nothing was chosen on test. The model, the thresholds, and the answer rule (`mean`) all came from validation. The three seeds give the same results, so the spread across seeds is 0.
+
+### RAGBench Test
+
+| Result | Test | Validation |
+|---|---:|---:|
+| Answer AUROC | 0.5816 | 0.6031 |
+| Answer AUROC (FinQA) | 0.5678 | 0.6078 |
+| Answer AUROC (TATQA) | 0.5724 | 0.5745 |
+| ROC-AUC (claims) | 0.6171 | 0.6277 |
+| Strict Recall | 0.0000 | 0.0072 |
+| Lenient Recall | 0.5041 | 0.5181 |
+| Uncertain Rate | 0.3327 | 0.3333 |
+| ECE | 0.0032 | 0.0052 |
+
+The test results are a little lower than the validation results. The difference is about 0.02, which is close to noise.
+
+The strict recall is 0 on test. On validation, the lower threshold was set by only 3 claims, so it is very low. On test, no claim has a score below it. This matches the validation result: the model does not really label claims as Unsupported.
+
+The Uncertain rate and the lenient recall are almost the same as on validation. So the rule that fills the Uncertain label up to one third works in the same way on test. About half of the incorrect claims are sent to the analyst to check.
+
+The answer AUROC for both subsets together (0.5816) is higher than the answer AUROC of each subset (0.5678 and 0.5724). This is not an error. FinQA and TATQA have different rates of Unsupported answers and different score ranges, so when we put them together, part of the ranking comes from the difference between the two subsets.
+
+### Inserted Error Set v2 Test
+
+| Result | Test (80) |
+|---|---:|
+| Strict recall | 0.000 |
+| Lenient recall | 1.000 |
+| Uncertain rate | 1.000 |
+| AUROC | 0.866 |
+| ECE | 0.459 |
+| Storyboard B strict recall | 0.000 |
+
+Every claim is labeled Uncertain, the same as on validation. The scores are inside the Uncertain range of the RAGBench thresholds. The AUROC is 0.866, which is even higher than on validation (0.814), so the model still ranks these claims well. But the calibration is not good (ECE 0.459), because the model gives every claim about a 95% chance of being correct.
+
+### Field 10
+
+| Target | Result |
+|---|---|
+| Strict recall at least 0.80 on Inserted Error Set v2 | Not met (0.000) |
+| Precision at least 0.60 on Inserted Error Set v2 | Not met (no claim labeled Unsupported) |
+| Strict recall at least 0.80 on the Storyboard B slice | Not met (0.000) |
+| Answer AUROC at least 0.75 on RAGBench | Not met (0.5816) |
+| ECE at most 0.10 on RAGBench | Met (0.0032) |
+| ECE at most 0.10 on Inserted Error Set v2 | Not met (0.459) |
+
+The Classical model does not meet the Field 10 targets. As Field 10 and Field 11 say, we report this in the comparison table. The fallback in Field 11 is used only if no method meets the targets.
+
+### Comparison Table Row
+
+| Model | Overall (strict recall / precision / F1 / AUROC) | Storyboard B slice (strict recall) | Spread across 3 seeds (± std) | Calibration (ECE) | Training cost (GPU hours) | Inference latency (ms per claim) | Inspectability |
+|---|---|---|---|---|---|---|---|
+| TF-IDF + Logistic Regression | 0.00 / N/A / N/A / 0.58 | 0.00 | AUROC ± 0.000 | 0.003 (RAGBench) / 0.459 (Inserted) | 0 GPU (0.12 CPU hours) | 2.7 | 7 standardized coefficients |
+
+Strict recall, precision, and F1 come from the Inserted Error Set v2 test split. AUROC is the answer AUROC on the RAGBench test splits. Precision and F1 are N/A because the model labels no claim as Unsupported. The inference latency includes building the features, on a laptop CPU.
+
+The test results, the lock file, the reliability diagrams, and the error samples are in `outputs/final_test/`.
 
 ## Earlier Experiments
 
@@ -496,9 +563,9 @@ Before we had the shared passages, we tested the numeric features on claims that
 
 ## Current Status and Next Steps
 
-We have completed data loading, preprocessing, feature engineering with the shared normalizer, training, tuning, validation metrics, calibration (ECE), threshold selection, the Inserted Error Set v2 test on train and validation, error analysis export, prediction for new claims with the saved thresholds, and a saved run record with checksums and versions.
+We have completed data loading, preprocessing, feature engineering with the shared normalizer, training, tuning with three seeds, validation metrics, calibration (ECE), threshold selection, the Inserted Error Set v2 test on train and validation, the final test, prediction for new claims with the saved thresholds, and a saved run record with checksums and versions.
 
-The model reaches an answer-level AUROC of 0.6031 on RAGBench validation. This is below the target of 0.75. On Inserted Error Set v2 validation, the model ranks claims much better (AUROC 0.814), but the RAGBench thresholds label every claim as Uncertain. These are validation results only. If the final results do not reach the targets, we will report this as described in Field 10 and Field 11 of the Experiment Card.
+The model reaches an answer AUROC of 0.5816 on the RAGBench test splits, which is below the target of 0.75. On the Inserted Error Set v2 test split, the model ranks claims well (AUROC 0.866), but the RAGBench thresholds label every claim as Uncertain. The model does not meet the Field 10 targets, and we report this as Field 10 and Field 11 say.
 
 Our targets from the Experiment Card are at least 0.80 strict recall and at least 0.60 precision for Unsupported claims on Inserted Error Set v2, and at least 0.75 AUROC on the RAGBench test splits. The model must also reach at least 0.80 strict recall on the Storyboard B slice.
 
@@ -512,9 +579,5 @@ Our targets from the Experiment Card are at least 0.80 strict recall and at leas
 
 ### Next Steps
 
-1. Commit and push the current code.
-2. Run `bash run_all.sh` again after the commit, so the results match a clean commit.
-3. Run `bash run_seeds.sh` to get the spread across three seeds (Field 5).
-4. Run `final_test.py --confirm` only once. It tests the RAGBench test splits and the Inserted Error Set v2 test split.
-5. Do the error analysis with the test results, because Field 9 says it comes after the final test run. The samples are in `outputs/final_test/error_analysis/`.
-6. Add our row to the comparison table and update this README with the test results.
+1. Do the error analysis with the test results, because Field 9 says it comes after the final test run. The samples are in `outputs/final_test/error_analysis/`. Each file has empty columns for the two reviewers.
+2. Add our row to the team comparison table.
