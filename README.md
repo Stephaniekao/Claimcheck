@@ -19,7 +19,7 @@ All four methods label the same claims, with the same passages and the same numb
 | Row | Method | Owner | Status |
 |---|---|---|---|
 | Baseline | Rule-based number normalization + keyword matching, plus a rule-based support score | Sharon | Done; test results, support score and error analysis in [Baseline/](Baseline/) |
-| Classical | TF-IDF + logistic regression | Stephanie | Planned |
+| Classical | TF-IDF + logistic regression | Stephanie | Done; test results, three seeds and README in [Classical/](Classical/) |
 | Deep | DeBERTa-v3-large (NLI checkpoint), fine-tuned on RAGBench FinQA/TAT-QA | Chengyuan | Planned |
 | Foundation | LLM judge (Claude; GPT and Gemini if time allows) | Stephanie | Planned |
 
@@ -58,6 +58,7 @@ Data/
   Inserted Error Set/                     400 claims, locked company split, SEC source snapshots, SHA256 manifest
   RAGBench/                               created by the download step (git-ignored, ~560 MB)
 Baseline/                                 rule-based baseline: code, tests, outputs
+Classical/                                TF-IDF + logistic regression: code, tests, outputs
 ```
 
 ## Getting started
@@ -95,6 +96,16 @@ python3 Baseline/error_analysis.py
 python3 -m unittest discover Baseline/tests
 ```
 
+To run the Classical model (TF-IDF + logistic regression), see the Quick Start in [Classical/README.md](Classical/README.md). In short, from the `Classical/` folder:
+
+```bash
+pip install -r requirements.txt
+bash run_all.sh
+bash run_seeds.sh
+```
+
+Its final test was also run once, and `Classical/outputs/final_test/final_test_lock.json` stops it from running again.
+
 Don't run `--final-test` yourself: each test split is used once, and `run_ragbench.py --final-test` refuses to run again. Train/validation runs rewrite the train/validation files in `Baseline/outputs/` but keep the logged test results. Every results JSON records the commit, the dataset version and the hardware that produced it.
 
 On macOS with the python.org build of Python, `urllib` downloads in the notebook can fail with `CERTIFICATE_VERIFY_FAILED`. Run *Install Certificates.command* in your Python folder, or use `fetch_ragbench.py`, which downloads with `curl`.
@@ -105,7 +116,7 @@ On macOS with the python.org build of Python, `urllib` downloads in the notebook
 |---|---|---|---|---|---|---|---|---|---|
 | Rule-based baseline (Inserted v2: rules 1.3.0; RAGBench: rules 1.2.0) | 1.00 / 1.00 / 1.00 | 1.00 | 0.18 / 0.05 / 0.08 · 0.05 / 0.02 / 0.03 | 0.57 · 0.46 (support score 1.0.0, added after the test run) | N/A (deterministic) | N/A (score not calibrated) | none | ~1 ms/claim (CPU) | Each label comes from a named rule and the passage line it used |
 | *Label everything Unsupported* | *1.00 / 0.50 / 0.67* | *1.00* | *1.00 / 0.02 / 0.03 · 1.00 / 0.01 / 0.02* | | | | | | |
-| TF-IDF + LR | | | | | | | | | |
+| TF-IDF + LR (seed 42; seeds 43 and 44 give the same model) | 0.00 / N/A / N/A | 0.00 | 0.00 / 0.00 / 0.00 · 0.00 / 0.00 / 0.00 | 0.64 · 0.59 (claim level) | 3 seeds, std 0.000 | 0.003 (RAGBench) · 0.459 (Inserted) | ~0.12 CPU hours, no GPU | ~2.7 ms/claim (CPU, with features) | 7 standardized coefficients |
 | DeBERTa-v3-large | | | | | | | | | |
 | LLM judge | | | | | | | | | |
 
@@ -114,8 +125,10 @@ On macOS with the python.org build of Python, `urllib` downloads in the notebook
 - **v2 claims contain two wording giveaways** ("billion" marks every Unit error; odd decimals mark Small Numerical errors). Trained methods should be checked with a claim-only model; see [Data/README.md](Data/README.md).
 - **The baseline's support score is near chance on RAGBench** (AUROC 0.57 FinQA, 0.46 TAT-QA), so the 0.75 target is a real step up from number and keyword matching.
 - **The baseline labels 73% of RAGBench claims Uncertain,** over the ⅓ cap, because most RAGBench sentences are calculations or contain no number.
+- **The Classical model ranks Inserted Error Set v2 claims well (AUROC 0.87 on test), but labels all of them Uncertain.** Its thresholds were chosen on RAGBench, and its scores on the Inserted Error Set are in a different range, so every claim falls between the two thresholds. Methods that choose thresholds on RAGBench should check this.
+- **`adherence_score` and "any claim is Unsupported" are different answer labels.** 97 RAGBench validation answers have `adherence_score` = False but no unsupported sentence. All methods should use `adherence_score` for answer level results.
 
-Details, error analysis and limitations: [Baseline/README.md](Baseline/README.md).
+Details, error analysis and limitations: [Baseline/README.md](Baseline/README.md) and [Classical/README.md](Classical/README.md).
 
 ## Ethics and scope
 
