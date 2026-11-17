@@ -9,7 +9,8 @@ import numpy as np
 import pandas as pd
 
 from claimcheck_classical.model_io import load_model
-from claimcheck_classical.preprocessing import preprocess_claims
+from claimcheck_classical.preprocessing import normalize_text, preprocess_claims
+from claimcheck_classical.shared import normalizer_cannot_read
 from claimcheck_classical.features.evidence_features import (
     build_full_feature_matrix,
     with_claim_text,
@@ -18,6 +19,7 @@ from claimcheck_classical.features.evidence_features import (
 
 
 NO_PASSAGE_REASON = "no cited passage"
+UNREADABLE_NUMBER_REASON = "normalizer could not read a number"
 NO_THRESHOLD_REASON = "no feasible thresholds"
 
 
@@ -230,6 +232,12 @@ def predict_claims(
         p_supported[has_passage] = 1.0 - scored_unsupported
         features.loc[has_passage, :] = X.to_numpy()
 
+    # Claims with a number the normalizer cannot read.
+    unreadable = np.array([
+        normalizer_cannot_read(normalize_text(text))
+        for text in claim_text.tolist()
+    ])
+
     predicted_labels = []
     reasons = []
 
@@ -239,6 +247,12 @@ def predict_claims(
         if not has_passage[index]:
             predicted_labels.append("Uncertain")
             reasons.append(NO_PASSAGE_REASON)
+
+        # Number the normalizer cannot read: do not guess
+        # (Experiment Card, Field 12).
+        elif unreadable[index]:
+            predicted_labels.append("Uncertain")
+            reasons.append(UNREADABLE_NUMBER_REASON)
 
         # No feasible thresholds: every claim is Uncertain.
         elif all_uncertain:

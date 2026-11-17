@@ -3,3 +3,7 @@ pandas
 scipy
 scikit-learn
 joblib
+# Reads adherence_score from the RAGBench parquet files (answer-level gold)
+pyarrow
+# Reliability diagrams in final_test.py
+matplotlib

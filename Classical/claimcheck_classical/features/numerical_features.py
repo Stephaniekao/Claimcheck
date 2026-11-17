@@ -2,9 +2,10 @@
 ClaimCheck Classical Model - Numerical Features
 
 Numerical feature extraction for:
-1. Financial number extraction
-2. Unit normalization
-3. Claim-evidence numerical consistency
+1. Financial number extraction (kept for the older tests and tools)
+2. Claim-evidence numerical consistency, using the team's shared
+   normalizer (Experiment Card, Field 12)
+3. Number details with text positions (kept for older tools)
 """
 
 import re
@@ -112,84 +113,61 @@ def extract_numbers(text: str) -> list[float]:
 
 
 # ============================================================
-# 2. NUMERICAL CONSISTENCY
+# 2. NUMERICAL CONSISTENCY (SHARED NORMALIZER)
 # ============================================================
+
+def evidence_lines(evidence: str) -> list[str]:
+    """Original evidence lines, without empty lines."""
+
+    return [
+        line.strip()
+        for line in str(evidence).split("\n")
+        if line.strip()
+    ]
+
 
 def compute_numerical_consistency(
     claim: str,
     evidence: str,
 ) -> float:
-    """Check numerical consistency while excluding reporting years."""
+    """Check claim amounts against the passage with the shared normalizer.
 
-    def financial_numbers(text: str) -> list[dict]:
-        """Extract numbers excluding identified reporting years."""
+    Experiment Card, Field 12: every method uses the team's number
+    normalizer (Baseline/claimcheck_baseline/normalize.py). Years and
+    dates are not amounts, units and scales are normalized, rounding
+    is allowed, and a minus sign must agree as in the baseline's
+    sign check.
 
-        numbers = extract_number_details(text)
-        periods = extract_reporting_periods(text)
+    The evidence should be the original passage with one sentence per
+    line, so the sign check reads each amount next to its own line.
 
-        # Collect reporting years identified by the period parser.
-        reporting_years = {
-            year
-            for year, quarter in periods
-            if year is not None
-        }
+    Returns:
+        NaN  when the claim has no amount,
+        1.0  when every claim amount appears in the passage,
+        0.0  otherwise.
+    """
 
-        filtered = []
+    from ..shared import amounts_match, normalize
 
-        for number in numbers:
-            # Exclude plain numbers that match reporting years.
-            if (
-                number["type"] == "number"
-                and number["value"] in reporting_years
-            ):
-                continue
+    claim_amounts = normalize.extract_quantities(claim)
 
-            filtered.append(number)
-
-        return filtered
-
-    # Extract financial numbers from claim and evidence.
-    claim_numbers = financial_numbers(claim)
-    evidence_numbers = financial_numbers(evidence)
-
-    # No financial numbers in the claim means unknown.
-    if not claim_numbers:
+    # No amount in the claim means unknown.
+    if not claim_amounts:
         return np.nan
 
-    # Track evidence numbers already used for matching.
-    used_evidence = set()
+    passage = [
+        (line, normalize.extract_quantities(line))
+        for line in evidence_lines(evidence)
+    ]
 
-    for claim_number in claim_numbers:
-        matched = False
+    for amount in claim_amounts:
+        found = any(
+            amounts_match(amount, claim, passage_amount, line)
+            for line, amounts in passage
+            for passage_amount in amounts
+        )
 
-        for index, evidence_number in enumerate(evidence_numbers):
-
-            if index in used_evidence:
-                continue
-
-            # Percentages must match percentages.
-            claim_is_percentage = (
-                claim_number["type"] == "percentage"
-            )
-            evidence_is_percentage = (
-                evidence_number["type"] == "percentage"
-            )
-
-            if claim_is_percentage != evidence_is_percentage:
-                continue
-
-            # Compare normalized numerical values.
-            if math.isclose(
-                claim_number["value"],
-                evidence_number["value"],
-                rel_tol=1e-9,
-                abs_tol=1e-9,
-            ):
-                used_evidence.add(index)
-                matched = True
-                break
-
-        if not matched:
+        if not found:
             return 0.0
 
     return 1.0

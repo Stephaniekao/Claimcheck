@@ -317,17 +317,20 @@ def build_static_features(df: pd.DataFrame) -> pd.DataFrame:
 
     # Calculate the three financial consistency scores.
     scores = {
+        # Numbers read the original evidence, one line at a time,
+        # with the team's shared normalizer.
         "numerical": [
             compute_numerical_consistency(claim, evidence)
-            for claim, evidence in zip(claims, clean_evidence)
+            for claim, evidence in zip(claims, raw_evidence)
         ],
         "period": [
             compute_period_consistency(claim, evidence)
             for claim, evidence in zip(claims, clean_evidence)
         ],
+        # Scope reads the original evidence, one line at a time.
         "scope": [
             compute_scope_consistency(claim, evidence)
-            for claim, evidence in zip(claims, clean_evidence)
+            for claim, evidence in zip(claims, raw_evidence)
         ],
     }
 
@@ -466,46 +469,123 @@ def with_claim_text(
 # 6. ANSWER-LEVEL SCORE AGGREGATION
 # ============================================================
 
+ANSWER_AGGREGATIONS = ("min", "mean")
+
+
 def aggregate_answer_scores(
     df: pd.DataFrame,
     p_supported,
     key_columns: tuple[str, ...] = ("subset", "answer_row"),
+    method: str = "min",
 ) -> pd.DataFrame:
     """Combine claim scores into one answer score.
 
-    The answer score uses the lowest claim support probability.
-    An answer is positive (1) when any of its claims is Unsupported.
+    method "min" uses the lowest claim support probability and
+    "mean" uses the average. The Experiment Card (Field 6) says the
+    rule is chosen on the validation split; see
+    select_answer_aggregation().
+
+    Gold: an answer is positive (1) when adherence_score is False,
+    the same gold the baseline uses. When the column is missing, the
+    old rule "any claim is Unsupported" is used. Both are returned,
+    so the two can be compared.
+
     A higher answer_score means the answer is more likely to
     contain an Unsupported claim.
     """
 
-    # Attach claim-level probabilities to the answer keys and labels.
-    table = (
-        df[list(key_columns) + ["label"]]
-        .reset_index(drop=True)
-        .copy()
-    )
+    if method not in ANSWER_AGGREGATIONS:
+        raise ValueError(
+            f"method must be one of {ANSWER_AGGREGATIONS}."
+        )
+
+    columns = list(key_columns) + ["label"]
+    has_adherence = "adherence_score" in df.columns
+
+    if has_adherence:
+        columns.append("adherence_score")
+
+    table = df[columns].reset_index(drop=True).copy()
 
     table["p_supported"] = np.asarray(
         p_supported,
         dtype=float,
     )
 
-    # Aggregate all claims belonging to the same answer.
     grouped = table.groupby(list(key_columns), sort=False)
 
     answers = grouped.agg(
-        min_p_supported=("p_supported", "min"),
-        y_true=(
+        agg_p_supported=("p_supported", method),
+        y_any_claim=(
             "label",
             lambda labels: int((labels == "Unsupported").any()),
         ),
     ).reset_index()
 
-    # Convert the lowest support probability to an Unsupported score.
-    answers["answer_score"] = 1.0 - answers["min_p_supported"]
+    if has_adherence:
+        adherence = grouped["adherence_score"].first().reset_index(drop=True)
+
+        if adherence.isna().any():
+            raise ValueError("adherence_score is missing for some answers.")
+
+        # The CSV may store booleans as text.
+        adherence = adherence.map(
+            lambda value: str(value).strip().lower() in ("true", "1", "1.0")
+        )
+
+        answers["y_adherence"] = (~adherence).astype(int).to_numpy()
+        answers["y_true"] = answers["y_adherence"]
+    else:
+        answers["y_true"] = answers["y_any_claim"]
+
+    answers["answer_score"] = 1.0 - answers["agg_p_supported"]
+
+    # Old column name, kept so existing callers still work.
+    if method == "min":
+        answers["min_p_supported"] = answers["agg_p_supported"]
 
     return answers
+
+
+def select_answer_aggregation(
+    validation_df: pd.DataFrame,
+    p_supported,
+    key_columns: tuple[str, ...] = ("subset", "answer_row"),
+) -> dict:
+    """Choose the answer aggregation rule on validation data only.
+
+    Returns the AUROC of each rule, the chosen rule, and how many
+    answers have a different gold label under adherence_score and
+    under "any claim is Unsupported".
+    """
+
+    from sklearn.metrics import roc_auc_score
+
+    scores = {}
+    disagreements = None
+
+    for method in ANSWER_AGGREGATIONS:
+        answers = aggregate_answer_scores(
+            validation_df, p_supported, key_columns, method=method
+        )
+        scores[method] = float(
+            roc_auc_score(answers["y_true"], answers["answer_score"])
+        )
+
+        if "y_adherence" in answers.columns:
+            disagreements = int(
+                (answers["y_adherence"] != answers["y_any_claim"]).sum()
+            )
+
+    # Ties go to "min", the rule named in the Experiment Card.
+    chosen = max(ANSWER_AGGREGATIONS, key=lambda m: (scores[m], m == "min"))
+
+    return {
+        "chosen_method": chosen,
+        "validation_answer_auroc": scores,
+        "gold": "adherence_score" if disagreements is not None else "any_claim",
+        "gold_disagreements": disagreements,
+    }
 
 
 # ============================================================

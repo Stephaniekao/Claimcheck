@@ -1,0 +1,132 @@
+{
+  "experiment": "full_seed44_best",
+  "random_seed": 44,
+  "best_config": {
+    "ngram_range": [
+      1,
+      3
+    ],
+    "max_features": 10000,
+    "C": 10.0
+  },
+  "validation_claims": 21543,
+  "binary_metrics": {
+    "n": 21543,
+    "supported_gold": 21267,
+    "unsupported_gold": 276,
+    "threshold": 0.5,
+    "accuracy": 0.9871884138699345,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tn": 21267,
+    "fp": 0,
+    "fn": 276,
+    "tp": 0,
+    "roc_auc": 0.6276641943052549,
+    "pr_auc": 0.029018578358747743
+  },
+  "binary_threshold": {
+    "threshold": 0.012416237135599141,
+    "precision": 0.015191770556577423,
+    "recall": 0.8079710144927537,
+    "f1": 0.029822801738548982,
+    "target_recall": 0.8
+  },
+  "calibration": {
+    "brier_score": 0.012635974552090019,
+    "ece": 0.005164203286154454,
+    "n_bins": 10
+  },
+  "precision_at_recall_0.80": {
+    "precision": 0.015191770556577423,
+    "recall": 0.8079710144927537,
+    "risk_threshold": 0.012416237135599141
+  },
+  "answer_aggregation": {
+    "chosen_method": "mean",
+    "validation_answer_auroc": {
+      "min": 0.5712831821929102,
+      "mean": 0.603143858202803
+    },
+    "gold": "adherence_score",
+    "gold_disagreements": 97
+  },
+  "answer_level_auroc": {
+    "method": "mean",
+    "overall": 0.603143858202803,
+    "answers": 5102,
+    "unsupported_answers": 250,
+    "FinQA": 0.6078163581392355,
+    "TATQA": 0.5744743499458954
+  },
+  "forced_uncertain": {
+    "normalizer_failures": 968,
+    "normalizer_failure_rate": 0.044933389035881725,
+    "no_passage": 0
+  },
+  "dual_threshold": {
+    "feasible": true,
+    "reason": null,
+    "lower_threshold": 0.8938191528504735,
+    "upper_threshold": 0.9799341958008496,
+    "strict_recall": 0.007547169811320755,
+    "lenient_recall": 0.4981132075471698,
+    "unsupported_precision": 0.6666666666666666,
+    "strict_f1": 0.014925373134328358,
+    "uncertain_rate": 0.3019684082624544,
+    "coverage": 0.6980315917375456,
+    "predicted_unsupported": 3,
+    "true_unsupported": 2,
+    "predicted_uncertain": 6213,
+    "min_precision": 0.6,
+    "max_uncertain_rate": 0.3333333333333333,
+    "candidates_checked": 18754,
+    "feasible_candidates": 2,
+    "upper_rule": "fill Uncertain up to max_uncertain_rate",
+    "n_claims": 21543,
+    "n_forced_uncertain": 968,
+    "forced_uncertain_rate": 0.044933389035881725,
+    "uncertain_budget_total": 7181,
+    "uncertain_budget_scored": 6213,
+    "ac2_satisfiable": true
+  },
+  "cost": {
+    "training_seconds": {
+      "static_features": 332.5970652499236,
+      "tfidf_and_features": 132.64855958288535,
+      "logistic_regression_fit": 0.07838987512513995,
+      "total": 465.3240147079341
+    },
+    "model_only_ms_per_claim": 9.474655208575804e-05,
+    "note": "Training seconds cover the training features, the TF-IDF fit and the best trial's fit on CPU. End-to-end latency with feature building is measured by final_test.py."
+  },
+  "three_label_metrics": {
+    "n": 21543,
+    "supported_gold": 21267,
+    "unsupported_gold": 276,
+    "predicted_supported": 14359,
+    "predicted_uncertain": 7181,
+    "predicted_unsupported": 3,
+    "strict_recall": 0.007246376811594203,
+    "lenient_recall": 0.5181159420289855,
+    "unsupported_precision": 0.6666666666666666,
+    "strict_f1": 0.014336917562724014,
+    "uncertain_rate": 0.3333333333333333,
+    "coverage": 0.6666666666666667,
+    "strict_tp": 2,
+    "false_unsupported": 1,
+    "missed_unsupported": 133,
+    "uncertain_unsupported": 141,
+    "uncertain_supported": 7040,
+    "decision_counts": {
+      "supported_to_supported": 14226,
+      "supported_to_uncertain": 7040,
+      "supported_to_unsupported": 1,
+      "unsupported_to_supported": 133,
+      "unsupported_to_uncertain": 141,
+      "unsupported_to_unsupported": 2
+    }
+  },
+  "fallback_all_uncertain": false
+}

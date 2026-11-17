@@ -6,10 +6,17 @@ Follows the experiment card (Fields 3, 5, 8):
     * Trials are scored on the official RAGBench VALIDATION splits only.
       The test splits are never loaded.
     * The best trial then gets the full evaluation: calibration,
-      dual thresholds (Uncertain <= 1/3, precision >= 0.60,
-      maximum strict recall), three-label metrics, saved model.
-    * Answer-level AUROC (min-claim-score rule) is reported overall and
-      per subset, because the card's 0.75 target is answer-level.
+      dual thresholds, three-label metrics, saved model.
+    * Thresholds (Field 8): the lower threshold gives the highest strict
+      recall with precision >= 0.60; the upper threshold then fills
+      Uncertain up to 1/3 of claims (team rule). Claims the shared
+      normalizer cannot read, or with no passage, are Uncertain whatever
+      their score (Field 12) and count toward the 1/3.
+    * Answer-level AUROC (Field 6): gold is adherence_score, and the
+      rule that combines claim scores is chosen on validation. The
+      candidate rules count toward the 20-trial limit (Field 5), as in
+      the baseline, so the search uses MAX_TRIALS - 2 trials.
+    * Precision at recall 0.80 uses the baseline's definition.
 
 Gold labels:
     Supported = 0
@@ -20,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import time
 from pathlib import Path
 
 import numpy as np
@@ -44,7 +52,9 @@ from claimcheck_classical.features.text_features import (
     create_tfidf_vectorizer,
 )
 from claimcheck_classical.features.evidence_features import (
+    ANSWER_AGGREGATIONS,
     aggregate_answer_scores,
+    select_answer_aggregation,
     build_full_feature_matrix,
     build_static_features,
     sample_trials,
@@ -71,7 +81,7 @@ from claimcheck_classical.evaluation.calibration import (
 
 from claimcheck_classical.evaluation.thresholds import (
     select_threshold,
-    select_dual_thresholds,
+    select_thresholds_with_forced_uncertain,
 )
 
 from claimcheck_classical.inference.predict import (
@@ -79,7 +89,17 @@ from claimcheck_classical.inference.predict import (
 )
 
 from claimcheck_classical.model_io import save_model
-from claimcheck_classical.provenance import build_metadata
+from claimcheck_classical.preprocessing import normalize_text
+from claimcheck_classical.provenance import build_metadata, hardware_info
+from claimcheck_classical.shared import (
+    normalizer_failure_mask,
+    precision_at_recall,
+    shared_versions,
+)
+
+# Field 5: 20 trials in total. The answer aggregation rules chosen on
+# validation count as trials, as in the baseline.
+SEARCH_TRIALS = MAX_TRIALS - len(ANSWER_AGGREGATIONS)
 
 
 PROJECT_DIR = Path(__file__).resolve().parents[2]
@@ -134,16 +154,23 @@ def run_mode_name(
     sample_size: int,
     sampling: str,
     unsupported_ratio: float,
+    seed: int = RANDOM_SEED,
 ) -> str:
-    """Name the data configuration of a tuning run."""
+    """Name the data configuration of a tuning run.
 
-    if full_data:
-        return "full"
+    The main run uses seed 42 and keeps the old names. The extra
+    seed runs (Field 5) add the seed, such as "full_seed43".
+    """
 
-    return (
+    name = "full" if full_data else (
         f"{sampling}_n{sample_size}"
         f"_r{unsupported_ratio:.2f}"
     )
+
+    if seed != RANDOM_SEED:
+        name += f"_seed{seed}"
+
+    return name
 
 
 def ragbench_input_paths() -> dict:
@@ -199,37 +226,27 @@ def check_finite(X: pd.DataFrame, name: str) -> None:
         raise ValueError(f"Invalid {name} features.")
 
 
-# ============================================================
-# 3. THREE-LABEL PREDICTIONS
-# ============================================================
+def forced_uncertain_mask(df: pd.DataFrame) -> dict:
+    """Claims labeled Uncertain whatever their score (Field 12).
 
-def predict_three_labels(
-    p_supported: np.ndarray,
-    threshold_results: dict,
-) -> np.ndarray:
-    """Use selected thresholds or all-Uncertain fallback."""
+    Returns the combined mask and its two parts:
+    claims the shared normalizer cannot read, and claims with
+    no cited passage.
+    """
 
-    if not threshold_results["feasible"]:
-        return np.full(
-            len(p_supported),
-            "Uncertain",
-            dtype=object,
-        )
+    claims = df["claim"].fillna("").astype(str).map(normalize_text)
+    unreadable = normalizer_failure_mask(claims.tolist())
 
-    lower = threshold_results["lower_threshold"]
-    upper = threshold_results["upper_threshold"]
-
-    return np.array(
-        [
-            classify_support_probability(
-                float(p),
-                lower,
-                upper,
-            )
-            for p in p_supported
-        ],
-        dtype=object,
+    no_passage = (
+        df["evidence"].fillna("").astype(str).str.strip().eq("").to_numpy()
     )
+
+    return {
+        "mask": unreadable | no_passage,
+        "normalizer_failures": int(unreadable.sum()),
+        "normalizer_failure_rate": float(unreadable.mean()),
+        "no_passage": int(no_passage.sum()),
+    }
 
 
 # ============================================================
@@ -239,16 +256,19 @@ def predict_three_labels(
 def answer_level_auroc(
     validation_df: pd.DataFrame,
     p_supported: np.ndarray,
+    method: str = "min",
 ) -> dict:
-    """AUROC on answers using the min-claim-score rule (card Field 6).
+    """Answer-level AUROC (card Field 6).
 
-    An answer is Unsupported if any of its claims is Unsupported.
+    Gold: an answer is Unsupported when adherence_score is False.
+    method: the rule that combines claim scores ("min" or "mean").
     Returned keys: overall, plus one entry per subset.
     """
 
     answers = aggregate_answer_scores(
         validation_df,
         p_supported,
+        method=method,
     )
 
     def auc(frame: pd.DataFrame):
@@ -262,6 +282,7 @@ def answer_level_auroc(
         )
 
     result = {
+        "method": method,
         "overall": auc(answers),
         "answers": int(len(answers)),
         "unsupported_answers": int(answers["y_true"].sum()),
@@ -287,22 +308,31 @@ def run_search(
     selection_metric: str,
     min_precision: float,
     max_uncertain_rate: float,
+    forced_val: np.ndarray,
+    seed: int = RANDOM_SEED,
 ):
-    """Run at most MAX_TRIALS random trials; keep the best in memory."""
+    """Run SEARCH_TRIALS random trials; keep the best in memory."""
 
     trials = sample_trials(
         TFIDF_NGRAM_RANGE,
         TFIDF_MAX_FEATURES,
         LR_C_VALUES,
-        max_trials=MAX_TRIALS,
-        seed=RANDOM_SEED,
+        max_trials=SEARCH_TRIALS,
+        seed=seed,
     )
 
-    print(f"\nTuning trials: {len(trials)} (maximum {MAX_TRIALS})")
+    print(
+        f"\nTuning trials: {len(trials)} "
+        f"(+ {len(ANSWER_AGGREGATIONS)} answer rules = "
+        f"{len(trials) + len(ANSWER_AGGREGATIONS)}, maximum {MAX_TRIALS})"
+    )
 
     # Slow, vectorizer-independent features: computed once per split.
     print("Computing vectorizer-independent features ...")
+    start = time.perf_counter()
     static_train = build_static_features(train_processed)
+    static_train_seconds = time.perf_counter() - start
+
     static_val = build_static_features(validation_processed)
 
     # Group trials so each (ngram, vocabulary) is fitted only once.
@@ -328,6 +358,7 @@ def run_search(
             ngram_range=ngram,
             max_features=vocab,
         )
+        group_start = time.perf_counter()
         vectorizer.fit(training_text)
 
         X_train = build_full_feature_matrix(
@@ -335,6 +366,9 @@ def run_search(
             vectorizer,
             static=static_train,
         )
+        # Training cost: TF-IDF fit and training features only.
+        group_feature_seconds = time.perf_counter() - group_start
+
         X_val = build_full_feature_matrix(
             validation_processed,
             vectorizer,
@@ -350,13 +384,18 @@ def run_search(
 
         for trial_id, c_value in members:
 
+            fit_start = time.perf_counter()
+
             model = train_logistic_regression(
                 X_train,
                 y_train,
                 C=c_value,
                 ngram_range=ngram,
                 max_features=vocab,
+                random_state=seed,
             )
+
+            fit_seconds = time.perf_counter() - fit_start
 
             unsupported_index = list(model.classes_).index(1)
             p_unsupported = model.predict_proba(X_val)[
@@ -375,11 +414,18 @@ def run_search(
                 p_supported,
             )
 
-            dual = select_dual_thresholds(
+            dual = select_thresholds_with_forced_uncertain(
                 y_true=y_val,
                 p_supported=p_supported,
+                forced_uncertain=forced_val,
                 min_precision=min_precision,
                 max_uncertain_rate=max_uncertain_rate,
+            )
+
+            # Metrics over all validation claims, forced ones included.
+            trial_labels = evaluate_three_label(
+                y_true=y_val,
+                predicted_labels=dual["labels"],
             )
 
             row = {
@@ -393,10 +439,11 @@ def run_search(
                 "answer_auroc_FinQA": answers.get("FinQA"),
                 "answer_auroc_TATQA": answers.get("TATQA"),
                 "dual_feasible": dual["feasible"],
-                "strict_recall": dual.get("strict_recall", 0.0),
-                "unsupported_precision": dual.get(
-                    "unsupported_precision", 0.0
-                ),
+                "strict_recall": trial_labels["strict_recall"],
+                "unsupported_precision": trial_labels[
+                    "unsupported_precision"
+                ],
+                "uncertain_rate": trial_labels["uncertain_rate"],
             }
             rows.append(row)
 
@@ -421,6 +468,14 @@ def run_search(
                     "vectorizer": vectorizer,
                     "X_val": X_val,
                     "X_train_shape": X_train.shape,
+                    "training_seconds": {
+                        "static_features": static_train_seconds,
+                        "tfidf_and_features": group_feature_seconds,
+                        "logistic_regression_fit": fit_seconds,
+                        "total": static_train_seconds
+                        + group_feature_seconds
+                        + fit_seconds,
+                    },
                     "ngram": ngram,
                     "max_features": vocab,
                     "C": c_value,
@@ -441,6 +496,8 @@ def evaluate_best(
     target_recall: float,
     min_precision: float,
     max_uncertain_rate: float,
+    forced: dict,
+    seed: int = RANDOM_SEED,
 ) -> dict:
     """Calibration, thresholds, three-label metrics and saved model."""
 
@@ -461,7 +518,13 @@ def evaluate_best(
     print(f"\nSaved best model: {model_path}")
 
     unsupported_index = list(model.classes_).index(1)
+
+    predict_start = time.perf_counter()
     p_unsupported = model.predict_proba(X_val)[:, unsupported_index]
+    model_ms_per_claim = (
+        (time.perf_counter() - predict_start) * 1000 / max(len(X_val), 1)
+    )
+
     p_supported = 1.0 - p_unsupported
 
     binary_metrics = evaluate_binary(
@@ -487,39 +550,57 @@ def evaluate_best(
         index=False,
     )
 
-    dual_threshold = select_dual_thresholds(
+    dual_threshold = select_thresholds_with_forced_uncertain(
         y_true=y_val,
         p_supported=p_supported,
+        forced_uncertain=forced["mask"],
         min_precision=min_precision,
         max_uncertain_rate=max_uncertain_rate,
     )
 
-    predicted_labels = predict_three_labels(
-        p_supported,
-        dual_threshold,
-    )
+    predicted_labels = dual_threshold.pop("labels")
 
     three_label_metrics = evaluate_three_label(
         y_true=y_val,
         predicted_labels=predicted_labels,
     )
 
+    # Check the labels against the rule inference uses.
     if dual_threshold["feasible"]:
-        for metric in (
-            "strict_recall",
-            "lenient_recall",
-            "unsupported_precision",
-            "uncertain_rate",
+        expected = np.array(
+            [
+                "Uncertain" if is_forced else classify_support_probability(
+                    float(p),
+                    dual_threshold["lower_threshold"],
+                    dual_threshold["upper_threshold"],
+                )
+                for p, is_forced in zip(p_supported, forced["mask"])
+            ],
+            dtype=object,
+        )
+
+        if not np.array_equal(expected, predicted_labels):
+            raise ValueError("Threshold labels differ from inference.")
+
+        if not np.isclose(
+            dual_threshold["unsupported_precision"],
+            three_label_metrics["unsupported_precision"],
         ):
-            if not np.isclose(
-                dual_threshold[metric],
-                three_label_metrics[metric],
-            ):
-                raise ValueError(f"Threshold mismatch: {metric}")
+            raise ValueError("Threshold mismatch: unsupported_precision")
+
     elif not np.all(predicted_labels == "Uncertain"):
         raise ValueError("Invalid all-Uncertain fallback.")
 
-    answers = answer_level_auroc(validation_df, p_supported)
+    # Field 6: precision at recall 0.80, baseline definition.
+    p_at_r80 = precision_at_recall(y_val, p_unsupported, target_recall)
+
+    # Field 6: answer rule chosen on validation, then answer AUROC.
+    aggregation = select_answer_aggregation(validation_df, p_supported)
+    answers = answer_level_auroc(
+        validation_df,
+        p_supported,
+        method=aggregation["chosen_method"],
+    )
 
     coefficients = coefficient_table(model)
 
@@ -547,7 +628,7 @@ def evaluate_best(
 
     detail = {
         "experiment": name,
-        "random_seed": RANDOM_SEED,
+        "random_seed": seed,
         "best_config": {
             "ngram_range": list(best["ngram"]),
             "max_features": best["max_features"],
@@ -567,8 +648,22 @@ def evaluate_best(
             "ece": calibration["ece"],
             "n_bins": DEFAULT_CALIBRATION_BINS,
         },
+        "precision_at_recall_0.80": p_at_r80,
+        "answer_aggregation": aggregation,
         "answer_level_auroc": answers,
+        "forced_uncertain": {
+            key: value for key, value in forced.items() if key != "mask"
+        },
         "dual_threshold": dual_threshold,
+        "cost": {
+            "training_seconds": best["training_seconds"],
+            "model_only_ms_per_claim": model_ms_per_claim,
+            "note": (
+                "Training seconds cover the training features, the TF-IDF "
+                "fit and the best trial's fit on CPU. End-to-end latency "
+                "with feature building is measured by final_test.py."
+            ),
+        },
         "three_label_metrics": three_label_metrics,
         "fallback_all_uncertain": not dual_threshold["feasible"],
     }
@@ -583,7 +678,12 @@ def evaluate_best(
         project_dir=PROJECT_DIR,
         details={
             "experiment": name,
-            "random_seed": RANDOM_SEED,
+            "random_seed": seed,
+            "shared_components": shared_versions(),
+            "hardware": hardware_info(),
+            "search_trials": SEARCH_TRIALS,
+            "training_seconds": best["training_seconds"],
+            "answer_aggregation_trials": len(ANSWER_AGGREGATIONS),
             "card_version": not (USE_EXTRA_FEATURES or USE_CLAIM_TEXT),
             "use_extra_features": USE_EXTRA_FEATURES,
             "use_claim_text": USE_CLAIM_TEXT,
@@ -600,11 +700,16 @@ def evaluate_best(
                 "upper_threshold": dual_threshold["upper_threshold"],
                 "min_precision": min_precision,
                 "max_uncertain_rate": max_uncertain_rate,
+                "upper_rule": "fill Uncertain up to max_uncertain_rate",
+                "forced_uncertain": "normalizer cannot read, or no passage",
             },
+            "answer_aggregation": aggregation["chosen_method"],
             "validation_metrics": {
                 "roc_auc": binary_metrics["roc_auc"],
                 "pr_auc": binary_metrics["pr_auc"],
                 "answer_auroc": answers["overall"],
+                "precision_at_recall_0.80": p_at_r80["precision"],
+                "normalizer_failure_rate": forced["normalizer_failure_rate"],
                 "ece": calibration["ece"],
                 "strict_recall": three_label_metrics["strict_recall"],
                 "unsupported_precision": three_label_metrics[
@@ -634,6 +739,14 @@ def evaluate_best(
     print("Unsupported precision: "
           f"{three_label_metrics['unsupported_precision']:.4f}")
     print(f"Uncertain rate: {three_label_metrics['uncertain_rate']:.4f}")
+    print(f"Lenient recall: {three_label_metrics['lenient_recall']:.4f}")
+    print(f"Precision at recall 0.80: {p_at_r80['precision']:.4f}")
+    print(f"Forced Uncertain: {forced['normalizer_failures']} unreadable, "
+          f"{forced['no_passage']} no passage "
+          f"(AC2 satisfiable: {dual_threshold['ac2_satisfiable']})")
+    print(f"Answer rule: {aggregation['chosen_method']} "
+          f"{aggregation['validation_answer_auroc']}  "
+          f"gold disagreements: {aggregation['gold_disagreements']}")
     numeric = coefficients[coefficients["group"] == "numeric"]
 
     print("\nNumeric feature coefficients (standardized):")
@@ -678,6 +791,7 @@ def run_tuning(
     min_precision: float = DEFAULT_MIN_PRECISION,
     max_uncertain_rate: float = DEFAULT_MAX_UNCERTAIN_RATE,
     selection_metric: str = "pr_auc",
+    seed: int = RANDOM_SEED,
 ) -> pd.DataFrame:
     """Search, then evaluate the best trial on validation data."""
 
@@ -687,7 +801,7 @@ def run_tuning(
         )
 
     print("========== TUNING (TF-IDF + LOGISTIC REGRESSION) ==========")
-    print(f"Random seed: {RANDOM_SEED}")
+    print(f"Random seed: {seed}")
     print(f"Full training data: {full_data}")
     print(f"Selection metric: {selection_metric}")
 
@@ -709,6 +823,8 @@ def run_tuning(
     y_train = map_labels(train_processed)
     y_val = map_labels(validation_processed)
 
+    forced = forced_uncertain_mask(validation_df)
+
     trials_df, best = run_search(
         train_processed=train_processed,
         validation_processed=validation_processed,
@@ -718,6 +834,8 @@ def run_tuning(
         selection_metric=selection_metric,
         min_precision=min_precision,
         max_uncertain_rate=max_uncertain_rate,
+        forced_val=forced["mask"],
+        seed=seed,
     )
 
     mode = run_mode_name(
@@ -725,6 +843,7 @@ def run_tuning(
         sample_size,
         sampling,
         unsupported_ratio,
+        seed=seed,
     )
 
     trials_path = OUTPUT_DIR / f"tuning_trials_{mode}.csv"
@@ -746,6 +865,8 @@ def run_tuning(
         target_recall=target_recall,
         min_precision=min_precision,
         max_uncertain_rate=max_uncertain_rate,
+        forced=forced,
+        seed=seed,
     )
 
     return trials_df
@@ -757,7 +878,7 @@ def run_tuning(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Tune TF-IDF + Logistic Regression (<= 20 trials)."
+        description="Tune TF-IDF + Logistic Regression (20 trials in total)."
     )
 
     parser.add_argument("--sample-size", type=int, default=1000)
@@ -795,6 +916,14 @@ def main() -> None:
     )
 
     parser.add_argument(
+        "--seed",
+        type=int,
+        default=RANDOM_SEED,
+        help="Trial sampling and solver seed. 42 is the main run; "
+             "43 and 44 are the extra seed runs (Field 5).",
+    )
+
+    parser.add_argument(
         "--selection-metric",
         choices=SELECTION_METRICS,
         default="pr_auc",
@@ -811,6 +940,7 @@ def main() -> None:
         min_precision=args.min_precision,
         max_uncertain_rate=args.max_uncertain_rate,
         selection_metric=args.selection_metric,
+        seed=args.seed,
     )
 
 

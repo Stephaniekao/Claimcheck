@@ -1,10 +1,10 @@
 {
-  "created_utc": "2026-11-16T07:02:14Z",
+  "created_utc": "2026-11-17T00:09:38Z",
   "model_file": "classical_model_full_best.joblib",
-  "model_sha256": "8d26e92b9702dc8e8dfacbef898cb56c1892be3985f5a46d42be1b9c0dc27dc0",
+  "model_sha256": "e61b19bc2f0891c5b274ed8481264b77fcd245a166ce0cb7e7809a65a2ff55a3",
   "git": {
-    "commit": "unknown",
-    "uncommitted_changes": null
+    "commit": "a2e30cf00d0406c8c05121c9f671f867b4ef380c",
+    "uncommitted_changes": false
   },
   "libraries": {
     "python": "3.13.9",
@@ -21,6 +21,27 @@
   },
   "experiment": "full_best",
   "random_seed": 42,
+  "shared_components": {
+    "normalizer": "1.3.0",
+    "normalizer_sha256": "65685ee5d62b72ce6b1bb6b564e16f23a5dc2bb524127fde9368fdbb92a3d17e",
+    "evidence": "1.0.0",
+    "evidence_sha256": "9d34e3b243fe19da8c8cdea2923cf33f810aafb9c5c7415bdb59794092b4820c",
+    "metrics_sha256": "d4d00d93194db5208ba2b5f72850b4d0d37fc07ef841463ecf69a5cfce21faa9"
+  },
+  "hardware": {
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "processor": "arm",
+    "gpu": null
+  },
+  "search_trials": 18,
+  "training_seconds": {
+    "static_features": 325.89312241692096,
+    "tfidf_and_features": 120.38575250003487,
+    "logistic_regression_fit": 0.07039787503890693,
+    "total": 446.34927279199474
+  },
+  "answer_aggregation_trials": 2,
   "card_version": true,
   "use_extra_features": false,
   "use_claim_text": false,
@@ -41,7 +62,7 @@
   "best_config": {
     "ngram_range": [
       1,
-      2
+      3
     ],
     "max_features": 10000,
     "C": 10.0
@@ -50,18 +71,23 @@
   "validation_claims": 21543,
   "thresholds": {
     "feasible": true,
-    "lower_threshold": 0.9107882435812955,
-    "upper_threshold": 0.9107882435812956,
+    "lower_threshold": 0.8938191528504735,
+    "upper_threshold": 0.9799341958008496,
     "min_precision": 0.6,
-    "max_uncertain_rate": 0.3333333333333333
+    "max_uncertain_rate": 0.3333333333333333,
+    "upper_rule": "fill Uncertain up to max_uncertain_rate",
+    "forced_uncertain": "normalizer cannot read, or no passage"
   },
+  "answer_aggregation": "mean",
   "validation_metrics": {
-    "roc_auc": 0.6180799605839624,
-    "pr_auc": 0.029122519420833617,
-    "answer_auroc": 0.5831144338923688,
-    "ece": 0.005166613343264747,
+    "roc_auc": 0.6276641943052549,
+    "pr_auc": 0.029018578358747743,
+    "answer_auroc": 0.603143858202803,
+    "precision_at_recall_0.80": 0.015191770556577423,
+    "normalizer_failure_rate": 0.044933389035881725,
+    "ece": 0.005164203286154454,
     "strict_recall": 0.007246376811594203,
     "unsupported_precision": 0.6666666666666666,
-    "uncertain_rate": 4.6418790326324094e-05
+    "uncertain_rate": 0.3333333333333333
   }
 }

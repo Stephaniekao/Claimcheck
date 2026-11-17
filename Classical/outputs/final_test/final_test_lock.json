@@ -1,0 +1,24 @@
+{
+  "status": "finished",
+  "started_utc": "2026-11-17T01:01:00+00:00",
+  "git": {
+    "commit": "c59156ac72e76c60ffdd4f0e8806f74d41afa4b4",
+    "uncommitted_changes": false
+  },
+  "models": {
+    "42": {
+      "file": "classical_model_full_best.json",
+      "model_sha256": "e61b19bc2f0891c5b274ed8481264b77fcd245a166ce0cb7e7809a65a2ff55a3"
+    },
+    "43": {
+      "file": "classical_model_full_seed43_best.json",
+      "model_sha256": "8c3d2f2e1463bbd5a2257e73b4b9909ea494b5d4a2e73308302301a0229c01a2"
+    },
+    "44": {
+      "file": "classical_model_full_seed44_best.json",
+      "model_sha256": "6638a8b134f5255c82e7232f96c831b97e17262687ae7e41f51df3ab5dfcd7ba"
+    }
+  },
+  "finished_utc": "2026-11-17T01:04:22+00:00",
+  "results": "final_test_results.json"
+}

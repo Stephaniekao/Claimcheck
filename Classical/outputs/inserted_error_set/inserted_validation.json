@@ -1,0 +1,727 @@
+{
+  "method": "TF-IDF + Logistic Regression (Classical)",
+  "run_at_utc": "2026-11-17T00:09:39+00:00",
+  "note": "Thresholds were chosen on RAGBench validation and are only applied here. The train split was used to develop the scope keywords, so train results are development results.",
+  "model": {
+    "metadata_file": "classical_model_full_best.json",
+    "model_sha256": "e61b19bc2f0891c5b274ed8481264b77fcd245a166ce0cb7e7809a65a2ff55a3",
+    "best_config": {
+      "ngram_range": [
+        1,
+        3
+      ],
+      "max_features": 10000,
+      "C": 10.0
+    },
+    "thresholds": {
+      "feasible": true,
+      "lower_threshold": 0.8938191528504735,
+      "upper_threshold": 0.9799341958008496,
+      "min_precision": 0.6,
+      "max_uncertain_rate": 0.3333333333333333,
+      "upper_rule": "fill Uncertain up to max_uncertain_rate",
+      "forced_uncertain": "normalizer cannot read, or no passage"
+    }
+  },
+  "shared_components": {
+    "normalizer": "1.3.0",
+    "normalizer_sha256": "65685ee5d62b72ce6b1bb6b564e16f23a5dc2bb524127fde9368fdbb92a3d17e",
+    "evidence": "1.0.0",
+    "evidence_sha256": "9d34e3b243fe19da8c8cdea2923cf33f810aafb9c5c7415bdb59794092b4820c",
+    "metrics_sha256": "d4d00d93194db5208ba2b5f72850b4d0d37fc07ef841463ecf69a5cfce21faa9"
+  },
+  "inserted_input_sha256": {
+    "general_claims_300.csv": "120ced12a734836d59cb371010aa8ba74e84302db341545bb5f80c2fe7803f0a",
+    "storyboard_b_100.csv": "ea859d53027524c2f30d3d2b2b23db0b2b30ca27bc36d5a0443114b9234b94a6",
+    "source_snapshots.zip": "f80fafd6a57d209a97bef9fa660888f62ef37ad605811d8611db0a824301c92e"
+  },
+  "git": {
+    "commit": "a2e30cf00d0406c8c05121c9f671f867b4ef380c",
+    "uncommitted_changes": false
+  },
+  "libraries": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.7.2"
+  },
+  "hardware": {
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "processor": "arm",
+    "gpu": null
+  },
+  "splits": {
+    "train": {
+      "overall": {
+        "n": 240,
+        "n_unsupported_gold": 120,
+        "strict_recall": 0.0,
+        "lenient_recall": 1.0,
+        "precision": null,
+        "lenient_precision": 0.5,
+        "f1": null,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 1.0
+      },
+      "general_claims": {
+        "n": 210,
+        "n_unsupported_gold": 105,
+        "strict_recall": 0.0,
+        "lenient_recall": 1.0,
+        "precision": null,
+        "lenient_precision": 0.5,
+        "f1": null,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 1.0
+      },
+      "storyboard_b": {
+        "n": 30,
+        "n_unsupported_gold": 15,
+        "strict_recall": 0.0,
+        "lenient_recall": 1.0,
+        "precision": null,
+        "lenient_precision": 0.5,
+        "f1": null,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 1.0
+      },
+      "reference_flag_everything": {
+        "n": 240,
+        "n_unsupported_gold": 120,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.5,
+        "lenient_precision": 0.5,
+        "f1": 0.6666666666666666,
+        "false_alarm_rate": 1.0,
+        "uncertain_rate": 0.0
+      },
+      "targets_met": {
+        "strict_recall>=0.80": false,
+        "precision>=0.60": false,
+        "uncertain_rate<=1/3": false,
+        "storyboard_b_strict_recall>=0.80": false
+      },
+      "scores_overall": {
+        "n_scored": 240,
+        "n_without_score": 0,
+        "auroc": 0.7883333333333333,
+        "average_precision": 0.8571265623050133,
+        "precision_at_recall_0.80": {
+          "precision": 0.6153846153846154,
+          "recall": 0.8,
+          "risk_threshold": 0.028752441435213588
+        },
+        "base_rate": 0.5,
+        "n_distinct_scores": 240,
+        "ece": 0.46261319226510433,
+        "brier_score": 0.4573800639685583,
+        "calibration_table": [
+          {
+            "bin": 1,
+            "lower_bound": 0.0,
+            "upper_bound": 0.1,
+            "count": 240,
+            "mean_predicted": 0.037386807734895666,
+            "observed_rate": 0.5,
+            "absolute_gap": 0.46261319226510433
+          },
+          {
+            "bin": 2,
+            "lower_bound": 0.1,
+            "upper_bound": 0.2,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 3,
+            "lower_bound": 0.2,
+            "upper_bound": 0.3,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 4,
+            "lower_bound": 0.3,
+            "upper_bound": 0.4,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 5,
+            "lower_bound": 0.4,
+            "upper_bound": 0.5,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 6,
+            "lower_bound": 0.5,
+            "upper_bound": 0.6,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 7,
+            "lower_bound": 0.6,
+            "upper_bound": 0.7,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 8,
+            "lower_bound": 0.7,
+            "upper_bound": 0.8,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 9,
+            "lower_bound": 0.8,
+            "upper_bound": 0.9,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 10,
+            "lower_bound": 0.9,
+            "upper_bound": 1.0,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          }
+        ]
+      },
+      "scores_storyboard_b": {
+        "n_scored": 30,
+        "n_without_score": 0,
+        "auroc": 0.7911111111111111,
+        "average_precision": 0.8042371861025113,
+        "precision_at_recall_0.80": {
+          "precision": 0.7368421052631579,
+          "recall": 0.9333333333333333,
+          "risk_threshold": 0.04255745567914424
+        },
+        "base_rate": 0.5,
+        "n_distinct_scores": 30,
+        "ece": 0.4564305510798995,
+        "brier_score": 0.4567828348829883,
+        "calibration_table": [
+          {
+            "bin": 1,
+            "lower_bound": 0.0,
+            "upper_bound": 0.1,
+            "count": 30,
+            "mean_predicted": 0.0435694489201005,
+            "observed_rate": 0.5,
+            "absolute_gap": 0.4564305510798995
+          },
+          {
+            "bin": 2,
+            "lower_bound": 0.1,
+            "upper_bound": 0.2,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 3,
+            "lower_bound": 0.2,
+            "upper_bound": 0.3,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 4,
+            "lower_bound": 0.3,
+            "upper_bound": 0.4,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 5,
+            "lower_bound": 0.4,
+            "upper_bound": 0.5,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 6,
+            "lower_bound": 0.5,
+            "upper_bound": 0.6,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 7,
+            "lower_bound": 0.6,
+            "upper_bound": 0.7,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 8,
+            "lower_bound": 0.7,
+            "upper_bound": 0.8,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 9,
+            "lower_bound": 0.8,
+            "upper_bound": 0.9,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 10,
+            "lower_bound": 0.9,
+            "upper_bound": 1.0,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          }
+        ]
+      },
+      "per_error_type": [
+        {
+          "error_type": "Flipped Sign",
+          "n": 13,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Metric Confusion",
+          "n": 21,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "n": 15,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Small Numerical",
+          "n": 21,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported",
+          "n": 105,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "n": 15,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Temporal",
+          "n": 21,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Transposed Digits",
+          "n": 8,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Unit",
+          "n": 21,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        }
+      ],
+      "label_reasons": {
+        "scored": 240
+      },
+      "latency_ms_per_claim": 2.618
+    },
+    "validation": {
+      "overall": {
+        "n": 80,
+        "n_unsupported_gold": 40,
+        "strict_recall": 0.0,
+        "lenient_recall": 1.0,
+        "precision": null,
+        "lenient_precision": 0.5,
+        "f1": null,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 1.0
+      },
+      "general_claims": {
+        "n": 60,
+        "n_unsupported_gold": 30,
+        "strict_recall": 0.0,
+        "lenient_recall": 1.0,
+        "precision": null,
+        "lenient_precision": 0.5,
+        "f1": null,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 1.0
+      },
+      "storyboard_b": {
+        "n": 20,
+        "n_unsupported_gold": 10,
+        "strict_recall": 0.0,
+        "lenient_recall": 1.0,
+        "precision": null,
+        "lenient_precision": 0.5,
+        "f1": null,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 1.0
+      },
+      "reference_flag_everything": {
+        "n": 80,
+        "n_unsupported_gold": 40,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.5,
+        "lenient_precision": 0.5,
+        "f1": 0.6666666666666666,
+        "false_alarm_rate": 1.0,
+        "uncertain_rate": 0.0
+      },
+      "targets_met": {
+        "strict_recall>=0.80": false,
+        "precision>=0.60": false,
+        "uncertain_rate<=1/3": false,
+        "storyboard_b_strict_recall>=0.80": false
+      },
+      "scores_overall": {
+        "n_scored": 80,
+        "n_without_score": 0,
+        "auroc": 0.81375,
+        "average_precision": 0.8724522233749862,
+        "precision_at_recall_0.80": {
+          "precision": 0.6274509803921569,
+          "recall": 0.8,
+          "risk_threshold": 0.029650547970630953
+        },
+        "base_rate": 0.5,
+        "n_distinct_scores": 80,
+        "ece": 0.46124939920226715,
+        "brier_score": 0.45682154660806173,
+        "calibration_table": [
+          {
+            "bin": 1,
+            "lower_bound": 0.0,
+            "upper_bound": 0.1,
+            "count": 80,
+            "mean_predicted": 0.03875060079773286,
+            "observed_rate": 0.5,
+            "absolute_gap": 0.46124939920226715
+          },
+          {
+            "bin": 2,
+            "lower_bound": 0.1,
+            "upper_bound": 0.2,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 3,
+            "lower_bound": 0.2,
+            "upper_bound": 0.3,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 4,
+            "lower_bound": 0.3,
+            "upper_bound": 0.4,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 5,
+            "lower_bound": 0.4,
+            "upper_bound": 0.5,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 6,
+            "lower_bound": 0.5,
+            "upper_bound": 0.6,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 7,
+            "lower_bound": 0.6,
+            "upper_bound": 0.7,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 8,
+            "lower_bound": 0.7,
+            "upper_bound": 0.8,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 9,
+            "lower_bound": 0.8,
+            "upper_bound": 0.9,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 10,
+            "lower_bound": 0.9,
+            "upper_bound": 1.0,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          }
+        ]
+      },
+      "scores_storyboard_b": {
+        "n_scored": 20,
+        "n_without_score": 0,
+        "auroc": 0.92,
+        "average_precision": 0.9406593406593406,
+        "precision_at_recall_0.80": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "risk_threshold": 0.04302297951314008
+        },
+        "base_rate": 0.5,
+        "n_distinct_scores": 20,
+        "ece": 0.45743130098534585,
+        "brier_score": 0.4575187275815328,
+        "calibration_table": [
+          {
+            "bin": 1,
+            "lower_bound": 0.0,
+            "upper_bound": 0.1,
+            "count": 20,
+            "mean_predicted": 0.0425686990146541,
+            "observed_rate": 0.5,
+            "absolute_gap": 0.4574313009853459
+          },
+          {
+            "bin": 2,
+            "lower_bound": 0.1,
+            "upper_bound": 0.2,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 3,
+            "lower_bound": 0.2,
+            "upper_bound": 0.3,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 4,
+            "lower_bound": 0.3,
+            "upper_bound": 0.4,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 5,
+            "lower_bound": 0.4,
+            "upper_bound": 0.5,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 6,
+            "lower_bound": 0.5,
+            "upper_bound": 0.6,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 7,
+            "lower_bound": 0.6,
+            "upper_bound": 0.7,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 8,
+            "lower_bound": 0.7,
+            "upper_bound": 0.8,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 9,
+            "lower_bound": 0.8,
+            "upper_bound": 0.9,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          },
+          {
+            "bin": 10,
+            "lower_bound": 0.9,
+            "upper_bound": 1.0,
+            "count": 0,
+            "mean_predicted": null,
+            "observed_rate": null,
+            "absolute_gap": null
+          }
+        ]
+      },
+      "per_error_type": [
+        {
+          "error_type": "Flipped Sign",
+          "n": 4,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Metric Confusion",
+          "n": 6,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "n": 10,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Small Numerical",
+          "n": 6,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported",
+          "n": 30,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "n": 10,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Temporal",
+          "n": 6,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Transposed Digits",
+          "n": 2,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Unit",
+          "n": 6,
+          "Unsupported": 0.0,
+          "Uncertain": 1.0,
+          "Supported": 0.0
+        }
+      ],
+      "label_reasons": {
+        "scored": 80
+      },
+      "latency_ms_per_claim": 2.27
+    }
+  }
+}

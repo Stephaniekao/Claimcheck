@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-11-17T00:33:46Z",
+  "model_file": "classical_model_full_seed43_best.joblib",
+  "model_sha256": "8c3d2f2e1463bbd5a2257e73b4b9909ea494b5d4a2e73308302301a0229c01a2",
+  "git": {
+    "commit": "a2e30cf00d0406c8c05121c9f671f867b4ef380c",
+    "uncommitted_changes": false
+  },
+  "libraries": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.7.2"
+  },
+  "input_sha256": {
+    "FinQA_train": "32aa4c7743efea8a5f837b237c0e6bff8b1f423c46b27b217c0ffeceb46cfe37",
+    "FinQA_validation": "0e4dca93dbd5d4a4aba6dc7d9fc0bf0741594ea88f199e576c297f522143c81a",
+    "TATQA_train": "2a56530a4fb8a09459d9f3b9030795336773ff681fac2c554e0842fb4e148a01",
+    "TATQA_validation": "518cb046a8ae0f989fbcf88b6c3c6addc0c4c3be76432cec4cf17921320aa6a9"
+  },
+  "experiment": "full_seed43_best",
+  "random_seed": 43,
+  "shared_components": {
+    "normalizer": "1.3.0",
+    "normalizer_sha256": "65685ee5d62b72ce6b1bb6b564e16f23a5dc2bb524127fde9368fdbb92a3d17e",
+    "evidence": "1.0.0",
+    "evidence_sha256": "9d34e3b243fe19da8c8cdea2923cf33f810aafb9c5c7415bdb59794092b4820c",
+    "metrics_sha256": "d4d00d93194db5208ba2b5f72850b4d0d37fc07ef841463ecf69a5cfce21faa9"
+  },
+  "hardware": {
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "processor": "arm",
+    "gpu": null
+  },
+  "search_trials": 18,
+  "training_seconds": {
+    "static_features": 319.8004670839291,
+    "tfidf_and_features": 134.62602795893326,
+    "logistic_regression_fit": 0.07333500008098781,
+    "total": 454.49983004294336
+  },
+  "answer_aggregation_trials": 2,
+  "card_version": true,
+  "use_extra_features": false,
+  "use_claim_text": false,
+  "numeric_features": [
+    "cosine_similarity",
+    "numerical_consistency",
+    "period_consistency",
+    "scope_consistency",
+    "numerical_missing",
+    "period_missing",
+    "scope_missing"
+  ],
+  "model_config": {
+    "solver": "liblinear",
+    "max_iter": 2000,
+    "random_state": 42
+  },
+  "best_config": {
+    "ngram_range": [
+      1,
+      3
+    ],
+    "max_features": 10000,
+    "C": 10.0
+  },
+  "train_claims": 163878,
+  "validation_claims": 21543,
+  "thresholds": {
+    "feasible": true,
+    "lower_threshold": 0.8938191528504735,
+    "upper_threshold": 0.9799341958008496,
+    "min_precision": 0.6,
+    "max_uncertain_rate": 0.3333333333333333,
+    "upper_rule": "fill Uncertain up to max_uncertain_rate",
+    "forced_uncertain": "normalizer cannot read, or no passage"
+  },
+  "answer_aggregation": "mean",
+  "validation_metrics": {
+    "roc_auc": 0.6276641943052549,
+    "pr_auc": 0.029018578358747743,
+    "answer_auroc": 0.603143858202803,
+    "precision_at_recall_0.80": 0.015191770556577423,
+    "normalizer_failure_rate": 0.044933389035881725,
+    "ece": 0.005164203286154454,
+    "strict_recall": 0.007246376811594203,
+    "unsupported_precision": 0.6666666666666666,
+    "uncertain_rate": 0.3333333333333333
+  }
+}

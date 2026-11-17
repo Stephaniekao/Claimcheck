@@ -41,7 +41,10 @@ def sha256_file(path, chunk_size: int = 1 << 20) -> str:
 # ============================================================
 
 def git_info(directory) -> dict:
-    """Return the current git commit and whether files have changed."""
+    """Return the current git commit and whether code has changed.
+
+    Changes to result files (outputs/ and models/) do not count.
+    """
 
     def run(arguments: list[str]) -> str:
         return subprocess.run(
@@ -55,7 +58,20 @@ def git_info(directory) -> dict:
 
     try:
         commit = run(["rev-parse", "HEAD"])
-        dirty = bool(run(["status", "--porcelain"]))
+
+        # Only code counts. Results that a run writes (outputs/, models/,
+        # and the baseline's outputs/) are left out, as the baseline does,
+        # so a run on a clean commit is recorded as clean.
+        dirty = bool(run([
+            "status",
+            "--porcelain",
+            "--untracked-files=no",
+            "--",
+            ":/",
+            ":(top,exclude)Classical/outputs",
+            ":(top,exclude)Classical/models",
+            ":(top,exclude)Baseline/outputs",
+        ]))
 
     # Git may be missing, or the folder may not be a repository.
     except (OSError, subprocess.SubprocessError):
@@ -78,6 +94,17 @@ def library_versions() -> dict:
         "pandas": pandas.__version__,
         "scipy": scipy.__version__,
         "scikit-learn": sklearn.__version__,
+    }
+
+
+def hardware_info() -> dict:
+    """Machine the run used (comparison table: cost and latency)."""
+
+    return {
+        "platform": platform.platform(),
+        "machine": platform.machine(),
+        "processor": platform.processor() or None,
+        "gpu": None,
     }
 
 

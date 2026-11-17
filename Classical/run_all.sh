@@ -17,5 +17,10 @@ echo "========== 2. TUNING ON THE FULL TRAINING DATA =========="
 python -m claimcheck_classical.training.tune --full-data
 
 echo
+echo "========== 3. INSERTED ERROR SET v2: TRAIN + VALIDATION =========="
+python -m claimcheck_classical.evaluation.inserted_validation
+
+echo
 echo "Done. Results are in outputs/ and the model is in models/."
 echo "The thresholds and the run record are in models/classical_model_full_best.json."
+echo "Inserted Error Set results are in outputs/inserted_error_set/."
