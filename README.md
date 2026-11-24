@@ -20,7 +20,7 @@ All four methods label the same claims, with the same passages and the same numb
 |---|---|---|---|
 | Baseline | Rule-based number normalization + keyword matching, plus a rule-based support score | Sharon | Done; test results, support score and error analysis in [Baseline/](Baseline/) |
 | Classical | TF-IDF + logistic regression | Stephanie | Done; test results, three seeds and README in [Classical/](Classical/) |
-| Deep | DeBERTa-v3-large (NLI checkpoint), fine-tuned on RAGBench FinQA/TAT-QA | Chengyuan | Planned |
+| Deep | DeBERTa-v3-large (NLI checkpoint), fine-tuned on RAGBench FinQA/TAT-QA | Chengyuan | Done; three-seed training, validation, final test and diagnostics in [DeBERTa/](DeBERTa/) |
 | Foundation | LLM judge (Claude; GPT and Gemini if time allows) | Stephanie | Planned |
 
 ## Data
@@ -59,11 +59,13 @@ Data/
   RAGBench/                               created by the download step (git-ignored, ~560 MB)
 Baseline/                                 rule-based baseline: code, tests, outputs
 Classical/                                TF-IDF + logistic regression: code, tests, outputs
+DeBERTa/                                  fine-tuned verifier, tests, diagnostics and saved result summaries
+ClaimSplitter/                            sentence splitting with original-answer character offsets
 ```
 
 ## Getting started
 
-The environment is pinned in the repo: Python **3.14.0** (`.python-version`) and the exact packages in `requirements.txt`. Results were produced on an Apple M5 laptop, CPU only; no GPU is needed.
+The environment is pinned in the repo: Python **3.14.0** (`.python-version`) and the exact packages in `requirements.txt`. The Baseline results were produced on an Apple M5 laptop, CPU only. DeBERTa training and reported inference used an NVIDIA GeForce RTX 3090 on Windows with Python 3.14.0; see [DeBERTa/README.md](DeBERTa/README.md) for its additional dependencies.
 
 ```bash
 # 0. Environment
@@ -117,8 +119,10 @@ On macOS with the python.org build of Python, `urllib` downloads in the notebook
 | Rule-based baseline (Inserted v2: rules 1.3.0; RAGBench: rules 1.2.0) | 1.00 / 1.00 / 1.00 | 1.00 | 0.18 / 0.05 / 0.08 · 0.05 / 0.02 / 0.03 | 0.57 · 0.46 (support score 1.0.0, added after the test run) | N/A (deterministic) | N/A (score not calibrated) | none | ~1 ms/claim (CPU) | Each label comes from a named rule and the passage line it used |
 | *Label everything Unsupported* | *1.00 / 0.50 / 0.67* | *1.00* | *1.00 / 0.02 / 0.03 · 1.00 / 0.01 / 0.02* | | | | | | |
 | TF-IDF + LR (seed 42; seeds 43 and 44 give the same model) | 0.00 / N/A / N/A | 0.00 | 0.00 / 0.00 / 0.00 · 0.00 / 0.00 / 0.00 | 0.64 · 0.59 (claim level) | 3 seeds, std 0.000 | 0.003 (RAGBench) · 0.459 (Inserted) | ~0.12 CPU hours, no GPU | ~2.7 ms/claim (CPU, with features) | 7 standardized coefficients |
-| DeBERTa-v3-large | | | | | | | | | |
+| DeBERTa-v3-large | 0.992 / 0.796 / 0.881 | 1.000 | 0.189 / 0.169 / 0.172 · 0.263 / 0.092 / 0.134 | 0.811 · 0.787 (claim level) | 0, 1, 2; mean across seeds | 0.030 · 0.051 (RAGBench); 0.079 (Inserted) | 2.74 GPU hours for original training/search | 32.4 · 19.3 ms/claim (GPU) | Highest-scoring evidence window and threshold decision |
 | LLM judge | | | | | | | | | |
+
+DeBERTa values are three-seed means from the completed, once-only final tests. Its answer-level AUROC is 0.765 (FinQA) and 0.773 (TAT-QA), using `adherence_score` as gold. Claim-level and answer-level AUROC must be compared at the same level. DeBERTa selected temperature and thresholds on combined FinQA/TAT-QA validation for RAGBench, and on Inserted v2 validation for Inserted v2. Classical transferred its RAGBench validation thresholds to Inserted v2, so Inserted threshold-based metrics also reflect the different calibration protocols. DeBERTa produced zero Uncertain labels because its selected lower and upper thresholds coincide. Inserted v2 mean ECE is 0.079, with descriptive company-bootstrap 95% interval [0.026, 0.151]. Saved reports and limitations are in [DeBERTa/README.md](DeBERTa/README.md).
 
 **Points for the team:**
 - **The Inserted Error Set is still saturated by simple rules.** v2's 50/50 labels fixed the trivial reference (flagging everything now fails the precision target), but number and keyword matching still scores 1.00, because the passages list each fact cleanly. Harder passages, such as real 10-K text with distractor lines, would be needed to separate methods here.
@@ -128,7 +132,7 @@ On macOS with the python.org build of Python, `urllib` downloads in the notebook
 - **The Classical model ranks Inserted Error Set v2 claims well (AUROC 0.87 on test), but labels all of them Uncertain.** Its thresholds were chosen on RAGBench, and its scores on the Inserted Error Set are in a different range, so every claim falls between the two thresholds. Methods that choose thresholds on RAGBench should check this.
 - **`adherence_score` and "any claim is Unsupported" are different answer labels.** 97 RAGBench validation answers have `adherence_score` = False but no unsupported sentence. All methods should use `adherence_score` for answer level results.
 
-Details, error analysis and limitations: [Baseline/README.md](Baseline/README.md) and [Classical/README.md](Classical/README.md).
+Details, error analysis and limitations: [Baseline/README.md](Baseline/README.md), [Classical/README.md](Classical/README.md) and [DeBERTa/README.md](DeBERTa/README.md).
 
 ## Ethics and scope
 

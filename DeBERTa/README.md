@@ -4,11 +4,53 @@ Deep row of the Experiment Card (owner: Chengyuan). DeBERTa-v3-large, starting f
 
 It reads the same claims and passages as the baseline (`Baseline/claimcheck_baseline/evidence.py` for the Inserted Error Set, `response_sentences` / `documents_sentences` for RAGBench) and is scored by the same code (`Baseline/claimcheck_baseline/metrics.py`).
 
-**Status:** code ready; not trained yet.
+**Status:** three-seed training, validation and final testing completed. The frozen configuration uses claim-first inputs, learning rate `1e-5`, two epochs, and seeds 0, 1 and 2. Each final evaluation command was executed once for the frozen three-seed run. FinanceBench evaluation remains pending.
+
+## Saved final test results
+
+Values are mean ± sample standard deviation across the three individual models. They are not an ensemble. All labels and settings were frozen before final testing.
+
+| Dataset | Strict Unsupported recall | Unsupported precision | F1 | Claim AUROC | ECE | Uncertain rate |
+|---|---:|---:|---:|---:|---:|---:|
+| FinQA | 0.189 ± 0.055 | 0.169 ± 0.030 | 0.172 ± 0.005 | 0.811 ± 0.007 | 0.030 ± 0.007 | 0.000 |
+| TATQA | 0.263 ± 0.062 | 0.092 ± 0.014 | 0.134 ± 0.009 | 0.787 ± 0.005 | 0.051 ± 0.008 | 0.000 |
+| Inserted v2 | 0.992 ± 0.014 | 0.796 ± 0.096 | 0.881 ± 0.051 | 0.983 | 0.079 ± 0.023 | 0.000 |
+
+RAGBench answer-level AUROC is 0.765 (FinQA) and 0.773 (TAT-QA), averaged across seeds. Each model uses mean claim-score aggregation, selected on validation, and `adherence_score` as answer gold.
+
+Test sizes are 12,836 FinQA claims, 12,248 TAT-QA claims, and 80 Inserted v2 claims. Storyboard B strict recall is 1.000 for all three seeds. Inserted v2 flag-all F1 is 0.667; DeBERTa mean F1 is 0.881. The rule-based baseline achieves F1 1.000 on this dataset.
+
+## Thresholds and practical limitations
+
+- RAGBench uses a single temperature/threshold setting per seed chosen jointly on FinQA and TAT-QA validation. Inserted v2 uses its own validation split for temperature and threshold selection. DeBERTa weights are trained only on RAGBench train.
+- Classical uses RAGBench-derived thresholds on Inserted v2. Comparisons of Inserted recall, precision and Uncertain rate therefore reflect both model differences and calibration protocol differences.
+- The chosen lower and upper thresholds are equal for every seed, producing zero Uncertain labels. Strict and lenient recall are consequently identical. The validation search allowed an Uncertain band, but its objective selected a zero-width band.
+- RAGBench claim AUROC exceeds 0.75 on both subsets. At the frozen thresholds, mean error recall is only 18.9% on FinQA and 26.3% on TAT-QA, and error precision is 16.9% and 9.2%. These alarms require human review.
+- Inserted v2 mean ECE is 0.079. Its descriptive company-bootstrap 95% interval is [0.026, 0.151], based on eight test companies and 2,000 resamples. The interval crosses the 0.10 target.
+- The frozen three-seed mean point estimates meet the recorded DeBERTa targets on these test splits. FinanceBench and end-user workflow effectiveness have not been established by these runs.
+- Input-order and hard-negative trials failed the recorded validation adoption criteria; MiniCheck failed its screening criterion. The original claim-first models were retained. See [validation_diagnostics.md](validation_diagnostics.md) for protocols and results.
+
+## Logged artifacts and hardware
+
+The small original result reports are committed under `results/` so readers can inspect them without executing evaluation.
+
+| Artifact | Contents |
+|---|---|
+| [ragbench_metrics_test.json](results/ragbench_metrics_test.json) | Per-seed claim/answer metrics, frozen settings, provenance and latency |
+| [inserted_metrics_test.json](results/inserted_metrics_test.json) | Per-seed Inserted v2 and Storyboard B metrics |
+| [supplemental_metrics.json](results/supplemental_metrics.json) | Saved test ranking hits and company-bootstrap ECE interval |
+| [chosen_config.json](results/chosen_config.json) | Original training search, selected configuration and GPU hours |
+| [ragbench_setting.json](results/ragbench_setting.json), [inserted_setting.json](results/inserted_setting.json) | Temperatures and thresholds fitted on validation |
+
+The reports retain the original evaluation commit `53ecda0ee18f6d7102cc0c9441e2cb361b6a6c05`. The later GitHub publication and documentation commits have different hashes. Reports were copied from the saved run.
+
+The recorded original training/search consumed 2.74 GPU hours, excluding later exploratory runs. Evaluation used an NVIDIA GeForce RTX 3090 on Windows, Python 3.14.0. Mean GPU inference latency was 32.4 ms/claim on FinQA and 19.3 ms/claim on TAT-QA. Checkpoints and per-claim prediction files are retained locally; trained weights are required to run frozen-model inference.
+
+The commands below describe reproduction. The final test splits have already been evaluated. Inspect the saved reports above to read the existing results. A fresh clone lacks the local checkpoints and `outputs/` files, so an absent result file in a new checkout does not make these test splits unseen.
 
 ## Run
 
-Needs a CUDA GPU (developed for one 24 GB GPU) and RAGBench in `Data/RAGBench/` (`./run_all.sh --fetch`).
+The recorded run used a CUDA GPU with 24 GB VRAM and RAGBench in `Data/RAGBench/`. Exact installed package versions are recorded in `requirements.txt` in this folder. The existing scripts also have a CPU fallback; CPU training time was not measured.
 
 ```bash
 python -m pip install -r requirements.txt        # numpy, pandas, pyarrow (root)

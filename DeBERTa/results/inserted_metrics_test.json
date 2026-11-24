@@ -1,0 +1,623 @@
+{
+  "method": "DeBERTa-v3-large (NLI checkpoint), fine-tuned on RAGBench FinQA/TAT-QA",
+  "split": "test",
+  "run_at_utc": "2026-11-16T00:20:47+00:00",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.23.0",
+    "cuda": "12.8",
+    "checkpoint": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "max_len": 512
+  },
+  "train_config": {
+    "lr": 1e-05,
+    "epochs": 2,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "input_sha256": {
+    "Inserted Error Set/general_claims_300.csv": "e0221df537eef2c7f1431b9c19dbf1d694f431a94e276d6fb7419e07a4f6b7d3",
+    "Inserted Error Set/storyboard_b_100.csv": "b70bd178df355959d39264f51d7f5b8a9e47e7831387223f0234dbca0717c1c6",
+    "Inserted Error Set/source_snapshots.zip": "f80fafd6a57d209a97bef9fa660888f62ef37ad605811d8611db0a824301c92e",
+    "RAGBench/FinQA/train.parquet": "dd4c6619f034befab53f6a69fef3c6707ad77b8cc8571ac8990d9f82778107d4",
+    "RAGBench/FinQA/validation.parquet": "3d71b6ce2491bfc53ca302c67bc698c18b2f9a4416c666ca60ae8f39c3097e61",
+    "RAGBench/FinQA/test.parquet": "2afbf352768c89e7bf1237403d4159c93a5e883060dea97ca1421f8c45036762",
+    "RAGBench/TATQA/train.parquet": "51a184e2b93239ad4e1bd3efc5eacb0c83efce0386842454e8202db474265869",
+    "RAGBench/TATQA/validation.parquet": "7472341cb82147cbe9db71e0f4a4bc8d3f6ed195031c8fc1db7d0d6e97fdc1b3",
+    "RAGBench/TATQA/test.parquet": "0e3b670ccb4274ffc9dfba5dbdcbfc39aa1402ee8e72d24d42c4eac9f655c852"
+  },
+  "provenance": {
+    "git": {
+      "commit": "53ecda0ee18f6d7102cc0c9441e2cb361b6a6c05",
+      "uncommitted_changes": false
+    },
+    "python": "3.14.0",
+    "hardware": {
+      "platform": "Windows-10-10.0.19045-SP0",
+      "machine": "AMD64",
+      "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+      "gpu": "NVIDIA GeForce RTX 3090"
+    },
+    "inserted_error_set": {
+      "format": "ClaimCheck Inserted Error Set v2, 40 companies, 400 claims",
+      "version": "v2",
+      "manifest_sha256": "84182eafc8e3f874e0cbc733ac3a140859d36419f939a7973487a8a53a4d18a3"
+    }
+  },
+  "per_seed": {
+    "0": {
+      "overall": {
+        "n": 80,
+        "n_unsupported_gold": 40,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.7407407407407407,
+        "lenient_precision": 0.7407407407407407,
+        "f1": 0.851063829787234,
+        "false_alarm_rate": 0.35,
+        "uncertain_rate": 0.0,
+        "score": {
+          "n": 80,
+          "auroc": 0.98375,
+          "average_precision": 0.9843322050785427,
+          "base_rate": 0.5,
+          "n_distinct_scores": 80,
+          "precision_at_recall_0.80": {
+            "precision": 0.9705882352941176,
+            "recall": 0.825,
+            "risk_threshold": 0.7396386952149006
+          }
+        },
+        "ece_raw": 0.046830241085262986,
+        "ece": 0.07946426923718033
+      },
+      "general_claims": {
+        "n": 30,
+        "n_unsupported_gold": 15,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.5172413793103449,
+        "lenient_precision": 0.5172413793103449,
+        "f1": 0.6818181818181819,
+        "false_alarm_rate": 0.9333333333333333,
+        "uncertain_rate": 0.0,
+        "score": {
+          "n": 30,
+          "auroc": 0.8844444444444445,
+          "average_precision": 0.8880144508004919,
+          "base_rate": 0.5,
+          "n_distinct_scores": 30,
+          "precision_at_recall_0.80": {
+            "precision": 0.8571428571428571,
+            "recall": 0.8,
+            "risk_threshold": 0.5401377271208405
+          }
+        },
+        "ece_raw": 0.0913809511810541,
+        "ece": 0.15847192187716752
+      },
+      "storyboard_b": {
+        "n": 50,
+        "n_unsupported_gold": 25,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0,
+        "score": {
+          "n": 50,
+          "auroc": 1.0,
+          "average_precision": 1.0,
+          "base_rate": 0.5,
+          "n_distinct_scores": 50,
+          "precision_at_recall_0.80": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "risk_threshold": 0.9778269338819835
+          }
+        },
+        "ece_raw": 0.020099815027788296,
+        "ece": 0.03205967765318794
+      },
+      "reference_flag_everything": {
+        "n": 80,
+        "n_unsupported_gold": 40,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.5,
+        "lenient_precision": 0.5,
+        "f1": 0.6666666666666666,
+        "false_alarm_rate": 1.0,
+        "uncertain_rate": 0.0
+      },
+      "targets_met": {
+        "strict_recall>=0.80": true,
+        "precision>=0.60": true,
+        "uncertain_rate<=1/3": true,
+        "storyboard_b_strict_recall>=0.80": true
+      },
+      "per_error_type": [
+        {
+          "error_type": "Flipped Sign",
+          "n": 1,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Metric Confusion",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "n": 25,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Small Numerical",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported",
+          "n": 15,
+          "Unsupported": 0.933,
+          "Uncertain": 0.0,
+          "Supported": 0.067
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "n": 25,
+          "Unsupported": 0.0,
+          "Uncertain": 0.0,
+          "Supported": 1.0
+        },
+        {
+          "error_type": "Temporal",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Transposed Digits",
+          "n": 2,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Unit",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        }
+      ],
+      "setting": {
+        "temperature": 1.15,
+        "lower": 0.8806873534530718,
+        "upper": 0.8806873534530718,
+        "precision_target_met_on_validation": true,
+        "rule": "Uncertain <= 1/3 and precision >= 0.60, then highest strict recall",
+        "validation": {
+          "strict_recall": 1.0,
+          "precision": 0.625,
+          "f1": 0.7692307692307693,
+          "uncertain_rate": 0.0
+        }
+      },
+      "latency_ms_per_claim": 18.88
+    },
+    "1": {
+      "overall": {
+        "n": 80,
+        "n_unsupported_gold": 40,
+        "strict_recall": 0.975,
+        "lenient_recall": 0.975,
+        "precision": 0.9069767441860465,
+        "lenient_precision": 0.9069767441860465,
+        "f1": 0.9397590361445783,
+        "false_alarm_rate": 0.1,
+        "uncertain_rate": 0.0,
+        "score": {
+          "n": 80,
+          "auroc": 0.985,
+          "average_precision": 0.9844446759669161,
+          "base_rate": 0.5,
+          "n_distinct_scores": 80,
+          "precision_at_recall_0.80": {
+            "precision": 0.9512195121951219,
+            "recall": 0.975,
+            "risk_threshold": 0.4714219808884257
+          }
+        },
+        "ece_raw": 0.07324386421241796,
+        "ece": 0.0561693199170776
+      },
+      "general_claims": {
+        "n": 30,
+        "n_unsupported_gold": 15,
+        "strict_recall": 0.9333333333333333,
+        "lenient_recall": 0.9333333333333333,
+        "precision": 0.7777777777777778,
+        "lenient_precision": 0.7777777777777778,
+        "f1": 0.8484848484848485,
+        "false_alarm_rate": 0.26666666666666666,
+        "uncertain_rate": 0.0,
+        "score": {
+          "n": 30,
+          "auroc": 0.8933333333333333,
+          "average_precision": 0.871934546934547,
+          "base_rate": 0.5,
+          "n_distinct_scores": 30,
+          "precision_at_recall_0.80": {
+            "precision": 0.875,
+            "recall": 0.9333333333333333,
+            "risk_threshold": 0.4714219808884257
+          }
+        },
+        "ece_raw": 0.1700480700780948,
+        "ece": 0.1526199786266432
+      },
+      "storyboard_b": {
+        "n": 50,
+        "n_unsupported_gold": 25,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0,
+        "score": {
+          "n": 50,
+          "auroc": 1.0,
+          "average_precision": 1.0,
+          "base_rate": 0.5,
+          "n_distinct_scores": 50,
+          "precision_at_recall_0.80": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "risk_threshold": 0.9987401178807271
+          }
+        },
+        "ece_raw": 0.015161340693011865,
+        "ece": 0.0017010753086617665
+      },
+      "reference_flag_everything": {
+        "n": 80,
+        "n_unsupported_gold": 40,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.5,
+        "lenient_precision": 0.5,
+        "f1": 0.6666666666666666,
+        "false_alarm_rate": 1.0,
+        "uncertain_rate": 0.0
+      },
+      "targets_met": {
+        "strict_recall>=0.80": true,
+        "precision>=0.60": true,
+        "uncertain_rate<=1/3": true,
+        "storyboard_b_strict_recall>=0.80": true
+      },
+      "per_error_type": [
+        {
+          "error_type": "Flipped Sign",
+          "n": 1,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Metric Confusion",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "n": 25,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Small Numerical",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported",
+          "n": 15,
+          "Unsupported": 0.267,
+          "Uncertain": 0.0,
+          "Supported": 0.733
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "n": 25,
+          "Unsupported": 0.0,
+          "Uncertain": 0.0,
+          "Supported": 1.0
+        },
+        {
+          "error_type": "Temporal",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Transposed Digits",
+          "n": 2,
+          "Unsupported": 0.5,
+          "Uncertain": 0.0,
+          "Supported": 0.5
+        },
+        {
+          "error_type": "Unit",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        }
+      ],
+      "setting": {
+        "temperature": 0.65,
+        "lower": 0.895632493840511,
+        "upper": 0.895632493840511,
+        "precision_target_met_on_validation": true,
+        "rule": "Uncertain <= 1/3 and precision >= 0.60, then highest strict recall",
+        "validation": {
+          "strict_recall": 1.0,
+          "precision": 0.8163265306122449,
+          "f1": 0.898876404494382,
+          "uncertain_rate": 0.0
+        }
+      },
+      "latency_ms_per_claim": 16.527
+    },
+    "2": {
+      "overall": {
+        "n": 80,
+        "n_unsupported_gold": 40,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.7407407407407407,
+        "lenient_precision": 0.7407407407407407,
+        "f1": 0.851063829787234,
+        "false_alarm_rate": 0.35,
+        "uncertain_rate": 0.0,
+        "score": {
+          "n": 80,
+          "auroc": 0.980625,
+          "average_precision": 0.9793973368974743,
+          "base_rate": 0.5,
+          "n_distinct_scores": 80,
+          "precision_at_recall_0.80": {
+            "precision": 0.9428571428571428,
+            "recall": 0.825,
+            "risk_threshold": 0.7538265187203478
+          }
+        },
+        "ece_raw": 0.08796983461361375,
+        "ece": 0.10124886108640618
+      },
+      "general_claims": {
+        "n": 30,
+        "n_unsupported_gold": 15,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.5172413793103449,
+        "lenient_precision": 0.5172413793103449,
+        "f1": 0.6818181818181819,
+        "false_alarm_rate": 0.9333333333333333,
+        "uncertain_rate": 0.0,
+        "score": {
+          "n": 30,
+          "auroc": 0.8622222222222222,
+          "average_precision": 0.8161039508020933,
+          "base_rate": 0.5,
+          "n_distinct_scores": 30,
+          "precision_at_recall_0.80": {
+            "precision": 0.8235294117647058,
+            "recall": 0.9333333333333333,
+            "risk_threshold": 0.42749385702578135
+          }
+        },
+        "ece_raw": 0.2075127027928829,
+        "ece": 0.20503856549334282
+      },
+      "storyboard_b": {
+        "n": 50,
+        "n_unsupported_gold": 25,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 1.0,
+        "lenient_precision": 1.0,
+        "f1": 1.0,
+        "false_alarm_rate": 0.0,
+        "uncertain_rate": 0.0,
+        "score": {
+          "n": 50,
+          "auroc": 1.0,
+          "average_precision": 1.0,
+          "base_rate": 0.5,
+          "n_distinct_scores": 50,
+          "precision_at_recall_0.80": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "risk_threshold": 0.9827265488402919
+          }
+        },
+        "ece_raw": 0.02232930157333611,
+        "ece": 0.03897503844224425
+      },
+      "reference_flag_everything": {
+        "n": 80,
+        "n_unsupported_gold": 40,
+        "strict_recall": 1.0,
+        "lenient_recall": 1.0,
+        "precision": 0.5,
+        "lenient_precision": 0.5,
+        "f1": 0.6666666666666666,
+        "false_alarm_rate": 1.0,
+        "uncertain_rate": 0.0
+      },
+      "targets_met": {
+        "strict_recall>=0.80": true,
+        "precision>=0.60": true,
+        "uncertain_rate<=1/3": true,
+        "storyboard_b_strict_recall>=0.80": true
+      },
+      "per_error_type": [
+        {
+          "error_type": "Flipped Sign",
+          "n": 1,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Metric Confusion",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Segment vs Total Revenue",
+          "n": 25,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Small Numerical",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Supported",
+          "n": 15,
+          "Unsupported": 0.933,
+          "Uncertain": 0.0,
+          "Supported": 0.067
+        },
+        {
+          "error_type": "Supported Segment Revenue",
+          "n": 25,
+          "Unsupported": 0.0,
+          "Uncertain": 0.0,
+          "Supported": 1.0
+        },
+        {
+          "error_type": "Temporal",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Transposed Digits",
+          "n": 2,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        },
+        {
+          "error_type": "Unit",
+          "n": 3,
+          "Unsupported": 1.0,
+          "Uncertain": 0.0,
+          "Supported": 0.0
+        }
+      ],
+      "setting": {
+        "temperature": 1.2,
+        "lower": 0.8795314296421608,
+        "upper": 0.8795314296421608,
+        "precision_target_met_on_validation": true,
+        "rule": "Uncertain <= 1/3 and precision >= 0.60, then highest strict recall",
+        "validation": {
+          "strict_recall": 1.0,
+          "precision": 0.625,
+          "f1": 0.7692307692307693,
+          "uncertain_rate": 0.0
+        }
+      },
+      "latency_ms_per_claim": 19.099
+    }
+  },
+  "across_seeds": {
+    "overall.strict_recall": {
+      "mean": 0.9916666666666667,
+      "std": 0.014433756729740658,
+      "n_seeds": 3
+    },
+    "overall.precision": {
+      "mean": 0.7961527418891761,
+      "std": 0.09597640133815484,
+      "n_seeds": 3
+    },
+    "overall.f1": {
+      "mean": 0.8806288985730154,
+      "std": 0.051208201266242134,
+      "n_seeds": 3
+    },
+    "overall.uncertain_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n_seeds": 3
+    },
+    "overall.ece": {
+      "mean": 0.07896081674688804,
+      "std": 0.02254398714328909,
+      "n_seeds": 3
+    },
+    "storyboard_b.strict_recall": {
+      "mean": 1.0,
+      "std": 0.0,
+      "n_seeds": 3
+    },
+    "storyboard_b.precision": {
+      "mean": 1.0,
+      "std": 0.0,
+      "n_seeds": 3
+    },
+    "storyboard_b.f1": {
+      "mean": 1.0,
+      "std": 0.0,
+      "n_seeds": 3
+    },
+    "storyboard_b.uncertain_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n_seeds": 3
+    },
+    "storyboard_b.ece": {
+      "mean": 0.024245263801364655,
+      "std": 0.019827654420192832,
+      "n_seeds": 3
+    }
+  }
+}

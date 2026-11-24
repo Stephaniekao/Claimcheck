@@ -1,0 +1,493 @@
+{
+  "method": "DeBERTa-v3-large (NLI checkpoint), fine-tuned on RAGBench FinQA/TAT-QA",
+  "split": "test",
+  "run_at_utc": "2026-11-16T00:21:07+00:00",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.23.0",
+    "cuda": "12.8",
+    "checkpoint": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "max_len": 512
+  },
+  "train_config": {
+    "lr": 1e-05,
+    "epochs": 2,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "input_sha256": {
+    "Inserted Error Set/general_claims_300.csv": "e0221df537eef2c7f1431b9c19dbf1d694f431a94e276d6fb7419e07a4f6b7d3",
+    "Inserted Error Set/storyboard_b_100.csv": "b70bd178df355959d39264f51d7f5b8a9e47e7831387223f0234dbca0717c1c6",
+    "Inserted Error Set/source_snapshots.zip": "f80fafd6a57d209a97bef9fa660888f62ef37ad605811d8611db0a824301c92e",
+    "RAGBench/FinQA/train.parquet": "dd4c6619f034befab53f6a69fef3c6707ad77b8cc8571ac8990d9f82778107d4",
+    "RAGBench/FinQA/validation.parquet": "3d71b6ce2491bfc53ca302c67bc698c18b2f9a4416c666ca60ae8f39c3097e61",
+    "RAGBench/FinQA/test.parquet": "2afbf352768c89e7bf1237403d4159c93a5e883060dea97ca1421f8c45036762",
+    "RAGBench/TATQA/train.parquet": "51a184e2b93239ad4e1bd3efc5eacb0c83efce0386842454e8202db474265869",
+    "RAGBench/TATQA/validation.parquet": "7472341cb82147cbe9db71e0f4a4bc8d3f6ed195031c8fc1db7d0d6e97fdc1b3",
+    "RAGBench/TATQA/test.parquet": "0e3b670ccb4274ffc9dfba5dbdcbfc39aa1402ee8e72d24d42c4eac9f655c852"
+  },
+  "provenance": {
+    "git": {
+      "commit": "53ecda0ee18f6d7102cc0c9441e2cb361b6a6c05",
+      "uncommitted_changes": false
+    },
+    "python": "3.14.0",
+    "hardware": {
+      "platform": "Windows-10-10.0.19045-SP0",
+      "machine": "AMD64",
+      "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+      "gpu": "NVIDIA GeForce RTX 3090"
+    }
+  },
+  "per_seed": {
+    "0": {
+      "setting": {
+        "temperature": 0.95,
+        "lower": 0.26778672597491315,
+        "upper": 0.26778672597491315,
+        "precision_target_met_on_validation": false,
+        "rule": "no pair met precision >= 0.60: Uncertain <= 1/3, then highest F1",
+        "validation": {
+          "strict_recall": 0.2572463768115942,
+          "precision": 0.16473317865429235,
+          "f1": 0.20084865629420087,
+          "uncertain_rate": 0.0
+        },
+        "aggregation": "mean",
+        "answer_auroc_by_aggregation": {
+          "lowest": 0.7928235477830167,
+          "mean": 0.802469506821045
+        }
+      },
+      "subsets": {
+        "FinQA": {
+          "claim_level": {
+            "n": 12836,
+            "n_unsupported_gold": 222,
+            "strict_recall": 0.16666666666666666,
+            "lenient_recall": 0.16666666666666666,
+            "precision": 0.18137254901960784,
+            "lenient_precision": 0.18137254901960784,
+            "f1": 0.1737089201877934,
+            "false_alarm_rate": 0.013239257967337879,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 12836,
+              "auroc": 0.8133657083435107,
+              "average_precision": 0.10826057667264817,
+              "base_rate": 0.017295107510127767,
+              "n_distinct_scores": 11091,
+              "precision_at_recall_0.80": {
+                "precision": 0.038115631691648826,
+                "recall": 0.8018018018018018,
+                "risk_threshold": 0.012451380196131345
+              }
+            },
+            "ece_raw": 0.03613974306666824,
+            "ece": 0.03336630818029168
+          },
+          "answer_level": {
+            "n": 2294,
+            "n_unsupported_gold": 196,
+            "strict_recall": 0.09183673469387756,
+            "lenient_recall": 0.09183673469387756,
+            "precision": 0.4090909090909091,
+            "lenient_precision": 0.4090909090909091,
+            "f1": 0.15,
+            "false_alarm_rate": 0.012392755004766444,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 2294,
+              "auroc": 0.7648124550106029,
+              "average_precision": 0.24327720749268694,
+              "base_rate": 0.08544027898866609,
+              "n_distinct_scores": 2294,
+              "precision_at_recall_0.80": {
+                "precision": 0.1448339483394834,
+                "recall": 0.8010204081632653,
+                "risk_threshold": 0.020765265672246125
+              }
+            },
+            "ece_raw": 0.042398441356502586,
+            "ece": 0.0472575368458175
+          },
+          "latency_ms_per_claim": 32.197
+        },
+        "TATQA": {
+          "claim_level": {
+            "n": 12248,
+            "n_unsupported_gold": 147,
+            "strict_recall": 0.21768707482993196,
+            "lenient_recall": 0.21768707482993196,
+            "precision": 0.10031347962382445,
+            "lenient_precision": 0.10031347962382445,
+            "f1": 0.1373390557939914,
+            "false_alarm_rate": 0.02371704817783654,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 12248,
+              "auroc": 0.7872326849920201,
+              "average_precision": 0.07363379187823675,
+              "base_rate": 0.012001959503592423,
+              "n_distinct_scores": 10604,
+              "precision_at_recall_0.80": {
+                "precision": 0.02264006139677667,
+                "recall": 0.8027210884353742,
+                "risk_threshold": 0.011244800076244843
+              }
+            },
+            "ece_raw": 0.05256308242602602,
+            "ece": 0.04972974640487875
+          },
+          "answer_level": {
+            "n": 3338,
+            "n_unsupported_gold": 116,
+            "strict_recall": 0.15517241379310345,
+            "lenient_recall": 0.15517241379310345,
+            "precision": 0.24,
+            "lenient_precision": 0.24,
+            "f1": 0.18848167539267016,
+            "false_alarm_rate": 0.017690875232774673,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 3338,
+              "auroc": 0.7775744343842976,
+              "average_precision": 0.17185957183476613,
+              "base_rate": 0.0347513481126423,
+              "n_distinct_scores": 3318,
+              "precision_at_recall_0.80": {
+                "precision": 0.06916850625459897,
+                "recall": 0.8103448275862069,
+                "risk_threshold": 0.021910293665600378
+              }
+            },
+            "ece_raw": 0.04527345472576504,
+            "ece": 0.04124895479881098
+          },
+          "latency_ms_per_claim": 19.592
+        }
+      }
+    },
+    "1": {
+      "setting": {
+        "temperature": 0.95,
+        "lower": 0.25970410929271937,
+        "upper": 0.25970410929271937,
+        "precision_target_met_on_validation": false,
+        "rule": "no pair met precision >= 0.60: Uncertain <= 1/3, then highest F1",
+        "validation": {
+          "strict_recall": 0.19927536231884058,
+          "precision": 0.12761020881670534,
+          "f1": 0.15558698727015557,
+          "uncertain_rate": 0.0
+        },
+        "aggregation": "mean",
+        "answer_auroc_by_aggregation": {
+          "lowest": 0.7874106954762823,
+          "mean": 0.7909072729223658
+        }
+      },
+      "subsets": {
+        "FinQA": {
+          "claim_level": {
+            "n": 12836,
+            "n_unsupported_gold": 222,
+            "strict_recall": 0.14864864864864866,
+            "lenient_recall": 0.14864864864864866,
+            "precision": 0.1907514450867052,
+            "lenient_precision": 0.1907514450867052,
+            "f1": 0.1670886075949367,
+            "false_alarm_rate": 0.011098779134295227,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 12836,
+              "auroc": 0.8158311514304855,
+              "average_precision": 0.10827604388575299,
+              "base_rate": 0.017295107510127767,
+              "n_distinct_scores": 10959,
+              "precision_at_recall_0.80": {
+                "precision": 0.045664443304258596,
+                "recall": 0.8018018018018018,
+                "risk_threshold": 0.019927642575388815
+              }
+            },
+            "ece_raw": 0.036866027704025334,
+            "ece": 0.03385857144134425
+          },
+          "answer_level": {
+            "n": 2294,
+            "n_unsupported_gold": 196,
+            "strict_recall": 0.08163265306122448,
+            "lenient_recall": 0.08163265306122448,
+            "precision": 0.3018867924528302,
+            "lenient_precision": 0.3018867924528302,
+            "f1": 0.1285140562248996,
+            "false_alarm_rate": 0.01763584366062917,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 2294,
+              "auroc": 0.7786643255967782,
+              "average_precision": 0.22982213375537236,
+              "base_rate": 0.08544027898866609,
+              "n_distinct_scores": 2291,
+              "precision_at_recall_0.80": {
+                "precision": 0.16086065573770492,
+                "recall": 0.8010204081632653,
+                "risk_threshold": 0.03358878711012825
+              }
+            },
+            "ece_raw": 0.04248229303200145,
+            "ece": 0.049910726528297186
+          },
+          "latency_ms_per_claim": 32.605
+        },
+        "TATQA": {
+          "claim_level": {
+            "n": 12248,
+            "n_unsupported_gold": 147,
+            "strict_recall": 0.23809523809523808,
+            "lenient_recall": 0.23809523809523808,
+            "precision": 0.09943181818181818,
+            "lenient_precision": 0.09943181818181818,
+            "f1": 0.14028056112224446,
+            "false_alarm_rate": 0.026196182133707956,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 12248,
+              "auroc": 0.7928068012594676,
+              "average_precision": 0.06556806199036885,
+              "base_rate": 0.012001959503592423,
+              "n_distinct_scores": 10367,
+              "precision_at_recall_0.80": {
+                "precision": 0.026775584297708193,
+                "recall": 0.8027210884353742,
+                "risk_threshold": 0.018745151778697067
+              }
+            },
+            "ece_raw": 0.06258993767581564,
+            "ece": 0.05950290086045308
+          },
+          "answer_level": {
+            "n": 3338,
+            "n_unsupported_gold": 116,
+            "strict_recall": 0.16379310344827586,
+            "lenient_recall": 0.16379310344827586,
+            "precision": 0.18446601941747573,
+            "lenient_precision": 0.18446601941747573,
+            "f1": 0.17351598173515984,
+            "false_alarm_rate": 0.0260707635009311,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 3338,
+              "auroc": 0.7574755452813631,
+              "average_precision": 0.15389686815948614,
+              "base_rate": 0.0347513481126423,
+              "n_distinct_scores": 3316,
+              "precision_at_recall_0.80": {
+                "precision": 0.06058631921824104,
+                "recall": 0.8017241379310345,
+                "risk_threshold": 0.024219944828013373
+              }
+            },
+            "ece_raw": 0.06357532651086395,
+            "ece": 0.05915815970928521
+          },
+          "latency_ms_per_claim": 19.115
+        }
+      }
+    },
+    "2": {
+      "setting": {
+        "temperature": 1.0,
+        "lower": 0.7132134056091308,
+        "upper": 0.7132134056091308,
+        "precision_target_met_on_validation": false,
+        "rule": "no pair met precision >= 0.60: Uncertain <= 1/3, then highest F1",
+        "validation": {
+          "strict_recall": 0.32971014492753625,
+          "precision": 0.10556844547563805,
+          "f1": 0.15992970123022848,
+          "uncertain_rate": 0.0
+        },
+        "aggregation": "mean",
+        "answer_auroc_by_aggregation": {
+          "lowest": 0.787095065389239,
+          "mean": 0.7974899433194311
+        }
+      },
+      "subsets": {
+        "FinQA": {
+          "claim_level": {
+            "n": 12836,
+            "n_unsupported_gold": 222,
+            "strict_recall": 0.25225225225225223,
+            "lenient_recall": 0.25225225225225223,
+            "precision": 0.13493975903614458,
+            "lenient_precision": 0.13493975903614458,
+            "f1": 0.17582417582417584,
+            "false_alarm_rate": 0.028460440780085618,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 12836,
+              "auroc": 0.8025802875969358,
+              "average_precision": 0.09848430459861479,
+              "base_rate": 0.017295107510127767,
+              "n_distinct_scores": 10827,
+              "precision_at_recall_0.80": {
+                "precision": 0.03760033798056612,
+                "recall": 0.8018018018018018,
+                "risk_threshold": 0.01176232099533081
+              }
+            },
+            "ece_raw": 0.021596688913177377,
+            "ece": 0.021596688913177377
+          },
+          "answer_level": {
+            "n": 2294,
+            "n_unsupported_gold": 196,
+            "strict_recall": 0.2193877551020408,
+            "lenient_recall": 0.2193877551020408,
+            "precision": 0.3208955223880597,
+            "lenient_precision": 0.3208955223880597,
+            "f1": 0.2606060606060606,
+            "false_alarm_rate": 0.043374642516682556,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 2294,
+              "auroc": 0.7512888854302445,
+              "average_precision": 0.23648612794221302,
+              "base_rate": 0.08544027898866609,
+              "n_distinct_scores": 2294,
+              "precision_at_recall_0.80": {
+                "precision": 0.1384083044982699,
+                "recall": 0.8163265306122449,
+                "risk_threshold": 0.01596222682432691
+              }
+            },
+            "ece_raw": 0.051787226146859766,
+            "ece": 0.05178722614685975
+          },
+          "latency_ms_per_claim": 32.437
+        },
+        "TATQA": {
+          "claim_level": {
+            "n": 12248,
+            "n_unsupported_gold": 147,
+            "strict_recall": 0.3333333333333333,
+            "lenient_recall": 0.3333333333333333,
+            "precision": 0.07561728395061729,
+            "lenient_precision": 0.07561728395061729,
+            "f1": 0.12327044025157233,
+            "false_alarm_rate": 0.04950004131889926,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 12248,
+              "auroc": 0.7823885359449126,
+              "average_precision": 0.0781669214229659,
+              "base_rate": 0.012001959503592423,
+              "n_distinct_scores": 10642,
+              "precision_at_recall_0.80": {
+                "precision": 0.023054755043227664,
+                "recall": 0.8163265306122449,
+                "risk_threshold": 0.012589871883392334
+              }
+            },
+            "ece_raw": 0.043066279335814445,
+            "ece": 0.043066279335814445
+          },
+          "answer_level": {
+            "n": 3338,
+            "n_unsupported_gold": 116,
+            "strict_recall": 0.3275862068965517,
+            "lenient_recall": 0.3275862068965517,
+            "precision": 0.16666666666666666,
+            "lenient_precision": 0.16666666666666666,
+            "f1": 0.22093023255813954,
+            "false_alarm_rate": 0.058969584109248914,
+            "uncertain_rate": 0.0,
+            "score": {
+              "n": 3338,
+              "auroc": 0.783428583659753,
+              "average_precision": 0.19467241469227045,
+              "base_rate": 0.0347513481126423,
+              "n_distinct_scores": 3307,
+              "precision_at_recall_0.80": {
+                "precision": 0.0679327976625274,
+                "recall": 0.8017241379310345,
+                "risk_threshold": 0.02187781035900105
+              }
+            },
+            "ece_raw": 0.037031498898437945,
+            "ece": 0.037031498898437945
+          },
+          "latency_ms_per_claim": 19.181
+        }
+      }
+    }
+  },
+  "across_seeds": {
+    "FinQA.score.auroc": {
+      "mean": 0.8105923824569774,
+      "std": 0.0070473293124775965,
+      "n_seeds": 3
+    },
+    "FinQA.strict_recall": {
+      "mean": 0.18918918918918917,
+      "std": 0.05535227805155182,
+      "n_seeds": 3
+    },
+    "FinQA.precision": {
+      "mean": 0.16902125104748586,
+      "std": 0.029885648665349287,
+      "n_seeds": 3
+    },
+    "FinQA.f1": {
+      "mean": 0.17220723453563533,
+      "std": 0.004557283502301135,
+      "n_seeds": 3
+    },
+    "FinQA.uncertain_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n_seeds": 3
+    },
+    "FinQA.ece": {
+      "mean": 0.02960718951160443,
+      "std": 0.006941661952126143,
+      "n_seeds": 3
+    },
+    "TATQA.score.auroc": {
+      "mean": 0.7874760073988001,
+      "std": 0.005213393078058227,
+      "n_seeds": 3
+    },
+    "TATQA.strict_recall": {
+      "mean": 0.26303854875283444,
+      "std": 0.06172633827127528,
+      "n_seeds": 3
+    },
+    "TATQA.precision": {
+      "mean": 0.09178752725208665,
+      "std": 0.014010778281241764,
+      "n_seeds": 3
+    },
+    "TATQA.f1": {
+      "mean": 0.13363001905593605,
+      "std": 0.009091411779910864,
+      "n_seeds": 3
+    },
+    "TATQA.uncertain_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "n_seeds": 3
+    },
+    "TATQA.ece": {
+      "mean": 0.050766308867048755,
+      "std": 0.008267192878452668,
+      "n_seeds": 3
+    }
+  }
+}

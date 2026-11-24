@@ -1,0 +1,60 @@
+{
+  "chosen_on": "RAGBench validation (FinQA + TAT-QA)",
+  "per_seed": {
+    "0": {
+      "temperature": 0.95,
+      "lower": 0.26778672597491315,
+      "upper": 0.26778672597491315,
+      "precision_target_met_on_validation": false,
+      "rule": "no pair met precision >= 0.60: Uncertain <= 1/3, then highest F1",
+      "validation": {
+        "strict_recall": 0.2572463768115942,
+        "precision": 0.16473317865429235,
+        "f1": 0.20084865629420087,
+        "uncertain_rate": 0.0
+      },
+      "aggregation": "mean",
+      "answer_auroc_by_aggregation": {
+        "lowest": 0.7928235477830167,
+        "mean": 0.802469506821045
+      }
+    },
+    "1": {
+      "temperature": 0.95,
+      "lower": 0.25970410929271937,
+      "upper": 0.25970410929271937,
+      "precision_target_met_on_validation": false,
+      "rule": "no pair met precision >= 0.60: Uncertain <= 1/3, then highest F1",
+      "validation": {
+        "strict_recall": 0.19927536231884058,
+        "precision": 0.12761020881670534,
+        "f1": 0.15558698727015557,
+        "uncertain_rate": 0.0
+      },
+      "aggregation": "mean",
+      "answer_auroc_by_aggregation": {
+        "lowest": 0.7874106954762823,
+        "mean": 0.7909072729223658
+      }
+    },
+    "2": {
+      "temperature": 1.0,
+      "lower": 0.7132134056091308,
+      "upper": 0.7132134056091308,
+      "precision_target_met_on_validation": false,
+      "rule": "no pair met precision >= 0.60: Uncertain <= 1/3, then highest F1",
+      "validation": {
+        "strict_recall": 0.32971014492753625,
+        "precision": 0.10556844547563805,
+        "f1": 0.15992970123022848,
+        "uncertain_rate": 0.0
+      },
+      "aggregation": "mean",
+      "answer_auroc_by_aggregation": {
+        "lowest": 0.787095065389239,
+        "mean": 0.7974899433194311
+      }
+    }
+  },
+  "chosen_at_utc": "2026-11-14T03:04:03+00:00"
+}

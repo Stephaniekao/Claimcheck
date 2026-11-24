@@ -1,0 +1,60 @@
+{
+  "lr": 1e-05,
+  "epochs": 2,
+  "schedule_epochs": 2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "checkpoints": {
+    "0": "checkpoints\\lr1e-05_ep2_seed0",
+    "1": "checkpoints\\lr1e-05_ep2_seed1",
+    "2": "checkpoints\\lr1e-05_ep2_seed2"
+  },
+  "n_trials": 4,
+  "chosen_on": "RAGBench validation: mean claim-level AUROC (FinQA, TAT-QA)",
+  "supported_per_unsupported": 4,
+  "gpu_hours": {
+    "lr1e-05_seed0": 0.8354691147222223,
+    "lr2e-05_seed0": 0.8411825989722221,
+    "lr1e-05_seed1": 0.532238956611111,
+    "lr1e-05_seed2": 0.5325396603333336
+  },
+  "gpu_hours_total": 2.741430330638889,
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.23.0",
+    "cuda": "12.8",
+    "checkpoint": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "max_len": 512
+  },
+  "input_sha256": {
+    "Inserted Error Set/general_claims_300.csv": "e0221df537eef2c7f1431b9c19dbf1d694f431a94e276d6fb7419e07a4f6b7d3",
+    "Inserted Error Set/storyboard_b_100.csv": "b70bd178df355959d39264f51d7f5b8a9e47e7831387223f0234dbca0717c1c6",
+    "Inserted Error Set/source_snapshots.zip": "f80fafd6a57d209a97bef9fa660888f62ef37ad605811d8611db0a824301c92e",
+    "RAGBench/FinQA/train.parquet": "dd4c6619f034befab53f6a69fef3c6707ad77b8cc8571ac8990d9f82778107d4",
+    "RAGBench/FinQA/validation.parquet": "3d71b6ce2491bfc53ca302c67bc698c18b2f9a4416c666ca60ae8f39c3097e61",
+    "RAGBench/TATQA/train.parquet": "51a184e2b93239ad4e1bd3efc5eacb0c83efce0386842454e8202db474265869",
+    "RAGBench/TATQA/validation.parquet": "7472341cb82147cbe9db71e0f4a4bc8d3f6ed195031c8fc1db7d0d6e97fdc1b3"
+  },
+  "provenance": {
+    "git": {
+      "commit": "59390f5e31710a75596fe0ee1163848142bb34c5",
+      "uncommitted_changes": false
+    },
+    "python": "3.14.0",
+    "hardware": {
+      "platform": "Windows-10-10.0.19045-SP0",
+      "machine": "AMD64",
+      "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+      "gpu": "NVIDIA GeForce RTX 3090"
+    },
+    "inserted_error_set": {
+      "format": "ClaimCheck Inserted Error Set v2, 40 companies, 400 claims",
+      "version": "v2",
+      "manifest_sha256": "84182eafc8e3f874e0cbc733ac3a140859d36419f939a7973487a8a53a4d18a3"
+    }
+  },
+  "chosen_at_utc": "2026-11-14T03:03:35+00:00"
+}
