@@ -1,0 +1,9 @@
+# DeBERTa row only. Install on top of the root requirements.txt (numpy, pandas, pyarrow):
+#   python -m pip install -r requirements.txt
+#   python -m pip install torch --index-url https://download.pytorch.org/whl/cu128   # pick the CUDA build for your GPU
+#   python -m pip install -r DeBERTa/requirements.in
+# Then pin what was installed, so the run can be repeated:
+#   python -m pip freeze > DeBERTa/requirements.txt
+transformers
+sentencepiece
+protobuf
