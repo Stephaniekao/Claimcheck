@@ -42,7 +42,7 @@ The small original result reports are committed under `results/` so readers can 
 | [chosen_config.json](results/chosen_config.json) | Original training search, selected configuration and GPU hours |
 | [ragbench_setting.json](results/ragbench_setting.json), [inserted_setting.json](results/inserted_setting.json) | Temperatures and thresholds fitted on validation |
 
-The reports retain the original evaluation commit `53ecda0ee18f6d7102cc0c9441e2cb361b6a6c05`. The later GitHub publication and documentation commits have different hashes. Reports were copied from the saved run.
+Final-test results were produced at local commit `53ecda0ee18f6d7102cc0c9441e2cb361b6a6c05`. All 18 DeBERTa files tracked in that commit are byte-identical to their counterparts in published commit [`1e2b540`](https://github.com/Stephaniekao/Claimcheck/commit/1e2b540e2b4d391bbf41f99a4a06035f25c9d841), which was merged into `main` through PR #6. Publication added only `DeBERTa/.gitignore`. The DeBERTa Python source, pinned requirements, and shared `Baseline/claimcheck_baseline` modules on `main` at documentation commit `cc5c6e8` match the local evaluation commit. Later changes updated the README and archived the original reports under `results/`. The result JSONs retain their original evaluation provenance.
 
 The recorded original training/search consumed 2.74 GPU hours, excluding later exploratory runs. Evaluation used an NVIDIA GeForce RTX 3090 on Windows, Python 3.14.0. Mean GPU inference latency was 32.4 ms/claim on FinQA and 19.3 ms/claim on TAT-QA. Checkpoints and per-claim prediction files are retained locally; trained weights are required to run frozen-model inference.
 
